@@ -6,7 +6,15 @@ export default {
     "./resources/**/*.vue",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'cream-bg': '#FBF2E9',
+        'navy-bg' : '#1B4668',
+      },
+      backgroundImage: {
+        'home-bg' : "url('/public/image/Homepage_bg.png')",
+      }
+    },
   },
   plugins: [],
 }

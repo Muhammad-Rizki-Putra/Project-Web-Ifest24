@@ -1,6 +1,9 @@
-@props(['active' => false])
+@props(['href'])
 
-<a {{ $attributes }}
-    class="{{ $active ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white' }} px-3 py-2 text-sm font-medium"
-    aria-current="{{ $active ? 'page' : '' }}">{{ $slot }}
+@php
+    $active = request()->is(trim($href, '/')) || request()->is(trim($href, '/') . '/*');
+@endphp
+
+<a href="{{ $href }}" {{ $attributes->merge(['class' => $active ? 'text-black' : 'text-gray-300 hover:text-black']) }}>
+    {{ $slot }}
 </a>

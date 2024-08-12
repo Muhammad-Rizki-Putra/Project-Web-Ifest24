@@ -5,19 +5,19 @@ use App\Http\Controllers\SemnasController;
 
 
 Route::get('/', function () {
-    return view('home');
+    return view('home', ['pagename' => 'home']);
 });
 
 Route::get('/partner-with-us', function () {
-    return view('partner');
+    return view('partner', ['pagename' => 'partner']);
 });
 
 Route::get('/register', function () {
-    return view('register');
+    return view('register', ['pagename' => 'register']);
 });
 
 Route::get('/login', function () {
-    return view('login');
+    return view('login', ['pagename' => 'login']);
 });
 
 // Event Route
@@ -36,17 +36,17 @@ Route::get('/last-act', function () {
 
 // Competition Route
 Route::get('/competitive-programming', function () {
-    return view('competitions.compro');
+    return view('competitions.compro' , ['pagename' => 'compro']);
 });
 Route::get('/data-analysis-competition', function () {
-    return view('competitions.data');
+    return view('competitions.data', ['pagename' => 'data']);
 });
 Route::get('/capture-the-flag', function () {
-    return view('competitions.cft');
+    return view('competitions.cft' , ['pagename' => 'ctf']);
 });
 Route::get('/informatics-competition', function () {
-    return view('competitions.informatics');
+    return view('competitions.informatics' , ['pagename' => 'informatics']);
 });
 Route::get('/web-development-competition', function () {
-    return view('competitions.web');
+    return view('competitions.web', ['pagename' => 'webdev']);
 });

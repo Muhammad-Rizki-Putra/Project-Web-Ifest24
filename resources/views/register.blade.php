@@ -1,12 +1,13 @@
 <x-layout>
+<x-slot:pagename>{{$pagename}}</x-slot:pagename>
     <div class="flex flex-row mx-auto my-auto">
-        <img class="h-463 w-auto my-auto" src="image/logo_ifest.png" alt="logo_ifest" >
-        <img class="w-auto px-20" src="image/Line.png" alt="line" >
+        <img class="w-auto my-auto hidden lg:block" src="image/logo_ifest.png" alt="logo_ifest" >
+        <img class="w-auto px-20 hidden lg:block" src="image/Line.png" alt="line" >
         <div class="flex flex-col items-center">
             <h1 class="text-5xl pb-5">
                 Register
             </h1>
-            <form class="w-463 max-w-lg">
+            <form class="min-w-[463px] max-w-lg w-auto">
                 <div class="flex flex-wrap -mx-3 mb-2">
                     <div class="w-full px-3">
                         <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">

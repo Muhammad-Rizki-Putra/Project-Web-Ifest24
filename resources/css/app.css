@@ -2,9 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
+#login{
     background-color: #FBF2E9;
 }
+
+#register{
+    background-color: #FBF2E9;
+}
+
+
 
 .no-scroll {
     overflow: hidden;
@@ -19,3 +25,20 @@ body{
 .w-463 {
     width: 463px;
 }
+
+.flex-grow{
+    flex-grow: 4;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 15s linear infinite;
+    will-change: transform;
+}
+

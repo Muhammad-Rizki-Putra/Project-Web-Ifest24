@@ -1,14 +1,14 @@
 <x-layout>
 <x-slot:pagename>{{$pagename}}</x-slot:pagename>
-    <div class="flex flex-row mx-auto my-auto">
-        <img class="w-auto my-auto hidden lg:block" src="image/logo_ifest.png" alt="logo_ifest" >
-        <img class="w-auto px-20 hidden lg:block" src="image/Line.png" alt="line" >
-        <div class="flex flex-col items-center">
+    <div class="flex flex-row justify-center h-[calc(100vh-116px)] mx-auto max-h-[calc(80vh)] ">
+        <img class="w-auto h-auto my-auto hidden lg:block pt-[116px]" src="image/logo_ifest.png" alt="logo_ifest" >
+        <img class="w-auto my-auto h-auto px-20 hidden lg:block " src="image/Line.png" alt="line" >
+        <div class="flex flex-col items-center pt-[48px] my-auto h-auto max-h-[627px]">
             <h1 class="text-5xl pb-5">
                 Register
             </h1>
-            <form class="min-w-[463px] max-w-lg w-auto">
-                <div class="flex flex-wrap -mx-3 mb-2">
+            <form class="h-auto w-[calc(75vh)]">
+                <div class="flex flex-wrap -mx-3 ">
                     <div class="w-full px-3">
                         <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
                             Email
@@ -17,43 +17,43 @@
                     </div>
                 </div>
 
-                <div class="flex flex-wrap -mx-3 mb-2">
+                <div class="flex flex-wrap -mx-3 ">
                     <div class="w-full px-3">
-                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold " for="grid-password">
                             Password
                         </label>
                         <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" type="password" placeholder="Enter Your Password">
                     </div>
                 </div>
 
-                <div class="flex flex-wrap -mx-3 mb-2">
+                <div class="flex flex-wrap -mx-3 ">
                     <div class="w-full px-3">
-                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold " for="grid-password">
                             Confirm your Password
                         </label>
                         <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password-confirmation" type="password" placeholder="Enter Your Confirmation Password">
                     </div>
                 </div>
 
-                <div class="flex flex-wrap -mx-3 mb-2">
+                <div class="flex flex-wrap -mx-3 ">
                     <div class="w-full px-3">
-                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold " for="grid-password">
                             Username
                         </label>
                         <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-username" type="text" placeholder="Enter Your Username">
                     </div>
                 </div>
 
-                <div class="flex flex-wrap -mx-3 mb-2">
-                    <div class="w-full md:w-1/2 px-3 mb-2 md:mb-0">
-                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-city">
+                <div class="flex flex-wrap -mx-3 ">
+                    <div class="w-full md:w-1/2 px-3  md:mb-0">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold " for="grid-city">
                             Date Birth
                         </label>
                         <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-birth-date" type="date" placeholder="Select Your Birth Date">
                     </div>
 
-                    <div class="w-full md:w-1/2 px-3 mb-2 md:mb-0">
-                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-state">
+                    <div class="w-full flex-wrap md:w-1/2 px-3  md:mb-0">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold " for="grid-state">
                             Current Level of Education
                         </label>
                         <div class="relative">
@@ -69,9 +69,9 @@
                     </div>
                 </div>
 
-                <div class="flex flex-wrap -mx-3 mb-2">
+                <div class="flex flex-wrap -mx-3 mt-3">
                     <div class="w-full px-3">
-                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold " for="grid-password">
                             Where do you know IFest?
                         </label>
                         <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-ifest-info" type="text" placeholder="Enter Your Thought">

@@ -1,12 +1,12 @@
 <x-layout>
 <x-slot:pagename>{{$pagename}}</x-slot:pagename>
     <div class="w-full flex flex-col bg-home-bg bg-cover bg-no-repeat bg-center">
-        <div class="py-[125px] px-[184px] bg-white flex items-center" style="height: 80vh;">
-            <img src="/image/logo_ifest3.png" alt="" class="">
+        <div class="py-[125px] px-[184px] bg-white flex items-center h-[calc(100vh-189px)]">
+            <img src="/image/logo_ifest3.png" alt="" class="h-auto w-auto">
         </div>
 
         <div class="">
-            <div class="h-[88px] relative overflow-hidden bg-navy-bg text-white ">
+            <div class="h-min-[88px] relative overflow-hidden bg-navy-bg text-white h-auto">
                 <div class="animate-marquee whitespace-nowrap ">
                     <span class="mx-4 text-7xl">• XX Days Left!</span>
                     <span class="mx-4 text-7xl">• XX Days Left!</span>
@@ -22,11 +22,11 @@
             </div>
         </div>
 
-        <div class="flex flex-col px-[125px] pt-[50px] justify-center">
+        <div class="flex flex-col px-[125px] pt-[25vh] justify-center">
 
             <div class="flex flex-col lg:flex-row justify-center ">
                 <img class="w-auto" src="/image/box.png" alt="">
-                <div class="flex flex-col text-balance ml-10">
+                <div class="flex flex-col text-balance ml-10 mt-10 lg:mt-0">
                     <h1 class="text-7xl">Premiere Launch</h1>
                     <p class="text-3xl max-w-[578px]">A platform that enables Founders or Strategic Partners from multiple companies involved in the Artificial Intelligence and Financial Technology sectors, alongside experts and specialists in these domains.</p>
                 </div>
@@ -45,8 +45,16 @@
                 </p>
             </div>
 
-            <div>
-                
+            <div class="gallery">
+                <div class="gallery-container">
+                    <img src="/image/furina.png" alt="furina" class="gallery-item gallery-item-1" data-index = "1">
+                    <img src="/image/furina.png" alt="furina" class="gallery-item gallery-item-2" data-index = "2">
+                    <img src="/image/furina.png" alt="furina" class="gallery-item gallery-item-3" data-index = "3">
+                </div>
+                <div class="gallery-controls">
+
+                </div>
+                <script src="js/app.js"></script>
             </div>
         </div>
 

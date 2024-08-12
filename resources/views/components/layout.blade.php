@@ -13,15 +13,15 @@
     <script defer src="{{ mix('js/app.js') }}"></script>
 </head>
 
-<body id="{{$pagename}}" class="min-h-screen bg-home-bg bg-cover bg-no-repeat bg-center flex flex-col">
-    <div class="flex-grow">
+<body id="{{$pagename}}" class="">
+    <div class="">
         <!-- navbar -->
         <x-Navbar></x-Navbar>
 
         <!-- header -->
         <!-- <x-Header></x-Header> -->
         <main>
-            <div class="w-full mx-auto flex-grow">
+            <div class="w-full mx-auto ">
                 {{ $slot }}
             </div>
         </main>

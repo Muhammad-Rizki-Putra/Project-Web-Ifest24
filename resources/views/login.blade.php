@@ -1,14 +1,14 @@
 <x-layout>
     <x-slot:pagename>{{$pagename}}</x-slot:pagename>
-    <div class="flex flex-row justify-center mx-auto my-auto">
-        <img class="w-auto my-auto hidden lg:block" src="image/logo_ifest.png" alt="logo_ifest" >
-        <img class="w-auto px-20 hidden lg:block" src="image/Line.png" alt="line" >
-        <div class="flex flex-col items-center">
+    <div class="flex flex-row justify-center h-[calc(100vh-116px)] mx-auto max-h-[calc(80vh)] ">
+        <img class="w-auto h-auto my-auto hidden lg:block pt-[116px]" src="image/logo_ifest.png" alt="logo_ifest" >
+        <img class="w-auto my-auto h-auto px-20 hidden lg:block " src="image/Line.png" alt="line" >
+        <div class="flex flex-col items-center pt-[48px] my-auto h-auto max-h-[627px]">
             <h1 class="text-5xl pb-5">
                 Login
             </h1>
-            <form class="w-auto mt-10 min-w-[463px]">
-                <div class="flex flex-wrap -mx-3 mb-2">
+            <form class="h-auto w-[calc(75vh)]">
+                <div class="flex flex-wrap -mx-3 ">
                     <div class="w-full px-3">
                         <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
                             Username/Email

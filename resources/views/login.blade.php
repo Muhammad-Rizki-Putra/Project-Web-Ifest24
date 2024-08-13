@@ -1,6 +1,9 @@
-<x-layout>
+<x-layout2>
     <x-slot:pagename>{{$pagename}}</x-slot:pagename>
-    <div class="flex flex-row justify-center h-[calc(100vh-116px)] mx-auto max-h-[calc(80vh)] ">
+    <div class="flex justify-end">
+        <a href="/" class="absolute"><img src="/image/cancel-logo.png" alt="" class="mt-10 mr-10"></a>
+    </div>
+    <div class="flex flex-row items-center justify-center h-screen mx-auto">
         <img class="w-auto h-auto my-auto hidden lg:block pt-[116px]" src="image/logo_ifest.png" alt="logo_ifest" >
         <img class="w-auto my-auto h-auto px-20 hidden lg:block " src="image/Line.png" alt="line" >
         <div class="flex flex-col items-center pt-[48px] my-auto h-auto max-h-[627px]">
@@ -41,4 +44,4 @@
             </button>
         </div>
     </div>
-</x-layout>
+</x-layout2>

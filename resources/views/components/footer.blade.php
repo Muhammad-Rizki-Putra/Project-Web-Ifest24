@@ -1,4 +1,4 @@
-<div class="flex flex-row items-center justify-center w-full h-auto bg-cream-bg space-x-96 p-5">
+<div class="flex flex-row items-center justify-center w-full h-auto bg-cream-bg space-x-64  p-5">
     <div class="flex flex-col items-center justify-center">
         <h1 class="text-3xl pb-3">Brought To You By</h1>
         <div class="flex flex-row items-center justify-center">

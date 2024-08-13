@@ -13,6 +13,7 @@ export default {
       },
       backgroundImage: {
         'home-bg' : "url('/public/image/Homepage_bg.png')",
+        'countdown-bg' : "url('/public/image/bg-countdown.png')",
       }
     },
   },

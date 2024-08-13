@@ -45,18 +45,50 @@
                 </p>
             </div>
 
-            <div class="gallery">
-                <div class="gallery-container">
-                    <img src="/image/furina.png" alt="furina" class="gallery-item gallery-item-1" data-index = "1">
-                    <img src="/image/furina.png" alt="furina" class="gallery-item gallery-item-2" data-index = "2">
-                    <img src="/image/furina.png" alt="furina" class="gallery-item gallery-item-3" data-index = "3">
-                </div>
-                <div class="gallery-controls">
+            <div class="flex flex-col justify-center pt-[116px]">
+                <h1 class="text-7xl text-center">Explore Our Event!</h1>
+                <div class="flex flex-row items-center justify-center ">
+                    <div class="control-buttons">
+                        <button id="carousel-0-previousButton"><img src="/image/prev.png" alt=""></button>
+                    </div>
 
+                    <div class="gallery">
+                        <div class="gallery-container">
+                            <img src="/image/box.png" alt="furina" class="gallery-item gallery-item-1" data-index = "1">
+                            <img src="/image/furina.png" alt="furina" class="gallery-item gallery-item-2" data-index = "2">
+                            <img src="/image/box.png" alt="furina" class="gallery-item gallery-item-3" data-index = "3">
+                        </div>
+                    </div>
+
+                    <div class="control-buttons">
+                        <button id="carousel-0-nextButton"><img src="/image/next.png" alt=""></button>
+                    </div>
                 </div>
-                <script src="js/app.js"></script>
             </div>
-        </div>
 
+            <div class="flex flex-col justify-center pt-[116px]">
+                <h1 class="text-7xl text-center">Explore Our Competition!</h1>
+                <div class="flex flex-row items-center justify-center ">
+                    <div class="control-buttons">
+                        <button id="carousel-1-previousButton"><img src="/image/prev.png" alt=""></button>
+                    </div>
+
+                    <div class="gallery">
+                        <div class="gallery-container">
+                            <img src="/image/box.png" alt="furina" class="gallery-item gallery-item-1" data-index = "1">
+                            <img src="/image/furina.png" alt="furina" class="gallery-item gallery-item-2" data-index = "2">
+                            <img src="/image/box.png" alt="furina" class="gallery-item gallery-item-3" data-index = "3">
+                        </div>
+                    </div>
+
+                    <div class="control-buttons">
+                        <button id="carousel-1-nextButton"><img src="/image/next.png" alt=""></button>
+                    </div>
+                </div>
+            </div>
+
+            
+
+        </div>
     </div>
 </x-layout>

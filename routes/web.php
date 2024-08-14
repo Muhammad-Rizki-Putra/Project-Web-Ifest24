@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\RegisterController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SemnasController;
 
@@ -12,13 +14,14 @@ Route::get('/partner-with-us', function () {
     return view('partner', ['pagename' => 'partner']);
 });
 
-Route::get('/register', function () {
-    return view('register', ['pagename' => 'register']);
-});
+// register
+Route::get('/register', [RegisterController::class, 'create'])->middleware('guest');
+Route::post('/register', [RegisterController::class, 'store']);
 
-Route::get('/login', function () {
-    return view('login', ['pagename' => 'login']);
-});
+// login
+Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
+Route::post('/login', [LoginController::class, 'authenticate']);
+Route::get('/logout', [LoginController::class, 'logout']);
 
 // Event Route
 Route::get('/seminar-nasional', [SemnasController::class, 'index'])->name('semnas');
@@ -40,16 +43,16 @@ Route::get('/last-act', function () {
 
 // Competition Route
 Route::get('/competitive-programming', function () {
-    return view('competitions.compro' , ['pagename' => 'compro']);
+    return view('competitions.compro', ['pagename' => 'compro']);
 });
 Route::get('/data-analysis-competition', function () {
     return view('competitions.data', ['pagename' => 'data']);
 });
 Route::get('/capture-the-flag', function () {
-    return view('competitions.cft' , ['pagename' => 'ctf']);
+    return view('competitions.cft', ['pagename' => 'ctf']);
 });
 Route::get('/informatics-competition', function () {
-    return view('competitions.informatics' , ['pagename' => 'informatics']);
+    return view('competitions.informatics', ['pagename' => 'informatics']);
 });
 Route::get('/web-development-competition', function () {
     return view('competitions.web', ['pagename' => 'webdev']);

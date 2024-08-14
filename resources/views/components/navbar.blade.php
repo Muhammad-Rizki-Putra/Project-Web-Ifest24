@@ -25,7 +25,16 @@
                             <a href="/informatics-competition" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1">Informatics Competition</a>
                             <a href="/web-development-competition" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1">Web Development</a>
                         </x-dropdown>
-                        <x-nav-link href="/login" :active="request()->is('/')">Login</x-nav-link>
+                        @if(auth()->guest())
+                            <x-nav-link href="/login" :active="request()->is('login')">Login</x-nav-link>
+                            <x-nav-link href="/register" :active="request()->is('register')">Register</x-nav-link>
+                        @else
+                            <x-dropdown>
+                                <x-slot name="button">{{ auth()->user()->name }}</x-slot>
+                                <a href="/profile" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1">Profile</a>
+                                <a href="/logout" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1">Logout</a>
+                            </x-dropdown>
+                        @endif
                     </div>
                 </div>
             </div>
@@ -74,7 +83,16 @@
                 <a href="/informatics-competition" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1">Informatics Competition</a>
                 <a href="/web-development-competition" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1">Web Development</a>
             </x-dropdown>
-            <x-nav-link href="/login" :active="request()->is('/')">Login</x-nav-link>
+            @if(auth()->guest())
+                <x-nav-link href="/login" :active="request()->is('login')">Login</x-nav-link>
+                <x-nav-link href="/register" :active="request()->is('register')">Register</x-nav-link>
+            @else
+                <x-dropdown>
+                    <x-slot name="button">{{ auth()->user()->name }}</x-slot>
+                    <a href="/profile" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1">Profile</a>
+                    <a href="/logout" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1">Logout</a>
+                </x-dropdown>
+            @endif
         </div>
         <div class="border-t border-gray-700 pb-3 pt-4">
             <div class="flex items-center px-5">

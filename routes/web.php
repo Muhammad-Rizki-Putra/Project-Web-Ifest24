@@ -23,14 +23,18 @@ Route::get('/login', function () {
 // Event Route
 Route::get('/seminar-nasional', [SemnasController::class, 'index'])->name('semnas');
 Route::get('/technopreneur', function () {
-    return view('events.techno');
+    return view('events.techno' , ['pagename' => 'techno']);
 });
 Route::get('/grand-opening', function () {
-    return view('events.grand-opening');
+    return view('events.grand-opening', ['pagename' => 'grand-opening']);
 });
 
 Route::get('/last-act', function () {
-    return view('events.last-act');
+    return view('events.last-act', ['pagename' => 'last-act']);
+});
+
+Route::get('/last-act', function () {
+    return view('events.last-act', ['pagename' => 'last-act']);
 });
 
 

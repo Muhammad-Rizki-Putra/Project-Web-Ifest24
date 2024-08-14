@@ -1,43 +1,39 @@
 <nav class="bg-cream-bg" x-data="{ isOpen: false }">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 min-w-max">
-        <div class="flex flex-col items-center justify-center">
-            <div class="">
-                <div class="flex justify-center">
-                    <img class="h-auto w-auto pt-5" src="/image/logo_ifest2.png"
-                        alt="logo_ifest2">
-                </div>
-                <div class="hidden md:flex">
-                    <div class="flex items-baseline space-x-10">
-                        <x-nav-link href="/" :active="request()->is('/')">Home</x-nav-link>
-                        <x-nav-link href="/partner-with-us" :active="request()->is('/')">Partner With Us!</x-nav-link>
-                        <x-dropdown>
-                            <x-slot name="button"> Events </x-slot>
-                            <a href="/grand-opening" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1">Grand Opening</a>
-                            <a href="/technopreneur" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1">Technopreneur</a>
-                            <a href="/last-act" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1">Last Act</a>
-                            <a href="/seminar-nasional" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1">Semnas</a>
-                        </x-dropdown>
-                        <x-dropdown>
-                            <x-slot name="button"> Competitions </x-slot>
-                            <a href="/competitive-programming" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1">Competitive Programming</a>
-                            <a href="/data-analysis-competition" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1">Data Analysis</a>
-                            <a href="/capture-the-flag" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1">Capture The Flag</a>
-                            <a href="/informatics-competition" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1">Informatics Competition</a>
-                            <a href="/web-development-competition" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1">Web Development</a>
-                        </x-dropdown>
-                        @if(auth()->guest())
-                            <x-nav-link href="/login" :active="request()->is('login')">Login</x-nav-link>
-                            <x-nav-link href="/register" :active="request()->is('register')">Register</x-nav-link>
-                        @else
-                            <x-dropdown>
-                                <x-slot name="button">{{ auth()->user()->name }}</x-slot>
-                                <a href="/profile" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1">Profile</a>
-                                <a href="/logout" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1">Logout</a>
-                            </x-dropdown>
-                        @endif
-                    </div>
-                </div>
+    <div class="flex flex-col items-center justify-center">      
+            <div class="flex justify-center">
+                <img class="h-auto w-auto pt-2" src="/image/logo_ifest2.png"
+                    alt="logo_ifest2">
             </div>
+                <div class="hidden md:flex md:justify-center md:space-x-32 md:pb-3">
+                    <x-nav-link href="/" :active="request()->is('/')" class="text-xl font-bold flex items-center">Home</x-nav-link>
+                    <x-nav-link href="/partner-with-us" :active="request()->is('/')" class="text-xl font-bold flex items-center">Partner With Us!</x-nav-link>
+                    <x-dropdown>
+                        <x-slot name="button"> Events </x-slot>
+                        <a href="/grand-opening" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1">Grand Opening</a>
+                        <a href="/technopreneur" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1">Technopreneur</a>
+                        <a href="/last-act" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1">Last Act</a>
+                        <a href="/seminar-nasional" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1">Semnas</a>
+                    </x-dropdown>
+                    <x-dropdown>
+                        <x-slot name="button"> Competitions </x-slot>
+                        <a href="/competitive-programming" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1">Competitive Programming</a>
+                        <a href="/data-analysis-competition" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1">Data Analysis</a>
+                        <a href="/capture-the-flag" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1">Capture The Flag</a>
+                        <a href="/informatics-competition" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1">Informatics Competition</a>
+                        <a href="/web-development-competition" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1">Web Development</a>
+                    </x-dropdown>
+                    @if(auth()->guest())
+                        <x-nav-link href="/login" :active="request()->is('login')" class="text-xl font-bold flex items-center">Login</x-nav-link>
+                        <x-nav-link href="/register" :active="request()->is('register')" class="text-xl font-bold flex items-center">Register</x-nav-link>
+                    @else
+                        <x-dropdown>
+                            <x-slot name="button">{{ auth()->user()->name }}</x-slot>
+                            <a href="/profile" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1">Profile</a>
+                            <a href="/logout" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1">Logout</a>
+                        </x-dropdown>
+                    @endif
+                </div>
+        </div>
             
             <div class="-mr-2 flex md:hidden">
                 <!-- Mobile menu button -->

@@ -7,18 +7,7 @@
 
         <div class="">
             <div class="h-min-[88px] relative overflow-hidden bg-navy-bg text-white h-auto">
-                <div class="animate-marquee whitespace-nowrap ">
-                    <span class="mx-4 text-7xl">• XX Days Left!</span>
-                    <span class="mx-4 text-7xl">• XX Days Left!</span>
-                    <span class="mx-4 text-7xl">• XX Days Left!</span>
-                    <span class="mx-4 text-7xl">• XX Days Left!</span>
-                    <span class="mx-4 text-7xl">• XX Days Left!</span>
-                    <span class="mx-4 text-7xl">• XX Days Left!</span>
-                    <span class="mx-4 text-7xl">• XX Days Left!</span>
-                    <span class="mx-4 text-7xl">• XX Days Left!</span>
-                    <span class="mx-4 text-7xl">• XX Days Left!</span>
-                    <span class="mx-4 text-7xl">• XX Days Left!</span>
-                </div>
+                <x-home-countdown>2024-08-17</x-home-countdown>
             </div>
         </div>
 

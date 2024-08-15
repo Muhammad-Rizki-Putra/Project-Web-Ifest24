@@ -41,11 +41,6 @@ Route::get('/last-act', function () {
     return view('events.last-act', ['pagename' => 'last-act']);
 });
 
-Route::get('/last-act', function () {
-    return view('events.last-act', ['pagename' => 'last-act']);
-});
-
-
 // Competition Route
 Route::get('/competitive-programming', function () {
     return view('competitions.compro', ['pagename' => 'compro']);

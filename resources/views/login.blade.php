@@ -68,11 +68,11 @@
             <p>Don't have an account? <a href="/register">Register here!</a></p>
             <h5 class="text-lg">or</h5>
 
-            <button
+            <a href="{{ route('google-auth') }}"
                 class="bg-white border border-gray-300 text-gray-700 font-semibold py-2 px-4 rounded inline-flex items-center mt-4">
                 <img src="image/google.png" alt="Google logo" class="w-6 h-6 mr-2">
                 <span>Login with Google</span>
-            </button>
+            </a>
         </div>
     </div>
 </x-layout2>

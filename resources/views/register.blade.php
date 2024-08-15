@@ -146,21 +146,29 @@
                             @enderror
                         </div>
                         <div class="relative">
+                            @php
+                                $oldIfestInfo = old('ifest_info', []);
+                                if (!is_array($oldIfestInfo)) {
+                                    $oldIfestInfo = [];
+                                }
+                                $ifestInfoValue = implode(', ', $oldIfestInfo);
+                            @endphp
+                            <input type="hidden" id="grid-ifest-info" name="ifest_info" value="{{ $ifestInfoValue }}">
                             <input
                                 class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                                id="grid-ifest-info" type="text" name="ifest_info" placeholder="Select Your Options" required readonly
-                                onclick="toggleCheckboxes()" value="{{ implode(', ', old('ifest_info', [])) }}">
+                                id="grid-ifest-info-display" type="text" placeholder="Select Your Options" required readonly
+                                onclick="toggleCheckboxes()" value="{{ $ifestInfoValue }}">
                             <div id="checkboxes" class="absolute border border-gray-200 rounded shadow-lg hidden p-4" style="bottom: 100%; margin-bottom: 10px; background-color: rgba(255, 255, 255, 0.8);">
                                 <div class="grid grid-cols-2 gap-4">
-                                    <label><input type="checkbox" name="ifest_info[]" value="Social Media" onclick="updateInput()" {{ in_array('Social Media', old('ifest_info', [])) ? 'checked' : '' }}> Social Media</label>
-                                    <label><input type="checkbox" name="ifest_info[]" value="Friend" onclick="updateInput()" {{ in_array('Friend', old('ifest_info', [])) ? 'checked' : '' }}> Friend</label>
-                                    <label><input type="checkbox" name="ifest_info[]" value="Roadshow" onclick="updateInput()" {{ in_array('Roadshow', old('ifest_info', [])) ? 'checked' : '' }}> Roadshow</label>
-                                    <label><input type="checkbox" name="ifest_info[]" value="Media Partner" onclick="updateInput()" {{ in_array('Media Partner', old('ifest_info', [])) ? 'checked' : '' }}> Media Partner</label>
-                                    <label><input type="checkbox" name="ifest_info[]" value="Ads" onclick="updateInput()" {{ in_array('Ads', old('ifest_info', [])) ? 'checked' : '' }}> Ads</label>
-                                    <label><input type="checkbox" name="ifest_info[]" value="Other" onclick="toggleOtherInput(); updateInput()" {{ in_array('Other', old('ifest_info', [])) ? 'checked' : '' }}> Other</label>
+                                    <label><input type="checkbox" name="ifest_info[]" value="Social Media" onclick="updateInput()" {{ in_array('Social Media', $oldIfestInfo) ? 'checked' : '' }}> Social Media</label>
+                                    <label><input type="checkbox" name="ifest_info[]" value="Friend" onclick="updateInput()" {{ in_array('Friend', $oldIfestInfo) ? 'checked' : '' }}> Friend</label>
+                                    <label><input type="checkbox" name="ifest_info[]" value="Roadshow" onclick="updateInput()" {{ in_array('Roadshow', $oldIfestInfo) ? 'checked' : '' }}> Roadshow</label>
+                                    <label><input type="checkbox" name="ifest_info[]" value="Media Partner" onclick="updateInput()" {{ in_array('Media Partner', $oldIfestInfo) ? 'checked' : '' }}> Media Partner</label>
+                                    <label><input type="checkbox" name="ifest_info[]" value="Ads" onclick="updateInput()" {{ in_array('Ads', $oldIfestInfo) ? 'checked' : '' }}> Ads</label>
+                                    <label><input type="checkbox" name="ifest_info[]" value="Other" onclick="toggleOtherInput(); updateInput()" {{ in_array('Other', $oldIfestInfo) ? 'checked' : '' }}> Other</label>
                                 </div>
                                 <input
-                                    class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mt-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 {{ in_array('Other', old('ifest_info', [])) ? '' : 'hidden' }}"
+                                    class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mt-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 {{ in_array('Other', $oldIfestInfo) ? '' : 'hidden' }}"
                                     id="other-input" type="text" name="ifest_info_other" placeholder="Please specify" oninput="updateInput()" value="{{ old('ifest_info_other') }}">
                             </div>
                         </div>
@@ -182,7 +190,7 @@
 
 <script>
     document.addEventListener('click', function(event) {
-        if (!event.target.closest('#checkboxes') && !event.target.closest('#grid-ifest-info')) {
+        if (!event.target.closest('#checkboxes') && !event.target.closest('#grid-ifest-info-display')) {
             document.getElementById("checkboxes").style.display = "none";
         }
     });
@@ -220,7 +228,8 @@
                 }
             }
         });
-        document.getElementById("grid-ifest-info").value = selected.join(', ');
+        document.getElementById("grid-ifest-info").value = selected;
+        document.getElementById("grid-ifest-info-display").value = selected.join(', ');
     }
 
     document.addEventListener('DOMContentLoaded', function() {

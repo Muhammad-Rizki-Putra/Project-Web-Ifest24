@@ -14,6 +14,22 @@ Route::get('/partner-with-us', function () {
     return view('partner', ['pagename' => 'partner']);
 });
 
+Route::get('/profile', function () {
+    return view('profile', ['pagename' => 'profile']);
+});
+
+Route::get('/profile-edit', function () {
+    return view('profile-edit', ['pagename' => 'profile-edit']);
+});
+
+Route::get('/forgot-password', function () {
+    return view('forgot-password', ['pagename' => 'forgot-password']);
+});
+
+Route::get('/forgot-password-new', function () {
+    return view('forgot-password-new', ['pagename' => 'forgot-password-new']);
+});
+
 // register
 Route::get('/register', [RegisterController::class, 'create'])->middleware('guest');
 Route::post('/register', [RegisterController::class, 'store']);

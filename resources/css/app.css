@@ -2,16 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-#login{
-    background-color: #FBF2E9;
-}
-
-#register{
-    background-color: #FBF2E9;
-}
-
-
-
 .no-scroll {
     overflow: hidden;
     height: 100%;

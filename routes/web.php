@@ -4,6 +4,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SemnasController;
+use App\Http\Controllers\GoogleController;
 
 
 Route::get('/', function () {
@@ -39,6 +40,10 @@ Route::get('/login', [LoginController::class, 'index'])->name('login')->middlewa
 Route::post('/login', [LoginController::class, 'authenticate']);
 Route::get('/logout', [LoginController::class, 'logout']);
 
+// google
+Route::get('auth/google', [GoogleController::class,'redirect'])->name('google-auth')->middleware('guest');
+Route::get('auth/google/call-back', [GoogleController::class,'callbackGoogle']);
+
 // Event Route
 Route::get('/seminar-nasional', [SemnasController::class, 'index'])->name('semnas');
 Route::get('/technopreneur', function () {
@@ -51,11 +56,6 @@ Route::get('/grand-opening', function () {
 Route::get('/last-act', function () {
     return view('events.last-act', ['pagename' => 'last-act']);
 });
-
-Route::get('/last-act', function () {
-    return view('events.last-act', ['pagename' => 'last-act']);
-});
-
 
 // Competition Route
 Route::get('/competitive-programming', function () {

@@ -32,6 +32,45 @@
     will-change: transform;
 }
 
+/* Profile */
+.account-info{
+    width: 40%;
+    margin: 0 auto;
+}
+
+.register-location{
+    width: 40%;
+    margin: 0 auto;
+}
+
+.edit-profile{
+    width: 40%;
+    margin: 0 auto;
+}
+
+.profile-edit-box{
+    width: 100%;
+}
+
+.profile-edit-box-section{
+    width: 100%;
+    background-color: #DDEDFA;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin-top: 0.25rem;;
+}
+
+.profile-section-name{
+    padding-bottom: 0.25rem;
+}
+
+.profile-buttons{
+    width: 1rem;
+    height: 1rem;
+}
+
+
+
 /* caraouwsel */
 .gallery{
     width: 45%;

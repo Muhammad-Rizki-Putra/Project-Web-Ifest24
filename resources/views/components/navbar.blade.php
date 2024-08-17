@@ -23,8 +23,11 @@
                 <a href="/web-development-competition" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1">Web Development</a>
             </x-dropdown>
             @if(auth()->guest())
-                <x-nav-link href="/login" :active="request()->is('login')" class="text-xl font-bold flex items-center">Login</x-nav-link>
-                <x-nav-link href="/register" :active="request()->is('register')" class="text-xl font-bold flex items-center">Register</x-nav-link>
+            <x-dropdown>
+                <x-slot name="button"> Login/Register </x-slot>
+                <x-nav-link href="/login" :active="request()->is('login')" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1">Login</x-nav-link>
+                <x-nav-link href="/register" :active="request()->is('register')" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1">Register</x-nav-link>
+            </x-dropdown>
             @else
                 <x-dropdown>
                     <x-slot name="button">{{ auth()->user()->name }}</x-slot>

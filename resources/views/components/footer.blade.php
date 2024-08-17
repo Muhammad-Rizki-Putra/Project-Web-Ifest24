@@ -29,10 +29,10 @@
     <div class="flex flex-col items-center justify-center">
         <h1 class="text-xl pb-3 text-nowrap font-bold">Social Media</h1>
         <div class="flex space-x-2">
-            <img src="/image/Instagram.png" alt="">
-            <img src="/image/Tiktok.png" alt="">
-            <img src="/image/Youtube.png" alt="">
-            <img src="/image/Linkedin.png" alt="">
+            <a href="https://www.instagram.com/ifestunpad/"><img src="/image/Instagram.png" alt=""></a>
+            <a href="https://www.tiktok.com/@ifestunpad?lang=en"><img src="/image/Tiktok.png" alt=""></a>
+            <a href="https://www.youtube.com/@informaticsfestivalhimatif4954"><img src="/image/Youtube.png" alt=""></a>
+            <a href="https://www.linkedin.com/company/ifest-unpad/"><img src="/image/Linkedin.png" alt=""></a>
         </div>
     </div>
 </div>

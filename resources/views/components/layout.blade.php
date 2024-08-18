@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ $pagename }}</title>
     @vite('resources/css/app.css')
     @vite('resources/js/app.js')
@@ -21,12 +21,12 @@
         <!-- header -->
         <!-- <x-Header></x-Header> -->
         <main>
-            <div class="w-full mx-auto ">
+            <div class="w-full mx-auto">
                 {{ $slot }}
             </div>
         </main>
 
-        <x-footer></x-footer>
+        <!-- <x-footer></x-footer> -->
     </div>
 </body>
 

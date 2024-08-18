@@ -54,7 +54,7 @@
             </button>
         </div>
         <div class="absolute bg-black w-screen h-[200%] opacity-50" x-show="isOpen"></div>
-        <div class="fixed ml-[calc(100%-180px)] z-20 w-auto h-auto bg-cream-bg flex flex-col rounded-lg text-end" x-show="isOpen">
+        <div class="absolute right-0 z-20 w-auto h-auto bg-cream-bg flex flex-col rounded-lg text-end fill-left-to-right" x-show="isOpen">
             <div class="w-full h-auto p-3">
                 <button class="text-lg text-bold" x-on:click="isOpen = !isOpen">
                     <img src="/image/hamburger.png" alt="" class="w-auto h-5">
@@ -77,7 +77,7 @@
                         x-transition:leave="transition ease-in duration-75" 
                         x-transition:leave-start="opacity-100 transform scale-100" 
                         x-transition:leave-end="opacity-0 transform scale-95" 
-                        class="mt-2 bg-cream-bg"
+                        class="mt-2 bg-cream-bg fill-up-to-down"
                     >
                         <a href="/grand-opening" class="block px-4 py-2 text-sm text-gray-700">Grand Opening</a>
                         <a href="/technopreneur" class="block px-4 py-2 text-sm text-gray-700">Technopreneur</a>
@@ -97,7 +97,7 @@
                         x-transition:leave="transition ease-in duration-75" 
                         x-transition:leave-start="opacity-100 transform scale-100" 
                         x-transition:leave-end="opacity-0 transform scale-95" 
-                        class="mt-2 bg-cream-bg"
+                        class="mt-2 bg-cream-bg fill-up-to-down"
                     >
                         <a href="/competitive-programming" class="block px-4 py-2 text-sm text-gray-700">Competitive Programming</a>
                         <a href="/data-analysis-competition" class="block px-4 py-2 text-sm text-gray-700">Data Analysis</a>
@@ -120,7 +120,7 @@
                             x-transition:leave="transition ease-in duration-75" 
                             x-transition:leave-start="opacity-100 transform scale-100" 
                             x-transition:leave-end="opacity-0 transform scale-95" 
-                            class="mt-2 bg-cream-bg"
+                            class="mt-2 bg-cream-bg fill-up-to-down"
                         >
                         <a href="/login" class="block px-4 py-2 text-sm text-gray-700">Login</a>
                         <a href="/register" class="block px-4 py-2 text-sm text-gray-700">Register</a>
@@ -139,7 +139,7 @@
                             x-transition:leave="transition ease-in duration-75" 
                             x-transition:leave-start="opacity-100 transform scale-100" 
                             x-transition:leave-end="opacity-0 transform scale-95" 
-                            class="mt-2 bg-cream-bg"
+                            class="mt-2 bg-cream-bg fill-up-to-down"
                         >
                         <a href="/profile" class="block px-4 py-2 text-sm text-gray-700">Profile</a>
                         <a href="/logout" class="block px-4 py-2 text-sm text-gray-700">Logout</a>

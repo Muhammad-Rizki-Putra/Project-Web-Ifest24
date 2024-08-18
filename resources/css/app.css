@@ -211,3 +211,13 @@
 .gallery-nav li.gallery-item-selected{
     background-color: #555;
 }
+
+@keyframes fill-left-to-right {
+    from { width: 0%; }
+    to { width: 47%; }
+}
+
+.fill-left-to-right {
+    animation: fill-left-to-right 0.5s ease-in-out;
+    
+}

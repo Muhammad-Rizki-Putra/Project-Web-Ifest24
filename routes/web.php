@@ -5,6 +5,7 @@ use App\Http\Controllers\RegisterController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SemnasController;
 use App\Http\Controllers\GoogleController;
+use App\Http\Controllers\ResetPasswordController;
 
 
 Route::get('/', function () {
@@ -23,14 +24,6 @@ Route::get('/profile-edit', function () {
     return view('profile-edit', ['pagename' => 'profile-edit']);
 });
 
-Route::get('/forgot-password', function () {
-    return view('forgot-password', ['pagename' => 'forgot-password']);
-});
-
-Route::get('/forgot-password-new', function () {
-    return view('forgot-password-new', ['pagename' => 'forgot-password-new']);
-});
-
 // register
 Route::get('/register', [RegisterController::class, 'create'])->middleware('guest');
 Route::post('/register', [RegisterController::class, 'store']);
@@ -41,13 +34,19 @@ Route::post('/login', [LoginController::class, 'authenticate']);
 Route::get('/logout', [LoginController::class, 'logout']);
 
 // google
-Route::get('auth/google', [GoogleController::class,'redirect'])->name('google-auth')->middleware('guest');
-Route::get('auth/google/call-back', [GoogleController::class,'callbackGoogle']);
+Route::get('auth/google', [GoogleController::class, 'redirect'])->name('google-auth')->middleware('guest');
+Route::get('auth/google/call-back', [GoogleController::class, 'callbackGoogle']);
+
+// forgot password
+Route::get('/forgot-password', [ResetPasswordController::class, 'index'])->middleware('guest');
+Route::post('/forgot-password', [ResetPasswordController::class, 'sendResetLink'])->middleware('guest');
+Route::get('/reset-password/{token}', [ResetPasswordController::class, 'showResetForm'])->middleware('guest')->name('password.reset');
+Route::post('/reset-password', [ResetPasswordController::class, 'reset'])->middleware('guest');
 
 // Event Route
 Route::get('/seminar-nasional', [SemnasController::class, 'index'])->name('semnas');
 Route::get('/technopreneur', function () {
-    return view('events.techno' , ['pagename' => 'techno']);
+    return view('events.techno', ['pagename' => 'techno']);
 });
 Route::get('/grand-opening', function () {
     return view('events.grand-opening', ['pagename' => 'grand-opening']);

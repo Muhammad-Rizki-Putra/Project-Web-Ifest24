@@ -12,10 +12,10 @@
                     Login
                 </h1>
 
-                @if (session('success'))
+                @if (session()->has('success') || session()->has('status'))
                     <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative mb-4"
                         role="alert">
-                        <span class="block sm:inline">{{ session('success') }}</span>
+                        <span class="block sm:inline">{{ session('success') ?? session('status') }}</span>
                     </div>
                 @endif
 
@@ -56,7 +56,7 @@
                                 class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                                 id="grid-password" name="password" type="password" placeholder="Enter Your Password"
                                 required value="{{ old('password') }}">
-                            <a href="to do: add forgot password link">Forgot your password?</a>
+                            <a href="/forgot-password">Forgot your password?</a>
                         </div>
                     </div>
                     <div class="flex justify-center">

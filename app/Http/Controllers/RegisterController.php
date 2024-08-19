@@ -47,6 +47,6 @@ class RegisterController extends Controller
             'ifest_info' => json_encode($request->ifest_info),
         ]);
         
-        return redirect()->route('login')->with('success', 'Registration successful!');
+        return redirect()->route('login')->with('success', 'Registration successful, please login!');
     }
 }

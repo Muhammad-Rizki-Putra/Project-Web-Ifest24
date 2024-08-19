@@ -6,6 +6,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SemnasController;
 use App\Http\Controllers\GoogleController;
 use App\Http\Controllers\ResetPasswordController;
+use App\Http\Controllers\ProfileController;
+
 
 
 Route::get('/', function () {
@@ -16,13 +18,11 @@ Route::get('/partner-with-us', function () {
     return view('partner', ['pagename' => 'partner']);
 });
 
-Route::get('/profile', function () {
-    return view('profile', ['pagename' => 'profile']);
-});
 
-Route::get('/profile-edit', function () {
-    return view('profile-edit', ['pagename' => 'profile-edit']);
-});
+// profile
+Route::get('/profile', [ProfileController::class, 'showProfile'])->middleware('auth');
+Route::get('/profile-edit', [ProfileController::class, 'editProfile'])->middleware('auth')->name('profile-edit');
+Route::post('/profile-edit', [ProfileController::class, 'updateProfile'])->middleware('auth');
 
 // register
 Route::get('/register', [RegisterController::class, 'create'])->middleware('guest');

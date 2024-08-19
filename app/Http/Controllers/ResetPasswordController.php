@@ -21,8 +21,8 @@ class ResetPasswordController extends Controller
 
         $user = User::where('email', $request->email)->first();
 
-        if ($user && $user->google_id) {
-            return back()->withErrors(['email' => 'Users who registered with Google cannot reset their password.']);
+        if ($user && $user->password == null) {
+            return back()->withErrors(['email' => 'Try signing in with google.']);
         }
 
         $status = Password::sendResetLink(

@@ -16,7 +16,7 @@ class LoginController extends Controller
     public function authenticate(Request $request)
     {
         $validatedData = $request->validate([
-            'account' => 'required|string|max:255',
+            'account' => 'required|email:dns|string|max:255',
             'password' => 'required|string',
         ]);
 
@@ -27,7 +27,7 @@ class LoginController extends Controller
         // }
 
         if (!Auth::attempt(['email' => $validatedData['account'], 'password' => $validatedData['password']])) {
-            return redirect()->back()->withErrors(['password' => 'Incorrect Password.']);
+            return redirect()->back()->withErrors(['password' => 'Login Failed.']);
         }
 
         $request->session()->regenerate();

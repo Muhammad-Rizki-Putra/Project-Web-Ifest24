@@ -7,18 +7,18 @@
                 <div class="grid grid-cols-3 grid-rows-2 gap-4">
                     <div class="text-left flex-col truncate">
                         <p class="font-bold">Name</p>
-                        <p>Saya</p>
+                        <p>{{ $user->name }}</p>
                     </div>
                     <div class="text-left flex-col truncate">
                         <p class="font-bold">Full Name</p>
-                        <p>Saya Sendiri</p>
+                        <p>{{ $user->fullname }}</p>
                     </div>
                     <div class="text-left flex flex-col truncate">
                         <div class="flex flex-row items-center gap-2">
-                            <button class="flex items-center gap-2">
+                            <a href="/profile-edit" class="flex items-center gap-2">
                                 <img src="/image/profile_edit.png" alt="" class="profile-buttons">
                                 Edit
-                            </button>
+                            </a>
                         </div>
                         <div class="flex flex-row items-center gap-2">
                             <button class="flex items-center gap-2">
@@ -29,15 +29,15 @@
                     </div>
                     <div class="text-left flex-col truncate">
                         <p class="font-bold">Email</p>
-                        <p>Gmail@gmail.com</p>
+                        <p>{{ $user->email }}</p>
                     </div>
                     <div class="text-left flex-col truncate">
                         <p class="font-bold">Birthday</p>
-                        <p>dd - mm - yyyy</p>
+                        <p>{{ \Carbon\Carbon::parse($user->birth_date)->format('F j, Y') }}</p>
                     </div>
                     <div class="text-left flex-col truncate">
                         <p class="font-bold">Education Level</p>
-                        <p>SD</p>
+                        <p>{{ $user->education_level }}</p>
                     </div>
                 </div>
             </div>

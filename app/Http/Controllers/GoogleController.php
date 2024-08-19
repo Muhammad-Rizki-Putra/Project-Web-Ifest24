@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use App\Models\User;
 use Laravel\Socialite\Facades\Socialite;
 use Illuminate\Support\Facades\Auth;
@@ -16,15 +17,14 @@ class GoogleController extends Controller
 
     public function callbackGoogle()
     {
-        // $user = Socialite::driver('google')->user();
-        // dd($user);
         try {
             $user = Socialite::driver('google')->user();
             $existingUser = User::where('email', $user->getEmail())->first();
 
             if ($existingUser) {
                 $existingUser->update(['google_id' => $user->getId()]);
-                Auth::login($existingUser, true);
+                Auth::login($existingUser);
+                return redirect('/');
             } else {
                 $newUser = User::create([
                     'fullname' => $user->getName(),
@@ -32,16 +32,9 @@ class GoogleController extends Controller
                     'google_id' => $user->getId(),
                 ]);
 
-                Auth::login($newUser, true);
-
-                // $newUser = User::create([
-                //     'fullname' => $user->getName(),
-                //     'email' => $user->getEmail(),
-                //     'google_id' => $user->getId(),
-                // ]);
+                Auth::login($newUser);
+                return redirect('/profile-edit');
             }
-
-            return redirect('/');
         } catch (\Exception $e) {
             Log::error('Failed to authenticate with Google.', ['exception' => $e]);
             return redirect()->back()->withErrors(['google' => 'Failed to authenticate with Google.']);

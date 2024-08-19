@@ -54,7 +54,17 @@
             </button>
         </div>
         <div class="absolute bg-black w-screen h-[200%] opacity-50" x-show="isOpen"></div>
-        <div class="absolute right-0 z-20 w-[50%] h-auto bg-cream-bg flex flex-col rounded-lg text-end fill-left-to-right" x-show="isOpen">
+        <div 
+            class="absolute right-0 z-20 w-[50%] h-auto bg-cream-bg flex flex-col rounded-lg text-end outline outline-2 outline-offset-2 outline-navy-bg"
+            x-show="isOpen" 
+            x-transition:enter="transition ease-out duration-200" 
+            x-transition:enter-start="opacity-0 transform translate-x-full" 
+            x-transition:enter-end="opacity-100 transform translate-x-0"
+            x-transition:leave="transition ease-in duration-500"
+            x-transition:leave-start="transform translate-x-0" 
+            x-transition:leave-end="transform translate-x-full"
+            :class="{'fill-right-to-left': !isOpen, 'fill-left-to-right': isOpen}"
+        >
             <div class="w-full h-auto p-3">
                 <button class="text-lg text-bold" x-on:click="isOpen = !isOpen">
                     <img src="/image/hamburger.png" alt="" class="w-auto h-5">

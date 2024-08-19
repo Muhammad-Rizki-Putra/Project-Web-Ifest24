@@ -3,12 +3,12 @@
         <div class="flex justify-center">
             <img class="h-auto w-auto pt-2" src="/image/logo_ifest2.png" alt="logo_ifest2">
         </div>
-        <div class="hidden md:flex md:justify-center md:space-x-32 md:pb-3">
-            <a href="/" class="text-xl font-bold flex items-center">Home</a>
-            <a href="/partner-with-us" class="text-xl font-bold flex items-center text-nowrap">Partner With Us!</a>
+        <div class="hidden md:flex md:justify-center md:space-x-32 pb-3">
+            <a href="/" class="text-lg font-bold flex items-center">Home</a>
+            <a href="/partner-with-us" class="text-lg font-bold flex items-center text-nowrap">Partner With Us!</a>
             <div x-data="{ open: false }" @mouseover="open = true" @mouseleave="open = false">
-                <button class="text-xl font-bold flex items-center">Events</button>
-                <div x-show="open" class="absolute shadow-md mt-2">
+                <button class="text-lg font-bold flex items-center">Events</button>
+                <div x-show="open" class="absolute shadow-md bg-black text-white">
                     <a href="/grand-opening" class="block px-4 py-2 text-sm text-gray-700">Grand Opening</a>
                     <a href="/technopreneur" class="block px-4 py-2 text-sm text-gray-700">Technopreneur</a>
                     <a href="/last-act" class="block px-4 py-2 text-sm text-gray-700">Last Act</a>
@@ -16,8 +16,8 @@
                 </div>
             </div>
             <div x-data="{ open: false }" @mouseover="open = true" @mouseleave="open = false">
-                <button class="text-xl font-bold flex items-center">Competitions</button>
-                <div x-show="open" class="absolute shadow-md mt-2">
+                <button class="text-lg font-bold flex items-center">Competitions</button>
+                <div x-show="open" class="absolute shadow-md">
                     <a href="/competitive-programming" class="block px-4 py-2 text-sm text-gray-700">Competitive Programming</a>
                     <a href="/data-analysis-competition" class="block px-4 py-2 text-sm text-gray-700">Data Analysis</a>
                     <a href="/capture-the-flag" class="block px-4 py-2 text-sm text-gray-700">Capture The Flag</a>
@@ -27,15 +27,15 @@
             </div>
             @if(auth()->guest())
             <div x-data="{ open: false }" @mouseover="open = true" @mouseleave="open = false">
-                <button class="text-xl font-bold flex items-center">Login/Register</button>
-                <div x-show="open" class="absolute shadow-md mt-2">
+                <button class="text-lg font-bold flex items-center">Login/Register</button>
+                <div x-show="open" class="absolute shadow-md">
                     <a href="/login" class="block px-4 py-2 text-sm text-gray-700">Login</a>
                     <a href="/register" class="block px-4 py-2 text-sm text-gray-700">Register</a>
                 </div>
             </div>
             @else
             <div x-data="{ open: false }" @mouseover="open = true" @mouseleave="open = false">
-                <button class="text-xl font-bold flex items-center">{{ auth()->user()->name }}</button>
+                <button class="text-lg font-bold flex items-center">{{ auth()->user()->name }}</button>
                 <div x-show="open" class="absolute shadow-md mt-2">
                     <a href="/profile" class="block px-4 py-2 text-sm text-gray-700">Profile</a>
                     <a href="/logout" class="block px-4 py-2 text-sm text-gray-700">Logout</a>
@@ -54,21 +54,21 @@
             </button>
         </div>
         <div class="absolute bg-black w-screen h-[200%] opacity-50" x-show="isOpen"></div>
-        <div class="absolute right-0 z-20 w-auto h-auto bg-cream-bg flex flex-col rounded-lg text-end fill-left-to-right" x-show="isOpen">
+        <div class="absolute right-0 z-20 w-[50%] h-auto bg-cream-bg flex flex-col rounded-lg text-end fill-left-to-right" x-show="isOpen">
             <div class="w-full h-auto p-3">
                 <button class="text-lg text-bold" x-on:click="isOpen = !isOpen">
                     <img src="/image/hamburger.png" alt="" class="w-auto h-5">
                 </button>
             </div>
             <div class="w-full h-auto p-3">
-                <a href="/" class="text-xl font-bold justify-self-end">Home</a>
+                <a href="/" class="text-lg font-bold justify-self-end">Home</a>
             </div>
             <div class="w-full h-auto p-3">
-                <a href="/partner-with-us" class="text-xl font-bold items-center text-nowrap">Partner With Us!</a>
+                <a href="/partner-with-us" class="text-lg font-bold items-center text-nowrap">Partner With Us!</a>
             </div>
             <div class="w-full h-auto p-3">
                 <div x-data="{ open: false }">
-                    <button @click="open = !open" class="text-xl font-bold">Events</button>
+                    <button @click="open = !open" class="text-lg font-bold">Events</button>
                     <div 
                         x-show="open" 
                         x-transition:enter="transition ease-out duration-200" 
@@ -88,7 +88,7 @@
             </div>
             <div class="w-full h-auto p-3">
                 <div x-data="{ open: false }">
-                    <button @click="open = !open" class="text-xl font-bold">Competitions</button>
+                    <button @click="open = !open" class="text-lg font-bold">Competitions</button>
                     <div 
                         x-show="open" 
                         x-transition:enter="transition ease-out duration-200" 
@@ -111,7 +111,7 @@
                 @if(auth()->guest())
                 <div class="w-full h-auto p-3">
                     <div x-data="{ open: false }">
-                        <button @click="open = !open" class="text-xl font-bold">Login/Register</button>
+                        <button @click="open = !open" class="text-lg font-bold">Login/Register</button>
                         <div 
                             x-show="open" 
                             x-transition:enter="transition ease-out duration-200" 
@@ -130,7 +130,7 @@
                 @else
                 <div class="w-full h-auto p-3">
                     <div x-data="{ open: false }">
-                        <button @click="open = !open" class="text-xl font-bold">{{ auth()->user()->name }}</button>
+                        <button @click="open = !open" class="text-lg font-bold">{{ auth()->user()->name }}</button>
                         <div 
                             x-show="open" 
                             x-transition:enter="transition ease-out duration-200" 

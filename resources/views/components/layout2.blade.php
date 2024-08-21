@@ -14,7 +14,7 @@
 </head>
 
 <body id="{{$pagename}}" class="">
-    
+    <x-navbar></x-navbar>
     <div class="">
         <main>
             <div class="w-full h-full mx-auto bg-home2-bg bg-cover bg-no-repeat bg-center flex items-center justify-center">
@@ -24,6 +24,7 @@
 
         
     </div>
+    <x-footer></x-footer>
 </body>
 
 </html>

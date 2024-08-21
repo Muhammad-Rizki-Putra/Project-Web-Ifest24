@@ -1,6 +1,6 @@
 <x-layout2>
     <x-slot:pagename>{{ $pagename }}</x-slot:pagename>
-    <div class="w-auto h-auto bg-cream-bg p-5 rounded-lg">
+    <div class="w-auto h-auto bg-cream-bg p-5 rounded-lg hidden md:block">
         <div class="flex justify-end">
             <a href="/" class="absolute"><img src="/image/cancel-logo.png" alt="" class="mt-10 mr-10"></a>
         </div>
@@ -76,5 +76,73 @@
                 </a>
             </div>
         </div>
+    </div>
+
+    <div class="md:hidden flex flex-col items-center w-[75%] h-auto bg-cream-bg p-5 m-5 rounded-lg">
+        <h1 class="font-bold text-3xl mb-5">Login</h1>
+        <h1 class="font-bold text-lg">Selamat Datang</h1>
+        <h1 class="opacity-50 text-sm pb-10">Isi form berikut untuk melanjutkan</h1>
+
+        @if (session()->has('success') || session()->has('status'))
+            <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative mb-4" role="alert">
+                <span class="block sm:inline">{{ session('success') ?? session('status') }}</span>
+            </div>
+        @endif
+
+        @error('account')
+            <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative mb-4" role="alert">
+                <span class="block sm:inline">{{ $message }}</span>
+            </div>
+        @enderror
+
+        @error('password')
+            <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative mb-4" role="alert">
+                <span class="block sm:inline">{{ $message }}</span>
+            </div>
+        @enderror
+
+        <form class="h-auto w-[100%]" action="/login" method="post">
+            @csrf
+            <div class="flex flex-col">
+                <div class="w-full">
+                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                        for="grid-account">
+                        Email
+                    </label>
+                    <input
+                        class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-1 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                        id="grid-account" name="account" type="text" placeholder="Enter Your Email"
+                        value="{{ old('account') }}" required>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap mb-2">
+                <div class="w-full">
+                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                        for="grid-password">
+                        Password
+                    </label>
+                    <input
+                        class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-1 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                        id="grid-password" name="password" type="password" placeholder="Enter Your Password" required
+                        value="{{ old('password') }}">
+                    <p class="text-sm">Forgot your password? <a href="/forgot-password" class="text-navy-bg">Click
+                            Here!</a></p>
+                    <p class="text-sm">Don't have an account? <a href="/register">Register here!</a></p>
+                </div>
+            </div>
+            <div class="flex justify-center mt-7">
+                <button type="submit" class="image-button">
+                    <img src="image/Login_button.png" alt="button image">
+                </button>
+            </div>
+        </form>
+        <h5 class="text-lg">or</h5>
+
+        <a href="{{ route('google-auth') }}"
+            class="bg-white border border-gray-300 text-gray-700 font-semibold py-2 px-4 rounded inline-flex items-center mt-4">
+            <img src="image/google.png" alt="Google logo" class="w-6 h-6 mr-2">
+            <span>Login with Google</span>
+        </a>
     </div>
 </x-layout2>

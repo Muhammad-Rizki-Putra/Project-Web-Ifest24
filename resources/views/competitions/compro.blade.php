@@ -15,7 +15,7 @@
         <x-countdown>2024-08-15</x-countdown>
 
         <h1 class="text-5xl p-20 font-bold">Timeline of Activity</h1>
-        <div class="">
+        <div class="w-[45vh]">
             <img src="/image/tl-cp.png" alt="" class="flex h-auto">
         </div>
     </div>
@@ -35,7 +35,7 @@
         <x-countdown-mobver>2024-09-01</x-countdown-mobver>
 
         <h1 class="text-3xl py-20 font-bold">Timeline of Activity</h1>
-        <div class="px-5">
+        <div class="px-5 w-[30vh]">
             <img src="/image/tl-cp.png" alt="" class="flex h-auto">
         </div>
     </div>

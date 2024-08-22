@@ -9,13 +9,13 @@
 
         <div class="flex flex-row items-center justify-center space-x-10 w-auto py-10">
             <a href=""><x-button>Booklet</x-button></a>
-            <a href=""><x-button>Registration</x-button></a>
+            <a href="http://bit.ly/IFEST_WEBDEV2024"><x-button>Registration</x-button></a>
         </div>
 
         <x-countdown>2024-08-15</x-countdown>
 
         <h1 class="text-5xl p-20 font-bold">Timeline of Activity</h1>
-        <div class="">
+        <div class="w-[45vh]">
             <img src="/image/tl-wdc.png" alt="" class="flex h-auto">
         </div>
     </div>
@@ -29,13 +29,13 @@
 
         <div class="flex flex-row items-center justify-center space-x-10 w-auto py-10">
             <a href=""><x-button-mobver>Booklet</x-button-mobver></a>
-            <a href=""><x-button-mobver>Registration</x-button-mobver></a>
+            <a href="http://bit.ly/IFEST_WEBDEV2024"><x-button-mobver>Registration</x-button-mobver></a>
         </div>
 
         <x-countdown-mobver>2024-09-14</x-countdown-mobver>
 
         <h1 class="text-3xl py-20 font-bold">Timeline of Activity</h1>
-        <div class="px-5">
+        <div class="px-5 w-[30vh]">
             <img src="/image/tl-wdc.png" alt="" class="flex h-auto">
         </div>
     </div>

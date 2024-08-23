@@ -59,9 +59,26 @@
             <h1 class="text-6xl font-semibold">FaQ</h1>
         </div>
 
-        <div class="w-full">
-            <div>
-                <x-fa-q-button></x-fa-q-button>
+        <div class="w-full gap-y-10 flex flex-col">
+            <div x-data="{ open: false }">
+                <x-faq-button>
+                    <x-slot:slottitle>What is the event about?</x-slot:slottitle>
+                    <x-slot:slotdrop>This event is about...</x-slot:slotdrop>
+                </x-faq-button>
+            </div>
+            
+            <div x-data="{ open: false }">
+                <x-faq-button>
+                    <x-slot:slottitle>When is the event?</x-slot:slottitle>
+                    <x-slot:slotdrop>The event will take place on...</x-slot:slotdrop>
+                </x-faq-button>
+            </div>
+
+            <div x-data="{ open: false }">
+                <x-faq-button>
+                    <x-slot:slottitle>Where is the event?</x-slot:slottitle>
+                    <x-slot:slotdrop>The event location is...</x-slot:slotdrop>
+                </x-faq-button>
             </div>
         </div>
     </div>

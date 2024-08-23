@@ -3,6 +3,7 @@
     <div
         class="hidden md:flex items-center justify-center flex-col h-auto bg-itcomp-bg bg-top bg-cover bg-no-repeat py-20 gap-y-10 px-[25%]"
         x-data="{ selected: 'rh-la1' }">
+
         <div>
             <h1 class="text-6xl font-bold">LAST ACT</h1>
         </div>
@@ -10,16 +11,17 @@
         <div class="flex flex-row gap-10">
 
             <x-radio-button textSize="text-sm" textPadding="p-1" name="rh-la" value="rh-la1"
-                id="rh-la-1">Semnas</x-radio-button>
+                id="rh-la-1" x-model="selected">Semnas</x-radio-button>
 
-            <x-radio-button textSize="text-sm" textPadding="p-1" name="rh-la" value="rh-la2" id="rh-la-2">Company
-                Expo</x-radio-button>
+            <x-radio-button textSize="text-sm" textPadding="p-1" name="rh-la" value="rh-la2"
+                id="rh-la-2" x-model="selected">Company Expo</x-radio-button>
 
             <x-radio-button textSize="text-sm" textPadding="p-1" name="rh-la" value="rh-la3"
-                id="rh-la-3">Awarding</x-radio-button>
+                id="rh-la-3" x-model="selected">Awarding</x-radio-button>
         </div>
 
-        <div class="hidden md:flex items-center justify-center flex-col h-auto py-20 gap-y-20">
+        <!-- Semnas -->
+        <div x-show="selected === 'rh-la1'" class="md:flex items-center justify-center flex-col h-auto py-20 gap-y-20">
             <div>
                 <h1 class="text-4xl font-bold text-center text-wrap">Exploring Career Path In Technology: Navigating
                     Challenges and Opportunities</h1>
@@ -112,6 +114,16 @@
                     </x-faq-button>
                 </div>
             </div>
+        </div>
+
+        <!-- Company Expo -->
+        <div x-show="selected === 'rh-la2'" class="hidden md:flex items-center justify-center flex-col h-auto py-20 gap-y-20">
+            
+        </div>
+
+        <!-- Awarding -->
+        <div x-show="selected === 'rh-la3'" class="hidden md:flex items-center justify-center flex-col h-auto py-20 gap-y-20">
+            
         </div>
     </div>
 </x-layout>

@@ -11,7 +11,7 @@
         x-transition:leave="transition ease-in duration-500"
         x-transition:leave-start="transform translate-y-0" 
         x-transition:leave-end="transform -translate-y-full"
-        class="overflow-hidden bg-white z-0 p-5 rounded-b-lg">
+        class="overflow-hidden bg-white z-0 p-5 rounded-b-lg outline outline-1 outline-navy-bg -outline-offset-1">
         {{ $slotdrop ?? 'Default Dropdown Content' }}
     </div>
 </div>

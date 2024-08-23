@@ -20,7 +20,7 @@
 
         <!-- header -->
         <!-- <x-Header></x-Header> -->
-        <main>
+        <main class="mt-24">
             <div class="w-full mx-auto">
                 {{ $slot }}
             </div>

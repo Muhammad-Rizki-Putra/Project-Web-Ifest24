@@ -16,7 +16,7 @@
 <body id="{{$pagename}}" class="">
     <x-navbar></x-navbar>
     <div class="">
-        <main>
+        <main class="mt-24">
             <div class="w-full h-full mx-auto bg-home2-bg bg-cover bg-no-repeat bg-center flex items-center justify-center">
                 {{ $slot }}
             </div>

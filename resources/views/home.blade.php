@@ -7,7 +7,7 @@
 
         <div class="">
             <div class="h-min-[88px] relative overflow-hidden bg-navy-bg text-white h-auto">
-                <x-home-countdown>2024-08-17</x-home-countdown>
+                <x-home-countdown>2024-09-17</x-home-countdown>
             </div>
         </div>
 

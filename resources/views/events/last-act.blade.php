@@ -21,7 +21,14 @@
         </div>
 
         <!-- Semnas -->
-        <div x-show="selected === 'rh-la1'" class="md:flex items-center justify-center flex-col h-auto py-20 gap-y-20">
+        <div x-show="selected === 'rh-la1'" class="md:flex items-center justify-center flex-col h-auto py-20 gap-y-20"
+            x-transition:enter="transition ease-out duration-300"
+            x-transition:enter-start="opacity-0 scale-90"
+            x-transition:enter-end="opacity-100 scale-100"
+            x-transition:leave="transition ease-in duration-100"
+            x-transition:leave-start="opacity-100 scale-100"
+            x-transition:leave-end="opacity-0 scale-90"
+            >
             <div>
                 <h1 class="text-4xl font-bold text-center text-wrap">Exploring Career Path In Technology: Navigating
                     Challenges and Opportunities</h1>
@@ -117,13 +124,27 @@
         </div>
 
         <!-- Company Expo -->
-        <div x-show="selected === 'rh-la2'" class="hidden md:flex items-center justify-center flex-col h-auto py-20 gap-y-20">
-            
+        <div x-show="selected === 'rh-la2'" class="hidden md:flex items-center justify-center flex-col h-auto py-20 gap-y-20"
+            x-transition:enter="transition ease-out duration-300"
+            x-transition:enter-start="opacity-0 scale-90"
+            x-transition:enter-end="opacity-100 scale-100"
+            x-transition:leave="transition ease-in duration-100"
+            x-transition:leave-start="opacity-100 scale-100"
+            x-transition:leave-end="opacity-0 scale-90"
+        >
+            <h1>ini adalah comp expo</h1>
         </div>
 
         <!-- Awarding -->
-        <div x-show="selected === 'rh-la3'" class="hidden md:flex items-center justify-center flex-col h-auto py-20 gap-y-20">
-            
+        <div x-show="selected === 'rh-la3'" class="hidden md:flex items-center justify-center flex-col h-auto py-20 gap-y-20"
+            x-transition:enter="transition ease-out duration-300"
+            x-transition:enter-start="opacity-0 scale-90"
+            x-transition:enter-end="opacity-100 scale-100"
+            x-transition:leave="transition ease-in duration-100"
+            x-transition:leave-start="opacity-100 scale-100"
+            x-transition:leave-end="opacity-0 scale-90"
+        >
+        <h1>ini adalah awarding</h1>
         </div>
     </div>
 </x-layout>

@@ -18,17 +18,17 @@
                 @if(auth()->guest())
                 <div x-data="{ open: false }" @mouseover="open = true" @mouseleave="open = false">
                     <button class="text-lg font-bold flex items-center">Login/Register</button>
-                    <div x-show="open" class="absolute shadow-md">
-                        <a href="/login" class="block px-4 py-2 text-sm text-gray-700">Login</a>
-                        <a href="/register" class="block px-4 py-2 text-sm text-gray-700">Register</a>
+                    <div x-show="open" class="absolute bg-black opacity opacity-50">
+                        <a href="/login" class="block px-4 py-2 text-sm text-white">Login</a>
+                        <a href="/register" class="block px-4 py-2 text-sm text-white">Register</a>
                     </div>
                 </div>
                 @else
                 <div x-data="{ open: false }" @mouseover="open = true" @mouseleave="open = false">
                     <button class="text-lg font-bold flex items-center">{{ auth()->user()->name }}</button>
-                    <div x-show="open" class="absolute shadow-md mt-2">
-                        <a href="/profile" class="block px-4 py-2 text-sm text-gray-700">Profile</a>
-                        <a href="/logout" class="block px-4 py-2 text-sm text-gray-700">Logout</a>
+                    <div x-show="open" class="absolute bg-black opacity opacity-50 mt-2">
+                        <a href="/profile" class="block px-4 py-2 text-sm text-white">Profile</a>
+                        <a href="/logout" class="block px-4 py-2 text-sm text-white">Logout</a>
                     </div>
                 </div>
                 @endif

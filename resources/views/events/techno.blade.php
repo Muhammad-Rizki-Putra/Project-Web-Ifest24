@@ -1,8 +1,8 @@
 <x-layout>
 <x-slot:pagename>{{$pagename}}</x-slot:pagename>
-    <div class="hidden md:flex items-center justify-center flex-col h-auto bg-home-bg bg-cover bg-no-repeat bg-center py-10 gap-y-32">
-        <h1 class="text-7xl font-bold">TECHNOPRENEUR</h1>
-        <p class="text-6xl text-center font-bold">Future Founders:<br>Embracing The Rise of<br>Tech-Based Business</p>
+    <div class="hidden md:flex items-center justify-center flex-col h-auto bg-home-bg bg-cover bg-no-repeat bg-center py-20 gap-y-32">
+        <h1 class="text-7xl font-bold" style="color: rgb(12 40 62);">TECHNOPRENEUR</h1>
+        <p class="text-6xl text-center font-bold" style="color: rgb(115 4 53);">Future Founders:<br>Embracing The Rise of<br>Tech-Based Business</p>
         <div x-data="{ openA: true, openB: false }" class="flex flex-col items-center justfy-center">
             <div class="flex flex-row items-center justify-center pb-20 gap-x-40">
                 <x-button>
@@ -12,18 +12,18 @@
                     <button x-on:click="openB = !openB; if (openA) openA = false">Workshop</button>
                 </x-button>
             </div>
-            <p class="w-3/5 text-center text-3xl">Designed to turn tech skills into successful businesses, Technopreneur is where technology meets entrepreneurship. Through engaging seminars and hands-on workshops, knowledge and tools are provided by professional mentors, helping you leverage digital technology to bring your business ideas to life.</p>
+            <p class="w-3/5 text-center text-3xl" style="color: rgb(12 40 62);">Designed to turn tech skills into successful businesses, Technopreneur is where technology meets entrepreneurship. Through engaging seminars and hands-on workshops, knowledge and tools are provided by professional mentors, helping you leverage digital technology to bring your business ideas to life.</p>
             <div class="flex flex-col items-center justify-center">
                 <div x-show="openA" x-transition class="flex flex-col items-center justify-center">
-                    <p class="text-7xl font-bold pt-20 pb-10">SEMINAR</p>
-                    <p class="w-3/5 text-center text-3xl font-bold pb-40">The material and talk show presented by professional speakers who are experts in technology-based business to develop the interest and talent for entrepreneurship within the community in the field of IT.</p>
+                    <p class="text-7xl font-bold pt-20 pb-10" style="color: rgb(12 40 62);">SEMINAR</p>
+                    <p class="w-3/5 text-center text-2xl font-bold pb-20" style="color: rgb(12 40 62);">The material and talk show presented by professional speakers who are experts in technology-based business to develop the interest and talent for entrepreneurship within the community in the field of IT.</p>
                     <x-countdown></x-countdown>
                 </div>
-                <div x-show="openB" x-transition class="flex flex-col items-center justify-center py-10">
-                    <p class="text-7xl font-bold pt-20 pb-10">WORKSHOP</p>
-                    <p class="w-3/5 text-center text-3xl font-bold pb-40">An online workshop that provides training and development facilities by professionals with the aim of providing participants with an understanding of the use of technological advances to transform businesses into innovative startups.</p>
+                <div x-show="openB" x-transition class="flex flex-col items-center justify-center">
+                    <p class="text-7xl font-bold pt-20 pb-10" style="color: rgb(12 40 62);">WORKSHOP</p>
+                    <p class="w-3/5 text-center text-2xl font-bold pb-20" style="color: rgb(12 40 62);">An online workshop that provides training and development facilities by professionals with the aim of providing participants with an understanding of the use of technological advances to transform businesses into innovative startups.</p>
                     <x-countdown></x-countdown>
-                    <div style="background-image:url('image/Rectangle_74.png');" class="bg-cover w-full p-3.5 text-white mt-40">
+                    <div style="background-image:url('image/Rectangle_74.png');" class="bg-cover w-full p-3.5 text-white mt-20">
                         <p class="text-center text-3xl font-bold p-3.5">Reward for Workshop's 3 winner team</p>
                         <p class="text-center text-7xl font-bold p-3.5">Fresh Money Up To<br>XXX Rupiah</p>
                         <p class="text-center text-4xl font-bold p-3.5">and</p>
@@ -106,8 +106,8 @@
         </div>
     </div>
     <div class="md:hidden flex items-center justify-center flex-col h-auto bg-home-bg bg-cover bg-no-repeat bg-center py-5 gap-y-10">
-        <h1 class="text-4xl font-bold">TECHNOPRENEUR</h1>
-        <p class="text-3xl text-center font-bold">Future Founders:<br>Embracing The Rise of<br>Tech-Based Business</p>
+        <h1 class="text-4xl font-bold" style="color: rgb(12 40 62);">TECHNOPRENEUR</h1>
+        <p class="text-3xl text-center font-bold" style="color: rgb(115 4 53);">Future Founders:<br>Embracing The Rise of<br>Tech-Based Business</p>
         <div x-data="{ openA: true, openB: false }" class="flex flex-col items-center justfy-center">
             <div class="flex flex-row items-center justify-center pb-10 gap-x-10" >
                 <x-button>
@@ -117,16 +117,16 @@
                     <button x-on:click="openB = !openB; if (openA) openA = false"><p class="text-lg">Workshop</p></button>
                 </x-button>
             </div>
-            <p class="w-4/5 text-center text-lg">Designed to turn tech skills into successful businesses, Technopreneur is where technology meets entrepreneurship. Through engaging seminars and hands-on workshops, knowledge and tools are provided by professional mentors, helping you leverage digital technology to bring your business ideas to life.</p>
+            <p class="w-4/5 text-center text-lg leading-snug" style="color: rgb(12 40 62);">Designed to turn tech skills into successful businesses, Technopreneur is where technology meets entrepreneurship. Through engaging seminars and hands-on workshops, knowledge and tools are provided by professional mentors, helping you leverage digital technology to bring your business ideas to life.</p>
             <div class="flex flex-col items-center justify-center">
                 <div x-show="openA" x-transition class="flex flex-col items-center justify-center">
-                    <p class="text-4xl font-bold pt-12 pb-5">SEMINAR</p>
-                    <p class="w-4/5 text-center text-lg font-bold pb-10">The material and talk show presented by professional speakers who are experts in technology-based business to develop the interest and talent for entrepreneurship within the community in the field of IT.</p>
+                    <p class="text-4xl font-bold pt-12 pb-5" style="color: rgb(12 40 62);">SEMINAR</p>
+                    <p class="w-4/5 text-center text-base font-bold pb-10" style="color: rgb(12 40 62);">The material and talk show presented by professional speakers who are experts in technology-based business to develop the interest and talent for entrepreneurship within the community in the field of IT.</p>
                     <x-countdown-mobver></x-countdown-mobver>
                 </div>
                 <div x-show="openB" x-transition class="flex flex-col items-center justify-center">
-                    <p class="text-4xl font-bold pt-12 pb-5">WORKSHOP</p>
-                    <p class="w-4/5 text-center text-lg font-bold pb-10">An online workshop that provides training and development facilities by professionals with the aim of providing participants with an understanding of the use of technological advances to transform businesses into innovative startups.</p>
+                    <p class="text-4xl font-bold pt-12 pb-5" style="color: rgb(12 40 62);">WORKSHOP</p>
+                    <p class="w-4/5 text-center text-base font-bold pb-10" style="color: rgb(12 40 62);">An online workshop that provides training and development facilities by professionals with the aim of providing participants with an understanding of the use of technological advances to transform businesses into innovative startups.</p>
                     <x-countdown-mobver></x-countdown-mobver>
                     <div style="background-image:url('image/Rectangle_74.png');" class="bg-cover w-full p-1.5 text-white mt-10">
                         <p class="text-center text-lg font-bold p-1.5">Reward for Workshop's 3 winner team</p>

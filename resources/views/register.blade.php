@@ -136,22 +136,6 @@
                         </div>
                     </div>
 
-                    <div class="flex flex-col">
-                        <div class="w-full">
-                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                                for="grid-password">
-                                Password
-                            </label>
-                            @error('password')
-                            <p class="text-red-500 text-xs italic">{{ $message }}</p>
-                            @enderror
-                            <input
-                                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-1 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                                id="grid-password" type="password" name="password" placeholder="Enter Your Password"
-                                required>
-                        </div>
-                    </div>
-
                     <div class="flex flex-wrap -mx-3 mt-3">
                         <div class="w-full px-3">
                             <div class="flex justify-between items-center">
@@ -327,7 +311,7 @@
                     </div>
                 </div>
             </div>
-
+            
 
             <div class="flex flex-col">
                 <div class="w-full">

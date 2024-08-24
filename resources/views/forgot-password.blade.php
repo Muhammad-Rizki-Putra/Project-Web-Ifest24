@@ -1,7 +1,7 @@
 <x-layout2>
     <x-slot:pagename>{{ $pagename }}</x-slot:pagename>
     <div class="w-full h-screen flex items-center justify-center bg-home-bg bg-cover bg-no-repeat bg-center">
-        <div class="bg-cream-bg p-8 rounded-lg shadow-lg max-w-md w-full text-center forgot-pass">
+        <div class="bg-cream-bg p-8 rounded-lg shadow-lg max-w-md w-full text-center forgot-pass mx-8">
             <div class="flex justify-start mb-4">
                 <a href="/login" class="text-slate-800 hover:text-slate-600">
                     <img src="/image/prev.png" alt="" class="mx-auto h-8 w-8">

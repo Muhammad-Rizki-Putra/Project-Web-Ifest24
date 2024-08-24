@@ -5,7 +5,7 @@
             <div class="text-2xl profile-section-name">Edit Profile</div>
             <form action="/profile-edit" method="POST">
                 @csrf
-                <div class="bg-cream-bg p-4 rounded-lg flex flex-col items-center justify-between gap-4">   
+                <div class="bg-cream-bg p-4 rounded-lg flex flex-col items-center justify-between gap-4 lg:w-160 ">
                     <div class="self-start profile-edit-box">
                         <p class="font-bold">Full Name</p>
                         <input type="text" name="fullname" class="profile-edit-box profile-edit-box-section" value="{{ $user->fullname }}" required>

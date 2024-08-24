@@ -8,8 +8,6 @@ use App\Http\Controllers\GoogleController;
 use App\Http\Controllers\ResetPasswordController;
 use App\Http\Controllers\ProfileController;
 
-
-
 Route::get('/', function () {
     return view('home', ['pagename' => 'Home']);
 });
@@ -17,7 +15,6 @@ Route::get('/', function () {
 Route::get('/partner-with-us', function () {
     return view('partner', ['pagename' => 'Partner']);
 });
-
 
 // profile
 Route::get('/profile', [ProfileController::class, 'showProfile'])->middleware('auth');
@@ -27,6 +24,12 @@ Route::post('/profile-edit', [ProfileController::class, 'updateProfile'])->middl
 // register
 Route::get('/register', [RegisterController::class, 'create'])->middleware('guest');
 Route::post('/register', [RegisterController::class, 'store']);
+
+
+// verify
+Route::get('/email/verify', [RegisterController::class, 'verifyEmail'])->middleware('auth')->name('verification.notice');
+Route::get('/email/verify/{id}/{hash}', [RegisterController::class, 'emailVerificationHandler'])->middleware(['auth', 'signed'])->name('verification.verify');
+Route::post('/email/verify', [RegisterController::class, 'resendEmailVerification'])->middleware(['auth'])->name('verification.send');
 
 // login
 Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');

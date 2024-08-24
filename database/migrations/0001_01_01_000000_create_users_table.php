@@ -20,6 +20,7 @@ return new class extends Migration
             $table->date('birth_date')->nullable();
             $table->enum('education_level', ['SMP', 'SMA', 'Univ.'])->nullable();
             $table->json('ifest_info')->nullable();
+            $table->timestamp('email_verified_at')->nullable();
             $table->timestamps();
         });
 
@@ -49,3 +50,4 @@ return new class extends Migration
         Schema::dropIfExists('sessions');
     }
 };
+

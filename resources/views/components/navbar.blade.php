@@ -25,7 +25,7 @@
                 </div>
                 @else
                 <div x-data="{ open: false }" @mouseover="open = true" @mouseleave="open = false">
-                    <button class="text-lg font-bold flex items-center">{{ auth()->user()->name }}</button>
+                    <button class="text-lg font-bold flex items-center">{{ auth()->user()->fullname }}</button>
                     <div x-show="open" class="absolute bg-black opacity opacity-50 mt-2">
                         <a href="/profile" class="block px-4 py-2 text-sm text-white">Profile</a>
                         <a href="/logout" class="block px-4 py-2 text-sm text-white">Logout</a>
@@ -163,7 +163,7 @@
                 @else
                 <div class="w-full h-auto p-3">
                     <div x-data="{ open: false }">
-                        <button @click="open = !open" class="text-lg font-bold">{{ auth()->user()->name }}</button>
+                        <button @click="open = !open" class="text-lg font-bold">{{ auth()->user()->fullname }}</button>
                         <div 
                             x-show="open" 
                             x-transition:enter="transition ease-out duration-200" 

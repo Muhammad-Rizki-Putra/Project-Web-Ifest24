@@ -11,11 +11,11 @@ use App\Http\Controllers\ProfileController;
 
 
 Route::get('/', function () {
-    return view('home', ['pagename' => 'home']);
+    return view('home', ['pagename' => 'Home']);
 });
 
 Route::get('/partner-with-us', function () {
-    return view('partner', ['pagename' => 'partner']);
+    return view('partner', ['pagename' => 'Partner']);
 });
 
 
@@ -46,29 +46,29 @@ Route::post('/reset-password', [ResetPasswordController::class, 'reset'])->middl
 // Event Route
 Route::get('/seminar-nasional', [SemnasController::class, 'index'])->name('semnas');
 Route::get('/technopreneur', function () {
-    return view('events.techno', ['pagename' => 'techno']);
+    return view('events.techno', ['pagename' => 'Technopreneur']);
 });
 Route::get('/grand-opening', function () {
-    return view('events.grand-opening', ['pagename' => 'grand-opening']);
+    return view('events.grand-opening', ['pagename' => 'Grand Opening']);
 });
 
 Route::get('/last-act', function () {
-    return view('events.last-act', ['pagename' => 'last-act']);
+    return view('events.last-act', ['pagename' => 'Last Act']);
 });
 
 // Competition Route
 Route::get('/competitive-programming', function () {
-    return view('competitions.compro', ['pagename' => 'compro']);
+    return view('competitions.compro', ['pagename' => 'Comprog']);
 });
 Route::get('/data-analysis-competition', function () {
-    return view('competitions.data', ['pagename' => 'data']);
+    return view('competitions.data', ['pagename' => 'DAC']);
 });
 Route::get('/capture-the-flag', function () {
-    return view('competitions.cft', ['pagename' => 'ctf']);
+    return view('competitions.cft', ['pagename' => 'CTF']);
 });
 Route::get('/informatics-competition', function () {
-    return view('competitions.informatics', ['pagename' => 'informatics']);
+    return view('competitions.informatics', ['pagename' => 'InCo']);
 });
 Route::get('/web-development-competition', function () {
-    return view('competitions.web', ['pagename' => 'webdev']);
+    return view('competitions.web', ['pagename' => 'WebDev']);
 });

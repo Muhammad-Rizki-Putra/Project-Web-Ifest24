@@ -43,8 +43,8 @@
   </template>
 
   <template x-if="remainingTime <= 0">
-    <div class="flex items-center justify-center w-[200%] ml-[-50%] bg-[#a00344] text-white p-4 rounded-xl space-x-8">
-      <div class="font-bold text-xl">Countdown has ended!</div>
+    <div class="flex items-center justify-center w-[100%] bg-[#a00344] text-white p-4 rounded-xl space-x-8">
+      <div class="font-bold text-base">Countdown has ended!</div>
     </div>
   </template>
 </div>

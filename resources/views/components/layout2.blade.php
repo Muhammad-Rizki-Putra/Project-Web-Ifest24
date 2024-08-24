@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ $pagename }}</title>
+    <link rel="icon" href="/image/logo_ifest4.png">
+    <title> IFest 2024 - {{ $pagename }}</title>
     @vite('resources/css/app.css')
     @vite('resources/js/app.js')
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
@@ -16,7 +17,7 @@
 <body id="{{$pagename}}" class="">
     <x-navbar></x-navbar>
     <div class="">
-        <main>
+        <main class="mt-24">
             <div class="w-full h-full mx-auto bg-home2-bg bg-cover bg-no-repeat bg-center flex items-center justify-center">
                 {{ $slot }}
             </div>

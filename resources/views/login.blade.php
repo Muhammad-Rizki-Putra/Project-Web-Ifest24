@@ -56,7 +56,8 @@
                                 class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                                 id="grid-password" name="password" type="password" placeholder="Enter Your Password"
                                 required value="{{ old('password') }}">
-                            <a href="/forgot-password">Forgot your password?</a>
+                                <a href="/forgot-password" class="hover:underline">Forgot your password?</a>
+
                         </div>
                     </div>
                     <div class="flex justify-center">
@@ -66,7 +67,7 @@
                     </div>
                 </form>
 
-                <p>Don't have an account? <a href="/register">Register here!</a></p>
+                <p>Don't have an account? <a href="/register" class="hover:underline">Register here!</a></p>
                 <h5 class="text-lg">or</h5>
 
                 <a href="{{ route('google-auth') }}"

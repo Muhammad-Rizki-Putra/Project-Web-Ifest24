@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="/image/logo_ifest4.png">
-    <title> IFest 2024 - {{ $pagename }}</title>
+    <title>{{ $pagename }} - IFest 2024</title>
     @vite('resources/css/app.css')
     @vite('resources/js/app.js')
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>

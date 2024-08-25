@@ -1,5 +1,5 @@
-<nav class="fixed top-0 z-30">   
-    <div class="hidden md:flex flex-col items-center justify-center h-[20%]" x-data="{ IsopenEvent: false, IsopenCompetition: false }">  
+<nav class="fixed top-0 z-30" x-data="{ IsopenEvent: false, IsopenCompetition: false, IsopenProfile: false }">   
+    <div class="hidden md:flex flex-col items-center justify-center h-[20%]">  
         <div class="bg-cream-bg w-screen z-20">
             <div class="flex justify-center ">
                 <img class="h-auto w-auto pt-2" src="/image/logo_ifest2.png" alt="logo_ifest2">
@@ -24,13 +24,25 @@
                     </div>
                 </div>
                 @else
-                <div x-data="{ open: false }" @mouseover="open = true" @mouseleave="open = false">
+                <!-- <div x-data="{ open: false }" @mouseover="open = true" @mouseleave="open = false">
                     <button class="text-lg font-bold flex items-center">{{ auth()->user()->fullname }}</button>
                     <div x-show="open" class="absolute bg-black opacity opacity-50 mt-2">
                         <a href="/profile" class="block px-4 py-2 text-sm text-white">Profile</a>
                         <a href="/logout" class="block px-4 py-2 text-sm text-white">Logout</a>
                     </div>
+                </div> -->
+                <div class="relative">
+                    <button x-on:click="IsopenProfile = !IsopenProfile">
+                        <img src="/image/DefaultProfilePicture.jpg" alt="" class="w-10 h-auto rounded-full">
+                    </button>
+                    <div x-show="IsopenProfile" x-transition class="absolute left-1/2 transform -translate-x-1/2 h-auto w-auto p-5 bg-cream-bg outline outline-2 rounded-sm mt-4">
+                        <div class="flex flex-col gap-y-2">
+                            <a href="/profile" class="block px-4 py-2 text-sm text-black font-semibold">Profile</a>
+                            <a href="/logout" class="block px-4 py-2 text-sm text-black font-semibold">Logout</a>
+                        </div>
+                    </div>
                 </div>
+
                 @endif
             </div>
         </div>
@@ -162,10 +174,10 @@
                 </div>
                 @else
                 <div class="w-full h-auto p-3">
-                    <div x-data="{ open: false }">
-                        <button @click="open = !open" class="text-lg font-bold">{{ auth()->user()->fullname }}</button>
+                    <div>
+                        <button @click="IsopenProfile = !IsopenProfile" class="text-lg font-bold"><img src="/image/DefaultProfilePicture.jpg" alt="" class="w-10 h-auto rounded-full"></button>
                         <div 
-                            x-show="open" 
+                            x-show="IsopenProfile" 
                             x-transition:enter="transition ease-out duration-200" 
                             x-transition:enter-start="opacity-0 transform scale-95" 
                             x-transition:enter-end="opacity-100 transform scale-100" 

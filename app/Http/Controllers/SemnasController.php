@@ -6,8 +6,8 @@ class SemnasController extends Controller
 {
     public function index()
     {
-        $title = 'Semnas';
-        return view('events.semnas', compact('title'));
+        $pagename = 'Semnas';
+        return view('events.semnas', compact('pagename'));
     }
 
     // pendaftaran

@@ -37,7 +37,6 @@ class ProfileController extends Controller
             'birth_date' => 'nullable|date',
             'education_level' => 'nullable|string|max:255',
             'institution' => 'nullable|string',
-            'ifest_info' => 'nullable|array',
         ]);
 
         $user->fullname = $request->input('fullname');
@@ -45,7 +44,6 @@ class ProfileController extends Controller
         $user->birth_date = $request->input('birth_date');
         $user->education_level = $request->input('education_level');
         $user->institution = $request->input('institution');
-        $user->ifest_info = json_encode($request->input('ifest_info'));
 
         /** @var \App\Models\User $user **/
         $user->save();

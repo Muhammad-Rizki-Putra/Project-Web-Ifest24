@@ -17,10 +17,10 @@
 <body id="{{$pagename}}" class="">
     <div class="">
         <!-- navbar -->
-        <x-Navbar></x-Navbar>
+        <x-navbar></x-navbar>
 
         <!-- header -->
-        <!-- <x-Header></x-Header> -->
+        <!-- <x-header></x-header> -->
         <main class="mt-24">
             <div class="w-full mx-auto">
                 {{ $slot }}

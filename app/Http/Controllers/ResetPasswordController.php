@@ -21,9 +21,9 @@ class ResetPasswordController extends Controller
 
         $user = User::where('email', $request->email)->first();
 
-        if ($user && $user->password == null) {
-            return back()->withErrors(['email' => 'Try signing in with google.']);
-        }
+        // if ($user && $user->password == null) {
+        //     return back()->withErrors(['email' => 'Try signing in with google.']);
+        // }
 
         $status = Password::sendResetLink(
             $request->only('email')

@@ -17,11 +17,13 @@ class ProfileController extends Controller
     {
         $user = Auth::user();
         $emailVerified = !is_null($user->email_verified_at);
+        $ifestInfo = $user->ifest_info ? explode(',', $user->ifest_info) : [];
 
         return view('profile-edit', [
             'pagename' => 'Edit Profile',
             'user' => $user,
             'emailVerified' => $emailVerified,
+            'oldIfestInfo' => old('ifest_info', $ifestInfo),
         ]);
     }
 
@@ -34,12 +36,17 @@ class ProfileController extends Controller
             'email' => 'required|email|max:255|unique:users,email,' . $user->id,
             'birth_date' => 'nullable|date',
             'education_level' => 'nullable|string|max:255',
+            'institution' => 'nullable|string',
+            'ifest_info' => 'nullable|array',
         ]);
 
         $user->fullname = $request->input('fullname');
         $user->email = $request->input('email');
         $user->birth_date = $request->input('birth_date');
         $user->education_level = $request->input('education_level');
+        $user->institution = $request->input('institution');
+        $user->ifest_info = json_encode($request->input('ifest_info'));
+
         /** @var \App\Models\User $user **/
         $user->save();
 

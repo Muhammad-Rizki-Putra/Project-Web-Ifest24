@@ -47,6 +47,7 @@ class RegisterController extends Controller
             'fullname' => $request->fullname,
             'birth_date' => $request->birth_date,
             'education_level' => $request->education_level,
+            'institution' => $request->institution,
             'ifest_info' => json_encode($request->ifest_info),
         ]);
 

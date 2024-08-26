@@ -15,10 +15,11 @@ return new class extends Migration
             $table->id();
             $table->string('email')->unique();
             $table->string('password')->nullable();
-            $table->string('google_id')->nullable();
+            // $table->string('google_id')->nullable();
             $table->string('fullname')->nullable();
             $table->date('birth_date')->nullable();
-            $table->enum('education_level', ['SMP', 'SMA', 'Univ.'])->nullable();
+            $table->enum('education_level', ['SMP', 'SMA', 'SMK', 'Univ.'])->nullable();
+            $table->string('institution')->nullable();
             $table->json('ifest_info')->nullable();
             $table->timestamp('email_verified_at')->nullable();
             $table->timestamps();
@@ -46,7 +47,7 @@ return new class extends Migration
     public function down(): void
     {
         Schema::dropIfExists('users');
-        // Schema::dropIfExists('password_reset_tokens');
+        Schema::dropIfExists('password_reset_tokens');
         Schema::dropIfExists('sessions');
     }
 };

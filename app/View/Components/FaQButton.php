@@ -21,6 +21,6 @@ class FaQButton extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.fa-q-button');
+        return view('components.faq-button');
     }
 }

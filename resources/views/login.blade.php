@@ -8,7 +8,7 @@
             <img class="w-auto h-auto m-auto hidden self-center lg:block pl-16 pt-4" src="image/logo_ifest.png" alt="logo_ifest">
             <img class="w-auto my-auto h-auto px-20 hidden lg:block " src="image/Line.png" alt="line">
             <div class="flex flex-col items-center pt-[48px] my-auto h-auto max-h-[627px]">
-                <h1 class="text-5xl pb-5">
+                <h1 class="text-5xl pb-5 font-bold text-navy-bg">
                     Login
                 </h1>
 
@@ -56,8 +56,9 @@
                                 class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                                 id="grid-password" name="password" type="password" placeholder="Enter Your Password"
                                 required value="{{ old('password') }}">
-                                <a href="/forgot-password" class="hover:underline">Forgot your password?</a>
-
+                                <p class="text-sm">Forgot your password? <a href="/forgot-password" class="text-navy-bg font-semibold">Click Here!</a></p>
+                                <p class="text-sm">Don't have an account? <a href="/register" class=" text-navy-bg font-semibold">Register here!</a></p>
+                
                         </div>
                     </div>
                     <div class="flex justify-center">
@@ -67,20 +68,13 @@
                     </div>
                 </form>
 
-                <p>Don't have an account? <a href="/register" class="hover:underline">Register here!</a></p>
-                <h5 class="text-lg">or</h5>
-
-                <a href="{{ route('google-auth') }}"
-                    class="bg-white border border-gray-300 text-gray-700 font-semibold py-2 px-4 rounded inline-flex items-center mt-4">
-                    <img src="image/google.png" alt="Google logo" class="w-6 h-6 mr-2">
-                    <span>Login with Google</span>
-                </a>
+                
             </div>
         </div>
     </div>
 
     <div class="md:hidden flex flex-col items-center w-[75%] h-auto bg-cream-bg p-5 m-5 rounded-lg">
-        <h1 class="font-bold text-3xl mb-5">Login</h1>
+        <h1 class="font-bold text-3xl mb-5  text-navy-bg">Login</h1>
         <h1 class="font-bold text-lg">Selamat Datang</h1>
         <h1 class="opacity-50 text-sm pb-10">Isi form berikut untuk melanjutkan</h1>
 
@@ -127,9 +121,9 @@
                         class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-1 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                         id="grid-password" name="password" type="password" placeholder="Enter Your Password" required
                         value="{{ old('password') }}">
-                    <p class="text-sm">Forgot your password? <a href="/forgot-password" class="text-navy-bg">Click
+                    <p class="text-sm">Forgot your password? <a href="/forgot-password" class="text-navy-bg font-semibold">Click
                             Here!</a></p>
-                    <p class="text-sm">Don't have an account? <a href="/register">Register here!</a></p>
+                    <p class="text-sm">Don't have an account? <a href="/register" class=" text-navy-bg font-semibold">Register here!</a></p>
                 </div>
             </div>
             <div class="flex justify-center mt-7">
@@ -138,12 +132,5 @@
                 </button>
             </div>
         </form>
-        <h5 class="text-lg">or</h5>
-
-        <a href="{{ route('google-auth') }}"
-            class="bg-white border border-gray-300 text-gray-700 font-semibold py-2 px-4 rounded inline-flex items-center mt-4">
-            <img src="image/google.png" alt="Google logo" class="w-6 h-6 mr-2">
-            <span>Login with Google</span>
-        </a>
     </div>
 </x-layout2>

@@ -18,9 +18,11 @@
                 @if(auth()->guest())
                 <div x-data="{ open: false }" @mouseover="open = true" @mouseleave="open = false">
                     <button class="text-lg font-bold flex items-center">Login/Register</button>
-                    <div x-show="open" class="absolute bg-black opacity opacity-50">
-                        <a href="/login" class="block px-4 py-2 text-sm text-white">Login</a>
-                        <a href="/register" class="block px-4 py-2 text-sm text-white">Register</a>
+                    <div x-show="open" x-transition class="absolute transform h-auto w-auto p-5 bg-cream-bg outline outline-2 rounded-sm mt-4">
+                        <div class="flex flex-col gap-y-2">
+                            <a href="/profile" class="block px-4 py-2 text-sm text-black font-semibold">Profile</a>
+                            <a href="/logout" class="block px-4 py-2 text-sm text-black font-semibold">Logout</a>
+                        </div>
                     </div>
                 </div>
                 @else

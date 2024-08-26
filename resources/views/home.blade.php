@@ -1,13 +1,13 @@
 <x-layout>
 <x-slot:pagename>{{$pagename}}</x-slot:pagename>
-    <div class="hidden w-full md:flex flex-col bg-home-bg bg-cover bg-no-repeat bg-center">
+    <div class="hidden w-full md:flex flex-col bg-home-bg bg-cover bg-no-repeat bg-center py-5">
         <div class="py-[125px] px-[184px] bg-white flex items-center h-[calc(100vh-189px)]">
             <img src="/image/logo_ifest3.png" alt="" class="h-auto w-auto">
         </div>
 
-        <div class="">
+        <div class="items-center justify-center">
             <div class="h-min-[88px] relative overflow-hidden bg-navy-bg text-white h-auto">
-                <x-home-countdown>2024-09-17</x-home-countdown>
+                <x-home-countdown class="">2024-09-17</x-home-countdown>
             </div>
         </div>
 
@@ -28,14 +28,14 @@
             </div>
         
             <div class="flex flex-col items-center pt-[116px]">
-                <h1 class="text-7xl text-center pb-[22px]">What is IFEST?</h1>
+                <h1 class="text-7xl text-center pb-[22px] font-semibold">What is IFEST?</h1>
                 <p class="text-3xl text-center max-w-[1191px]">
-                    IFest is an annual event presented by Himatif FMIPA Unpad, which carries the essence of IT and aims to serve as a platform for the development of participants' potential. IFest 2023 consists of several series, namely Talkshow, Technopreneur, National Seminar, IT Competition, Awarding Night, and Company Expo.
+                    IFest is an annual event presented by Himatif FMIPA Unpad, which carries the essence of IT and aims to serve as a platform for the development of participants' potential. IFest 2024 consists of several series, namely Talkshow, Technopreneur, National Seminar, IT Competition, Awarding Night, and Company Expo.
                 </p>
             </div>
 
             <div class="flex flex-col justify-center pt-[116px]">
-                <h1 class="text-7xl text-center">Explore Our Event!</h1>
+                <h1 class="text-7xl text-center font-semibold">Explore Our Event!</h1>
                 <div class="flex flex-row items-center justify-center ">
                     <div class="control-buttons">
                         <button id="carousel-0-previousButton"><img src="/image/prev.png" alt=""></button>
@@ -56,7 +56,7 @@
             </div>
 
             <div class="flex flex-col justify-center pt-[116px]">
-                <h1 class="text-7xl text-center">Explore Our Competition!</h1>
+                <h1 class="text-7xl text-center font-semibold">Explore Our Competition!</h1>
                 <div class="flex flex-row items-center justify-center ">
                     <div class="control-buttons">
                         <button id="carousel-1-previousButton"><img src="/image/prev.png" alt=""></button>
@@ -79,7 +79,7 @@
     </div>
 
     <!-- Mobile ver. -->
-    <div class="md:hidden w-full flex flex-col bg-home-bg bg-cover bg-no-repeat bg-center">
+    <div class="md:hidden w-full flex flex-col bg-home-bg bg-cover bg-no-repeat bg-center p-5">
         <div class=" bg-white flex items-center px-5 h-[calc(93vh-72px)]">
             <img src="/image/logo_ifest3.png" alt="" class="h-auto w-auto">
         </div>

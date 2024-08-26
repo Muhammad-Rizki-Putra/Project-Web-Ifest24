@@ -17,8 +17,8 @@
 <body id="{{$pagename}}" class="">
     
     <div class="">
-        <main>
-            <div class="w-full h-screen mx-auto bg-home2-bg bg-cover bg-no-repeat bg-center flex items-center justify-center">
+        <main class="min-h-screen">
+            <div class="w-full h-screen mx-auto bg-home2-bg bg-cover bg-no-repeat bg-center flex items-center justify-center p-5">
                 {{ $slot }}
             </div>
         </main>

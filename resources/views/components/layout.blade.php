@@ -21,7 +21,7 @@
 
         <!-- header -->
         <!-- <x-header></x-header> -->
-        <main class="mt-24">
+        <main class="mt-24 min-h-screen">
             <div class="w-full mx-auto">
                 {{ $slot }}
             </div>

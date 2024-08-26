@@ -35,6 +35,10 @@
                         <p class="font-bold">Education Level</p>
                         <p>{{ $user->education_level }}</p>
                     </div>
+                    <div class="text-left flex-col truncate">
+                        <p class="font-bold">Institution Name</p>
+                        <p>{{ $user->institution }}</p>
+                    </div>
                 </div>
             </div>
         </div>

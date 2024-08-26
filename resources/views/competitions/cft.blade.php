@@ -12,11 +12,11 @@
             <a href="http://bit.ly/IFEST_CTF"><x-button>Registration</x-button></a>
         </div>
 
-        <x-countdown>2024-08-15</x-countdown>
+        <x-countdown>2024-09-07</x-countdown>
 
         <h1 class="text-5xl p-20 font-bold">Timeline of Activity</h1>
         <div class="w-[45vh]">
-            <img src="/image/tl-ctf.png" alt="" class="flex h-auto">
+            <img src="/image/~tl-ctf.png" alt="" class="flex h-auto">
         </div>
     </div>
 
@@ -28,7 +28,7 @@
         </div>
 
         <div class="flex flex-row items-center justify-center space-x-10 w-auto py-10">
-            <a href=""><x-button-mobver>Booklet</x-button-mobver></a>
+            <a href="https://bit.ly/GUIDEBOOK_IFEST2024"><x-button-mobver>Booklet</x-button-mobver></a>
             <a href="http://bit.ly/IFEST_CTF"><x-button-mobver>Registration</x-button-mobver></a>
         </div>
 

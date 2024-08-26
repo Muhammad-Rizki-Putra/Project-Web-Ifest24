@@ -33,7 +33,7 @@
                     <div class="flex flex-wrap -mx-3 ">
                         <div class="w-full px-3">
                             <div class="flex justify-between items-center">
-                                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold "
                                     for="grid-email">
                                     Email
                                 </label>
@@ -85,7 +85,62 @@
                     </div>
 
                     <div class="flex flex-wrap -mx-3 ">
-                        <div class="w-full md:w-1/2 px-3  md:mb-0">
+                        <div class="w-full md:w-1/2 px-3">
+                            <div class="flex justify-between items-center">
+                                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold "
+                                    for="grid-education-level">
+                                    Current Level of Education
+                                </label>
+                                @error('education_level')
+                                <p class="text-red-500 text-xs italic">{{ $message }}</p>
+                                @enderror
+                            </div>
+                            <div class="relative">
+                                <select
+                                    class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                    id="grid-education-level" name="education_level" placeholder="Select Your Level"
+                                    required>
+                                    <option value="">Select Your Level</option>
+                                    <option value="SMP" {{ old('education_level') == 'SMP' ? 'selected' : '' }}>SMP
+                                    </option>
+                                    <option value="SMA" {{ old('education_level') == 'SMA' ? 'selected' : '' }}>SMA
+                                    </option>
+                                    </option>
+                                    <option value="SMK" {{ old('education_level') == 'SMK' ? 'selected' : '' }}>SMK
+                                    </option>
+                                    <option value="Univ." {{ old('education_level') == 'Univ.' ? 'selected' : '' }}>Univ.
+                                    </option>
+                                </select>
+                                <div
+                                    class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                                    <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 20 20">
+                                        <path
+                                            d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="w-full md:w-1/2 px-3">
+                            <div class="flex justify-between items-center">
+                                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold "
+                                    for="grid-institution">
+                                    Institution Name
+                                </label>
+                                @error('institution')
+                                <p class="text-red-500 text-xs italic">{{ $message }}</p>
+                                @enderror
+                            </div>
+                            <input
+                                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                id="grid-institution" type="text" name="institution" placeholder="Enter Your Institution"
+                                required value="{{ old('institution') }}">
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap -mx-3 mt-3">
+                        <div class="w-full md:w-1/2 px-3">
                             <div class="flex justify-between items-center">
                                 <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold "
                                     for="grid-birth-date">
@@ -101,45 +156,10 @@
                                 required value="{{ old('birth_date') }}">
                         </div>
 
-                        <div class="w-full flex-wrap md:w-1/2 px-3  md:mb-0">
+                        <div class="w-full md:w-1/2 px-3">
                             <div class="flex justify-between items-center">
                                 <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold "
-                                    for="grid-education-level">
-                                    Current Level of Education
-                                </label>
-                                @error('education_level')
-                                <p class="text-red-500 text-xs italic">{{ $message }}</p>
-                                @enderror
-                            </div>
-                            <div class="relative">
-                                <select
-                                    class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                                    id="grid-education-level" name="education_level" placeholder="Select Your Level"
-                                    required>
-                                    <option value="">Select Your Level</option>
-                                    <option value="SMP" {{ old('education_level') == 'SMP' ? 'selected' : '' }}>SMP
-                                    </option>
-                                    <option value="SMA" {{ old('education_level') == 'SMA' ? 'selected' : '' }}>SMA
-                                    </option>
-                                    <option value="Univ." {{ old('education_level') == 'Univ.' ? 'selected' : '' }}>Univ.
-                                    </option>
-                                </select>
-                                <div
-                                    class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-                                    <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 20 20">
-                                        <path
-                                            d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="flex flex-wrap -mx-3 mt-3">
-                        <div class="w-full px-3">
-                            <div class="flex justify-between items-center">
-                                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold" for="desktop-grid-ifest-info">
+                                    for="grid-ifest-info">
                                     Where do you know IFest?
                                 </label>
                                 @error('ifest_info')
@@ -297,6 +317,9 @@
                             </option>
                             <option value="SMA" {{ old('education_level') == 'SMA' ? 'selected' : '' }}>SMA
                             </option>
+                            </option>
+                            <option value="SMK" {{ old('education_level') == 'SMK' ? 'selected' : '' }}>SMK
+                            </option>
                             <option value="Univ." {{ old('education_level') == 'Univ.' ? 'selected' : '' }}>Univ.
                             </option>
                         </select>
@@ -311,7 +334,22 @@
                     </div>
                 </div>
             </div>
-            
+
+            <div class="flex flex-col">
+                <div class="w-full">
+                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                        for="grid-institution">
+                        Institution Name
+                    </label>
+                    @error('institution')
+                    <p class="text-red-500 text-xs italic">{{ $message }}</p>
+                    @enderror
+                    <input
+                        class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-1 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                        id="grid-institution" type="text" name="institution" placeholder="Enter Your Institution Name"
+                        required value="{{ old('institution') }}">
+                </div>
+            </div>
 
             <div class="flex flex-col">
                 <div class="w-full">

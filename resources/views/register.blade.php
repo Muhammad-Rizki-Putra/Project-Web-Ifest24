@@ -5,10 +5,10 @@
             <a href="/" class="absolute"><img src="/image/cancel-logo.png" alt="" class="mt-10 mr-10"></a>
         </div>
         <div class="flex flex-row items-center justify-center h-auto mx-auto">
-            <img class="w-auto h-auto my-auto hidden lg:block pt-4 pl-16" src="image/logo_ifest.png" alt="logo_ifest">
-            <img class="w-auto my-auto h-auto px-10 hidden lg:block " src="image/Line.png" alt="line">
+            <img class="w-auto h-auto my-auto hidden xl:block pt-4 pl-16" src="image/logo_ifest.png" alt="logo_ifest">
+            <img class="w-auto my-auto h-auto px-10 hidden xl:block " src="image/Line.png" alt="line">
             <div class="flex flex-col items-center py-4 my-auto h-auto max-h-[627px]">
-                <h1 class="text-5xl pb-5">
+                <h1 class="text-5xl pb-5 font-bold text-navy-bg">
                     Register
                 </h1>
                 <form class="h-auto w-[calc(75vh)] mb-0" action="/register" method="post">

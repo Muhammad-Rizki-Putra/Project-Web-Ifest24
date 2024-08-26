@@ -7,11 +7,11 @@
         <div class="flex flex-row items-center justify-center h-auto mx-auto">
             <img class="w-auto h-auto my-auto hidden lg:block pt-4 pl-16" src="image/logo_ifest.png" alt="logo_ifest">
             <img class="w-auto my-auto h-auto px-20 hidden lg:block " src="image/Line.png" alt="line">
-            <div class="flex flex-col items-center pt-[48px] my-auto h-auto max-h-[627px]">
+            <div class="flex flex-col items-center py-4 my-auto h-auto max-h-[627px]">
                 <h1 class="text-5xl pb-5">
                     Register
                 </h1>
-                <form class="h-auto w-[calc(75vh)]" action="/register" method="post">
+                <form class="h-auto w-[calc(75vh)] mb-0" action="/register" method="post">
                     @csrf
                     <div class="flex flex-wrap -mx-3 ">
                         <div class="w-full px-3">
@@ -196,14 +196,14 @@
                         </div>
                     </div>
 
-                    <div class="flex justify-center">
+                    <div class="flex justify-center mt-4">
                         <button type="submit" class="image-button">
                             <img src="image/tombol_regis.png" alt="button image">
                         </button>
                     </div>
                 </form>
 
-                <p>Already have an account? <a href="/login">Login here!</a></p>
+                <p>Already have an account? <a href="/login" style="color: rgb(75 85 212)" class="hover:underline">Login here!</a></p>
 
             </div>
         </div>
@@ -390,7 +390,7 @@
                 </div>
             </div>
 
-            <p class="text-sm">Already have an account? <a href="/login" class="text-navy-bg">Login here!</a></p>
+            <p class="text-sm">Already have an account? <a href="/login" class="hover:underline" style="color: rgb(75 85 212)">Login here!</a></p>
 
             <div class="flex justify-center mt-7">
                 <button type="submit" class="image-button">

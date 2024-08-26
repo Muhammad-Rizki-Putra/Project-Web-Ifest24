@@ -46,36 +46,33 @@
                         </div>
                     </div>
 
-                    <div class="flex flex-wrap -mx-3 mb-2">
+                    <div class="flex flex-wrap -mx-3">
                         <div class="w-full px-3">
                             <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
                                 for="grid-password">
                                 Password
                             </label>
                             <input
-                                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                                 id="grid-password" name="password" type="password" placeholder="Enter Your Password"
                                 required value="{{ old('password') }}">
-                                <p class="text-sm">Forgot your password? <a href="/forgot-password" class="text-navy-bg font-semibold">Click Here!</a></p>
-                                <p class="text-sm">Don't have an account? <a href="/register" class=" text-navy-bg font-semibold">Register here!</a></p>
-                
                         </div>
                     </div>
-                    <div class="flex justify-center">
+
+                    <div class="w-full flex justify-end">
+                        <a href="/forgot-password" class="flex font-semibold w-full justify-end hover:underline" style="color: rgb(75 85 212)">Forgot your password?</a>
+                    </div>
+                    
+                    <div class="flex justify-center mt-4">
                         <button type="submit" class="image-button">
                             <img src="image/Login_button.png" alt="button image">
                         </button>
                     </div>
                 </form>
 
-                <p>Don't have an account? <a href="/register" class="hover:underline">Register here!</a></p>
-                <h5 class="text-lg">or</h5>
+                <p>Don't have an account? <a href="/register" class="hover:underline" style="color: rgb(75 85 212)">Register here!</a></p>
+                
 
-                <a href="{{ route('google-auth') }}"
-                    class="bg-white border border-gray-300 text-gray-700 font-semibold py-2 px-4 rounded inline-flex items-center mt-4">
-                    <img src="image/google.png" alt="Google logo" class="w-6 h-6 mr-2">
-                    <span>Login with Google</span>
-                </a>
             </div>
         </div>
     </div>
@@ -128,9 +125,8 @@
                         class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-1 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                         id="grid-password" name="password" type="password" placeholder="Enter Your Password" required
                         value="{{ old('password') }}">
-                    <p class="text-sm">Forgot your password? <a href="/forgot-password" class="text-navy-bg font-semibold">Click
-                            Here!</a></p>
-                    <p class="text-sm">Don't have an account? <a href="/register" class=" text-navy-bg font-semibold">Register here!</a></p>
+                    <p class="text-sm">Forgot your password? <a href="/forgot-password" class="font-semibold hover:underline" style="color: rgb(75 85 212)">Click Here!</a></p>
+                    <p class="text-sm">Don't have an account? <a href="/register" class="font-semibold hover:underline" style="color: rgb(75 85 212)">Register here!</a></p>
                 </div>
             </div>
             <div class="flex justify-center mt-7">

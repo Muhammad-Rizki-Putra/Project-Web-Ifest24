@@ -16,7 +16,7 @@
 
         <h1 class="text-5xl p-20 font-bold">Timeline of Activity</h1>
         <div class="w-[45vh]">
-            <img src="/image/~tl-ctf.png" alt="" class="flex h-auto">
+            <img src="/image/tl/ctf.png" alt="" class="flex h-auto">
         </div>
     </div>
 
@@ -36,7 +36,7 @@
 
         <h1 class="text-3xl py-20 font-bold">Timeline of Activity</h1>
         <div class="px-5    ">
-            <img src="/image/tl-ctf.png" alt="" class="flex h-auto">
+            <img src="/image/tl/ctf.png" alt="" class="flex h-auto">
         </div>
     </div>
 </x-layout>

@@ -83,7 +83,7 @@
     <!-- bg-cream-bg w-screen z-20 -->
 
     <!-- mobile navbar -->
-     
+
     <div class="md:hidden flex flex-row items-start justify-between w-screen bg-cream-bg" x-data="{ isOpen: false }">
         <img class="h-auto w-[50%] p-2" src="/image/logo_ifest2.png" alt="logo_ifest2">
         <div class="p-5">
@@ -93,7 +93,7 @@
         </div>
         <div class="absolute bg-black w-screen h-[1200%] opacity-50" x-show="isOpen"></div>
         <div 
-            class="absolute right-0 z-20 w-[50%] h-auto bg-cream-bg flex flex-col rounded-lg text-end outline outline-2 outline-offset-2 outline-navy-bg"
+            class="absolute right-0 z-20 w-[50%] h-auto max-h-screen bg-cream-bg flex flex-col rounded-lg text-end outline outline-2 outline-offset-2 outline-navy-bg overflow-y-auto"
             x-show="isOpen" 
             x-transition:enter="transition ease-out duration-200" 
             x-transition:enter-start="opacity-0 transform translate-x-full" 

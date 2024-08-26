@@ -2,10 +2,10 @@
     <x-slot:pagename>{{ $pagename }}</x-slot:pagename>
     <div class="hidden md:block w-auto h-auto bg-cream-bg p-10 rounded-lg">
         <div class="flex justify-end">
-            <a href="/" class="absolute"><img src="/image/cancel-logo.png" alt="" class="mt-10 mr-10"></a>
+            <a href="/" class="absolute"><img src="/image/cancel-logo.png" alt="" class=""></a>
         </div>
         <div class="flex flex-row items-center justify-center h-auto mx-auto">
-            <img class="w-auto h-auto my-auto hidden xl:block pt-4 pl-16" src="image/logo_ifest.png" alt="logo_ifest">
+            <img class="w-auto md:h-96 h-auto my-auto hidden xl:block pt-4 pl-16" src="image/logo_ifest.png" alt="logo_ifest">
             <img class="w-auto my-auto h-auto px-10 hidden xl:block " src="image/Line.png" alt="line">
             <div class="flex flex-col items-center py-4 my-auto h-auto max-h-[627px]">
                 <h1 class="text-5xl pb-5 font-bold text-navy-bg">
@@ -25,7 +25,7 @@
                                 @enderror
                             </div>
                             <input
-                                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded md:py-2 py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                                 id="grid-fullname" type="text" name="fullname" placeholder="Enter Your Full Name" required
                                 value="{{ old('fullname') }}">
                         </div>
@@ -42,7 +42,7 @@
                                 @enderror
                             </div>
                             <input
-                                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded md:py-2 py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                                 id="grid-email" type="text" name="email" placeholder="Enter Your Email Here" required
                                 value="{{ old('email') }}">
                         </div>
@@ -60,7 +60,7 @@
                                 @enderror
                             </div>
                             <input
-                                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded md:py-2 py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                                 id="grid-password" type="password" name="password" placeholder="Enter Your Password"
                                 required>
                         </div>
@@ -78,7 +78,7 @@
                                 @enderror
                             </div>
                             <input
-                                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded md:py-2 py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                                 id="grid-password-confirmation" type="password" name="password_confirmation"
                                 placeholder="Enter Your Confirmation Password" required>
                         </div>
@@ -176,7 +176,7 @@
                                 @endphp
                                 <input type="hidden" id="desktop-grid-ifest-info" name="ifest_info" value="{{ $ifestInfoValue }}">
                                 <input
-                                    class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                    class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded md:py-2 py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                                     id="desktop-grid-ifest-info-display" type="text" placeholder="Select Your Options" required readonly
                                     onclick="toggleDesktopCheckboxes()" value="{{ $ifestInfoValue }}">
                                 <div id="desktop-checkboxes" class="absolute border border-gray-200 rounded shadow-lg hidden p-4" style="bottom: 100%; margin-bottom: 10px; background-color: rgba(255, 255, 255, 0.8);">

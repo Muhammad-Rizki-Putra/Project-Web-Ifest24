@@ -83,6 +83,7 @@
     <!-- bg-cream-bg w-screen z-20 -->
 
     <!-- mobile navbar -->
+     
     <div class="md:hidden flex flex-row items-start justify-between w-screen bg-cream-bg" x-data="{ isOpen: false }">
         <img class="h-auto w-[50%] p-2" src="/image/logo_ifest2.png" alt="logo_ifest2">
         <div class="p-5">

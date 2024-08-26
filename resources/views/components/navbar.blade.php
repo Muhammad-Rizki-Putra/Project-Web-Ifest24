@@ -71,11 +71,16 @@
         x-transition:leave-start="transform translate-y-0" 
         x-transition:leave-end="transform -translate-y-full">
             <div class="flex flex-row items-center justify-evenly">
-                <a href="/competitive-programming" class="block px-4 py-2 text-xs font-semibold text-white">Competitive Programming</a>
-                <a href="/data-analysis-competition" class="block px-4 py-2 text-xs font-semibold text-white">Data Analysis</a>
-                <a href="/capture-the-flag" class="block px-4 py-2 text-xs font-semibold text-white">Capture The Flag</a>
-                <a href="/informatics-competition" class="block px-4 py-2 text-xs font-semibold text-white">Informatics Competition</a>
-                <a href="/web-development-competition" class="block px-4 py-2 text-xs font-semibold text-white">Web Development</a>
+                <a href="/competitive-programming" class="hidden lg:block  py-2 text-xs font-semibold text-white">Competitive Programming</a>
+                <a href="/competitive-programming" class="lg:hidden block  py-2 text-xs font-semibold text-white">Comprog</a>
+                <a href="/data-analysis-competition" class="hidden lg:block  py-2 text-xs font-semibold text-white">Data Analysis</a>
+                <a href="/data-analysis-competition" class="lg:hidden block  py-2 text-xs font-semibold text-white">DaC</a>
+                <a href="/capture-the-flag" class="hidden lg:block  py-2 text-xs font-semibold text-white">Capture The Flag</a>
+                <a href="/capture-the-flag" class="lg:hidden block  py-2 text-xs font-semibold text-white">CTF</a>
+                <a href="/informatics-competition" class="hidden lg:block  py-2 text-xs font-semibold text-white">Informatics Competition</a>
+                <a href="/informatics-competition" class="lg:hidden block  py-2 text-xs font-semibold text-white">InforCom</a>
+                <a href="/web-development-competition" class="hidden lg:block  py-2 text-xs font-semibold text-white">Web Development</a>
+                <a href="/web-development-competition" class="lg:hidden block  py-2 text-xs font-semibold text-white">WebDev</a>
             </div>
         </div>
     </div>

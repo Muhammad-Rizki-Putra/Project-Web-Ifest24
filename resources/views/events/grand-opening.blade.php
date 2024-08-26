@@ -42,8 +42,11 @@
     </div>
 
     <div class="md:hidden flex items-center justify-center flex-col h-auto bg-home-bg bg-cover bg-no-repeat bg-center py-20 gap-y-32">
-        <h1 class="text-3xl font-bold">PREMIERE LAUNCH</h1>
-
+        <div class="flex flex-col items-center justify-center">
+            <h1 class="text-6xl font-bold">PREMIERE</h1>
+            <h1 class="text-6xl font-bold">LAUNCH</h1>
+        </div>
+        
         <x-countdown-mobver>2024-08-25</x-countdown-mobver>
 
         <div class="bg-white bg-opacity-60 rounded-xl shadow-lg p-6 w-auto max-w-lg mx-7">

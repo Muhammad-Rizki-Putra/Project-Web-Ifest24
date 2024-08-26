@@ -20,8 +20,8 @@
                     <button class="text-lg font-bold flex items-center">Login/Register</button>
                     <div x-show="open" x-transition class="absolute transform h-auto w-auto p-5 bg-cream-bg outline outline-2 rounded-sm mt-4">
                         <div class="flex flex-col gap-y-2">
-                            <a href="/profile" class="block px-4 py-2 text-sm text-black font-semibold">Profile</a>
-                            <a href="/logout" class="block px-4 py-2 text-sm text-black font-semibold">Logout</a>
+                            <a href="/login" class="block px-4 py-2 text-sm text-black font-semibold">Login</a>
+                            <a href="/register" class="block px-4 py-2 text-sm text-black font-semibold">Register</a>
                         </div>
                     </div>
                 </div>

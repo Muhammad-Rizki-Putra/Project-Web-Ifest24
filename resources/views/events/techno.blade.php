@@ -1,6 +1,6 @@
 <x-layout>
 <x-slot:pagename>{{$pagename}}</x-slot:pagename>
-    <div class="hidden md:flex items-center justify-center flex-col h-auto bg-home-bg bg-cover bg-no-repeat bg-center py-20 gap-y-32">
+    <div class="hidden md:flex items-center justify-center flex-col h-auto bg-fixed bg-right-bottom bg-home-bg bg-cover bg-no-repeat bg-center py-20 gap-y-32">
         <h1 class="text-7xl font-bold" style="color: rgb(12 40 62);">TECHNOPRENEUR</h1>
         <p class="text-6xl text-center font-bold" style="color: rgb(115 4 53);">Future Founders:<br>Embracing The Rise of<br>Tech-Based Business</p>
         <div x-data="{ openA: true, openB: false }" class="flex flex-col items-center justfy-center">

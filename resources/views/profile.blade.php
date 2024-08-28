@@ -1,6 +1,6 @@
 <x-layout>
     <x-slot:pagename>{{ $pagename }}</x-slot:pagename>
-    <div class="w-full flex flex-col bg-home-bg bg-cover bg-no-repeat bg-center place-content-center p-8">
+    <div class="w-full flex flex-col bg-home-bg bg-cover bg-no-repeat bg-fixed bg-right-bottom place-content-center p-8">
         <div class="account-info p-8">
             <div class="text-2xl profile-section-name">Profile</div>
             <div class="grid grid-cols-1 h-46 bg-cream-bg place-content-center p-4 rounded-lg">

@@ -1,6 +1,6 @@
 <x-layout>
 <x-slot:pagename>{{$pagename}}</x-slot:pagename>
-    <div class="hidden md:flex items-center justify-center flex-col h-auto bg-home-bg bg-cover bg-no-repeat bg-center py-20 gap-y-32">
+    <div class="hidden md:flex items-center justify-center flex-col h-auto  bg-home-bg bg-cover bg-no-repeat bg-fixed bg-right-bottom py-20 gap-y-32">
         <h1 class="text-7xl font-bold">PREMIERE LAUNCH</h1>
 
         <x-countdown>2024-08-25</x-countdown>
@@ -41,7 +41,7 @@
 
     </div>
 
-    <div class="md:hidden flex items-center justify-center flex-col h-auto bg-home-bg bg-cover bg-no-repeat bg-center py-20 gap-y-32">
+    <div class="md:hidden flex items-center justify-center flex-col h-auto bg-home-bg bg-cover bg-no-repeat bg-fixed bg-right-bottom py-20 gap-y-32">
         <div class="flex flex-col items-center justify-center">
             <h1 class="text-6xl font-bold">PREMIERE</h1>
             <h1 class="text-6xl font-bold">LAUNCH</h1>

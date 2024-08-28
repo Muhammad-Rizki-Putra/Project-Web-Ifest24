@@ -1,6 +1,6 @@
 <x-layout>
 <x-slot:pagename>{{$pagename}}</x-slot:pagename>
-    <div class="hidden w-full md:flex flex-col bg-home-bg bg-cover bg-no-repeat bg-fixed bg-right-bottom py-5">
+    <div class="hidden w-full md:flex flex-col bg-home-bg bg-cover bg-no-repeat bg-center py-5">
         <div class="py-[125px] px-[184px] bg-white flex items-center h-[calc(100vh-189px)]">
             <img src="/image/logo_ifest3.png" alt="" class="h-auto w-auto">
         </div>
@@ -79,7 +79,7 @@
     </div>
 
     <!-- Mobile ver. -->
-    <div class="md:hidden w-full flex flex-col bg-home-bg bg-cover bg-no-repeat bg-fixed bg-right-bottom">
+    <div class="md:hidden w-full flex flex-col bg-home-bg bg-cover bg-no-repeat bg-center">
         
 
         <div class="min-h-screen">

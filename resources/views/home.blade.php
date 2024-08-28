@@ -23,7 +23,7 @@
 
             <div class="flex justify-center pt-[116px]">
                 <iframe class=" h-[512px] w-[1191]"
-                    src="https://www.youtube.com/embed/bv__9O5CZok">
+                    src="">
                 </iframe>
             </div>
         
@@ -43,9 +43,9 @@
 
                     <div class="gallery">
                         <div class="gallery-container">
-                            <img src="/image/box.png" alt="furina" class="gallery-item gallery-item-1" data-index = "1">
-                            <img src="/image/furina.png" alt="furina" class="gallery-item gallery-item-2" data-index = "2">
-                            <img src="/image/box.png" alt="furina" class="gallery-item gallery-item-3" data-index = "3">
+                            <img src="/image/box.png" alt="box" class="gallery-item gallery-item-1" data-index = "1">
+                            <img src="/image/box.png" alt="box" class="gallery-item gallery-item-2" data-index = "2">
+                            <img src="/image/box.png" alt="box" class="gallery-item gallery-item-3" data-index = "3">
                         </div>
                     </div>
 
@@ -64,9 +64,9 @@
 
                     <div class="gallery">
                         <div class="gallery-container">
-                            <img src="/image/box.png" alt="furina" class="gallery-item gallery-item-1" data-index = "1">
-                            <img src="/image/furina.png" alt="furina" class="gallery-item gallery-item-2" data-index = "2">
-                            <img src="/image/box.png" alt="furina" class="gallery-item gallery-item-3" data-index = "3">
+                            <img src="/image/box.png" alt="box" class="gallery-item gallery-item-1" data-index = "1">
+                            <img src="/image/box.png" alt="box" class="gallery-item gallery-item-2" data-index = "2">
+                            <img src="/image/box.png" alt="box" class="gallery-item gallery-item-3" data-index = "3">
                         </div>
                     </div>
 
@@ -122,9 +122,9 @@
 
                     <div class="gallery">
                         <div class="gallery-container">
-                            <img src="/image/box.png" alt="furina" class="gallery-item gallery-item-1" data-index = "1">
-                            <img src="/image/furina.png" alt="furina" class="gallery-item gallery-item-2" data-index = "2">
-                            <img src="/image/box.png" alt="furina" class="gallery-item gallery-item-3" data-index = "3">
+                            <img src="/image/box.png" alt="box" class="gallery-item gallery-item-1" data-index = "1">
+                            <img src="/image/box.png" alt="box" class="gallery-item gallery-item-2" data-index = "2">
+                            <img src="/image/box.png" alt="box" class="gallery-item gallery-item-3" data-index = "3">
                         </div>
                     </div>
 
@@ -143,9 +143,9 @@
 
                     <div class="gallery">
                         <div class="gallery-container">
-                            <img src="/image/box.png" alt="furina" class="gallery-item gallery-item-1" data-index = "1">
-                            <img src="/image/furina.png" alt="furina" class="gallery-item gallery-item-2" data-index = "2">
-                            <img src="/image/box.png" alt="furina" class="gallery-item gallery-item-3" data-index = "3">
+                            <img src="/image/box.png" alt="box" class="gallery-item gallery-item-1" data-index = "1">
+                            <img src="/image/box.png" alt="box" class="gallery-item gallery-item-2" data-index = "2">
+                            <img src="/image/box.png" alt="box" class="gallery-item gallery-item-3" data-index = "3">
                         </div>
                     </div>
 

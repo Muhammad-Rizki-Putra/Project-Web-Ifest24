@@ -1,15 +1,16 @@
 <x-layout>
 <x-slot:pagename>{{$pagename}}</x-slot:pagename>
 <div class="hidden md:flex items-center justify-center flex-col h-auto bg-itcomp-bg bg-fixed bg-right-bottom bg-cover bg-no-repeat py-20">
-        
-        <div class="space-y-20 w-[50%]">
+
+        <div class="space-y-8 w-[50%] flex flex-col items-center justify-center">
             <h1 class="text-center text-5xl font-bold">Data Analyst</h1>
+            <img src="/image/Lomba/DAC.png" alt="" class="h-auto w-[32%]">
             <p class="text-center text-xl text-balance font-semibold">The Data Analysis Competition is a contest where participants are required to analyze a dataset to obtain useful information and support decision-making processes. In the preliminary round, participants are given a dataset to analyze and must write a paper on their findings. In the final round, participants are given a dataset to analyze within a limited time and then present their analysis to a panel of judges.</p>
         </div>
 
         <div class="flex flex-row items-center justify-center space-x-10 w-auto py-10">
-            <a href=""><x-button>Booklet</x-button></a>
-            <a href="http://bit.ly/FormPendaftaranDAC2024"><x-button>Registration</x-button></a>
+            <a href="https://drive.google.com/file/d/1ZZek3-IugUQVQrC21eu3iLtL2ZPRoyrS/view?usp=sharing"><x-button textSize="text-2xl" textPadding="p-1">Booklet</x-button></a>
+            <a href="http://bit.ly/FormPendaftaranDAC2024"><x-button textSize="text-2xl" textPadding="p-1">Registration</x-button></a>
         </div>
 
         <x-countdown>2024-08-15</x-countdown>
@@ -21,14 +22,15 @@
     </div>
 
     <div class="md:hidden flex items-center justify-center flex-col h-auto bg-itcomp-bg bg-fixed bg-right-bottom bg-cover bg-no-repeat py-20">
-        
-        <div class="space-y-10 mx-5">
+
+        <div class="space-y-4 mx-5 flex flex-col items-center justify-center">  
             <h1 class="text-center text-3xl font-bold">Data Analyst</h1>
-            <p class="text-center text-xl text-balance font-semibold">The Data Analysis Competition is a contest where participants are required to analyze a dataset to obtain useful information and support decision-making processes. In the preliminary round, participants are given a dataset to analyze and must write a paper on their findings. In the final round, participants are given a dataset to analyze within a limited time and then present their analysis to a panel of judges.</p>
+            <img src="/image/Lomba/DAC.png" alt="" class="h-auto w-[35%]">
+            <p class="text-center text-md text-wrap font-semibold">The Data Analysis Competition is a contest where participants are required to analyze a dataset to obtain useful information and support decision-making processes. In the preliminary round, participants are given a dataset to analyze and must write a paper on their findings. In the final round, participants are given a dataset to analyze within a limited time and then present their analysis to a panel of judges.</p>
         </div>
 
         <div class="flex flex-row items-center justify-center space-x-10 w-auto py-10">
-            <a href=""><x-button-mobver>Booklet</x-button-mobver></a>
+            <a href="https://drive.google.com/file/d/1ZZek3-IugUQVQrC21eu3iLtL2ZPRoyrS/view?usp=sharing"><x-button-mobver>Booklet</x-button-mobver></a>
             <a href="http://bit.ly/FormPendaftaranDAC2024"><x-button-mobver>Registration</x-button-mobver></a>
         </div>
 

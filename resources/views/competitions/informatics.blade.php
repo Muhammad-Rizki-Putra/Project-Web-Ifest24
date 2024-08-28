@@ -1,6 +1,6 @@
 <x-layout>
 <x-slot:pagename>{{$pagename}}</x-slot:pagename>
-    <div class="hidden md:flex items-center justify-center flex-col h-auto bg-itcomp-bg bg-top bg-cover bg-no-repeat py-20">
+    <div class="hidden md:flex items-center justify-center flex-col h-auto bg-itcomp-bg bg-fixed bg-right-bottom bg-cover bg-no-repeat py-20">
         
         <div class="space-y-20 w-[50%]">
             <h1 class="text-center text-5xl font-bold">Informatics Competition</h1>
@@ -20,7 +20,7 @@
         </div>
     </div>
 
-    <div class="md:hidden flex items-center justify-center flex-col h-auto bg-itcomp-bg bg-top bg-cover bg-no-repeat py-20">
+    <div class="md:hidden flex items-center justify-center flex-col h-auto bg-itcomp-bg bg-fixed bg-right-bottom bg-cover bg-no-repeat py-20">
         
         <div class="space-y-10 mx-5">
             <h1 class="text-center text-3xl font-bold">Informatics Competition</h1>

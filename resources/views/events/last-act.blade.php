@@ -1,8 +1,9 @@
 <x-layout>
     <x-slot:pagename>{{$pagename}}</x-slot:pagename>
+    <div x-data="{ selected: 'rh-la1' }">
     <div
         class="hidden md:flex items-center justify-center flex-col h-auto bg-itcomp-bg bg-fixed bg-right-bottom bg-cover bg-no-repeat py-20 gap-y-10 px-[25%]"
-        x-data="{ selected: 'rh-la1' }">
+        >
 
         <div>
             <h1 class="text-6xl font-bold">LAST ACT</h1>
@@ -10,13 +11,13 @@
 
         <div class="flex flex-row gap-10">
 
-            <x-radio-button textSize="text-sm" textPadding="p-1" name="rh-la" value="rh-la1"
+            <x-radio-button textSize="text-2xl" textPadding="p-1" name="rh-la" value="rh-la1"
                 id="rh-la-1" x-model="selected">Semnas</x-radio-button>
 
-            <x-radio-button textSize="text-sm" textPadding="p-1" name="rh-la" value="rh-la2"
+            <x-radio-button textSize="text-2xl" textPadding="p-1" name="rh-la" value="rh-la2"
                 id="rh-la-2" x-model="selected">Company Expo</x-radio-button>
 
-            <x-radio-button textSize="text-sm" textPadding="p-1" name="rh-la" value="rh-la3"
+            <x-radio-button textSize="text-2xl" textPadding="p-1" name="rh-la" value="rh-la3"
                 id="rh-la-3" x-model="selected">Awarding</x-radio-button>
         </div>
 
@@ -146,5 +147,6 @@
         >
         <h1>ini adalah awarding</h1>
         </div>
+    </div>
     </div>
 </x-layout>

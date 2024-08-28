@@ -17,7 +17,7 @@
 <body id="{{$pagename}}" class="">
     <div class="">
         <!-- navbar -->
-        <x-navbar></x-navbar>
+        <x-navbar class=""></x-navbar>
 
         <!-- header -->
         <!-- <x-header></x-header> -->

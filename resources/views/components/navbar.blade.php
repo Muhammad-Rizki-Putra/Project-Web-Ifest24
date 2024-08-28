@@ -5,19 +5,19 @@
                 <img class="h-auto w-auto pt-2" src="/image/logo_ifest2.png" alt="logo_ifest2">
             </div>
             <div class="hidden md:flex md:justify-center md:space-x-16 lg:space-x-24 pb-3">
-                <a href="/" class="text-lg font-bold flex items-center">Home</a>
-                <a href="/partner-with-us" class="text-lg font-bold flex items-center text-nowrap">Partner With Us!</a>
+                <a href="/" class="text-lg font-reguler flex items-center">Home</a>
+                <a href="/partner-with-us" class="text-lg font-reguler flex items-center text-nowrap">Partner With Us!</a>
                 <div class="flex flex-row items-center justify-center">
-                    <button @click="IsopenEvent = ! IsopenEvent, IsopenCompetition = false" class="text-lg font-bold flex items-center">Events</button>
+                    <button @click="IsopenEvent = ! IsopenEvent, IsopenCompetition = false" class="text-lg font-reguler flex items-center">Events</button>
                     <img src="/image/NavbarArrow.png" alt="" class="h-5 w-5 transition-transform duration-300 ease-in-out" :class="{'rotate-180': IsopenEvent}">
                 </div>
                 <div class="flex flex-row items-center justify-center">
-                <button @click="IsopenCompetition = ! IsopenCompetition, IsopenEvent = false" class="text-lg font-bold flex items-center">Competitions</button>
+                <button @click="IsopenCompetition = ! IsopenCompetition, IsopenEvent = false" class="text-lg font-reguler flex items-center">Competitions</button>
                     <img src="/image/NavbarArrow.png" alt="" class="h-5 w-5 transition-transform duration-300 ease-in-out" :class="{'rotate-180': IsopenCompetition}">
                 </div>
                 @if(auth()->guest())
                 <div x-data="{ open: false }" @mouseover="open = true" @mouseleave="open = false">
-                    <button class="text-lg font-bold flex items-center">Login/Register</button>
+                    <button class="text-lg font-reguler flex items-center">Login/Register</button>
                     <div x-show="open" x-transition class="absolute transform h-auto w-auto p-5 bg-cream-bg outline outline-2 rounded-sm mt-4">
                         <div class="flex flex-col gap-y-2">
                             <a href="/login" class="block px-4 py-2 text-sm text-black font-semibold">Login</a>
@@ -27,7 +27,7 @@
                 </div>
                 @else
                 <!-- <div x-data="{ open: false }" @mouseover="open = true" @mouseleave="open = false">
-                    <button class="text-lg font-bold flex items-center">{{ auth()->user()->fullname }}</button>
+                    <button class="text-lg font-reguler flex items-center">{{ auth()->user()->fullname }}</button>
                     <div x-show="open" class="absolute bg-black opacity opacity-50 mt-2">
                         <a href="/profile" class="block px-4 py-2 text-sm text-white">Profile</a>
                         <a href="/logout" class="block px-4 py-2 text-sm text-white">Logout</a>
@@ -96,7 +96,7 @@
                 <img src="/image/hamburger.png" alt="" class="w-auto h-5">
             </button>
         </div>
-        <div class="absolute bg-black w-screen h-[1200%] opacity-50" x-show="isOpen"></div>
+        <div class="absolute bg-black w-[calc(100vh+1vh)] h-[calc(100vh+1vh)] opacity-50" x-show="isOpen"></div>
         <div 
             class="absolute right-0 z-20 w-[50%] h-auto max-h-screen bg-cream-bg flex flex-col rounded-lg text-end outline outline-2 outline-offset-2 outline-navy-bg overflow-y-auto"
             x-show="isOpen" 
@@ -114,14 +114,14 @@
                 </button>
             </div>
             <div class="w-full h-auto p-3">
-                <a href="/" class="text-lg font-bold justify-self-end">Home</a>
+                <a href="/" class="text-lg font-reguler justify-self-end">Home</a>
             </div>
             <div class="w-full h-auto p-3">
-                <a href="/partner-with-us" class="text-lg font-bold items-center text-nowrap">Partner With Us!</a>
+                <a href="/partner-with-us" class="text-lg font-reguler items-center text-nowrap">Partner With Us!</a>
             </div>
             <div class="w-full h-auto p-3">
                 <div x-data="{ open: false }">
-                    <button @click="open = !open" class="text-lg font-bold">Events</button>
+                    <button @click="open = !open" class="text-lg font-reguler">Events</button>
                     <div 
                         x-show="open" 
                         x-transition:enter="transition ease-out duration-200" 
@@ -141,7 +141,7 @@
             </div>
             <div class="w-full h-auto p-3">
                 <div x-data="{ open: false }">
-                    <button @click="open = !open" class="text-lg font-bold">Competitions</button>
+                    <button @click="open = !open" class="text-lg font-reguler">Competitions</button>
                     <div 
                         x-show="open" 
                         x-transition:enter="transition ease-out duration-200" 
@@ -164,7 +164,7 @@
                 @if(auth()->guest())
                 <div class="w-full h-auto p-3">
                     <div x-data="{ open: false }">
-                        <button @click="open = !open" class="text-lg font-bold">Login/Register</button>
+                        <button @click="open = !open" class="text-lg font-reguler">Login/Register</button>
                         <div 
                             x-show="open" 
                             x-transition:enter="transition ease-out duration-200" 
@@ -183,7 +183,7 @@
                 @else
                 <div class="w-full h-auto p-3">
                     <div>
-                        <button @click="IsopenProfile = !IsopenProfile" class="text-lg font-bold"><img src="/image/DefaultProfilePicture.jpg" alt="" class="w-10 h-auto rounded-full"></button>
+                        <button @click="IsopenProfile = !IsopenProfile" class="text-lg font-reguler"><img src="/image/DefaultProfilePicture.jpg" alt="" class="w-10 h-auto rounded-full"></button>
                         <div 
                             x-show="IsopenProfile" 
                             x-transition:enter="transition ease-out duration-200" 

@@ -79,14 +79,15 @@
     </div>
 
     <!-- Mobile ver. -->
-    <div class="md:hidden w-full flex flex-col bg-home-bg bg-cover bg-no-repeat bg-center p-5">
-        <div class=" bg-white flex items-center px-5 h-[calc(93vh-72px)]">
-            <img src="/image/logo_ifest3.png" alt="" class="h-auto w-auto">
-        </div>
+    <div class="md:hidden w-full flex flex-col bg-home-bg bg-cover bg-no-repeat bg-center">
+        
 
-        <div class="">
+        <div class="min-h-screen">
+            <div class=" bg-white flex items-center px-5 h-[calc(90vh-96px)]">
+                <img src="/image/logo_ifest3.png" alt="" class="h-auto w-auto">
+            </div>
             <div class=" relative overflow-hidden bg-navy-bg text-white">
-                <x-home-countdown>2024-08-25</x-home-countdown>
+                <x-home-countdown class="min-w-screen">2024-09-25</x-home-countdown>
             </div>
         </div>
 
@@ -102,7 +103,7 @@
 
             <div class="flex justify-center pt-[116px]">
                 <iframe class=" h-auto w-screen"
-                    src="https://www.youtube.com/embed/bv__9O5CZok">
+                    src="">
                 </iframe>
             </div>
         

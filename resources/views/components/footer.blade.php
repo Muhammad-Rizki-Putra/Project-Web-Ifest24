@@ -8,7 +8,27 @@
     </div>
 
     <div class="flex flex-col items-center justify-center">
-        <h1 class="text-xl pb-2 text-nowrap font-bold">Partner Links</h1>
+        <h1 class="text-2xl pb-2 text-nowrap font-bold">Partner Links</h1>
+        <div class="grid max-sm:grid-cols-center-2 sm:max-lg:grid-cols-center-2 lg:grid-cols-center-3 items-center">  
+            <div class="w-[100px] flex items-center justify-center">
+                <img src="/image/sponsor/dicoding.png" alt="" class="h-auto w-[100px]">
+            </div>
+            <div class="w-[100px] flex items-center justify-center">
+                <img src="/image/sponsor/gitsid.png" alt="" class="h-auto w-[80px]">
+            </div>
+            <div class="w-[100px] flex items-center justify-center">
+                <img src="/image/sponsor/kolaborasico.png" alt="" class="h-auto w-[100px]">
+            </div>
+            <div class="w-[100px] flex items-center justify-center">
+                <img src="/image/sponsor/mekari.png" alt="" class="h-auto w-[100px]">
+            </div>
+            <div class="w-[100px] flex items-center justify-center">
+                <img src="/image/sponsor/startupbandung.png" alt="" class="h-auto w-[100px]">
+            </div>
+
+
+
+        </div>
     </div>
 
     <div class="flex flex-col items-center justify-start">
@@ -67,19 +87,23 @@
         <h1 class="text-lg pb-2 text-nowrap font-bold">Follow Our Social Media</h1>
         <div class="grid grid-rows-2 gap-2 h-auto">
             <div class="flex flex-row items-center">
-                <a href="https://www.instagram.com/ifestunpad/"><img src="/image/Instagram.png" class="h-auto w-[60%]" alt=""></a>
+                <a href="https://www.instagram.com/ifestunpad/"><img src="/image/Instagram.png" class="h-auto w-[60%]"
+                        alt=""></a>
                 <p class="text-md">@ifestunpad</p>
             </div>
             <div class="flex flex-row items-center">
-                <a href="https://www.tiktok.com/@ifestunpad?lang=en"><img src="/image/Tiktok.png" class="h-auto w-[60%]" alt=""></a>
+                <a href="https://www.tiktok.com/@ifestunpad?lang=en"><img src="/image/Tiktok.png" class="h-auto w-[60%]"
+                        alt=""></a>
                 <p class="text-md">@ifestunpad</p>
             </div>
             <div class="flex flex-row items-center">
-                <a href="https://www.youtube.com/@informaticsfestivalhimatif4954"><img src="/image/Youtube.png" class="h-auto w-[60%]" alt=""></a>
+                <a href="https://www.youtube.com/@informaticsfestivalhimatif4954"><img src="/image/Youtube.png"
+                        class="h-auto w-[60%]" alt=""></a>
                 <p class="text-md">Informatics Festival Himatif Unpad</p>
             </div>
             <div class="flex flex-row items-center">
-                <a href="https://www.linkedin.com/company/ifest-unpad/"><img src="/image/Linkedin.png" class="h-auto w-[60%]" alt=""></a>
+                <a href="https://www.linkedin.com/company/ifest-unpad/"><img src="/image/Linkedin.png"
+                        class="h-auto w-[60%]" alt=""></a>
                 <p class="text-md w-auto">IFEST UNPAD</p>
             </div>
         </div>
@@ -89,3 +113,7 @@
         <h1 class="text-lg text-nowrap font-bold">Partner Links</h1>
     </div>
 </div>
+
+<script src="
+https://cdn.jsdelivr.net/npm/@khoohaoyit/tailwind-grid-center@0.0.5/src/index.min.js
+"></script>

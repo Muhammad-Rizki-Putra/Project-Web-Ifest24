@@ -59,7 +59,6 @@
                 <a href="/grand-opening" class="block px-4 text-sm text-white font-semibold">Grand Opening</a>
                 <a href="/technopreneur" class="block px-4 text-sm text-white font-semibold">Technopreneur</a>
                 <a href="/last-act" class="block px-4 text-sm text-white font-semibold">Last Act</a>
-                <a href="/seminar-nasional" class="block px-4 text-sm text-white font-semibold">Semnas</a>
             </div>
         </div>
 
@@ -135,7 +134,6 @@
                         <a href="/grand-opening" class="block px-4 py-2 text-sm text-gray-700">Grand Opening</a>
                         <a href="/technopreneur" class="block px-4 py-2 text-sm text-gray-700">Technopreneur</a>
                         <a href="/last-act" class="block px-4 py-2 text-sm text-gray-700">Last Act</a>
-                        <a href="/seminar-nasional" class="block px-4 py-2 text-sm text-gray-700">Semnas</a>
                     </div>
                 </div>
             </div>

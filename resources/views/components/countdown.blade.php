@@ -19,7 +19,7 @@
   }"
 >
   <template x-if="remainingTime > 0">
-    <div class="flex items-center justify-center w-[200%] ml-[-50%] bg-[#a00344] text-white p-4 rounded-xl space-x-8">
+    <div class="flex items-center justify-evenly w-[200%] ml-[-50%] bg-[#a00344] text-white p-4 rounded-xl space-x-8">
       <div class="flex flex-col items-center justify-center">
         <div class="text-3xl font-bold" x-text="formatTime(remainingTime).days"></div>
         <div class="text-sm">Days</div>

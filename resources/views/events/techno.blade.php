@@ -137,34 +137,62 @@
             <div class="flex flex-col items-center justify-center w-full gap-y-10">
                 <p class="text-center text-6xl font-semibold">FaQ</p>
                 <div x-data="{ open: false }" class="w-1/2">
-                    <x-faq-button>
-                        <x-slot:slottitle>Pertanyaan 1</x-slot:slottitle>
-                        <x-slot:slotdrop>Penjelasan</x-slot:slotdrop>
-                    </x-faq-button>
+                    <x-fa-q-button-mobver>
+                        <x-slot:slottitle>Apakah rangkaian acara Technopreneur 2024 gratis?
+                        </x-slot:slottitle>
+                        <x-slot:slotdrop>Kamu dapat mengikuti Seminar Technopreneur 2024 secara GRATIS dan untuk
+                            workshop akan dikenakan biaya seharga 100 ribu per tim BAGI YANG LOLOS!
+                        </x-slot:slotdrop>
+                    </x-fa-q-button-mobver>
                 </div>
                 <div x-data="{ open: false }" class="w-1/2">
-                    <x-fa-q-button>
-                        <x-slot:slottitle>Pertanyaan 1</x-slot:slottitle>
-                        <x-slot:slotdrop>Penjelasan</x-slot:slotdrop>
-                    </x-fa-q-button>
+                    <x-fa-q-button-mobver>
+                        <x-slot:slottitle>Bagaimana teknis pembayarannya? Bagaimana jika tim saya tidak lolos seleksi
+                            Workshop Technopreneur?</x-slot:slottitle>
+                        <x-slot:slotdrop>Uang dibayarkan saat mengisi form registrasi. Uang akan dikembalikan 100%
+                            kepada setiap tim yang dinyatakan tidak lolos setelah pengumuman seleksi.
+                        </x-slot:slotdrop>
+                    </x-fa-q-button-mobver>
                 </div>
                 <div x-data="{ open: false }" class="w-1/2">
-                    <x-fa-q-button>
-                        <x-slot:slottitle>Pertanyaan 1</x-slot:slottitle>
-                        <x-slot:slotdrop>Penjelasan</x-slot:slotdrop>
-                    </x-fa-q-button>
+                    <x-fa-q-button-mobver>
+                        <x-slot:slottitle>Berapa orang yang diperbolehkan untuk mengikuti workshop?
+                        </x-slot:slottitle>
+                        <x-slot:slotdrop>Untuk pendaftaran awal workshop diperbolehkan untuk diikuti sebanyak banyaknya
+                            tim, tiap timnya beranggotakan 3 orang. Setelah itu akan dilakukan seleksi ide bisnis dan
+                            akan didapatkan 15 tim yang sudah lolos tahap seleksi awal.
+                        </x-slot:slotdrop>
+                    </x-fa-q-button-mobver>
                 </div>
                 <div x-data="{ open: false }" class="w-1/2">
-                    <x-fa-q-button>
-                        <x-slot:slottitle>Pertanyaan 1</x-slot:slottitle>
-                        <x-slot:slotdrop>Penjelasan</x-slot:slotdrop>
-                    </x-fa-q-button>
+                    <x-fa-q-button-mobver>
+                        <x-slot:slottitle>Apakah ada batasan umur dalam membuat tim workshop?
+                        </x-slot:slottitle>
+                        <x-slot:slotdrop>Syaratnya hanya minimal SMA dan mempunyai ide bisnis, anggotanya pun bisa dari
+                            institusi atau sekolah yang berbeda
+                        </x-slot:slotdrop>
+                    </x-fa-q-button-mobver>
                 </div>
                 <div x-data="{ open: false }" class="w-1/2">
-                    <x-fa-q-button>
-                        <x-slot:slottitle>Pertanyaan 1</x-slot:slottitle>
-                        <x-slot:slotdrop>Penjelasan</x-slot:slotdrop>
-                    </x-fa-q-button>
+                    <x-fa-q-button-mobver>
+                        <x-slot:slottitle>Bagaimana cara mengatahui bahwa tim saya itu termasuk dalam 15 tim yang lolos
+                            seleksi awal?
+                        </x-slot:slottitle>
+                        <x-slot:slotdrop>Apabila lolos seleksi dengan aspek-aspek yang diberikan di guidebook, maka akan
+                            diumumkan melalui email ketua Tim dan media sosial Ifest 2024
+                        </x-slot:slotdrop>
+                    </x-fa-q-button-mobver>
+                </div>
+                <div x-data="{ open: false }" class="w-1/2">
+                    <x-fa-q-button-mobver>
+                        <x-slot:slottitle>Bagaimana cara mendaftar Technopreneur 2024?
+
+                        </x-slot:slottitle>
+                        <x-slot:slotdrop>Calon peserta dapat mendaftar pada website ifest 2024 ([web ifest]) dan memilih
+                            rangkaian acara Technopreneur
+
+                        </x-slot:slotdrop>
+                    </x-fa-q-button-mobver>
                 </div>
             </div>
         </div>
@@ -240,14 +268,16 @@
                                 Identity & Market Launch Strategy</li>
                         </ul>
                         <x-countdown-mobver></x-countdown-mobver>
-                        <p class="text-center text-lg font-bold mt-4">Limited to Only 15 Selected Teams<br>100k/ team</p>
+                        <p class="text-center text-lg font-bold mt-4">Limited to Only 15 Selected Teams<br>100k/ team
+                        </p>
                         <div style="background-image:url('image/Rectangle_74.png');"
                             class="bg-cover w-full p-1.5 text-white mt-10">
                             <!-- <p class="text-center text-lg font-bold p-1.5">Reward for Workshop's 3 winner team</p> -->
                             <p class="text-center text-4xl font-bold p-1.5">Fresh Money Up To<br>IDR 4 Million+</p>
                             <!-- <p class="text-center text-xl font-bold p-1.5">and</p> -->
                             <p class="text-center text-3xl font-bold p-1.5">Winner and Participate<br>E-Certificate</p>
-                            <p class="text-center text-2xl font-bold p-1.5">10 Course Tickets of<br>Mekari University</p>
+                            <p class="text-center text-2xl font-bold p-1.5">10 Course Tickets of<br>Mekari University
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -309,32 +339,60 @@
                 <p class="text-center text-2xl font-semibold">FaQ</p>
                 <div x-data="{ open: false }" class="my-3 w-4/5">
                     <x-fa-q-button-mobver>
-                        <x-slot:slottitle>Pertanyaan 1</x-slot:slottitle>
-                        <x-slot:slotdrop>Penjelasan</x-slot:slotdrop>
+                        <x-slot:slottitle>Apakah rangkaian acara Technopreneur 2024 gratis?
+                        </x-slot:slottitle>
+                        <x-slot:slotdrop>Kamu dapat mengikuti Seminar Technopreneur 2024 secara GRATIS dan untuk
+                            workshop akan dikenakan biaya seharga 100 ribu per tim BAGI YANG LOLOS!
+                        </x-slot:slotdrop>
                     </x-fa-q-button-mobver>
                 </div>
                 <div x-data="{ open: false }" class="my-3 w-4/5">
                     <x-fa-q-button-mobver>
-                        <x-slot:slottitle>Pertanyaan 1</x-slot:slottitle>
-                        <x-slot:slotdrop>Penjelasan</x-slot:slotdrop>
+                        <x-slot:slottitle>Bagaimana teknis pembayarannya? Bagaimana jika tim saya tidak lolos seleksi
+                            Workshop Technopreneur?</x-slot:slottitle>
+                        <x-slot:slotdrop>Uang dibayarkan saat mengisi form registrasi. Uang akan dikembalikan 100%
+                            kepada setiap tim yang dinyatakan tidak lolos setelah pengumuman seleksi.
+                        </x-slot:slotdrop>
                     </x-fa-q-button-mobver>
                 </div>
                 <div x-data="{ open: false }" class="my-3 w-4/5">
                     <x-fa-q-button-mobver>
-                        <x-slot:slottitle>Pertanyaan 1</x-slot:slottitle>
-                        <x-slot:slotdrop>Penjelasan</x-slot:slotdrop>
+                        <x-slot:slottitle>Berapa orang yang diperbolehkan untuk mengikuti workshop?
+                        </x-slot:slottitle>
+                        <x-slot:slotdrop>Untuk pendaftaran awal workshop diperbolehkan untuk diikuti sebanyak banyaknya
+                            tim, tiap timnya beranggotakan 3 orang. Setelah itu akan dilakukan seleksi ide bisnis dan
+                            akan didapatkan 15 tim yang sudah lolos tahap seleksi awal.
+                        </x-slot:slotdrop>
                     </x-fa-q-button-mobver>
                 </div>
                 <div x-data="{ open: false }" class="my-3 w-4/5">
                     <x-fa-q-button-mobver>
-                        <x-slot:slottitle>Pertanyaan 1</x-slot:slottitle>
-                        <x-slot:slotdrop>Penjelasan</x-slot:slotdrop>
+                        <x-slot:slottitle>Apakah ada batasan umur dalam membuat tim workshop?
+                        </x-slot:slottitle>
+                        <x-slot:slotdrop>Syaratnya hanya minimal SMA dan mempunyai ide bisnis, anggotanya pun bisa dari
+                            institusi atau sekolah yang berbeda
+                        </x-slot:slotdrop>
                     </x-fa-q-button-mobver>
                 </div>
                 <div x-data="{ open: false }" class="my-3 w-4/5">
                     <x-fa-q-button-mobver>
-                        <x-slot:slottitle>Pertanyaan 1</x-slot:slottitle>
-                        <x-slot:slotdrop>Penjelasan</x-slot:slotdrop>
+                        <x-slot:slottitle>Bagaimana cara mengatahui bahwa tim saya itu termasuk dalam 15 tim yang lolos
+                            seleksi awal?
+                        </x-slot:slottitle>
+                        <x-slot:slotdrop>Apabila lolos seleksi dengan aspek-aspek yang diberikan di guidebook, maka akan
+                            diumumkan melalui email ketua Tim dan media sosial Ifest 2024
+                        </x-slot:slotdrop>
+                    </x-fa-q-button-mobver>
+                </div>
+                <div x-data="{ open: false }" class="my-3 w-4/5">
+                    <x-fa-q-button-mobver>
+                        <x-slot:slottitle>Bagaimana cara mendaftar Technopreneur 2024?
+
+                        </x-slot:slottitle>
+                        <x-slot:slotdrop>Calon peserta dapat mendaftar pada website ifest 2024 ([web ifest]) dan memilih
+                            rangkaian acara Technopreneur
+
+                        </x-slot:slotdrop>
                     </x-fa-q-button-mobver>
                 </div>
             </div>

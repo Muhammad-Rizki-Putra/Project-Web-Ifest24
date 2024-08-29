@@ -1,6 +1,6 @@
 <x-layout>
 <x-slot:pagename>{{$pagename}}</x-slot:pagename>
-    <div class="hidden md:flex items-center justify-center flex-col h-auto  bg-home-bg bg-cover bg-no-repeat bg-fixed bg-right-bottom py-20 gap-y-32">
+    <div class="hidden md:flex items-center justify-center flex-col h-auto  bg-home-bg bg-cover bg-no-repeat bg-fixed bg-left py-20 gap-y-32">
         <h1 class="text-7xl font-bold">PREMIERE LAUNCH</h1>
 
         <x-countdown>2024-08-25</x-countdown>
@@ -31,7 +31,7 @@
                 <p class="text-center text-black text-3xl font-medium">Will be held via Online Meeting</p>
             </div>
 
-            <a href="https://www.gatau.com" class="w-full max-w-lg">
+            <a href="http://bit.lt/SCIFest" class="w-full max-w-lg">
                 <div class="bg-transparent rounded-xl w-full max-w-lg flex flex-row items-center justify-center gap-x-3 outline outline-2 outline-offset-2 outline-navy-bg">
                     <img src="/image/Zoom.png" alt="" class="w-auto h-20">
                     <p class="text-center text-navy-bg text-3xl font-medium text-nowrap">Click here to Join!</p>
@@ -75,7 +75,7 @@
                 <p class="text-center text-black text-xl font-medium">Will be held via Online Meeting</p>
             </div>
 
-            <a href="https://www.gatau.com" class="w-full max-w-lg">
+            <a href="http://bit.lt/SCIFest" class="w-full max-w-lg">
                 <div class="bg-transparent rounded-xl w-full max-w-lg flex flex-row items-center justify-center gap-x-3 outline outline-2 outline-offset-2 outline-navy-bg">
                     <img src="/image/Zoom.png" alt="" class="w-auto h-20">
                     <p class="text-center text-navy-bg text-xl font-medium text-nowrap">Click here to Join!</p>

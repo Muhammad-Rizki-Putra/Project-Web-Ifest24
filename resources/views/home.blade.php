@@ -1,7 +1,7 @@
 <x-layout>
 <x-slot:pagename>{{$pagename}}</x-slot:pagename>
-    <div class="hidden w-full md:flex flex-col bg-home-bg bg-cover bg-no-repeat bg-center py-5">
-        <div class="py-[125px] px-[184px] bg-white flex items-center h-[calc(100vh-189px)]">
+    <div class="hidden w-full md:flex flex-col bg-home-bg bg-cover bg-no-repeat bg-center ">
+        <div class="py-[125px] px-[184px] bg-home-launch bg-center bg-cover bg-no-repeat flex items-center justify-center h-[calc(100vh-189px)]">
             <img src="/image/logo_ifest3.png" alt="" class="h-auto w-auto">
         </div>
 
@@ -13,8 +13,10 @@
 
         <div class="flex flex-col px-[125px] pt-[25vh] justify-center">
 
-            <div class="flex flex-col lg:flex-row justify-center ">
-                <img class="w-auto" src="/image/box.png" alt="">
+            <div class="flex flex-col lg:flex-row justify-center">
+                <div class="bg-home-doc bg-contain bg-center bg-no-repeat h-[512px] w-[512px] p-1.5 flex items-center justify-center">
+                    <img class="w-full h-[492px]" src="/image/doc.png" alt="">
+                </div>
                 <div class="flex flex-col text-balance ml-10 mt-10 lg:mt-0">
                     <h1 class="text-7xl">Premiere Launch</h1>
                     <p class="text-3xl max-w-[578px]">A platform that enables Founders or Strategic Partners from multiple companies involved in the Artificial Intelligence and Financial Technology sectors, alongside experts and specialists in these domains.</p>
@@ -82,9 +84,9 @@
     <div class="md:hidden w-full flex flex-col bg-home-bg bg-cover bg-no-repeat bg-center">
         
 
-        <div class="min-h-screen">
-            <div class=" bg-white flex items-center px-5 h-[calc(90vh-96px)]">
-                <img src="/image/logo_ifest3.png" alt="" class="h-auto w-auto">
+        <div class="h-min-screen">
+            <div class="bg-home-launch-mob bg-center bg-cover bg-no-repeat flex items-center justify-center px-5 h-[calc(90vh-76px)]">
+                <img src="/image/logo_ifest.png" alt="" class="h-auto w-[200px]">
             </div>
             <div class=" relative overflow-hidden bg-navy-bg text-white">
                 <x-home-countdown class="min-w-screen">2024-09-25</x-home-countdown>
@@ -93,8 +95,10 @@
 
         <div class="flex flex-col px-[5vh] pt-[5vh] justify-center">
 
-            <div class="flex flex-col lg:flex-row justify-center ">
-                <img class="w-auto h-auto" src="/image/box.png" alt="">
+            <div class="flex flex-col lg:flex-row justify-center items-center">
+                <div class="bg-home-doc bg-contain bg-center bg-no-repeat h-[256px] w-[256px] p-0.5 flex items-center justify-center">
+                    <img class="w-full h-[246px]" src="/image/doc.png" alt="">
+                </div>
                 <div class="flex flex-col text-balance text-center mt-10 lg:mt-0">
                     <h1 class="text-3xl font-bold">Premiere Launch</h1>
                     <p class="text-xl max-w-[578px]">A platform that enables Founders or Strategic Partners from multiple companies involved in the Artificial Intelligence and Financial Technology sectors, alongside experts and specialists in these domains.</p>

@@ -5,8 +5,8 @@
             <a href="/" class="absolute"><img src="/image/cancel-logo.png" alt="" class=""></a>
         </div>
         <div class="flex flex-row items-center justify-center h-auto mx-auto">
-            <img class="w-auto md:h-96 h-auto my-auto hidden xl:block pt-4 pl-16" src="image/logo_ifest.png" alt="logo_ifest">
-            <img class="w-auto my-auto h-auto px-10 hidden xl:block " src="image/Line.png" alt="line">
+        <img class="w-[350px] h-auto m-auto hidden self-center xl:block pl-16 pt-4" src="image/logo_ifest.png" alt="logo_ifest">
+        <div class="mx-10 hidden xl:block h-[80vh] w-[2px] bg-black"></div>
             <div class="flex flex-col items-center py-4 my-auto h-auto max-h-[627px]">
                 <h1 class="text-5xl pb-5 font-bold text-navy-bg">
                     Register
@@ -203,7 +203,7 @@
                     </div>
                 </form>
 
-                <p>Already have an account? <a href="/login" style="color: rgb(75 85 212)" class="hover:underline">Login here!</a></p>
+                <p>Already have an account? <a href="/login"  class="hover:underline hover:text-blue-500">Login here!</a></p>
 
             </div>
         </div>
@@ -390,7 +390,7 @@
                 </div>
             </div>
 
-            <p class="text-sm">Already have an account? <a href="/login" class="hover:underline" style="color: rgb(75 85 212)">Login here!</a></p>
+            <p class="text-sm">Already have an account? <a href="/login" class="hover:underline hover:text-blue-500">Login here!</a></p>
 
             <div class="flex justify-center mt-7">
                 <button type="submit" class="image-button">

@@ -78,6 +78,35 @@
                     </a>
                 </div>
 
+            <div class="flex flex-col items-center justify-start w-auto rounded-md p-5 gap-y-5" style="background-color: rgb(244 230 230);">
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="flex flex-col gap-y-2">
+                        <p class="font-bold">Alif Al Husaini</p>
+                        <div class="flex flex-row items-center gap-x-2">
+                            <img src="/image/Phone.png" alt="" class="h-5 w-auto">
+                            <p class="font-semibold">081237449945</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-y-2">
+                        <p class="font-bold">Panji Iman Sujatmiko</p>
+                        <div class="flex flex-row items-center gap-x-2">
+                            <img src="/image/Phone.png" alt="" class="h-5 w-auto">
+                            <p class="font-semibold">089647824647</p>
+                        </div>
+                        <div class="flex flex-row items-center gap-x-2">
+                            <img src="/image/lineapp.png" alt="" class="h-5 w-auto">
+                            <p class="font-semibold">panjiimans</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="font-semibold">Or</p>
+                <div>
+                    <div class="flex flex-row items-center gap-x-2">
+                        <img src="/image/Email1.png" alt="" class="h-5 w-auto">
+                        <p class="font-semibold">keilmuan.himatif@gmail.com</p>
+                    </div>
+                </div>
+            </div>
                 <div class="flex flex-col items-center justify-start w-auto rounded-md bg-cream-bg p-5 gap-y-5">
                     <div class="grid grid-cols-2 gap-4">
                         <div class="flex flex-col gap-y-2">

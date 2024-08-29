@@ -2,36 +2,39 @@
     <x-slot:pagename>{{$pagename}}</x-slot:pagename>
     <div x-data="{ selected: 'rh-tp1' }">
         <div
-            class="hidden md:flex items-center justify-center flex-col h-auto bg-fixed bg-right-bottom bg-home-bg bg-cover bg-no-repeat py-20 gap-y-32">
-            <h1 class="text-7xl font-bold" style="color: rgb(12 40 62);">TECHNOPRENEUR</h1>
-            <p class="text-6xl text-center font-bold" style="color: rgb(115 4 53);">Future Founders:<br>Embracing The
-                Rise of<br>Tech-Based Business</p>
+            class="hidden md:flex items-center justify-center flex-col h-auto bg-itcomp-bg bg-fixed bg-right-bottom bg-cover bg-no-repeat py-20 gap-y-10">
+            <h1 class="text-6xl font-bold" style="color: rgb(12 40 62);">TECHNOPRENEUR</h1>
+            <img src="image/logo 3.png" alt="" class="h-auto w-[12%]">
+            <p class="text-5xl text-center font-bold" style="color: rgb(115 4 53);">Future Founders:<br>Embracing The
+                Rise of Tech-Based Business</p>
             <div x-data="{ openA: true, openB: false }" class="flex flex-col items-center justfy-center">
                 <div class="flex flex-row items-center justify-center pb-20 gap-x-40">
 
                     <x-radio-button textSize="text-2xl" textPadding="p-1" name="rh-tp" value="rh-tp1" id="rh-tp-1"
-                        x-model="selected">Semnas</x-radio-button>
+                        x-model="selected">Seminar</x-radio-button>
 
-                        <x-radio-button textSize="text-2xl" textPadding="p-1" name="rh-tp" value="rh-tp2" id="rh-tp-2"
+                    <x-radio-button textSize="text-2xl" textPadding="p-1" name="rh-tp" value="rh-tp2" id="rh-tp-2"
                         x-model="selected">Workshop</x-radio-button>
 
                 </div>
-                <p class="w-3/5 text-center text-3xl" style="color: rgb(12 40 62);">Designed to turn tech skills into
+                <p class="w-3/5 text-center text-2xl" style="color: rgb(12 40 62);">Designed to turn tech skills into
                     successful businesses, Technopreneur is where technology meets entrepreneurship. Through engaging
                     seminars and hands-on workshops, knowledge and tools are provided by professional mentors, helping
                     you leverage digital technology to bring your business ideas to life.</p>
                 <div class="flex flex-col items-center justify-center">
                     <div x-show="selected === 'rh-tp1'" x-transition class="flex flex-col items-center justify-center">
-                        <p class="text-7xl font-bold pt-20 pb-10" style="color: rgb(12 40 62);">SEMINAR</p>
-                        <p class="w-3/5 text-center text-2xl font-bold pb-20" style="color: rgb(12 40 62);">The material
+                        <p class="text-6xl font-bold pt-20 pb-10" style="color: rgb(12 40 62);">SEMINAR</p>
+                        <p class="w-3/5 text-center text-2xl font-semibold pb-20" style="color: rgb(12 40 62);">The
+                            material
                             and talk show presented by professional speakers who are experts in technology-based
                             business to develop the interest and talent for entrepreneurship within the community in the
                             field of IT.</p>
                         <x-countdown></x-countdown>
                     </div>
                     <div x-show="selected === 'rh-tp2'" x-transition class="flex flex-col items-center justify-center">
-                        <p class="text-7xl font-bold pt-20 pb-10" style="color: rgb(12 40 62);">WORKSHOP</p>
-                        <p class="w-3/5 text-center text-2xl font-bold pb-20" style="color: rgb(12 40 62);">An online
+                        <p class="text-6xl font-bold pt-20 pb-10" style="color: rgb(12 40 62);">WORKSHOP</p>
+                        <p class="w-3/5 text-center text-2xl font-semibold pb-20" style="color: rgb(12 40 62);">An
+                            online
                             workshop that provides training and development facilities by professionals with the aim of
                             providing participants with an understanding of the use of technological advances to
                             transform businesses into innovative startups.</p>
@@ -39,7 +42,7 @@
                         <div style="background-image:url('image/Rectangle_74.png');"
                             class="bg-cover w-full p-3.5 text-white mt-20">
                             <p class="text-center text-3xl font-bold p-3.5">Reward for Workshop's 3 winner team</p>
-                            <p class="text-center text-7xl font-bold p-3.5">Fresh Money Up To<br>XXX Rupiah</p>
+                            <p class="text-center text-7xl font-bold p-3.5">Fresh Money Up To<br>IDR 4 Million+</p>
                             <p class="text-center text-4xl font-bold p-3.5">and</p>
                             <p class="text-center text-6xl font-bold p-3.5">Winner Certificate</p>
                         </div>
@@ -48,8 +51,9 @@
             </div>
 
             <div class="flex flex-row items-center justify-center space-x-10 w-auto">
-                <a href=""><x-button>Register</x-button></a>
-                <a href=""><x-button>Guidebook</x-button></a>
+                <a href="https://linktr.ee/Technopreneur2024" target="_blank" rel="noopener noreferrer">
+                    <x-button textSize="text-2xl" textPadding="p-1">Register & Guidebook</x-button>
+                </a>
             </div>
             <p class="text-center text-3xl font-bold">Limited to Only 15 Selected Teams<br>100k/ team</p>
             <div class="flex flex-col justify-center w-full">
@@ -70,55 +74,61 @@
                     </div>
                 </div>
             </div>
-            <div class="flex flex-row items-center justify-center w-7/12 rounded-xl p-5"
+            <div class="flex flex-row items-center justify-center w-auto rounded-md p-5 gap-y-5"
                 style="background-color: rgb(244 230 230);">
-                <div class="mx-10">
-                    <p class="text-2xl font-bold">Luthfi Hamam Arsyada</p>
-                    <p class="text-2xl flex flex-row"><img src="/image/Phone_Event.png" class="size-5 mr-2 mt-2">
+                <div class="mx-4">
+                    <p class="font-bold my-1">Luthfi Hamam Arsyada</p>
+                    <p class="flex flex-row font-semibold my-1"><img src="/image/Phone_Event.png"
+                            class="h-5 w-auto mr-2 mt-1">
                         081223682256</p>
-                    <p class="text-2xl flex flex-row"><img src="/image/Email_Event.png" class="size-5 mr-2 mt-2">
+                    <p class="flex flex-row font-semibold my-1"><img src="/image/Email_Event.png"
+                            class="h-5 w-auto mr-2 mt-1">
                         lutfiarsd@gmail.com</p>
-                    <p class="text-2xl flex flex-row"><img src="/image/Line_Event.png" class="size-5 mr-2 mt-2">
+                    <p class="flex flex-row font-semibold my-1"><img src="/image/Line_Event.png"
+                            class="h-5 w-auto mr-2 mt-1">
                         gaktaulupa10988</p>
                 </div>
-                <div class="mx-10">
-                    <p class="text-2xl font-bold">M. Zahran Muntazar</p>
-                    <p class="text-2xl flex flex-row"><img src="/image/Phone_Event.png" class="size-5 mr-2 mt-2">
+                <div class="mx-4">
+                    <p class="font-bold my-1">M. Zahran Muntazar</p>
+                    <p class="flex flex-row font-semibold my-1"><img src="/image/Phone_Event.png"
+                            class="h-5 w-auto mr-2 mt-1">
                         085174338747</p>
-                    <p class="text-2xl flex flex-row"><img src="/image/Email_Event.png" class="size-5 mr-2 mt-2">
+                    <p class="flex flex-row font-semibold my-1"><img src="/image/Email_Event.png"
+                            class="h-5 w-auto mr-2 mt-1">
                         zahranmuntazar17@gmail.com</p>
-                    <p class="text-2xl flex flex-row"><img src="/image/Line_Event.png" class="size-5 mr-2 mt-2">
+                    <p class="flex flex-row font-semibold my-1"><img src="/image/Line_Event.png"
+                            class="h-5 w-auto mr-2 mt-1">
                         zahranmuntazar</p>
                 </div>
             </div>
             <p>Poster??</p>
-            <div class="flex flex-col items-center justify-center w-full">
-                <p class="text-center text-4xl font-bold">FaQ</p>
-                <div x-data="{ open: false }" class="my-3 w-1/2">
+            <div class="flex flex-col items-center justify-center w-full gap-y-10">
+                <p class="text-center text-6xl font-semibold">FaQ</p>
+                <div x-data="{ open: false }" class="w-1/2">
                     <x-faq-button>
                         <x-slot:slottitle>Pertanyaan 1</x-slot:slottitle>
                         <x-slot:slotdrop>Penjelasan</x-slot:slotdrop>
                     </x-faq-button>
                 </div>
-                <div x-data="{ open: false }" class="my-3 w-1/2">
+                <div x-data="{ open: false }" class="w-1/2">
                     <x-fa-q-button>
                         <x-slot:slottitle>Pertanyaan 1</x-slot:slottitle>
                         <x-slot:slotdrop>Penjelasan</x-slot:slotdrop>
                     </x-fa-q-button>
                 </div>
-                <div x-data="{ open: false }" class="my-3 w-1/2">
+                <div x-data="{ open: false }" class="w-1/2">
                     <x-fa-q-button>
                         <x-slot:slottitle>Pertanyaan 1</x-slot:slottitle>
                         <x-slot:slotdrop>Penjelasan</x-slot:slotdrop>
                     </x-fa-q-button>
                 </div>
-                <div x-data="{ open: false }" class="my-3 w-1/2">
+                <div x-data="{ open: false }" class="w-1/2">
                     <x-fa-q-button>
                         <x-slot:slottitle>Pertanyaan 1</x-slot:slottitle>
                         <x-slot:slotdrop>Penjelasan</x-slot:slotdrop>
                     </x-fa-q-button>
                 </div>
-                <div x-data="{ open: false }" class="my-3 w-1/2">
+                <div x-data="{ open: false }" class="w-1/2">
                     <x-fa-q-button>
                         <x-slot:slottitle>Pertanyaan 1</x-slot:slottitle>
                         <x-slot:slotdrop>Penjelasan</x-slot:slotdrop>
@@ -127,39 +137,37 @@
             </div>
         </div>
         <div
-            class="md:hidden flex items-center justify-center flex-col h-auto bg-home-bg bg-cover bg-no-repeat bg-center py-5 gap-y-10">
-            <h1 class="text-4xl font-bold" style="color: rgb(12 40 62);">TECHNOPRENEUR</h1>
-            <p class="text-3xl text-center font-bold" style="color: rgb(115 4 53);">Future Founders:<br>Embracing The
+            class="md:hidden flex items-center justify-center flex-col h-auto bg-itcomp-bg bg-fixed bg-right-bottom bg-cover bg-no-repeat py-20">
+            <h1 class="text-3xl font-bold" style="color: rgb(12 40 62);">TECHNOPRENEUR</h1>
+            <img src="image/logo 3.png" alt="" class="h-auto w-[20%] mt-4">
+            <p class="text-2xl text-center font-bold mt-4" style="color: rgb(115 4 53);">Future Founders:<br>Embracing The
                 Rise of<br>Tech-Based Business</p>
-            <div x-data="{ openA: true, openB: false }" class="flex flex-col items-center justfy-center">
-                <div class="flex flex-row items-center justify-center pb-10 gap-x-10">
-                    <x-button>
-                        <button x-on:click="openA = !openA; if (openB) openB = false">
-                            <p class="text-lg">Seminar</p>
-                        </button>
-                    </x-button>
-                    <x-button>
-                        <button x-on:click="openB = !openB; if (openA) openA = false">
-                            <p class="text-lg">Workshop</p>
-                        </button>
-                    </x-button>
+            <div x-data="{ openA: true, openB: false }" class="flex flex-col items-center justfy-center space-y-4 mt-4">
+                <div class="flex flex-row items-center justify-center pb-4 gap-x-10">
+
+                    <x-radio-button textSize="text-lg" textPadding="p-1" name="rh-tp" value="rh-tp1" id="rh-tp-1"
+                        x-model="selected">Seminar</x-radio-button>
+
+                    <x-radio-button textSize="text-lg" textPadding="p-1" name="rh-tp" value="rh-tp2" id="rh-tp-2"
+                        x-model="selected">Workshop</x-radio-button>
+
                 </div>
-                <p class="w-4/5 text-center text-lg leading-snug" style="color: rgb(12 40 62);">Designed to turn tech
+                <p class="w-4/5 text-center text-md text-balance font-semibold" style="color: rgb(12 40 62);">Designed to turn tech
                     skills into successful businesses, Technopreneur is where technology meets entrepreneurship. Through
                     engaging seminars and hands-on workshops, knowledge and tools are provided by professional mentors,
                     helping you leverage digital technology to bring your business ideas to life.</p>
                 <div class="flex flex-col items-center justify-center">
-                    <div x-show="openA" x-transition class="flex flex-col items-center justify-center">
-                        <p class="text-4xl font-bold pt-12 pb-5" style="color: rgb(12 40 62);">SEMINAR</p>
-                        <p class="w-4/5 text-center text-base font-bold pb-10" style="color: rgb(12 40 62);">The
+                    <div x-show="selected === 'rh-tp1'" x-transition class="flex flex-col items-center justify-center">
+                        <p class="text-4xl font-bold pt-4 pb-2" style="color: rgb(12 40 62);">SEMINAR</p>
+                        <p class="w-4/5 text-center text-md font-bold pb-6" style="color: rgb(12 40 62);">The
                             material and talk show presented by professional speakers who are experts in
                             technology-based business to develop the interest and talent for entrepreneurship within the
                             community in the field of IT.</p>
                         <x-countdown-mobver></x-countdown-mobver>
                     </div>
-                    <div x-show="openB" x-transition class="flex flex-col items-center justify-center">
-                        <p class="text-4xl font-bold pt-12 pb-5" style="color: rgb(12 40 62);">WORKSHOP</p>
-                        <p class="w-4/5 text-center text-base font-bold pb-10" style="color: rgb(12 40 62);">An online
+                    <div x-show="selected === 'rh-tp2'" x-transition class="flex flex-col items-center justify-center">
+                        <p class="text-4xl font-bold pt-4 pb-2" style="color: rgb(12 40 62);">WORKSHOP</p>
+                        <p class="w-4/5 text-center text-md font-bold pb-6" style="color: rgb(12 40 62);">An online
                             workshop that provides training and development facilities by professionals with the aim of
                             providing participants with an understanding of the use of technological advances to
                             transform businesses into innovative startups.</p>
@@ -167,7 +175,7 @@
                         <div style="background-image:url('image/Rectangle_74.png');"
                             class="bg-cover w-full p-1.5 text-white mt-10">
                             <p class="text-center text-lg font-bold p-1.5">Reward for Workshop's 3 winner team</p>
-                            <p class="text-center text-4xl font-bold p-1.5">Fresh Money Up To<br>XXX Rupiah</p>
+                            <p class="text-center text-4xl font-bold p-1.5">Fresh Money Up To<br>IDR 4 Million+</p>
                             <p class="text-center text-xl font-bold p-1.5">and</p>
                             <p class="text-center text-3xl font-bold p-1.5">Winner Certificate</p>
                         </div>
@@ -175,17 +183,15 @@
                 </div>
             </div>
 
-            <div class="flex flex-row items-center justify-center space-x-10 w-auto">
-                <a href=""><x-button>
-                        <p class="text-lg">Register</p>
+            <div class="flex flex-row items-center justify-center space-x-10 w-auto mt-4">
+                <a href="https://linktr.ee/Technopreneur2024"><x-button textSize="text-lg" textPadding="p-1">
+                        Register & Guidebook
                     </x-button></a>
-                <a href=""><x-button>
-                        <p class="text-lg">Guidebook</p>
-                    </x-button></a>
+                
             </div>
-            <p class="text-center text-lg font-bold">Limited to Only 15 Selected Teams<br>100k/ team</p>
+            <p class="text-center text-lg font-bold mt-4">Limited to Only 15 Selected Teams<br>100k/ team</p>
             <div class="flex flex-col justify-center w-full">
-                <h1 class="text-xl text-center font-bold">The Speakers</h1>
+                <h1 class="text-xl text-center font-bold mt-4">The Speakers</h1>
                 <div class="flex flex-row items-center justify-center">
                     <div class="control-buttons">
                         <button id="carousel-0-previousButton"><img src="/image/prev.png" alt=""></button>
@@ -206,26 +212,26 @@
                 style="background-color: rgb(244 230 230);">
                 <div class="mx-1">
                     <p class="text-sm font-bold">Luthfi Hamam Arsyada</p>
-                    <p class="text-sm flex flex-row"><img src="/image/Phone_Event.png" class="size-3 mr-1 mt-1.5">
+                    <p class="text-sm flex flex-row font-semibold"><img src="/image/Phone_Event.png" class="size-3 mr-1 mt-1.5">
                         081223682256</p>
-                    <p class="text-sm flex flex-row"><img src="/image/Email_Event.png" class="size-3 mr-1 mt-1.5">
+                    <p class="text-sm flex flex-row font-semibold"><img src="/image/Email_Event.png" class="size-3 mr-1 mt-1.5">
                         lutfiarsd@gmail.com</p>
-                    <p class="text-sm flex flex-row"><img src="/image/Line_Event.png" class="size-3 mr-1 mt-1.5">
+                    <p class="text-sm flex flex-row font-semibold"><img src="/image/Line_Event.png" class="size-3 mr-1 mt-1.5">
                         gaktaulupa10988</p>
                 </div>
                 <div class="mx-1 self-end">
                     <p class="text-sm font-bold">M. Zahran Muntazar</p>
-                    <p class="text-sm flex flex-row"><img src="/image/Phone_Event.png" class="size-3 mr-1 mt-1.5">
+                    <p class="text-sm flex flex-row font-semibold"><img src="/image/Phone_Event.png" class="size-3 mr-1 mt-1.5">
                         085174338747</p>
-                    <p class="text-sm flex flex-row"><img src="/image/Email_Event.png" class="size-3 mr-1 mt-1.5">
+                    <p class="text-sm flex flex-row font-semibold"><img src="/image/Email_Event.png" class="size-3 mr-1 mt-1.5">
                         zahranmuntazar17@gmail.com</p>
-                    <p class="text-sm flex flex-row"><img src="/image/Line_Event.png" class="size-3 mr-1 mt-1.5">
+                    <p class="text-sm flex flex-row font-semibold"><img src="/image/Line_Event.png" class="size-3 mr-1 mt-1.5">
                         zahranmuntazar</p>
                 </div>
             </div>
             <p>Poster??</p>
-            <div class="flex flex-col items-center justify-center w-full">
-                <p class="text-center text-2xl font-bold">FaQ</p>
+            <div class="flex flex-col items-center justify-center w-full mt-4">
+                <p class="text-center text-2xl font-semibold">FaQ</p>
                 <div x-data="{ open: false }" class="my-3 w-4/5">
                     <x-fa-q-button-mobver>
                         <x-slot:slottitle>Pertanyaan 1</x-slot:slottitle>

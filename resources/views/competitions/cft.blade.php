@@ -30,14 +30,14 @@
         </div>
 
         <div class="flex flex-row items-center justify-center space-x-10 w-auto py-10">
-            <a href="https://drive.google.com/file/d/1_Ie8q0QKLtsSj9W1ig-pt3BiRPHMOj4-/view?usp=sharing"><x-button textSize="text-2xl" textPadding="p-1"-mobver>Booklet</x-button-mobver></a>
-            <a href="http://bit.ly/IFEST_CTF"><x-button textSize="text-2xl" textPadding="p-1"-mobver>Registration</x-button-mobver></a>
+            <a href="https://drive.google.com/file/d/1_Ie8q0QKLtsSj9W1ig-pt3BiRPHMOj4-/view?usp=sharing"><x-button-mobver textSize="text-2xl" textPadding="p-1">Booklet</x-button-mobver></a>
+            <a href="http://bit.ly/IFEST_CTF"><x-button-mobver textSize="text-2xl" textPadding="p-1">Registration</x-button-mobver></a>
         </div>
 
         <x-countdown-mobver>2024-09-15</x-countdown-mobver>
 
         <h1 class="text-3xl py-20 font-bold">Timeline of Activity</h1>
-        <div class="px-5    ">
+        <div class="px-5">
             <img src="/image/tl/ctf.png" alt="" class="flex h-auto">
         </div>
     </div>

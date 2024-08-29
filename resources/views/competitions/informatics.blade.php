@@ -4,7 +4,7 @@
 
         <div class="space-y-8 w-[50%] flex flex-col items-center justify-center">
             <h1 class="text-center text-5xl font-bold">Informatics Competition</h1>
-            <img src="/image/Lomba/Incomp.png" alt="" class="h-auto w-[32%]">
+            <img src="/image/Lomba/Incomp.png" alt="" class="h-auto w-[22%]">
             <p class="text-center text-xl text-balance font-semibold">The Informatics Competition is an informatics olympiad where participants are required to solve computational logic, algorithmic, and problem-solving questions. The preliminary round is held online, while the final will be conducted at the Unpad Jatinangor campus.</p>
         </div>
 

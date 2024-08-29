@@ -16,6 +16,7 @@ export default {
         'home2-bg' : "url('/public/image/home-background-2.png')",
         'itcomp-bg' : "url('/public/image/itcomp-background.png')",
         'countdown-bg' : "url('/public/image/bg-countdown.png')",
+        'speaker' : "url('/public/image/box_tp.png')",
       },
       spacing: {
         '80': '20rem',

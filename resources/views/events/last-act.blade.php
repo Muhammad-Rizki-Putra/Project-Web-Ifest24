@@ -66,7 +66,7 @@
                 </a>
             </div>
 
-            <div class="flex flex-col items-center justify-start w-auto rounded-md bg-cream-bg p-5 gap-y-5">
+            <div class="flex flex-col items-center justify-start w-auto rounded-md p-5 gap-y-5" style="background-color: rgb(244 230 230);">
                 <div class="grid grid-cols-2 gap-4">
                     <div class="flex flex-col gap-y-2">
                         <p class="font-bold">Alif Al Husaini</p>

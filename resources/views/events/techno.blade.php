@@ -7,7 +7,7 @@
             <img src="image/logo 3.png" alt="" class="h-auto w-[12%]">
             <p class="text-5xl text-center font-bold" style="color: rgb(115 4 53);">Future Founders:<br>Embracing The
                 Rise of Tech-Based Business</p>
-            <div x-data="{ openA: true, openB: false }" class="flex flex-col items-center justfy-center">
+            <div x-data="{ openA: true, openB: false }" class="flex flex-col items-center justify-center">
                 <div class="flex flex-row items-center justify-center pb-20 gap-x-40">
 
                     <x-radio-button textSize="text-2xl" textPadding="p-1" name="rh-tp" value="rh-tp1" id="rh-tp-1"
@@ -24,27 +24,60 @@
                 <div class="flex flex-col items-center justify-center">
                     <div x-show="selected === 'rh-tp1'" x-transition class="flex flex-col items-center justify-center">
                         <p class="text-6xl font-bold pt-20 pb-10" style="color: rgb(12 40 62);">SEMINAR</p>
-                        <p class="w-3/5 text-center text-2xl font-semibold pb-20" style="color: rgb(12 40 62);">The
+                        <p class="w-3/5 text-center text-2xl font-semibold" style="color: rgb(12 40 62);">The
                             material
                             and talk show presented by professional speakers who are experts in technology-based
                             business to develop the interest and talent for entrepreneurship within the community in the
                             field of IT.</p>
+                        <ul class="list-disc" style="width: auto; float: left;">
+                            <li style="width: auto; float: left; color: rgb(12 40 62);" class="mx-4 text-lg">Key of
+                                Building a Business</li>
+                            <li style="width: auto; float: left; color: rgb(12 40 62);" class="mx-4 text-lg">Driving
+                                Innovation and Success in Business with Technology</li>
+                            <!-- ... -->
+                        </ul>
+                        <ul class="list-disc pb-20" style="width: auto; float: left;">
+                            <li style="width: auto; float: left; color: rgb(12 40 62);" class="mx-4 text-lg">Empowering
+                                Business Growth through Data Science</li>
+                        </ul>
                         <x-countdown></x-countdown>
+                        <div style="background-image:url('image/Rectangle_74.png');"
+                            class="bg-cover w-full p-3.5 text-white mt-20">
+                            <p class="text-center text-6xl font-bold p-3.5">Free Ticket</p>
+                            <p class="text-center text-5xl font-bold p-3.5">E-Certificate</p>
+                        </div>
                     </div>
                     <div x-show="selected === 'rh-tp2'" x-transition class="flex flex-col items-center justify-center">
                         <p class="text-6xl font-bold pt-20 pb-10" style="color: rgb(12 40 62);">WORKSHOP</p>
-                        <p class="w-3/5 text-center text-2xl font-semibold pb-20" style="color: rgb(12 40 62);">An
+                        <p class="w-3/5 text-center text-2xl font-semibold" style="color: rgb(12 40 62);">An
                             online
                             workshop that provides training and development facilities by professionals with the aim of
                             providing participants with an understanding of the use of technological advances to
                             transform businesses into innovative startups.</p>
+                        <ul class="list-disc" style="width: auto; float: left;">
+                            <li style="width: auto; float: left; color: rgb(12 40 62);" class="mx-4 text-lg">Design
+                                Thinking</li>
+                            <li style="width: auto; float: left; color: rgb(12 40 62);" class="mx-4 text-lg">Business
+                                Strategy Foundation</li>
+                            <!-- ... -->
+                        </ul>
+                        <ul class="list-disc pb-20" style="width: auto; float: left;">
+                            <li style="width: auto; float: left; color: rgb(12 40 62);" class="mx-4 text-lg">Brand
+                                Identity & Market Launch Strategy</li>
+                            <li style="width: auto; float: left; color: rgb(12 40 62);" class="mx-4 text-lg">Funding and
+                                Pitching</li>
+                        </ul>
                         <x-countdown></x-countdown>
+                        <p class="text-center text-3xl font-bold mt-10">Limited to Only 15 Selected Teams<br>100k/ team
+                        </p>
                         <div style="background-image:url('image/Rectangle_74.png');"
                             class="bg-cover w-full p-3.5 text-white mt-20">
-                            <p class="text-center text-3xl font-bold p-3.5">Reward for Workshop's 3 winner team</p>
-                            <p class="text-center text-7xl font-bold p-3.5">Fresh Money Up To<br>IDR 4 Million+</p>
-                            <p class="text-center text-4xl font-bold p-3.5">and</p>
-                            <p class="text-center text-6xl font-bold p-3.5">Winner Certificate</p>
+                            <!-- <p class="text-center text-3xl font-bold p-3.5">Reward for Workshop's 3 winner team</p> -->
+                            <p class="text-center text-7xl font-bold p-3.5 leading-normal">Fresh Money Up To<br>IDR 4
+                                Million+</p>
+                            <!-- <p class="text-center text-4xl font-bold p-3.5">and</p> -->
+                            <p class="text-center text-6xl font-bold p-3.5">Winner and Participate E-Certificate</p>
+                            <p class="text-center text-5xl font-bold p-3.5">10 Course Tickets of Mekari University</p>
                         </div>
                     </div>
                 </div>
@@ -55,7 +88,6 @@
                     <x-button textSize="text-2xl" textPadding="p-1">Register & Guidebook</x-button>
                 </a>
             </div>
-            <p class="text-center text-3xl font-bold">Limited to Only 15 Selected Teams<br>100k/ team</p>
             <div class="flex flex-col justify-center w-full">
                 <h1 class="text-4xl text-center font-bold">The Speakers</h1>
                 <div class="flex flex-row items-center justify-center ">
@@ -140,9 +172,11 @@
             class="md:hidden flex items-center justify-center flex-col h-auto bg-itcomp-bg bg-fixed bg-right-bottom bg-cover bg-no-repeat py-20">
             <h1 class="text-3xl font-bold" style="color: rgb(12 40 62);">TECHNOPRENEUR</h1>
             <img src="image/logo 3.png" alt="" class="h-auto w-[20%] mt-4">
-            <p class="text-2xl text-center font-bold mt-4" style="color: rgb(115 4 53);">Future Founders:<br>Embracing The
+            <p class="text-2xl text-center font-bold mt-4" style="color: rgb(115 4 53);">Future Founders:<br>Embracing
+                The
                 Rise of<br>Tech-Based Business</p>
-            <div x-data="{ openA: true, openB: false }" class="flex flex-col items-center justfy-center space-y-4 mt-4">
+            <div x-data="{ openA: true, openB: false }"
+                class="flex flex-col items-center justify-center space-y-4 mt-4">
                 <div class="flex flex-row items-center justify-center pb-4 gap-x-10">
 
                     <x-radio-button textSize="text-lg" textPadding="p-1" name="rh-tp" value="rh-tp1" id="rh-tp-1"
@@ -152,32 +186,68 @@
                         x-model="selected">Workshop</x-radio-button>
 
                 </div>
-                <p class="w-4/5 text-center text-md text-balance font-semibold" style="color: rgb(12 40 62);">Designed to turn tech
+                <p class="w-4/5 text-center text-md text-balance font-semibold" style="color: rgb(12 40 62);">Designed
+                    to turn tech
                     skills into successful businesses, Technopreneur is where technology meets entrepreneurship. Through
                     engaging seminars and hands-on workshops, knowledge and tools are provided by professional mentors,
                     helping you leverage digital technology to bring your business ideas to life.</p>
                 <div class="flex flex-col items-center justify-center">
                     <div x-show="selected === 'rh-tp1'" x-transition class="flex flex-col items-center justify-center">
                         <p class="text-4xl font-bold pt-4 pb-2" style="color: rgb(12 40 62);">SEMINAR</p>
-                        <p class="w-4/5 text-center text-md font-bold pb-6" style="color: rgb(12 40 62);">The
+                        <p class="w-4/5 text-center text-md font-bold" style="color: rgb(12 40 62);">The
                             material and talk show presented by professional speakers who are experts in
                             technology-based business to develop the interest and talent for entrepreneurship within the
                             community in the field of IT.</p>
-                        <x-countdown-mobver></x-countdown-mobver>
-                    </div>
-                    <div x-show="selected === 'rh-tp2'" x-transition class="flex flex-col items-center justify-center">
-                        <p class="text-4xl font-bold pt-4 pb-2" style="color: rgb(12 40 62);">WORKSHOP</p>
-                        <p class="w-4/5 text-center text-md font-bold pb-6" style="color: rgb(12 40 62);">An online
-                            workshop that provides training and development facilities by professionals with the aim of
-                            providing participants with an understanding of the use of technological advances to
-                            transform businesses into innovative startups.</p>
+                        <ul class="list-disc" style="width: auto; float: left;">
+                            <li style="width: auto; float: left; color: rgb(12 40 62);" class="mx-4 text-sm">Key of
+                                Building a Business</li>
+                            <!-- ... -->
+                        </ul>
+                        <ul class="list-disc" style="width: auto; float: left;">
+                            <li style="width: auto; float: left; color: rgb(12 40 62);" class="mx-4 text-sm">Driving
+                                Innovation and Success in Business with Technology</li>
+                        </ul>
+                        <ul class="list-disc pb-6" style="width: auto; float: left;">
+                            <li style="width: auto; float: left; color: rgb(12 40 62);" class="mx-4 text-sm">Empowering
+                                Business Growth through Data Science</li>
+                        </ul>
                         <x-countdown-mobver></x-countdown-mobver>
                         <div style="background-image:url('image/Rectangle_74.png');"
                             class="bg-cover w-full p-1.5 text-white mt-10">
-                            <p class="text-center text-lg font-bold p-1.5">Reward for Workshop's 3 winner team</p>
+                            <p class="text-center text-3xl font-bold p-1.5">Free Ticket</p>
+                            <p class="text-center text-2xl font-bold p-1.5">E-Certificate</p>
+                        </div>
+                    </div>
+                    <div x-show="selected === 'rh-tp2'" x-transition class="flex flex-col items-center justify-center">
+                        <p class="text-4xl font-bold pt-4 pb-2" style="color: rgb(12 40 62);">WORKSHOP</p>
+                        <p class="w-4/5 text-center text-md font-bold" style="color: rgb(12 40 62);">An online
+                            workshop that provides training and development facilities by professionals with the aim of
+                            providing participants with an understanding of the use of technological advances to
+                            transform businesses into innovative startups.</p>
+                        <ul class="list-disc" style="width: auto; float: left;">
+                            <li style="width: auto; float: left; color: rgb(12 40 62);" class="mx-4 text-sm">Design
+                                Thinking</li>
+                            <li style="width: auto; float: left; color: rgb(12 40 62);" class="mx-4 text-sm">Business
+                                Strategy Foundation</li>
+                            <!-- ... -->
+                        </ul>
+                        <ul class="list-disc" style="width: auto; float: left;">
+                            <li style="width: auto; float: left; color: rgb(12 40 62);" class="mx-4 text-sm">Funding and
+                                Pitching</li>
+                        </ul>
+                        <ul class="list-disc pb-6" style="width: auto; float: left;">
+                            <li style="width: auto; float: left; color: rgb(12 40 62);" class="mx-4 text-sm">Brand
+                                Identity & Market Launch Strategy</li>
+                        </ul>
+                        <x-countdown-mobver></x-countdown-mobver>
+                        <p class="text-center text-lg font-bold mt-4">Limited to Only 15 Selected Teams<br>100k/ team</p>
+                        <div style="background-image:url('image/Rectangle_74.png');"
+                            class="bg-cover w-full p-1.5 text-white mt-10">
+                            <!-- <p class="text-center text-lg font-bold p-1.5">Reward for Workshop's 3 winner team</p> -->
                             <p class="text-center text-4xl font-bold p-1.5">Fresh Money Up To<br>IDR 4 Million+</p>
-                            <p class="text-center text-xl font-bold p-1.5">and</p>
-                            <p class="text-center text-3xl font-bold p-1.5">Winner Certificate</p>
+                            <!-- <p class="text-center text-xl font-bold p-1.5">and</p> -->
+                            <p class="text-center text-3xl font-bold p-1.5">Winner and Participate<br>E-Certificate</p>
+                            <p class="text-center text-2xl font-bold p-1.5">10 Course Tickets of<br>Mekari University</p>
                         </div>
                     </div>
                 </div>
@@ -187,9 +257,8 @@
                 <a href="https://linktr.ee/Technopreneur2024"><x-button textSize="text-lg" textPadding="p-1">
                         Register & Guidebook
                     </x-button></a>
-                
+
             </div>
-            <p class="text-center text-lg font-bold mt-4">Limited to Only 15 Selected Teams<br>100k/ team</p>
             <div class="flex flex-col justify-center w-full">
                 <h1 class="text-xl text-center font-bold mt-4">The Speakers</h1>
                 <div class="flex flex-row items-center justify-center">
@@ -212,20 +281,26 @@
                 style="background-color: rgb(244 230 230);">
                 <div class="mx-1">
                     <p class="text-sm font-bold">Luthfi Hamam Arsyada</p>
-                    <p class="text-sm flex flex-row font-semibold"><img src="/image/Phone_Event.png" class="size-3 mr-1 mt-1.5">
+                    <p class="text-sm flex flex-row font-semibold"><img src="/image/Phone_Event.png"
+                            class="size-3 mr-1 mt-1.5">
                         081223682256</p>
-                    <p class="text-sm flex flex-row font-semibold"><img src="/image/Email_Event.png" class="size-3 mr-1 mt-1.5">
+                    <p class="text-sm flex flex-row font-semibold"><img src="/image/Email_Event.png"
+                            class="size-3 mr-1 mt-1.5">
                         lutfiarsd@gmail.com</p>
-                    <p class="text-sm flex flex-row font-semibold"><img src="/image/Line_Event.png" class="size-3 mr-1 mt-1.5">
+                    <p class="text-sm flex flex-row font-semibold"><img src="/image/Line_Event.png"
+                            class="size-3 mr-1 mt-1.5">
                         gaktaulupa10988</p>
                 </div>
                 <div class="mx-1 self-end">
                     <p class="text-sm font-bold">M. Zahran Muntazar</p>
-                    <p class="text-sm flex flex-row font-semibold"><img src="/image/Phone_Event.png" class="size-3 mr-1 mt-1.5">
+                    <p class="text-sm flex flex-row font-semibold"><img src="/image/Phone_Event.png"
+                            class="size-3 mr-1 mt-1.5">
                         085174338747</p>
-                    <p class="text-sm flex flex-row font-semibold"><img src="/image/Email_Event.png" class="size-3 mr-1 mt-1.5">
+                    <p class="text-sm flex flex-row font-semibold"><img src="/image/Email_Event.png"
+                            class="size-3 mr-1 mt-1.5">
                         zahranmuntazar17@gmail.com</p>
-                    <p class="text-sm flex flex-row font-semibold"><img src="/image/Line_Event.png" class="size-3 mr-1 mt-1.5">
+                    <p class="text-sm flex flex-row font-semibold"><img src="/image/Line_Event.png"
+                            class="size-3 mr-1 mt-1.5">
                         zahranmuntazar</p>
                 </div>
             </div>

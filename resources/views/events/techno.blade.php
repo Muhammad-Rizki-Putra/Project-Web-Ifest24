@@ -216,6 +216,7 @@
                             class="bg-cover w-full p-1.5 text-white mt-10">
                             <p class="text-center text-3xl font-bold p-1.5">Free Ticket</p>
                             <p class="text-center text-2xl font-bold p-1.5">E-Certificate</p>
+                            
                         </div>
                     </div>
                     <div x-show="selected === 'rh-tp2'" x-transition class="flex flex-col items-center justify-center">

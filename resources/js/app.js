@@ -65,3 +65,21 @@ document.querySelectorAll('.gallery-container').forEach((container, index) => {
   carouselInstance.updateGallery();
   carouselInstance.useControls();
 });
+
+class CarouselITComp extends Carousel {
+  setCurrentState(direction) {
+    super.setCurrentState(direction);
+
+    // Check if the first element in the carousel array has the 'gallery-item-1' class
+    const selectedItem = this.carouselArray[0];
+    if (selectedItem.classList.contains('gallery-item-1')) {
+      // Execute the logic if the selected item is 'gallery-item-1'
+      container.dataset.carouselId = `test`;
+      // Add your specific logic here
+    } else {
+      // Execute the logic if the selected item is not 'gallery-item-1'
+      console.log('The selected item is not gallery-item-1');
+      // Add your specific logic here
+    }
+  }
+}

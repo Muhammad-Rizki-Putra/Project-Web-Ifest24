@@ -32,6 +32,7 @@ export default {
         'home-launch' : "url('/public/image/launch-home.png')",
         'home-launch-mob' : "url('/public/image/launch-home-mob.png')",
         'home-doc' : "url('/public/image/box_hm.png')",
+        'carousel' : "url('/public/image/box.png')",
       },
       spacing: {
         '80': '20rem',

@@ -44,10 +44,12 @@
                     </div>
 
                     <div class="gallery">
-                        <div class="gallery-container">
-                            <img src="/image/box.png" alt="box" class="gallery-item gallery-item-1" data-index = "1">
-                            <img src="/image/box.png" alt="box" class="gallery-item gallery-item-2" data-index = "2">
-                            <img src="/image/box.png" alt="box" class="gallery-item gallery-item-3" data-index = "3">
+                        <div class="gallery-container gallery-5">
+                            <img src="/image/Lomba/CTF.png" alt="box" class="bg-white gallery-item gallery-item-1" data-index = "1">
+                            <img src="/image/Lomba/Comprog.png" alt="box" class="bg-white gallery-item gallery-item-2" data-index = "2">
+                            <img src="/image/Lomba/DAC.png" alt="box" class="bg-white gallery-item gallery-item-3" data-index = "3">
+                            <img src="/image/Lomba/Incomp.png" alt="box" class="bg-white gallery-item gallery-item-4" data-index = "4">
+                            <img src="/image/Lomba/Webdev.png" alt="box" class="bg-white gallery-item gallery-item-5" data-index = "5">
                         </div>
                     </div>
 
@@ -65,9 +67,9 @@
                     </div>
 
                     <div class="gallery">
-                        <div class="gallery-container">
+                        <div class="gallery-container gallery-3">
                             <img src="/image/box.png" alt="box" class="gallery-item gallery-item-1" data-index = "1">
-                            <img src="/image/box.png" alt="box" class="gallery-item gallery-item-2" data-index = "2">
+                            <img src="/image/furina.png" alt="box" class="gallery-item gallery-item-2" data-index = "2">
                             <img src="/image/box.png" alt="box" class="gallery-item gallery-item-3" data-index = "3">
                         </div>
                     </div>
@@ -148,9 +150,9 @@
 
                     <div class="gallery">
                         <div class="gallery-container">
-                            <img src="/image/box.png" alt="box" class="gallery-item gallery-item-1" data-index = "1">
                             <img src="/image/box.png" alt="box" class="gallery-item gallery-item-2" data-index = "2">
                             <img src="/image/box.png" alt="box" class="gallery-item gallery-item-3" data-index = "3">
+                            <img src="/image/box.png" alt="box" class="gallery-item gallery-item-4" data-index = "4">
                         </div>
                     </div>
 

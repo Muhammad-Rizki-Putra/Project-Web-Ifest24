@@ -47,7 +47,6 @@ Route::get('/reset-password/{token}', [ResetPasswordController::class, 'showRese
 Route::post('/reset-password', [ResetPasswordController::class, 'reset'])->middleware('guest');
 
 // Event Route
-Route::get('/seminar-nasional', [SemnasController::class, 'index'])->name('semnas');
 Route::get('/technopreneur', function () {
     return view('events.techno', ['pagename' => 'Technopreneur']);
 });

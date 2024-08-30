@@ -5,8 +5,8 @@
             <a href="/" class="absolute"><img src="/image/cancel-logo.png" alt="" class="mt-10 mr-10"></a>
         </div>
         <div class="flex flex-row items-center justify-center h-auto mx-auto">
-            <img class="w-auto h-auto m-auto hidden self-center xl:block pl-16 pt-4" src="image/logo_ifest.png" alt="logo_ifest">
-            <img class="w-auto my-auto h-auto px-10 hidden xl:block " src="image/Line.png" alt="line">
+            <img class="w-[350px] h-auto m-auto hidden self-center xl:block pl-16 pt-4" src="image/logo_ifest.png" alt="logo_ifest">
+            <div class="mx-10 hidden xl:block h-[400px] w-[2px] bg-black"></div>
             <div class="flex flex-col items-center pt-[48px] my-auto h-auto max-h-[627px]">
                 <h1 class="text-5xl pb-5 font-bold text-navy-bg">
                     Login
@@ -60,7 +60,7 @@
                     </div>
 
                     <div class="w-full flex justify-end">
-                        <a href="/forgot-password" class="flex font-semibold w-full justify-end hover:underline" style="color: rgb(75 85 212)">Forgot your password?</a>
+                        <a href="/forgot-password" class="flex font-semibold w-full justify-end hover:underline hover:text-blue-500">Forgot your password?</a>
                     </div>
                     
                     <div class="flex justify-center mt-4">
@@ -70,7 +70,7 @@
                     </div>
                 </form>
 
-                <p>Don't have an account? <a href="/register" class="hover:underline" style="color: rgb(75 85 212)">Register here!</a></p>
+                <p>Don't have an account? <a href="/register" class="hover:underline hover:text-blue-500">Register here!</a></p>
                 
 
             </div>
@@ -125,8 +125,8 @@
                         class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-1 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                         id="grid-password" name="password" type="password" placeholder="Enter Your Password" required
                         value="{{ old('password') }}">
-                    <p class="text-sm">Forgot your password? <a href="/forgot-password" class="font-semibold hover:underline" style="color: rgb(75 85 212)">Click Here!</a></p>
-                    <p class="text-sm">Don't have an account? <a href="/register" class="font-semibold hover:underline" style="color: rgb(75 85 212)">Register here!</a></p>
+                    <p class="text-sm">Forgot your password? <a href="/forgot-password" class="hover:underline hover:text-blue-500">Click Here!</a></p>
+                    <p class="text-sm">Don't have an account? <a href="/register" class="hover:underline hover:text-blue-500">Register here!</a></p>
                 </div>
             </div>
             <div class="flex justify-center mt-7">

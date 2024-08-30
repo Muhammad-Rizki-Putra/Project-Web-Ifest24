@@ -1,5 +1,3 @@
-import './bootstrap';
-
 class Carousel {
   constructor(container, items) {
     this.carouselContainer = container;
@@ -7,28 +5,45 @@ class Carousel {
   }
 
   updateGallery() {
+    // Remove the existing classes from all items
     this.carouselArray.forEach((el) => {
-      el.classList.remove('gallery-item-1', 'gallery-item-2', 'gallery-item-3');
+      el.classList.remove(
+        'gallery-item-1',
+        'gallery-item-2',
+        'gallery-item-3',
+        'gallery-item-4',
+        'gallery-item-5'
+      );
     });
 
-    this.carouselArray.slice(0, 3).forEach((el, i) => {
+    // Add the new classes for the first 5 items
+    this.carouselArray.slice(0, 5).forEach((el, i) => {
       el.classList.add(`gallery-item-${i + 1}`);
     });
   }
 
   setCurrentState(direction) {
     if (direction.id === `${this.carouselContainer.dataset.carouselId}-previousButton`) {
+      // Move the last item to the front of the array
       this.carouselArray.unshift(this.carouselArray.pop());
     } else if (direction.id === `${this.carouselContainer.dataset.carouselId}-nextButton`) {
+      // Move the first item to the end of the array
       this.carouselArray.push(this.carouselArray.shift());
     }
+    // Update the gallery after changing the state
     this.updateGallery();
   }
 
   useControls() {
-    const previousButton = document.getElementById(`${this.carouselContainer.dataset.carouselId}-previousButton`);
-    const nextButton = document.getElementById(`${this.carouselContainer.dataset.carouselId}-nextButton`);
+    // Get the previous and next buttons
+    const previousButton = document.getElementById(
+      `${this.carouselContainer.dataset.carouselId}-previousButton`
+    );
+    const nextButton = document.getElementById(
+      `${this.carouselContainer.dataset.carouselId}-nextButton`
+    );
 
+    // Add event listeners for button clicks
     previousButton.addEventListener('click', (e) => {
       e.preventDefault();
       this.setCurrentState(previousButton);
@@ -41,6 +56,7 @@ class Carousel {
   }
 }
 
+// Initialize the carousel for each gallery container
 document.querySelectorAll('.gallery-container').forEach((container, index) => {
   const galleryItems = container.querySelectorAll('.gallery-item');
   container.dataset.carouselId = `carousel-${index}`;

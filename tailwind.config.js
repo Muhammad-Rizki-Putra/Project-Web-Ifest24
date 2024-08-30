@@ -7,6 +7,18 @@ export default {
   ],
   theme: {
     extend: {
+      animation: {
+        fade: 'fadeOut 1s ease-in-out',
+      },
+      
+      keyframes: theme => ({
+        fadeOut: {
+          '0%': { backgroundColor: theme('colors.white') },
+          '100%': { backgroundColor: theme('colors.transparent') },
+        },
+      }),
+      
+
       colors: {
         'cream-bg': '#FBF2E9',
         'navy-bg' : '#1B4668',
@@ -17,6 +29,9 @@ export default {
         'itcomp-bg' : "url('/public/image/itcomp-background.png')",
         'countdown-bg' : "url('/public/image/bg-countdown.png')",
         'speaker' : "url('/public/image/box_tp.png')",
+        'home-launch' : "url('/public/image/launch-home.png')",
+        'home-launch-mob' : "url('/public/image/launch-home-mob.png')",
+        'home-doc' : "url('/public/image/box_hm.png')",
       },
       spacing: {
         '80': '20rem',

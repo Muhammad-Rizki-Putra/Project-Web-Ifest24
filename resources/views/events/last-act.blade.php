@@ -27,8 +27,18 @@
                 x-transition:enter-end="opacity-100 scale-100" x-transition:leave="transition ease-in duration-100"
                 x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-90">
                 <div>
-                    <h1 class="text-4xl font-bold text-center text-wrap">Exploring Career Path In Technology: Navigating
+                    <h1 class="text-5xl font-semibold text-center text-wrap">SEMINAR NASIONAL</h1>
+                    <h1 class="text-3xl text-center text-wrap">Exploring Career Path In Technology: Navigating
                         Challenges and Opportunities</h1>
+                </div>
+
+                <div>
+                    <p class="text-lg text-center">National seminar is an event that invites speakers who have insights
+                        into
+                        informatics careers. We aim to provide a platform for sharing information, experiences, and
+                        ideas
+                        for
+                        those already involved in or interested in pursuing a career in the field of informatics.</p>
                 </div>
 
                 <div>
@@ -44,22 +54,18 @@
                     </div>
 
                     <div class="w-[315px] h-[400px] bg-speaker bg-cover bg-center bg-no-repeat p-1.5">
-
+                        <img src="/image/tba-pp.jpg" alt="" class="h-[75%] w-full">
+                        <div class="w-[100%] bg-navy-bg h-[25%] flex items-center justify-center">
+                            <h1 class="text-white font-semibold text-lg">To Be Announced</h1>
+                        </div>
                     </div>
                 </div>
 
-                <div>
-                    <p class="text-lg text-center">National seminar is an event that invites speakers who have insights
-                        into
-                        informatics careers. We aim to provide a platform for sharing information, experiences, and
-                        ideas
-                        for
-                        those already involved in or interested in pursuing a career in the field of informatics.</p>
-                </div>
+                
 
-                <div class="flex items-start w-full flex-col gap-y-5">
-                    <p class="text-xl text-left">Is pursuing a career in IT still worth it?</p>
-                    <p class="text-lg text-left">With the end of the pandemic, the startup trend that had been growing
+                <div class="flex items-center w-full flex-col gap-y-5">
+                    <p class="text-2xl text-center">Is pursuing a career in IT still worth it?</p>
+                    <p class="text-lg text-center">With the end of the pandemic, the startup trend that had been growing
                         has
                         seen
                         a decline over the past two years. Additionally, issues like Artificial Intelligence potentially
@@ -69,7 +75,7 @@
                 </div>
 
                 <div>
-                    <a href="https://www.gatau.com" class="w-full">
+                    <a href="http://bit.lt/SCIFest" class="w-full">
                         <div
                             class="bg-transparent rounded-xl w-full max-w-lg flex flex-row items-center justify-center gap-x-3 outline outline-4 outline-offset-2 outline-navy-bg">
                             <img src="/image/Zoom.png" alt="" class="w-auto h-10">
@@ -78,36 +84,8 @@
                     </a>
                 </div>
 
-            <div class="flex flex-col items-center justify-start w-auto rounded-md p-5 gap-y-5" style="background-color: rgb(244 230 230);">
-                <div class="grid grid-cols-2 gap-4">
-                    <div class="flex flex-col gap-y-2">
-                        <p class="font-bold">Alif Al Husaini</p>
-                        <div class="flex flex-row items-center gap-x-2">
-                            <img src="/image/Phone.png" alt="" class="h-5 w-auto">
-                            <p class="font-semibold">081237449945</p>
-                        </div>
-                    </div>
-                    <div class="flex flex-col gap-y-2">
-                        <p class="font-bold">Panji Iman Sujatmiko</p>
-                        <div class="flex flex-row items-center gap-x-2">
-                            <img src="/image/Phone.png" alt="" class="h-5 w-auto">
-                            <p class="font-semibold">089647824647</p>
-                        </div>
-                        <div class="flex flex-row items-center gap-x-2">
-                            <img src="/image/lineapp.png" alt="" class="h-5 w-auto">
-                            <p class="font-semibold">panjiimans</p>
-                        </div>
-                    </div>
-                </div>
-                <p class="font-semibold">Or</p>
-                <div>
-                    <div class="flex flex-row items-center gap-x-2">
-                        <img src="/image/Email1.png" alt="" class="h-5 w-auto">
-                        <p class="font-semibold">keilmuan.himatif@gmail.com</p>
-                    </div>
-                </div>
-            </div>
-                <div class="flex flex-col items-center justify-start w-auto rounded-md bg-cream-bg p-5 gap-y-5">
+                <div class="flex flex-col items-center justify-start w-auto rounded-md p-5 gap-y-5"
+                    style="background-color: rgb(244 230 230);">
                     <div class="grid grid-cols-2 gap-4">
                         <div class="flex flex-col gap-y-2">
                             <p class="font-bold">Alif Al Husaini</p>
@@ -136,6 +114,7 @@
                         </div>
                     </div>
                 </div>
+
 
                 <div>
                     <h1 class="text-6xl font-semibold">FaQ</h1>

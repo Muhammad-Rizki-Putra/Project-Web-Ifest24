@@ -1,7 +1,7 @@
 <x-layout>
 <x-slot:pagename>{{$pagename}}</x-slot:pagename>
-    <div class="flex w-full flex-col bg-home-bg bg-cover bg-no-repeat bg-center items-center">
-        <h1 class="text-7xl font-bold text-sky-950 pt-24">Why Partner With Us?</h1>
+    <div class="hidden md:flex w-full flex-col bg-home-bg bg-cover bg-no-repeat bg-center bg-fixed bg-right-bottom items-center">
+        <h1 class="text-6xl font-bold text-sky-950 pt-24">Why Partner With Us?</h1>
         <div class="text-3xl font-bold text-sky-950 text-center pt-24">
             <h1>By becoming a partner,</h1>
             <h1>your company stands to gain numerous advantages</h1>
@@ -126,6 +126,135 @@
 
             <div class="flex justify-center">
                 <button class="bg-sky-900 text-white font-bold py-2 px-10 rounded-full hover:bg-sky-950" type="submit">Send</button>
+            </div>
+        </div>
+    </div>
+    <div class="md:hidden flex w-full flex-col bg-home-bg bg-cover bg-no-repeat bg-center bg-fixed bg-right-bottom items-center">
+        <h1 class="text-3xl font-bold text-sky-950 pt-20">Why Partner With Us?</h1>
+        <div class="text-lg font-bold text-sky-950 text-center pt-6">
+            <h1>By becoming a partner,</h1>
+            <h1>your company stands to gain numerous advantages</h1>
+        </div>
+
+        <div class="flex flex-row flex-wrap gap-6 pt-4 w-4/5 place-content-center">
+            <div class="relative flex justify-center h-40 w-24 pt-2 rounded-xl text-center text-white items-center">
+                <img src="/image/pardner/gradient-box.png" alt="" class="absolute inset-0 rounded-xl object-cover">
+
+                <div class="relative flex flex-col items-center m-2 gap-3">
+                    <img src="/image/pardner/exposure.png" alt="Icon" class="size-16">
+                    <h1 class="relative text-[13px] font-semibold leading-relaxed ">Exposure to Tech Enthusiasts</h1>
+                </div>
+            </div>
+
+            <div class="relative flex justify-center h-40 w-24 pt-2 rounded-xl text-center text-white items-center">
+                <img src="/image/pardner/gradient-box.png" alt="" class="absolute inset-0 rounded-xl object-cover">
+
+                <div class="relative flex flex-col items-center m-2 gap-3">
+                    <img src="/image/pardner/network.png" alt="Icon" class="size-16">
+                    <h1 class="relative text-[13px] font-semibold leading-relaxed ">Networking Opportunities</h1>
+                </div>
+            </div>
+
+            <div class="relative flex justify-center h-40 w-24 pt-2 rounded-xl text-center text-white items-center">
+                <img src="/image/pardner/gradient-box.png" alt="" class="absolute inset-0 rounded-xl object-cover">
+
+                <div class="relative flex flex-col items-center m-2 gap-3">
+                    <img src="/image/pardner/media.png" alt="Icon" class="size-16">
+                    <h1 class="relative text-[13px] font-semibold leading-relaxed ">Media Coverage</h1>
+                </div>
+            </div>
+
+            <div class="relative flex justify-center h-40 w-24 pt-2 rounded-xl text-center text-white items-center">
+                <img src="/image/pardner/gradient-box.png" alt="" class="absolute inset-0 rounded-xl object-cover">
+
+                <div class="relative flex flex-col items-center m-2 gap-3">
+                    <img src="/image/pardner/innovation.png" alt="Icon" class="size-16">
+                    <h1 class="relative text-[13px] font-semibold leading-relaxed ">Innovation Recognition</h1>
+                </div>
+            </div>
+
+            <div class="relative flex justify-center h-40 w-24 pt-2 rounded-xl text-center text-white items-center">
+                <img src="/image/pardner/gradient-box.png" alt="" class="absolute inset-0 rounded-xl object-cover">
+
+                <div class="relative flex flex-col items-center m-2 gap-3">
+                    <img src="/image/pardner/target.png" alt="Icon" class="size-16">
+                    <h1 class="relative text-[13px] font-semibold leading-relaxed ">Target Marketing</h1>
+                </div>
+            </div>
+
+            <div class="relative flex justify-center h-40 w-24 pt-2 rounded-xl text-center text-white items-center">
+                <img src="/image/pardner/gradient-box.png" alt="" class="absolute inset-0 rounded-xl object-cover">
+
+                <div class="relative flex flex-col items-center m-2 gap-3">
+                    <img src="/image/pardner/community.png" alt="Icon" class="size-16">
+                    <h1 class="relative text-[13px] font-semibold leading-relaxed ">Community Engagement</h1>
+                </div>
+            </div>
+
+            <div class="relative flex justify-center h-40 w-24 pt-2 rounded-xl text-center text-white items-center">
+                <img src="/image/pardner/gradient-box.png" alt="" class="absolute inset-0 rounded-xl object-cover">
+
+                <div class="relative flex flex-col items-center m-2 gap-3">
+                    <img src="/image/pardner/collab.png" alt="Icon" class="size-16">
+                    <h1 class="relative text-[13px] font-semibold leading-relaxed ">Collaboration Opportunities</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-16 mb-12 py-5 px-6 w-4/5 flex flex-col items-center bg-gradient-to-br from-sky-950 to-pink-900 rounded-lg">
+            <h2 class="text-xl font-bold text-center mb-8 text-white">Interested? Don't hesitate! Fill the form, and get the benefit!</h2>
+            
+            <div class="mb-3 w-full">
+                <label class="block text-white font-bold mb-2" for="name">Name</label> 
+                <input class="w-full px-2 py-1 border rounded-lg text-gray-700" id="name" type="text" placeholder="Enter Your Name Here" required>
+            </div>
+
+            <div class="mb-3 w-full">
+                <label class="block text-white font-bold mb-2" for="email">Email</label>
+                <input class="w-full px-2 py-1 border rounded-lg text-gray-700" id="email" type="email" placeholder="Enter Your Email Here" required>
+            </div>
+
+            <div class="mb-3 w-full">
+                <label class="block text-white font-bold mb-2" for="company">Company</label>
+                <input class="w-full px-2 py-1 border rounded-lg text-gray-700" id="company" type="text" placeholder="Enter Your Company Here" required>
+            </div>
+            
+            <div class="mb-3 w-full">
+                <label class="block text-white font-bold mb-2" for="job-title">Job Title</label>
+                <input class="w-full px-2 py-1 border rounded-lg text-gray-700" id="job-title" type="text" placeholder="Enter Your Job Title Here" required>
+            </div>
+
+            <div class="mb-3 w-full">
+                <label class="block text-white font-bold mb-2">Partnership Goal</label>
+
+                <div class="flex gap-2">
+                    <label class="flex items-center">
+                        <input type="checkbox" class="hidden peer" name="goal" value="sponsor"/>
+                        <div class="w-3 h-3 rounded-sm border-2 border-white peer-checked:bg-white flex items-center justify-center"></div>
+                        <span class="mx-1 text-white">Sponsor</span>
+                    </label>
+
+                    <label class="flex items-center">
+                        <input type="checkbox" class="hidden peer" name="goal" value="media-partner"/>
+                        <div class="w-3 h-3 rounded-sm border-2 border-white peer-checked:bg-white flex items-center justify-center"></div>
+                        <span class="mx-1 text-white">Media Partner</span>
+                    </label>
+
+                    <label class="flex items-center">
+                        <input type="checkbox" class="hidden peer" name="goal" value="others"/>
+                        <div class="w-3 h-3 rounded-sm border-2 border-white peer-checked:bg-white flex items-center justify-center"></div>
+                        <span class="mx-1 text-white">Others</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="mb-4 w-full">
+                <label class="block text-white font-bold mb-2" for="description">Description</label>
+                <textarea class="w-full px-2 py-1 border rounded-lg text-gray-700" id="description" rows="4" placeholder="Enter Your Description Here"></textarea>
+            </div>
+
+            <div class="flex justify-center">
+                <button class="bg-sky-900 text-white font-bold py-1 px-5 rounded-full hover:bg-sky-950" type="submit">Send</button>
             </div>
         </div>
     </div>

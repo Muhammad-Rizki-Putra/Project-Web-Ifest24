@@ -36,10 +36,37 @@
                                 Innovation and Success in Business with Technology</li>
                             <!-- ... -->
                         </ul>
-                        <ul class="list-disc pb-20" style="width: auto; float: left;">
+                        <ul class="list-disc pb-10" style="width: auto; float: left;">
                             <li style="width: auto; float: left; color: rgb(12 40 62);" class="mx-4 text-lg">Empowering
                                 Business Growth through Data Science</li>
                         </ul>
+                        <p class="text-3xl font-bold mb-5">The Speakers</p>
+                        <div class="grid grid-cols-3 grid-rows-1 gap-x-10 pb-20">
+                            <div class="w-[252px] h-[320px] bg-speaker bg-cover bg-center bg-no-repeat p-1.5">
+                                <img src="/image/speaker_Sutansyah Marahakim.png" alt="" class="h-[75%] w-full">
+                                <div class="flex flex-col w-full bg-navy-bg h-[25%] flex items-center justify-center">
+                                    <h1 class="text-white font-semibold text-lg">Sutansyah Marahakim</h1>
+                                    <h2 class="text-white text-base leading-tight text-center">Creative Director &
+                                        Partner Kolaborasico</h2>
+                                </div>
+                            </div>
+                            <div class="w-[252px] h-[320px] bg-speaker bg-cover bg-center bg-no-repeat p-1.5">
+                                <img src="/image/speaker_Sudar Yatno.png" alt="" class="h-[75%] w-full">
+                                <div class="flex flex-col w-full bg-navy-bg h-[25%] flex items-center justify-center">
+                                    <h1 class="text-white font-semibold text-lg">Sudar Yatno</h1>
+                                    <h2 class="text-white text-base leading-tight text-center">Chief Technology Officer
+                                        (CTO) Gits.id</h2>
+                                </div>
+                            </div>
+                            <div class="w-[252px] h-[320px] bg-speaker bg-cover bg-center bg-no-repeat p-1.5">
+                                <img src="/image/speaker_Angel Metanosa Afinda.png" alt="" class="h-[75%] w-full">
+                                <div class="flex flex-col w-full bg-navy-bg h-[25%] flex items-center justify-center">
+                                    <h1 class="text-white font-semibold text-lg">Angel Metanosa Afinda</h1>
+                                    <h2 class="text-white text-base leading-tight text-center">Curriculum Developer
+                                        Dicoding</h2>
+                                </div>
+                            </div>
+                        </div>
                         <x-countdown></x-countdown>
                         <div style="background-image:url('image/Rectangle_74.png');"
                             class="bg-cover w-full p-3.5 text-white mt-20">
@@ -61,12 +88,46 @@
                                 Strategy Foundation</li>
                             <!-- ... -->
                         </ul>
-                        <ul class="list-disc pb-20" style="width: auto; float: left;">
+                        <ul class="list-disc pb-10" style="width: auto; float: left;">
                             <li style="width: auto; float: left; color: rgb(12 40 62);" class="mx-4 text-lg">Brand
                                 Identity & Market Launch Strategy</li>
                             <li style="width: auto; float: left; color: rgb(12 40 62);" class="mx-4 text-lg">Funding and
                                 Pitching</li>
                         </ul>
+                        <p class="text-3xl font-bold mb-5">The Mentors</p>
+                        <div class="grid grid-cols-4 grid-rows-1 gap-x-10 pb-20">
+                            <div class="w-[252px] h-[320px] bg-speaker bg-cover bg-center bg-no-repeat p-1.5">
+                                <img src="/image/mentor_Gilang Ramadhan.png" alt="" class="h-[75%] w-full">
+                                <div class="flex flex-col w-full bg-navy-bg h-[25%] flex items-center justify-center">
+                                    <h1 class="text-white font-semibold text-lg">Gilang Ramadhan</h1>
+                                    <h2 class="text-white text-base leading-tight text-center">Curriculum Developer &
+                                        Contributor Coordinator Dicoding</h2>
+                                </div>
+                            </div>
+                            <div class="w-[252px] h-[320px] bg-speaker bg-cover bg-center bg-no-repeat p-1.5">
+                                <img src="/image/mentor_Farih Muwaffaq.png" alt="" class="h-[75%] w-full">
+                                <div class="flex flex-col w-full bg-navy-bg h-[25%] flex items-center justify-center">
+                                    <h1 class="text-white font-semibold text-lg">Farih Muwaffaq</h1>
+                                    <h2 class="text-white text-base leading-tight text-center">CEO SelasarKampus</h2>
+                                </div>
+                            </div>
+                            <div class="w-[252px] h-[320px] bg-speaker bg-cover bg-center bg-no-repeat p-1.5">
+                                <img src="/image/mentor_Yahya Apristianto.png" alt="" class="h-[75%] w-full">
+                                <div class="flex flex-col w-full bg-navy-bg h-[25%] flex items-center justify-center">
+                                    <h1 class="text-white font-semibold text-lg">Yahya Apristianto</h1>
+                                    <h2 class="text-white text-base leading-tight text-center">Head of Marketing
+                                        Expansion Marketing</h2>
+                                </div>
+                            </div>
+                            <div class="w-[252px] h-[320px] bg-speaker bg-cover bg-center bg-no-repeat p-1.5">
+                                <img src="/image/mentor_Alvin Trianto Atmojo.png" alt="" class="h-[75%] w-full">
+                                <div class="flex flex-col w-full bg-navy-bg h-[25%] flex items-center justify-center">
+                                    <h1 class="text-white font-semibold text-lg">Alvin Trianto Atmojo</h1>
+                                    <h2 class="text-white text-base leading-tight text-center">QA Engineer Evermos &
+                                        Investment Commite Invst.id</h2>
+                                </div>
+                            </div>
+                        </div>
                         <x-countdown></x-countdown>
                         <p class="text-center text-3xl font-bold mt-10">Limited to Only 15 Selected Teams<br>100k/ team
                         </p>
@@ -88,24 +149,7 @@
                     <x-button textSize="text-2xl" textPadding="p-1">Register & Guidebook</x-button>
                 </a>
             </div>
-            <div class="flex flex-col justify-center w-full">
-                <h1 class="text-4xl text-center font-bold">The Speakers</h1>
-                <div class="flex flex-row items-center justify-center ">
-                    <div class="control-buttons">
-                        <button id="carousel-0-previousButton"><img src="/image/prev.png" alt=""></button>
-                    </div>
-                    <div class="gallery">
-                        <div class="gallery-container">
-                            <img src="/image/box.png" alt="box" class="gallery-item gallery-item-1" data-index="1">
-                            <img src="/image/box.png" alt="box" class="gallery-item gallery-item-2" data-index="2">
-                            <img src="/image/box.png" alt="box" class="gallery-item gallery-item-3" data-index="3">
-                        </div>
-                    </div>
-                    <div class="control-buttons">
-                        <button id="carousel-0-nextButton"><img src="/image/next.png" alt=""></button>
-                    </div>
-                </div>
-            </div>
+
             <div class="flex flex-row items-center justify-center w-auto rounded-md p-5 gap-y-5"
                 style="background-color: rgb(244 230 230);">
                 <div class="mx-4">
@@ -133,7 +177,7 @@
                         zahranmuntazar</p>
                 </div>
             </div>
-            <p>Poster??</p>
+            <img src="/image/POSTER TECHNO.png" class="h-auto w-[20%]" alt="">
             <div class="flex flex-col items-center justify-center w-full gap-y-10">
                 <p class="text-center text-6xl font-semibold">FaQ</p>
                 <div x-data="{ open: false }" class="w-1/2">
@@ -239,12 +283,39 @@
                             <li style="width: auto; float: left; color: rgb(12 40 62);" class="mx-4 text-sm">Empowering
                                 Business Growth through Data Science</li>
                         </ul>
+                        <p class="text-3xl font-bold mb-5">The Speakers</p>
+                        <div class="grid grid-cols-2 grid-rows-2 gap-x-2 gap-y-2 pb-20">
+                            <div class="w-[126px] h-[160px] bg-speaker bg-cover bg-center bg-no-repeat p-1.5">
+                                <img src="/image/speaker_Sutansyah Marahakim.png" alt="" class="h-[75%] w-full">
+                                <div class="flex flex-col w-full bg-navy-bg h-[25%] flex items-center justify-center">
+                                    <h1 class="text-white font-semibold text-sm">Sutansyah Marahakim</h1>
+                                    <h2 class="text-white text-xs leading-tight text-center">Creative Director &
+                                        Partner Kolaborasico</h2>
+                                </div>
+                            </div>
+                            <div class="w-[126px] h-[160px] bg-speaker bg-cover bg-center bg-no-repeat p-1.5">
+                                <img src="/image/speaker_Sudar Yatno.png" alt="" class="h-[75%] w-full">
+                                <div class="flex flex-col w-full bg-navy-bg h-[25%] flex items-center justify-center">
+                                    <h1 class="text-white font-semibold text-lg">Sudar Yatno</h1>
+                                    <h2 class="text-white text-base leading-tight text-center">Chief Technology Officer
+                                        (CTO) Gits.id</h2>
+                                </div>
+                            </div>
+                            <div class="w-[126px] h-[160px] bg-speaker bg-cover bg-center bg-no-repeat p-1.5">
+                                <img src="/image/speaker_Angel Metanosa Afinda.png" alt="" class="h-[75%] w-full">
+                                <div class="flex flex-col w-full bg-navy-bg h-[25%] flex items-center justify-center">
+                                    <h1 class="text-white font-semibold text-lg">Angel Metanosa Afinda</h1>
+                                    <h2 class="text-white text-base leading-tight text-center">Curriculum Developer
+                                        Dicoding</h2>
+                                </div>
+                            </div>
+                        </div>
                         <x-countdown-mobver></x-countdown-mobver>
                         <div style="background-image:url('image/Rectangle_74.png');"
                             class="bg-cover w-full p-1.5 text-white mt-10">
                             <p class="text-center text-3xl font-bold p-1.5">Free Ticket</p>
                             <p class="text-center text-2xl font-bold p-1.5">E-Certificate</p>
-                            
+
                         </div>
                     </div>
                     <div x-show="selected === 'rh-tp2'" x-transition class="flex flex-col items-center justify-center">
@@ -289,24 +360,6 @@
                         Register & Guidebook
                     </x-button></a>
 
-            </div>
-            <div class="flex flex-col justify-center w-full">
-                <h1 class="text-xl text-center font-bold mt-4">The Speakers</h1>
-                <div class="flex flex-row items-center justify-center">
-                    <div class="control-buttons">
-                        <button id="carousel-0-previousButton"><img src="/image/prev.png" alt=""></button>
-                    </div>
-                    <div class="gallery">
-                        <div class="gallery-container">
-                            <img src="/image/box.png" alt="box" class="gallery-item gallery-item-1" data-index="1">
-                            <img src="/image/box.png" alt="box" class="gallery-item gallery-item-2" data-index="2">
-                            <img src="/image/box.png" alt="box" class="gallery-item gallery-item-3" data-index="3">
-                        </div>
-                    </div>
-                    <div class="control-buttons">
-                        <button id="carousel-0-nextButton"><img src="/image/next.png" alt=""></button>
-                    </div>
-                </div>
             </div>
             <div class="flex flex-row items-center justify-center w-[95%] rounded-xl p-3"
                 style="background-color: rgb(244 230 230);">

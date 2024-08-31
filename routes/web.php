@@ -7,14 +7,19 @@ use App\Http\Controllers\SemnasController;
 use App\Http\Controllers\GoogleController;
 use App\Http\Controllers\ResetPasswordController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\PartnerController;
 
 Route::get('/', function () {
     return view('home', ['pagename' => 'Home']);
 });
 
+
+// partner
 Route::get('/partner-with-us', function () {
     return view('partner', ['pagename' => 'Partner']);
 });
+
+Route::post('/partner-with-us', [PartnerController::class, 'store']);
 
 // profile
 Route::get('/profile', [ProfileController::class, 'showProfile'])->middleware('auth');

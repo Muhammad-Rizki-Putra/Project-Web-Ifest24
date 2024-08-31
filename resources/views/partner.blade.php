@@ -1,5 +1,5 @@
 <x-layout>
-<x-slot:pagename>{{$pagename}}</x-slot:pagename>
+    <x-slot:pagename>{{$pagename}}</x-slot:pagename>
     <div class="hidden md:flex w-full flex-col bg-home-bg bg-cover bg-no-repeat bg-center bg-fixed bg-right-bottom items-center">
         <h1 class="text-6xl font-bold text-sky-950 pt-24">Why Partner With Us?</h1>
         <div class="text-3xl font-bold text-sky-950 text-center pt-24">
@@ -72,62 +72,90 @@
             </div>
         </div>
 
-        <div class="mt-32 mb-24 py-10 px-12 w-1/2 flex flex-col items-center bg-gradient-to-br from-sky-950 to-pink-900 rounded-3xl">
+        <!-- check1 -->
+        <form id='submit-form' action="/partner-with-us" method="POST" class="mt-32 mb-24 py-10 px-12 w-1/2 flex flex-col items-center bg-gradient-to-br from-sky-950 to-pink-900 rounded-3xl">
+            @csrf
+
             <h2 class="text-4xl font-bold text-center mb-8 text-white">Interested? Don't hesitate! Fill the form, and get the benefit!</h2>
-            
+
             <div class="mb-6 w-full">
-                <label class="block text-white font-bold mb-2" for="name">Name</label> 
-                <input class="w-full px-4 py-2 border rounded-lg text-gray-700" id="name" type="text" placeholder="Enter Your Name Here" required>
+                <label class="block text-white font-bold mb-2" for="name">Name</label>
+                <input class="w-full px-4 py-2 border rounded-lg text-gray-700 @error('name') border-red-500 @enderror" id="name" name="name" type="text" placeholder="Enter Your Name Here" value="{{ old('name') }}" required>
+                @error('name')
+                <span class="text-red-500 text-sm">{{ $message }}</span>
+                @enderror
             </div>
 
             <div class="mb-6 w-full">
                 <label class="block text-white font-bold mb-2" for="email">Email</label>
-                <input class="w-full px-4 py-2 border rounded-lg text-gray-700" id="email" type="email" placeholder="Enter Your Email Here" required>
+                <input class="w-full px-4 py-2 border rounded-lg text-gray-700 @error('email') border-red-500 @enderror" id="email" name="email" type="email" placeholder="Enter Your Email Here" value="{{ old('email') }}" required>
+                @error('email')
+                <span class="text-red-500 text-sm">{{ $message }}</span>
+                @enderror
             </div>
 
             <div class="mb-6 w-full">
                 <label class="block text-white font-bold mb-2" for="company">Company</label>
-                <input class="w-full px-4 py-2 border rounded-lg text-gray-700" id="company" type="text" placeholder="Enter Your Company Here" required>
+                <input class="w-full px-4 py-2 border rounded-lg text-gray-700 @error('company') border-red-500 @enderror" id="company" name="company" type="text" placeholder="Enter Your Company Here" value="{{ old('company') }}" required>
+                @error('company')
+                <span class="text-red-500 text-sm">{{ $message }}</span>
+                @enderror
             </div>
-            
+
             <div class="mb-6 w-full">
                 <label class="block text-white font-bold mb-2" for="job-title">Job Title</label>
-                <input class="w-full px-4 py-2 border rounded-lg text-gray-700" id="job-title" type="text" placeholder="Enter Your Job Title Here" required>
+                <input class="w-full px-4 py-2 border rounded-lg text-gray-700 @error('job_title') border-red-500 @enderror" id="job-title" name="job_title" type="text" placeholder="Enter Your Job Title Here" value="{{ old('job_title') }}" required>
+                @error('job_title')
+                <span class="text-red-500 text-sm">{{ $message }}</span>
+                @enderror
             </div>
 
             <div class="mb-6 w-full">
                 <label class="block text-white font-bold mb-2">Partnership Goal</label>
-
                 <div class="flex gap-4">
                     <label class="flex items-center">
-                        <input type="checkbox" class="hidden peer" name="goal" value="sponsor"/>
+                        <input type="checkbox" class="hidden peer" name="goal[]" value="sponsor" @if(is_array(old('goal')) && in_array('sponsor', old('goal'))) checked @endif />
                         <div class="w-5 h-5 rounded-md border-2 border-white peer-checked:bg-white flex items-center justify-center"></div>
                         <span class="ml-2 text-white">Sponsor</span>
                     </label>
 
                     <label class="flex items-center">
-                        <input type="checkbox" class="hidden peer" name="goal" value="media-partner"/>
+                        <input type="checkbox" class="hidden peer" name="goal[]" value="media-partner" @if(is_array(old('goal')) && in_array('media-partner', old('goal'))) checked @endif />
                         <div class="w-5 h-5 rounded-md border-2 border-white peer-checked:bg-white flex items-center justify-center"></div>
                         <span class="ml-2 text-white">Media Partner</span>
                     </label>
 
                     <label class="flex items-center">
-                        <input type="checkbox" class="hidden peer" name="goal" value="others"/>
+                        <input type="checkbox" class="hidden peer" name="goal[]" value="others" @if(is_array(old('goal')) && in_array('others', old('goal'))) checked @endif />
                         <div class="w-5 h-5 rounded-md border-2 border-white peer-checked:bg-white flex items-center justify-center"></div>
                         <span class="ml-2 text-white">Others</span>
                     </label>
                 </div>
+                @error('goal')
+                <span class="text-red-500 text-sm">{{ $message }}</span>
+                @enderror
             </div>
 
             <div class="mb-8 w-full">
                 <label class="block text-white font-bold mb-2" for="description">Description</label>
-                <textarea class="w-full px-4 py-2 border rounded-lg text-gray-700" id="description" rows="4" placeholder="Enter Your Description Here"></textarea>
+                <textarea class="w-full px-4 py-2 border rounded-lg text-gray-700 @error('description') border-red-500 @enderror" id="description" name="description" rows="4" placeholder="Enter Your Description Here">{{ old('description') }}</textarea>
+                @error('description')
+                <span class="text-red-500 text-sm">{{ $message }}</span>
+                @enderror
             </div>
+
+            @if (session()->has('success'))
+            <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative mb-4" role="alert">
+                <span class="block sm:inline">{{ session('success') }}</span>
+            </div>
+            @endif
 
             <div class="flex justify-center">
                 <button class="bg-sky-900 text-white font-bold py-2 px-10 rounded-full hover:bg-sky-950" type="submit">Send</button>
             </div>
-        </div>
+        </form>
+
+        <!-- mobver -->
     </div>
     <div class="md:hidden flex w-full flex-col bg-home-bg bg-cover bg-no-repeat bg-center bg-fixed bg-right-bottom items-center">
         <h1 class="text-3xl font-bold text-sky-950 pt-20">Why Partner With Us?</h1>
@@ -201,27 +229,40 @@
             </div>
         </div>
 
-        <div class="mt-16 mb-12 py-5 px-6 w-4/5 flex flex-col items-center bg-gradient-to-br from-sky-950 to-pink-900 rounded-lg">
+        <form id='submit-form' action="partner-with-us" method="POST" class="mt-16 mb-12 py-5 px-6 w-4/5 flex flex-col items-center bg-gradient-to-br from-sky-950 to-pink-900 rounded-lg">
+            @csrf
             <h2 class="text-xl font-bold text-center mb-8 text-white">Interested? Don't hesitate! Fill the form, and get the benefit!</h2>
-            
+
             <div class="mb-3 w-full">
-                <label class="block text-white font-bold mb-2" for="name">Name</label> 
-                <input class="w-full px-2 py-1 border rounded-lg text-gray-700" id="name" type="text" placeholder="Enter Your Name Here" required>
+                <label class="block text-white font-bold mb-2" for="name">Name</label>
+                <input class="w-full px-2 py-1 border rounded-lg text-gray-700" id="name" name="name" type="text" placeholder="Enter Your Name Here" value="{{ old('name') }}" required>
+                @error('name')
+                <span class="text-red-500 text-sm">{{ $message }}</span>
+                @enderror
             </div>
 
             <div class="mb-3 w-full">
                 <label class="block text-white font-bold mb-2" for="email">Email</label>
-                <input class="w-full px-2 py-1 border rounded-lg text-gray-700" id="email" type="email" placeholder="Enter Your Email Here" required>
+                <input class="w-full px-2 py-1 border rounded-lg text-gray-700" id="email" name="email" type="email" placeholder="Enter Your Email Here" value="{{ old('email') }}" required>
+                @error('email')
+                <span class="text-red-500 text-sm">{{ $message }}</span>
+                @enderror
             </div>
 
             <div class="mb-3 w-full">
                 <label class="block text-white font-bold mb-2" for="company">Company</label>
-                <input class="w-full px-2 py-1 border rounded-lg text-gray-700" id="company" type="text" placeholder="Enter Your Company Here" required>
+                <input class="w-full px-2 py-1 border rounded-lg text-gray-700" id="company" name="company" type="text" placeholder="Enter Your Company Here" value="{{ old('company') }}" required>
+                @error('company')
+                <span class="text-red-500 text-sm">{{ $message }}</span>
+                @enderror
             </div>
-            
+
             <div class="mb-3 w-full">
                 <label class="block text-white font-bold mb-2" for="job-title">Job Title</label>
-                <input class="w-full px-2 py-1 border rounded-lg text-gray-700" id="job-title" type="text" placeholder="Enter Your Job Title Here" required>
+                <input class="w-full px-2 py-1 border rounded-lg text-gray-700" id="job-title" name="job_title" type="text" placeholder="Enter Your Job Title Here" value="{{ old('job_title') }}" required>
+                @error('job_title')
+                <span class="text-red-500 text-sm">{{ $message }}</span>
+                @enderror
             </div>
 
             <div class="mb-3 w-full">
@@ -229,33 +270,46 @@
 
                 <div class="flex gap-2">
                     <label class="flex items-center">
-                        <input type="checkbox" class="hidden peer" name="goal" value="sponsor"/>
+                        <input type="checkbox" class="hidden peer" name="goal[]" value="sponsor" {{ is_array(old('goal')) && in_array('sponsor', old('goal')) ? 'checked' : '' }} />
                         <div class="w-3 h-3 rounded-sm border-2 border-white peer-checked:bg-white flex items-center justify-center"></div>
                         <span class="mx-1 text-white">Sponsor</span>
                     </label>
 
                     <label class="flex items-center">
-                        <input type="checkbox" class="hidden peer" name="goal" value="media-partner"/>
+                        <input type="checkbox" class="hidden peer" name="goal[]" value="media-partner" {{ is_array(old('goal')) && in_array('media-partner', old('goal')) ? 'checked' : '' }} />
                         <div class="w-3 h-3 rounded-sm border-2 border-white peer-checked:bg-white flex items-center justify-center"></div>
                         <span class="mx-1 text-white">Media Partner</span>
                     </label>
 
                     <label class="flex items-center">
-                        <input type="checkbox" class="hidden peer" name="goal" value="others"/>
+                        <input type="checkbox" class="hidden peer" name="goal[]" value="others" {{ is_array(old('goal')) && in_array('others', old('goal')) ? 'checked' : '' }} />
                         <div class="w-3 h-3 rounded-sm border-2 border-white peer-checked:bg-white flex items-center justify-center"></div>
                         <span class="mx-1 text-white">Others</span>
                     </label>
                 </div>
+                @error('goal')
+                <span class="text-red-500 text-sm">{{ $message }}</span>
+                @enderror
             </div>
 
             <div class="mb-4 w-full">
                 <label class="block text-white font-bold mb-2" for="description">Description</label>
-                <textarea class="w-full px-2 py-1 border rounded-lg text-gray-700" id="description" rows="4" placeholder="Enter Your Description Here"></textarea>
+                <textarea class="w-full px-2 py-1 border rounded-lg text-gray-700" id="description" name="description" rows="4" placeholder="Enter Your Description Here">{{ old('description') }}</textarea>
+                @error('description')
+                <span class="text-red-500 text-sm">{{ $message }}</span>
+                @enderror
             </div>
+
+
+            @if (session()->has('success'))
+            <div class="md:w-1/2 w-full bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative mb-4" role="alert">
+                <span class="block sm:inline">{{ session('success') }}</span>
+            </div>
+            @endif
 
             <div class="flex justify-center">
                 <button class="bg-sky-900 text-white font-bold py-1 px-5 rounded-full hover:bg-sky-950" type="submit">Send</button>
             </div>
-        </div>
+        </form>
     </div>
 </x-layout>

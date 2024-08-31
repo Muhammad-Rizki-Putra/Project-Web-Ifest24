@@ -83,11 +83,12 @@
 }
 
 .gallery-item{
-    height: 200px;
+    height: auto;
+    align-items: center;
     opacity: 0.8;
     position: absolute;
     transition: all 0.3s ease-in-out;
-    width: 330px;
+    width: auto;
     z-index: 0;
     border-radius: 15px;
     background-size: contain;
@@ -95,31 +96,41 @@
 
 /* gallery-3 */
 
-.gallery-3 .gallery-item-1 .gallery-item-3{
-    left: 250px;
-    opacity: 0.8;
-    width: 380px;
-    z-index: 1;
-}
-
 .gallery-3 .gallery-item-1{
     left: 30%;
     transform: translateX(-50%);
+    opacity: 0.5;
+    z-index: 1;
+    width: auto;
+    filter: blur(0.5rem);
+    
 }
 
 .gallery-3 .gallery-item-2{
     box-shadow: -2px 5px 33px 6px rgba(0, 0, 0,0.35);
-    height: 250px;
-    opacity: 1;
+    width: auto;
     left: 50%;
     transform: translateX(-50%);
+    opacity: 1;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-color: #FBF2E9;
+    background-size: contain;
+    background-image: url(/public/image/box_hm.png);
     z-index: 2;
+    background-size: 100% 100%;
+    padding: 30px;
 }
 
 .gallery-3 .gallery-item-3{
     left: 70%;
     transform: translateX(-50%);
+    opacity: 0.5;
+    z-index: 1;
+    width: auto;
+    filter: blur(0.5rem);
 }
+
 
 /* gallery 4 */
 
@@ -158,6 +169,7 @@
     transform: translateX(-50%);
     opacity: 0.25;
     width: auto;
+    filter: blur(1.5rem);
 }
 
 .gallery-5 .gallery-item-2{
@@ -166,6 +178,7 @@
     opacity: 0.5;
     z-index: 1;
     width: auto;
+    filter: blur(0.3rem);
 }
 
 .gallery-5 .gallery-item-3{
@@ -174,10 +187,11 @@
     left: 50%;
     transform: translateX(-50%);
     opacity: 1;
-    background-image: url(/public/image/box_hm.png);
     background-position: center;
     background-repeat: no-repeat; 
+    background-color: #FBF2E9;
     background-size: contain;
+    background-image: url(/public/image/box_hm.png);
     z-index: 2;
     background-size: 100% 100%;
     padding: 30px;
@@ -189,6 +203,7 @@
     opacity: 0.5;
     z-index: 1;
     width: auto;
+    filter: blur(0.3rem);
 }
 
 .gallery-5 .gallery-item-5{
@@ -196,6 +211,7 @@
     transform: translateX(-50%);
     opacity: 0.25;
     width: auto;
+    filter: blur(1.5rem);
 }
 
 /*  */
@@ -257,7 +273,7 @@
     right: -30px;
     padding: 10px;
     position: absolute;
-    top: 40;
+    top: 25%;
     transform: rotate(-45deg) translateY(-50%);
     transition: left 0.15s ease-in-out;
     width: 5px;

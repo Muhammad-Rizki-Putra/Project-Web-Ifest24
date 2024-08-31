@@ -5,7 +5,7 @@
             class="hidden md:flex items-center justify-center flex-col h-auto bg-itcomp-bg bg-fixed bg-right-bottom bg-cover bg-no-repeat py-20 gap-y-10 px-[25%]">
 
             <div>
-                <h1 class="text-3xl font-bold" style="color: rgb(12 40 62);">LAST ACT</h1>
+                <h1 class="text-6xl font-bold" style="color: rgb(12 40 62);">LAST ACT</h1>
             </div>
 
             <div class="flex flex-row gap-10">

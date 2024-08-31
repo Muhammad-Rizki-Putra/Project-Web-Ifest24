@@ -77,7 +77,7 @@
 
 <div class="md:hidden flex flex-col w-screen h-auto items-start justify-start bg-cream-bg px-5">
     <div class="flex flex-col items-start pt-3">
-        <h1 class="text-lg text-nowrap pb-2 ">Brought To You By</h1>
+        <h1 class="text-xl text-nowrap font-semibold pb-2 ">Brought To You By</h1>
         <div class="grid grid-cols-2 gap-2 items-center justify-start w-[100%]">
             <img src="/image/logo_ifest4.png" alt="" class="h-auto w-auto">
             <img src="/image/logo_himatif.png" alt="" class="h-auto w-auto">
@@ -85,7 +85,7 @@
     </div>
 
     <div class="flex flex-col items-start justify-start pt-3">
-        <h1 class="text-lg pb-2">Contacts</h1>
+        <h1 class="text-xl text-nowrap font-semibold pb-2">Contacts</h1>
         <div class="grid grid-rows-2 gap-2">
             <div class="flex flex-row">
                 <img src="/image/Email.png" alt="logo-email" class="mr-2 object-none">
@@ -100,7 +100,7 @@
     </div>
 
     <div class="flex flex-col items-start justify-start pt-3">
-        <h1 class="text-lg pb-2 text-nowrap">Follow Our Social Media</h1>
+        <h1 class="text-xl text-nowrap font-semibold pb-2">Follow Our Social Media</h1>
         <div class="grid grid-rows-2 gap-2 h-auto">
             <div class="flex flex-row items-center">
                 <a href="https://www.instagram.com/ifestunpad/" target="_blank" rel="noopener noreferrer"><img src="/image/Instagram.png" class="h-auto w-[60%]"
@@ -126,7 +126,27 @@
     </div>
 
     <div class="flex flex-col items-start justify-start pt-3">
-        <h1 class="text-lg text-nowrap">Partner Links</h1>
+        <h1 class="text-xl text-nowrap font-semibold">Partner Links</h1>
+        <div class="grid grid-flow-row-dense grid-cols-3 grid-rows-3 items-center">  
+            <div class="w-[100px] flex items-center justify-center">
+                <img src="/image/sponsor/dicoding.png" alt="" class="h-auto w-[100px]">
+            </div>
+            <div class="w-[100px] flex items-center justify-center">
+                <img src="/image/sponsor/gitsid.png" alt="" class="h-auto w-[80px]">
+            </div>
+            <div class="w-[100px] flex items-center justify-center">
+                <img src="/image/sponsor/kolaborasico.png" alt="" class="h-auto w-[100px]">
+            </div>
+            <div class="w-[100px] flex items-center justify-center">
+                <img src="/image/sponsor/mekari.png" alt="" class="h-auto w-[100px]">
+            </div>
+            <div class="w-[100px] flex items-center justify-center">
+                <img src="/image/sponsor/startupbandung.png" alt="" class="h-auto w-[100px]">
+            </div>
+
+
+
+        </div>
     </div>
 </div>
 

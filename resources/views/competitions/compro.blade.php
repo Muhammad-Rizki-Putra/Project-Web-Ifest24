@@ -9,8 +9,8 @@
         </div>
 
         <div class="flex flex-row items-center justify-center space-x-10 w-auto py-10">
-            <a href="https://drive.google.com/file/d/1d2Y6ryvdkKka1MtdKjUf6j-fMJ1mGZZ4/view?usp=sharing"><x-button textSize="text-2xl" textPadding="p-1">Booklet</x-button></a>
-            <a href=""><x-button textSize="text-2xl" textPadding="p-1">Registration</x-button></a>
+            <a href="https://drive.google.com/file/d/1d2Y6ryvdkKka1MtdKjUf6j-fMJ1mGZZ4/view?usp=sharing" target="_blank" rel="noopener noreferrer"><x-button textSize="text-2xl" textPadding="p-1">Booklet</x-button></a>
+            <a href="" target="_blank" rel="noopener noreferrer"><x-button textSize="text-2xl" textPadding="p-1">Registration</x-button></a>
         </div>
 
         <x-countdown>2024-08-15</x-countdown>
@@ -30,8 +30,8 @@
         </div>
 
         <div class="flex flex-row items-center justify-center space-x-10 w-auto py-10">
-            <a href="https://drive.google.com/file/d/1d2Y6ryvdkKka1MtdKjUf6j-fMJ1mGZZ4/view?usp=sharing"><x-button-mobver>Booklet</x-button-mobver></a>
-            <a href=""><x-button-mobver>Registration</x-button-mobver></a>
+            <a href="https://drive.google.com/file/d/1d2Y6ryvdkKka1MtdKjUf6j-fMJ1mGZZ4/view?usp=sharing" target="_blank" rel="noopener noreferrer"><x-button-mobver>Booklet</x-button-mobver></a>
+            <a href="" target="_blank" rel="noopener noreferrer"><x-button-mobver>Registration</x-button-mobver></a>
         </div>
 
         <x-countdown-mobver>2024-09-01</x-countdown-mobver>

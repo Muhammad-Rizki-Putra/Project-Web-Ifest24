@@ -18,7 +18,7 @@
                 <p class="text-center text-black text-3xl font-medium">To receive more details, please keep an eye on our Instagram!</p>
             </div>
 
-            <a href="https://www.instagram.com/ifestunpad/" class="w-full max-w-sm">
+            <a href="https://www.instagram.com/ifestunpad/" target="_blank" rel="noopener noreferrer" class="w-full max-w-sm">
                 <div class="bg-transparent rounded-xl p-6 px-2 w-full max-w-lg flex flex-row items-center justify-center gap-x-3 outline outline-2 outline-offset-2 outline-navy-bg">
                     <img src="/image/Instagram.png" alt="">
                     <p class="text-center text-navy-bg text-3xl font-medium">@ifest.unpad</p>
@@ -31,7 +31,7 @@
                 <p class="text-center text-black text-3xl font-medium">Will be held via Online Meeting</p>
             </div>
 
-            <a href="http://bit.lt/SCIFest" class="w-full max-w-lg">
+            <a href="http://bit.lt/SCIFest" target="_blank" rel="noopener noreferrer" class="w-full max-w-lg">
                 <div class="bg-transparent rounded-xl w-full max-w-lg flex flex-row items-center justify-center gap-x-3 outline outline-2 outline-offset-2 outline-navy-bg">
                     <img src="/image/Zoom.png" alt="" class="w-auto h-20">
                     <p class="text-center text-navy-bg text-3xl font-medium text-nowrap">Click here to Join!</p>
@@ -62,7 +62,7 @@
                 <p class="text-center text-black text-xl font-medium">To receive more details, please keep an eye on our Instagram!</p>
             </div>
 
-            <a href="https://www.instagram.com/ifestunpad/" class="w-auto max-w-sm">
+            <a href="https://www.instagram.com/ifestunpad/" target="_blank" rel="noopener noreferrer" class="w-auto max-w-sm">
                 <div class="bg-transparent rounded-xl p-6 px-2 w-auto max-w-lg flex flex-row items-center justify-center gap-x-3 outline outline-2 outline-offset-2 outline-navy-bg">
                     <img src="/image/Instagram.png" alt="">
                     <p class="text-center text-navy-bg text-xl font-medium">@ifest.unpad</p>
@@ -75,7 +75,7 @@
                 <p class="text-center text-black text-xl font-medium">Will be held via Online Meeting</p>
             </div>
 
-            <a href="http://bit.lt/SCIFest" class="w-full max-w-lg">
+            <a href="http://bit.lt/SCIFest" target="_blank" rel="noopener noreferrer" class="w-full max-w-lg">
                 <div class="bg-transparent rounded-xl w-full max-w-lg flex flex-row items-center justify-center gap-x-3 outline outline-2 outline-offset-2 outline-navy-bg">
                     <img src="/image/Zoom.png" alt="" class="w-auto h-20">
                     <p class="text-center text-navy-bg text-xl font-medium text-nowrap">Click here to Join!</p>

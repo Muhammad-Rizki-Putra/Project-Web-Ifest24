@@ -9,8 +9,8 @@
         </div>
 
         <div class="flex flex-row items-center justify-center space-x-10 w-auto py-10">
-            <a href="https://drive.google.com/file/d/1PUrcBSVbdaNC7KTzxGUNyBeLL1O7KoYz/view?usp=drive_link"><x-button textSize="text-2xl" textPadding="p-1">Booklet</x-button></a>
-            <a href="http://bit.ly/IFEST_INCOM2024"><x-button textSize="text-2xl" textPadding="p-1">Registration</x-button></a>
+            <a href="https://drive.google.com/file/d/1PUrcBSVbdaNC7KTzxGUNyBeLL1O7KoYz/view?usp=drive_link" target="_blank" rel="noopener noreferrer"><x-button textSize="text-2xl" textPadding="p-1">Booklet</x-button></a>
+            <a href="http://bit.ly/IFEST_INCOM2024" target="_blank" rel="noopener noreferrer"><x-button textSize="text-2xl" textPadding="p-1">Registration</x-button></a>
         </div>
 
         <x-countdown>2024-08-15</x-countdown>
@@ -30,8 +30,8 @@
         </div>
 
         <div class="flex flex-row items-center justify-center space-x-10 w-auto py-10">
-            <a href="https://drive.google.com/file/d/1PUrcBSVbdaNC7KTzxGUNyBeLL1O7KoYz/view?usp=drive_link"><x-button-mobver>Booklet</x-button-mobver></a>
-            <a href="http://bit.ly/IFEST_INCOM2024"><x-button-mobver>Registration</x-button-mobver></a>
+            <a href="https://drive.google.com/file/d/1PUrcBSVbdaNC7KTzxGUNyBeLL1O7KoYz/view?usp=drive_link" target="_blank" rel="noopener noreferrer"><x-button-mobver>Booklet</x-button-mobver></a>
+            <a href="http://bit.ly/IFEST_INCOM2024" target="_blank" rel="noopener noreferrer"><x-button-mobver>Registration</x-button-mobver></a>
         </div>
 
         <x-countdown-mobver>2024-09-14</x-countdown-mobver>

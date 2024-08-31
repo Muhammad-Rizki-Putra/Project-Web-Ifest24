@@ -2,7 +2,7 @@
     <x-slot:pagename>{{ $pagename }}</x-slot:pagename>
     <div class="w-auto h-auto bg-cream-bg p-10 rounded-lg hidden md:block">
         <div class="flex justify-end">
-            <a href="/" class="absolute"><img src="/image/cancel-logo.png" alt="" class="mt-10 mr-10"></a>
+            <a href="/" class="absolute"><img src="/image/cancel-logo.png" target="_blank" rel="noopener noreferrer" alt="" class="mt-10 mr-10"></a>
         </div>
         <div class="flex flex-row items-center justify-center h-auto mx-auto">
             <img class="w-[350px] h-auto m-auto hidden self-center xl:block pl-16 pt-4" src="image/logo_ifest.png" alt="logo_ifest">
@@ -60,7 +60,7 @@
                     </div>
 
                     <div class="w-full flex justify-end">
-                        <a href="/forgot-password" class="flex font-semibold w-full justify-end hover:underline hover:text-blue-500">Forgot your password?</a>
+                        <a href="/forgot-password" target="_blank" rel="noopener noreferrer" class="flex font-semibold w-full justify-end hover:underline hover:text-blue-500">Forgot your password?</a>
                     </div>
                     
                     <div class="flex justify-center mt-4">
@@ -70,7 +70,7 @@
                     </div>
                 </form>
 
-                <p>Don't have an account? <a href="/register" class="hover:underline hover:text-blue-500">Register here!</a></p>
+                <p>Don't have an account? <a href="/register" target="_blank" rel="noopener noreferrer" class="hover:underline hover:text-blue-500">Register here!</a></p>
                 
 
             </div>
@@ -125,8 +125,8 @@
                         class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-1 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                         id="grid-password" name="password" type="password" placeholder="Enter Your Password" required
                         value="{{ old('password') }}">
-                    <p class="text-sm">Forgot your password? <a href="/forgot-password" class="hover:underline hover:text-blue-500">Click Here!</a></p>
-                    <p class="text-sm">Don't have an account? <a href="/register" class="hover:underline hover:text-blue-500">Register here!</a></p>
+                    <p class="text-sm">Forgot your password? <a href="/forgot-password" target="_blank" rel="noopener noreferrer" class="hover:underline hover:text-blue-500">Click Here!</a></p>
+                    <p class="text-sm">Don't have an account? <a href="/register" target="_blank" rel="noopener noreferrer" class="hover:underline hover:text-blue-500">Register here!</a></p>
                 </div>
             </div>
             <div class="flex justify-center mt-7">

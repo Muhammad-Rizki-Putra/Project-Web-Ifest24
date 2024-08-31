@@ -1,6 +1,6 @@
 <x-layout>
     <x-slot:pagename>{{$pagename}}</x-slot:pagename>
-    <div class="hidden md:flex w-full flex-col bg-home-bg bg-cover bg-no-repeat bg-center bg-fixed bg-right-bottom items-center">
+    <div class="hidden md:flex w-full flex-col bg-itcomp-bg bg-cover bg-no-repeat bg-center bg-fixed bg-bottom items-center">
         <h1 class="text-6xl font-bold text-sky-950 pt-24">Why Partner With Us?</h1>
         <div class="text-3xl font-bold text-sky-950 text-center pt-24">
             <h1>By becoming a partner,</h1>

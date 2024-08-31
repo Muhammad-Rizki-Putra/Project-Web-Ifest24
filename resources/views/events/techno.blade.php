@@ -390,7 +390,7 @@
             </div>
 
             <div class="flex flex-row items-center justify-center space-x-10 w-auto mt-4 mb-4">
-                <a href="https://linktr.ee/Technopreneur2024"><x-button textSize="text-lg" textPadding="p-1">
+                <a href="https://linktr.ee/Technopreneur2024" target="_blank" rel="noopener noreferrer"><x-button textSize="text-lg" textPadding="p-1">
                         Register & Guidebook
                     </x-button></a>
 

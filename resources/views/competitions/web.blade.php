@@ -16,7 +16,7 @@
         <x-countdown>2024-08-15</x-countdown>
 
         <h1 class="text-5xl p-20 font-bold">Timeline of Activity</h1>
-        <div class="w-[45vh]">
+        <div class="w-[55vh]">
             <img src="/image/tl/webdev.png" alt="" class="flex h-auto">
         </div>
     </div>

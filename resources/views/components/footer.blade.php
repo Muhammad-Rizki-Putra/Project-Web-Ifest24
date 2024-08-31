@@ -79,8 +79,8 @@
     <div class="flex flex-col items-start pt-3">
         <h1 class="text-xl text-nowrap font-semibold pb-2 ">Brought To You By</h1>
         <div class="grid grid-cols-2 gap-2 items-center justify-start w-[100%]">
-            <img src="/image/logo_ifest4.png" alt="" class="h-auto w-auto">
-            <img src="/image/logo_himatif.png" alt="" class="h-auto w-auto">
+            <a href="/"><img src="/image/logo_ifest4.png" alt="" class="h-auto w-auto"></a>
+            <a href="http://himatif.fmipa.unpad.ac.id/" target="_blank" rel="noopener noreferrer"><img src="/image/logo_himatif.png" alt="" class="h-auto w-auto"></a>
         </div>
     </div>
 

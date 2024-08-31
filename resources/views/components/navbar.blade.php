@@ -89,7 +89,7 @@
     <!-- mobile navbar -->
 
     <div class="md:hidden flex flex-row items-start justify-between w-screen bg-cream-bg" x-data="{ isOpen: false }">
-        <img class="h-auto w-[50%] p-2" src="/image/logo_ifest2.png" alt="logo_ifest2">
+        <a href="/"><img class="h-auto w-[60%] p-2" src="/image/logo_ifest2.png" alt="logo_ifest2"></a>
         <div class="p-5">
             <button class="relative group mt-[1%]" x-on:click="isOpen = !isOpen">
                 <img src="/image/hamburger.png" alt="" class="w-auto h-5">

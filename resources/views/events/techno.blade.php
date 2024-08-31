@@ -124,7 +124,7 @@
                                 <div class="flex flex-col w-full bg-navy-bg h-[25%] flex items-center justify-center">
                                     <h1 class="text-white font-semibold text-lg">Alvin Trianto Atmojo</h1>
                                     <h2 class="text-white text-base leading-tight text-center">QA Engineer Evermos &
-                                        Investment Commite Invst.id</h2>
+                                        Investment Committee Invst.id</h2>
                                 </div>
                             </div>
                         </div>
@@ -368,8 +368,8 @@
                                 <img src="/image/mentor_Alvin Trianto Atmojo.png" alt="" class="h-[75%] w-full">
                                 <div class="flex flex-col w-full bg-navy-bg h-[25%] flex items-center justify-start">
                                     <h1 class="text-white font-semibold text-sm">Alvin Trianto Atmojo</h1>
-                                    <h2 class="text-white text-xs leading-tight text-center">QA Engineer Evermos &
-                                        Investment Commite Invst.id</h2>
+                                    <h2 class="text-white text-[10px] leading-tight text-center">QA Engineer Evermos &
+                                        Investment Committee Invst.id</h2>
                                 </div>
                             </div>
                         </div>

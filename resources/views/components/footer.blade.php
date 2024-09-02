@@ -3,7 +3,7 @@
         <h1 class="text-2xl pb-2 text-nowrap">Brought To You By</h1>
         <div class="flex flex-row items-center justify-center">
             <img src="/image/logo_ifest4.png" alt="" class="h-auto w-auto pr-3">
-            <img src="/image/logo_himatif.png" alt="" class="h-auto w-auto">
+            <img src="/image/logo_himatif.png" alt="" class="h-auto w-[512px]">
         </div>
     </div>
 

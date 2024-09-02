@@ -324,3 +324,8 @@
     animation: fill-up-to-down 0.5s ease-in-out;
     transform-origin: top;
 }
+
+@font-face {
+    font-family: 'Onest'; /* Change this to your font name */
+    src: url('/public/Fonts/TTF/OnestRegular1602-hint.ttf');
+}

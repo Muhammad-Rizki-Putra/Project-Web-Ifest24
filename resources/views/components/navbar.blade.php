@@ -1,27 +1,27 @@
 <nav class="fixed top-0 z-30" x-data="{ IsopenEvent: false, IsopenCompetition: false, IsopenProfile: false }">   
     <div class="hidden md:flex flex-col items-center justify-center h-[20%]">  
-        <div class="bg-cream-bg w-screen z-20">
+        <div class="bg-white h-full p-5 px-16 w-screen z-20 flex flex-row items-center justify-between">
             <div class="flex justify-center ">
-                <img class="h-auto w-auto pt-2" src="/image/logo_ifest2.png" alt="logo_ifest2">
+                <img class="h-auto w-[50px] pt-2" src="/image/logo_ifest.png" alt="logo_ifest2">
             </div>
-            <div class="hidden md:flex md:justify-center md:space-x-16 lg:space-x-24 pb-3">
-                <a href="/" class="text-lg font-reguler flex items-center">Home</a>
-                <a href="/partner-with-us" class="text-lg font-reguler flex items-center text-nowrap">Partner With Us!</a>
+            <div class="hidden md:flex md:justify-center md:space-x-16 lg:space-x-24 item-center h-full">
+                <a href="/" class="text-lg font-reguler flex items-center font-Onest">Home</a>
+                <a href="/partner-with-us" class="text-lg font-reguler flex items-center text-nowrap font-Onest">Partner With Us!</a>
                 <div class="flex flex-row items-center justify-center">
-                    <button @click="IsopenEvent = ! IsopenEvent, IsopenCompetition = false" class="text-lg font-reguler flex items-center">Events</button>
+                    <button @click="IsopenEvent = ! IsopenEvent, IsopenCompetition = false" class="text-lg font-reguler flex items-center font-Onest">Events</button>
                     <img src="/image/NavbarArrow.png" alt="" class="h-5 w-5 transition-transform duration-300 ease-in-out" :class="{'rotate-180': IsopenEvent}">
                 </div>
                 <div class="flex flex-row items-center justify-center">
-                <button @click="IsopenCompetition = ! IsopenCompetition, IsopenEvent = false" class="text-lg font-reguler flex items-center">Competitions</button>
+                <button @click="IsopenCompetition = ! IsopenCompetition, IsopenEvent = false" class="text-lg font-reguler flex items-center font-Onest">Competitions</button>
                     <img src="/image/NavbarArrow.png" alt="" class="h-5 w-5 transition-transform duration-300 ease-in-out" :class="{'rotate-180': IsopenCompetition}">
                 </div>
                 @if(auth()->guest())
                 <div x-data="{ open: false }" @mouseover="open = true" @mouseleave="open = false">
-                    <button class="text-lg font-reguler flex items-center">Login/Register</button>
+                    <button class="text-lg font-reguler flex items-center font-Onest">Login/Register</button>
                     <div x-show="open" x-transition class="absolute transform h-auto w-auto p-5 bg-cream-bg outline outline-2 rounded-sm mt-4">
                         <div class="flex flex-col gap-y-2">
-                            <a href="/login" class="block px-4 py-2 text-sm text-black font-semibold">Login</a>
-                            <a href="/register" class="block px-4 py-2 text-sm text-black font-semibold">Register</a>
+                            <a href="/login" class="block px-4 py-2 text-sm text-black font-semibold font-Onest">Login</a>
+                            <a href="/register" class="block px-4 py-2 text-sm text-black font-semibold font-Onest">Register</a>
                         </div>
                     </div>
                 </div>

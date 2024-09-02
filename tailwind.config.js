@@ -17,6 +17,10 @@ export default {
           '100%': { backgroundColor: theme('colors.transparent') },
         },
       }),
+
+      fontFamily: {
+        'Onest' : ['Onest','cursive']
+      },
       
 
       colors: {

@@ -2,7 +2,7 @@
     <div class="hidden md:flex flex-col items-center justify-center h-[20%]">  
         <div class="bg-cream-bg w-screen z-20">
             <div class="flex justify-center ">
-                <img class="h-auto w-auto pt-2" src="/image/logo_ifest2.png" alt="logo_ifest2">
+                <a href="/"><img class="h-auto w-auto pt-2" src="/image/logo_ifest2.png" alt="logo_ifest2"></a> 
             </div>
             <div class="hidden md:flex md:justify-center md:space-x-16 lg:space-x-24 pb-3">
                 <a href="/" class="text-lg font-reguler flex items-center">Home</a>

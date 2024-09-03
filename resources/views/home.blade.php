@@ -20,7 +20,7 @@
                     <img class="w-full h-[492px]" src="/image/doc.png" alt="">
                 </div>
                 <div class="flex flex-col text-balance ml-10 mt-10 lg:mt-0">
-                    <h1 class="text-7xl">Premiere Launch</h1>
+                    <h1 class="text-7xl pb-[22px]">Premiere Launch</h1>
                     <p class="text-3xl max-w-[578px]">A platform that enables Founders or Strategic Partners from
                         multiple companies involved in the Artificial Intelligence and Financial Technology sectors,
                         alongside experts and specialists in these domains.</p>

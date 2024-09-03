@@ -1,50 +1,30 @@
 <nav class="fixed top-0 z-30" x-data="{ IsopenEvent: false, IsopenCompetition: false, IsopenProfile: false }">   
-    <div class="hidden md:flex flex-col items-center justify-center h-[20%]">  
-        <div class="bg-white h-full p-5 px-16 w-screen z-20 flex flex-row items-center justify-between">
+    <div class="hidden md:flex flex-col items-end h-[20%] ">  
+        <div class="bg-white h-full p-5 px-16 w-screen z-20 flex flex-row items-center justify-between shadow-xl">
             <div class="flex justify-center ">
                 <img class="h-auto w-[50px] pt-2" src="/image/logo_ifest.png" alt="logo_ifest2">
             </div>
             <div class="hidden md:flex md:justify-center md:space-x-16 lg:space-x-24 item-center h-full">
-                <a href="/" class="text-lg font-reguler flex items-center font-Onest">Home</a>
-                <a href="/partner-with-us" class="text-lg font-reguler flex items-center text-nowrap font-Onest">Partner With Us!</a>
+                <a href="/" class="text-lg font-reguler flex items-center ">Home</a>
+                <a href="/partner-with-us" class="text-lg font-reguler flex items-center text-nowrap ">Partner With Us!</a>
                 <div class="flex flex-row items-center justify-center">
-                    <button @click="IsopenEvent = ! IsopenEvent, IsopenCompetition = false" class="text-lg font-reguler flex items-center font-Onest">Events</button>
+                    <button @click="IsopenEvent = ! IsopenEvent, IsopenCompetition = false , IsopenProfile = false" class="text-lg font-reguler flex items-center ">Events</button>
                     <img src="/image/NavbarArrow.png" alt="" class="h-5 w-5 transition-transform duration-300 ease-in-out" :class="{'rotate-180': IsopenEvent}">
                 </div>
                 <div class="flex flex-row items-center justify-center">
-                <button @click="IsopenCompetition = ! IsopenCompetition, IsopenEvent = false" class="text-lg font-reguler flex items-center font-Onest">Competitions</button>
+                    <button @click="IsopenCompetition = ! IsopenCompetition, IsopenEvent = false, IsopenProfile = false" class="text-lg font-reguler flex items-center ">Competitions</button>
                     <img src="/image/NavbarArrow.png" alt="" class="h-5 w-5 transition-transform duration-300 ease-in-out" :class="{'rotate-180': IsopenCompetition}">
                 </div>
                 @if(auth()->guest())
-                <div x-data="{ open: false }" @mouseover="open = true" @mouseleave="open = false">
-                    <button class="text-lg font-reguler flex items-center font-Onest">Login/Register</button>
-                    <div x-show="open" x-transition class="absolute transform h-auto w-auto p-5 bg-cream-bg outline outline-2 rounded-sm mt-4">
-                        <div class="flex flex-col gap-y-2">
-                            <a href="/login" class="block px-4 py-2 text-sm text-black font-semibold font-Onest">Login</a>
-                            <a href="/register" class="block px-4 py-2 text-sm text-black font-semibold font-Onest">Register</a>
-                        </div>
-                    </div>
+                <div class="flex flex-row items-center justify-center">
+                    <button @click="IsopenProfile = ! IsopenProfile, IsopenCompetition = false, IsopenEvent = false" class="text-lg font-reguler flex items-center ">Login/Register</button>
+                    <img src="/image/NavbarArrow.png" alt="" class="h-5 w-5 transition-transform duration-300 ease-in-out" :class="{'rotate-180': IsopenProfile}">
                 </div>
                 @else
-                <!-- <div x-data="{ open: false }" @mouseover="open = true" @mouseleave="open = false">
-                    <button class="text-lg font-reguler flex items-center">{{ auth()->user()->fullname }}</button>
-                    <div x-show="open" class="absolute bg-black opacity opacity-50 mt-2">
-                        <a href="/profile" class="block px-4 py-2 text-sm text-white">Profile</a>
-                        <a href="/logout" class="block px-4 py-2 text-sm text-white">Logout</a>
-                    </div>
-                </div> -->
-                <div class="relative">
-                    <button x-on:click="IsopenProfile = !IsopenProfile">
-                        <img src="/image/DefaultProfilePicture.jpg" alt="" class="w-10 h-auto rounded-full">
-                    </button>
-                    <div x-show="IsopenProfile" x-transition class="absolute left-1/2 transform -translate-x-1/2 h-auto w-auto p-5 bg-cream-bg outline outline-2 rounded-sm mt-4">
-                        <div class="flex flex-col gap-y-2">
-                            <a href="/profile" class="block px-4 py-2 text-sm text-black font-semibold">Profile</a>
-                            <a href="/logout" class="block px-4 py-2 text-sm text-black font-semibold">Logout</a>
-                        </div>
-                    </div>
+                <div class="flex flex-row items-center justify-center">
+                    <button @click="IsopenProfile = ! IsopenProfile, IsopenCompetition = false, IsopenEvent = false" class="text-lg font-reguler flex items-center ">Profile/Logout</button>
+                    <img src="/image/NavbarArrow.png" alt="" class="h-5 w-5 transition-transform duration-300 ease-in-out" :class="{'rotate-180': IsopenProfile}">
                 </div>
-
                 @endif
             </div>
         </div>
@@ -56,9 +36,9 @@
         x-transition:leave-start="transform translate-y-0" 
         x-transition:leave-end="transform -translate-y-full">
             <div class="flex flex-row items-center justify-evenly">
-                <a href="/grand-opening" class="block px-4 text-sm text-white font-semibold">Grand Opening</a>
-                <a href="/technopreneur" class="block px-4 text-sm text-white font-semibold">Technopreneur</a>
-                <a href="/last-act" class="block px-4 text-sm text-white font-semibold">Last Act</a>
+                <a href="/grand-opening" class="block px-4 text-sm text-white font-semibold ">Grand Opening</a>
+                <a href="/technopreneur" class="block px-4 text-sm text-white font-semibold ">Technopreneur</a>
+                <a href="/last-act" class="block px-4 text-sm text-white font-semibold ">Last Act</a>
             </div>
         </div>
 
@@ -82,13 +62,41 @@
                 <a href="/web-development-competition" class="lg:hidden block  py-2 text-xs font-semibold text-white">WebDev</a>
             </div>
         </div>
+
+        @if(auth()->guest())
+        <div x-show="IsopenProfile" class="bg-navy-bg w-[50%] h-7 rounded-b-lg relative items-center justify-center z-0"
+        x-transition:enter="transition ease-out duration-500" 
+        x-transition:enter-start="opacity-0 transform -translate-y-full" 
+        x-transition:enter-end="opacity-100 transform translate-y-0"
+        x-transition:leave="transition ease-in -duration-100"
+        x-transition:leave-start="transform translate-y-0" 
+        x-transition:leave-end="transform -translate-y-full">
+            <div class="flex flex-row items-center justify-evenly">
+                <a href="/login" class="block px-4 py-2 text-sm text-white  font-semibold">Login</a>
+                <a href="/register" class="block px-4 py-2 text-sm text-white font-semibold ">Register</a>
+            </div>
+        </div>
+        @else
+        <div x-show="IsopenProfile" class="bg-navy-bg w-[50%] h-7 rounded-b-lg relative items-center justify-center z-0"
+        x-transition:enter="transition ease-out duration-500" 
+        x-transition:enter-start="opacity-0 transform -translate-y-full" 
+        x-transition:enter-end="opacity-100 transform translate-y-0"
+        x-transition:leave="transition ease-in -duration-100"
+        x-transition:leave-start="transform translate-y-0" 
+        x-transition:leave-end="transform -translate-y-full">
+            <div class="flex flex-row items-center justify-evenly">
+                <a href="/profile" class="block px-4 py-2 text-sm text-white  font-semibold">Profile</a>
+                <a href="/logout" class="block px-4 py-2 text-sm text-white  font-semibold">Logout</a>
+            </div>
+        </div>
+        @endif
     </div>
 
-    <!-- bg-cream-bg w-screen z-20 -->
+    <!-- bg-white w-screen z-20 -->
 
     <!-- mobile navbar -->
 
-    <div class="md:hidden flex flex-row items-start justify-between w-screen bg-cream-bg" x-data="{ isOpen: false }">
+    <div class="md:hidden flex flex-row items-start justify-between w-screen bg-white shadow-xl" x-data="{ isOpen: false }">
         <a href="/"><img class="h-auto w-[60%] p-2" src="/image/logo_ifest2.png" alt="logo_ifest2"></a>
         <div class="p-5">
             <button class="relative group mt-[1%]" x-on:click="isOpen = !isOpen">
@@ -97,7 +105,7 @@
         </div>
         <div class="absolute bg-black w-[calc(100vh+1vh)] h-[calc(100vh+1vh)] opacity-50" x-show="isOpen"></div>
         <div 
-            class="absolute right-0 z-20 w-[50%] h-auto max-h-screen bg-cream-bg flex flex-col rounded-lg text-end outline outline-2 outline-offset-2 outline-navy-bg overflow-y-auto"
+            class="absolute right-0 z-20 w-[50%] h-auto max-h-screen bg-white flex flex-col rounded-lg text-end outline outline-2 outline-offset-2 outline-navy-bg overflow-y-auto"
             x-show="isOpen" 
             x-transition:enter="transition ease-out duration-200" 
             x-transition:enter-start="opacity-0 transform translate-x-full" 
@@ -129,7 +137,7 @@
                         x-transition:leave="transition ease-in duration-75" 
                         x-transition:leave-start="opacity-100 transform scale-100" 
                         x-transition:leave-end="opacity-0 transform scale-95" 
-                        class="mt-2 bg-cream-bg fill-up-to-down"
+                        class="mt-2 bg-white fill-up-to-down"
                     >
                         <a href="/grand-opening" class="block px-4 py-2 text-sm text-gray-700">Grand Opening</a>
                         <a href="/technopreneur" class="block px-4 py-2 text-sm text-gray-700">Technopreneur</a>
@@ -148,7 +156,7 @@
                         x-transition:leave="transition ease-in duration-75" 
                         x-transition:leave-start="opacity-100 transform scale-100" 
                         x-transition:leave-end="opacity-0 transform scale-95" 
-                        class="mt-2 bg-cream-bg fill-up-to-down"
+                        class="mt-2 bg-white fill-up-to-down"
                     >
                         <a href="/competitive-programming" class="block px-4 py-2 text-sm text-gray-700">Competitive Programming</a>
                         <a href="/data-analysis-competition" class="block px-4 py-2 text-sm text-gray-700">Data Analysis</a>
@@ -171,7 +179,7 @@
                             x-transition:leave="transition ease-in duration-75" 
                             x-transition:leave-start="opacity-100 transform scale-100" 
                             x-transition:leave-end="opacity-0 transform scale-95" 
-                            class="mt-2 bg-cream-bg fill-up-to-down"
+                            class="mt-2 bg-white fill-up-to-down"
                         >
                         <a href="/login" class="block px-4 py-2 text-sm text-gray-700">Login</a>
                         <a href="/register" class="block px-4 py-2 text-sm text-gray-700">Register</a>
@@ -190,7 +198,7 @@
                             x-transition:leave="transition ease-in duration-75" 
                             x-transition:leave-start="opacity-100 transform scale-100" 
                             x-transition:leave-end="opacity-0 transform scale-95" 
-                            class="mt-2 bg-cream-bg fill-up-to-down"
+                            class="mt-2 bg-white fill-up-to-down"
                         >
                         <a href="/profile" class="block px-4 py-2 text-sm text-gray-700">Profile</a>
                         <a href="/logout" class="block px-4 py-2 text-sm text-gray-700">Logout</a>

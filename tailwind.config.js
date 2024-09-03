@@ -19,7 +19,7 @@ export default {
       }),
 
       fontFamily: {
-        'Onest' : ['Onest','cursive']
+        'sans' : ['Onest','cursive']
       },
       
 

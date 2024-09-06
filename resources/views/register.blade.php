@@ -5,8 +5,9 @@
             <a href="/" class="absolute"><img src="/image/cancel-logo.png" alt="" class=""></a>
         </div>
         <div class="flex flex-row items-center justify-center h-auto mx-auto">
-        <img class="w-[350px] h-auto m-auto hidden self-center xl:block pl-16 pt-4" src="image/logo_ifest.png" alt="logo_ifest">
-        <div class="mx-10 hidden xl:block h-[80vh] w-[2px] bg-black"></div>
+            <img class="w-[350px] h-auto m-auto hidden self-center xl:block pl-16 pt-4" src="image/logo_ifest.png"
+                alt="logo_ifest">
+            <div class="mx-10 hidden xl:block h-[80vh] w-[2px] bg-black"></div>
             <div class="flex flex-col items-center py-4 my-auto h-auto max-h-[627px]">
                 <h1 class="text-5xl pb-5 font-bold text-navy-bg">
                     Register
@@ -21,13 +22,13 @@
                                     Full Name
                                 </label>
                                 @error('fullname')
-                                <p class="text-red-500 text-xs italic">{{ $message }}</p>
+                                    <p class="text-red-500 text-xs italic">{{ $message }}</p>
                                 @enderror
                             </div>
                             <input
                                 class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded md:py-2 py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                                id="grid-fullname" type="text" name="fullname" placeholder="Enter Your Full Name" required
-                                value="{{ old('fullname') }}">
+                                id="grid-fullname" type="text" name="fullname" placeholder="Enter Your Full Name"
+                                required value="{{ old('fullname') }}">
                         </div>
                     </div>
                     <div class="flex flex-wrap -mx-3 ">
@@ -38,7 +39,7 @@
                                     Email
                                 </label>
                                 @error('email')
-                                <p class="text-red-500 text-xs italic">{{ $message }}</p>
+                                    <p class="text-red-500 text-xs italic">{{ $message }}</p>
                                 @enderror
                             </div>
                             <input
@@ -56,7 +57,7 @@
                                     Password
                                 </label>
                                 @error('password')
-                                <p class="text-red-500 text-xs italic">{{ $message }}</p>
+                                    <p class="text-red-500 text-xs italic">{{ $message }}</p>
                                 @enderror
                             </div>
                             <input
@@ -74,7 +75,7 @@
                                     Confirm your Password
                                 </label>
                                 @error('password_confirmation')
-                                <p class="text-red-500 text-xs italic">{{ $message }}</p>
+                                    <p class="text-red-500 text-xs italic">{{ $message }}</p>
                                 @enderror
                             </div>
                             <input
@@ -92,7 +93,7 @@
                                     Current Level of Education
                                 </label>
                                 @error('education_level')
-                                <p class="text-red-500 text-xs italic">{{ $message }}</p>
+                                    <p class="text-red-500 text-xs italic">{{ $message }}</p>
                                 @enderror
                             </div>
                             <div class="relative">
@@ -129,13 +130,13 @@
                                     Institution Name
                                 </label>
                                 @error('institution')
-                                <p class="text-red-500 text-xs italic">{{ $message }}</p>
+                                    <p class="text-red-500 text-xs italic">{{ $message }}</p>
                                 @enderror
                             </div>
                             <input
                                 class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                                id="grid-institution" type="text" name="institution" placeholder="Enter Your Institution"
-                                required value="{{ old('institution') }}">
+                                id="grid-institution" type="text" name="institution"
+                                placeholder="Enter Your Institution" required value="{{ old('institution') }}">
                         </div>
                     </div>
 
@@ -147,7 +148,7 @@
                                     Date Birth
                                 </label>
                                 @error('birth_date')
-                                <p class="text-red-500 text-xs italic">{{ $message }}</p>
+                                    <p class="text-red-500 text-xs italic">{{ $message }}</p>
                                 @enderror
                             </div>
                             <input
@@ -163,47 +164,61 @@
                                     Where do you know IFest?
                                 </label>
                                 @error('ifest_info')
-                                <p class="text-red-500 text-xs italic">{{ $message }}</p>
+                                    <p class="text-red-500 text-xs italic">{{ $message }}</p>
                                 @enderror
                             </div>
                             <div class="relative">
                                 @php
-                                $oldIfestInfo = old('ifest_info', []);
-                                if (!is_array($oldIfestInfo)) {
-                                $oldIfestInfo = [];
-                                }
-                                $ifestInfoValue = implode(', ', $oldIfestInfo);
+                                    $oldIfestInfo = old('ifest_info', []);
+                                    if (!is_array($oldIfestInfo)) {
+                                        $oldIfestInfo = [];
+                                    }
+                                    $ifestInfoValue = implode(', ', $oldIfestInfo);
                                 @endphp
-                                <input type="hidden" id="desktop-grid-ifest-info" name="ifest_info" value="{{ $ifestInfoValue }}">
+                                <input type="hidden" id="desktop-grid-ifest-info" name="ifest_info"
+                                    value="{{ $ifestInfoValue }}">
                                 <input
                                     class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded md:py-2 py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                                    id="desktop-grid-ifest-info-display" type="text" placeholder="Select Your Options" required readonly
-                                    onclick="toggleDesktopCheckboxes()" value="{{ $ifestInfoValue }}">
-                                <div id="desktop-checkboxes" class="absolute border border-gray-200 rounded shadow-lg hidden p-4" style="bottom: 100%; margin-bottom: 10px; background-color: rgba(255, 255, 255, 0.8);">
+                                    id="desktop-grid-ifest-info-display" type="text" placeholder="Select Your Options"
+                                    required readonly onclick="toggleDesktopCheckboxes()" value="{{ $ifestInfoValue }}">
+                                <div id="desktop-checkboxes"
+                                    class="absolute border border-gray-200 rounded shadow-lg hidden p-4"
+                                    style="bottom: 100%; margin-bottom: 10px; background-color: rgba(255, 255, 255, 0.8);">
                                     <div class="grid grid-cols-2 gap-4">
-                                        <label><input type="checkbox" name="ifest_info[]" value="Social Media" onclick="updateInputDesktop()" {{ in_array('Social Media', $oldIfestInfo) ? 'checked' : '' }}> Social Media</label>
-                                        <label><input type="checkbox" name="ifest_info[]" value="Friend" onclick="updateInputDesktop()" {{ in_array('Friend', $oldIfestInfo) ? 'checked' : '' }}> Friend</label>
-                                        <label><input type="checkbox" name="ifest_info[]" value="Roadshow" onclick="updateInputDesktop()" {{ in_array('Roadshow', $oldIfestInfo) ? 'checked' : '' }}> Roadshow</label>
-                                        <label><input type="checkbox" name="ifest_info[]" value="Media Partner" onclick="updateInputDesktop()" {{ in_array('Media Partner', $oldIfestInfo) ? 'checked' : '' }}> Media Partner</label>
-                                        <label><input type="checkbox" name="ifest_info[]" value="Ads" onclick="updateInputDesktop()" {{ in_array('Ads', $oldIfestInfo) ? 'checked' : '' }}> Ads</label>
-                                        <label><input type="checkbox" name="ifest_info[]" value="Other" onclick="toggleOtherInput('desktop-other-input'); updateInputDesktop()" {{ in_array('Other', $oldIfestInfo) ? 'checked' : '' }}> Other</label>
+                                        <label><input type="checkbox" name="ifest_info[]" value="Social Media"
+                                                onclick="updateInputDesktop()" {{ in_array('Social Media', $oldIfestInfo) ? 'checked' : '' }}> Social Media</label>
+                                        <label><input type="checkbox" name="ifest_info[]" value="Friend"
+                                                onclick="updateInputDesktop()" {{ in_array('Friend', $oldIfestInfo) ? 'checked' : '' }}> Friend</label>
+                                        <label><input type="checkbox" name="ifest_info[]" value="Roadshow"
+                                                onclick="updateInputDesktop()" {{ in_array('Roadshow', $oldIfestInfo) ? 'checked' : '' }}> Roadshow</label>
+                                        <label><input type="checkbox" name="ifest_info[]" value="Media Partner"
+                                                onclick="updateInputDesktop()" {{ in_array('Media Partner', $oldIfestInfo) ? 'checked' : '' }}> Media Partner</label>
+                                        <label><input type="checkbox" name="ifest_info[]" value="Ads"
+                                                onclick="updateInputDesktop()" {{ in_array('Ads', $oldIfestInfo) ? 'checked' : '' }}> Ads</label>
+                                        <label><input type="checkbox" name="ifest_info[]" value="Other"
+                                                onclick="toggleOtherInput('desktop-other-input'); updateInputDesktop()"
+                                                {{ in_array('Other', $oldIfestInfo) ? 'checked' : '' }}> Other</label>
                                     </div>
                                     <input
                                         class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mt-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 {{ in_array('Other', $oldIfestInfo) ? '' : 'hidden' }}"
-                                        id="desktop-other-input" type="text" name="ifest_info_other" placeholder="Please specify" oninput="updateInputDesktop()" value="{{ old('ifest_info_other') }}">
+                                        id="desktop-other-input" type="text" name="ifest_info_other"
+                                        placeholder="Please specify" oninput="updateInputDesktop()"
+                                        value="{{ old('ifest_info_other') }}">
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="flex justify-center mt-4">
-                        <button type="submit" class="image-button">
-                            <img src="image/tombol_regis.png" alt="button image">
+                        <button type="submit"
+                            class="p-5 bg-gradient-to-br from-sky-950 to-pink-900 transition duration-500 ease-in-out hover:from-pink-900 hover:to-sky-950 py-2 px-10 rounded-sm">
+                            <h1 class="text-white">Register</h1>
                         </button>
                     </div>
                 </form>
 
-                <p>Already have an account? <a href="/login"  class="hover:underline hover:text-blue-500">Login here!</a></p>
+                <p>Already have an account? <a href="/login" class="hover:underline hover:text-blue-500">Login here!</a>
+                </p>
 
             </div>
         </div>
@@ -225,7 +240,7 @@
                         Full Name
                     </label>
                     @error('fullname')
-                    <p class="text-red-500 text-xs italic">{{ $message }}</p>
+                        <p class="text-red-500 text-xs italic">{{ $message }}</p>
                     @enderror
                     <input
                         class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-1 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
@@ -241,7 +256,7 @@
                         Email
                     </label>
                     @error('email')
-                    <p class="text-red-500 text-xs italic">{{ $message }}</p>
+                        <p class="text-red-500 text-xs italic">{{ $message }}</p>
                     @enderror
                     <input
                         class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-1 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
@@ -257,12 +272,11 @@
                         Password
                     </label>
                     @error('password')
-                    <p class="text-red-500 text-xs italic">{{ $message }}</p>
+                        <p class="text-red-500 text-xs italic">{{ $message }}</p>
                     @enderror
                     <input
                         class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-1 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                        id="grid-password" type="password" name="password" placeholder="Enter Your Password"
-                        required>
+                        id="grid-password" type="password" name="password" placeholder="Enter Your Password" required>
                 </div>
             </div>
 
@@ -273,7 +287,7 @@
                         Confirm Password
                     </label>
                     @error('password_confirmation')
-                    <p class="text-red-500 text-xs italic">{{ $message }}</p>
+                        <p class="text-red-500 text-xs italic">{{ $message }}</p>
                     @enderror
                     <input
                         class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-1 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
@@ -289,12 +303,12 @@
                         Date Birth
                     </label>
                     @error('birth_date')
-                    <p class="text-red-500 text-xs italic">{{ $message }}</p>
+                        <p class="text-red-500 text-xs italic">{{ $message }}</p>
                     @enderror
                     <input
                         class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-1 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                        id="grid-birth-date" type="date" name="birth_date" placeholder="Select Your Birth Date"
-                        required value="{{ old('birth_date') }}">
+                        id="grid-birth-date" type="date" name="birth_date" placeholder="Select Your Birth Date" required
+                        value="{{ old('birth_date') }}">
                 </div>
             </div>
 
@@ -305,13 +319,12 @@
                         Current Level of Education
                     </label>
                     @error('education_level')
-                    <p class="text-red-500 text-xs italic">{{ $message }}</p>
+                        <p class="text-red-500 text-xs italic">{{ $message }}</p>
                     @enderror
                     <div class="relative">
                         <select
                             class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-1 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                            id="grid-education-level" name="education_level" placeholder="Select Your Level"
-                            required>
+                            id="grid-education-level" name="education_level" placeholder="Select Your Level" required>
                             <option value="">Select Your Level</option>
                             <option value="SMP" {{ old('education_level') == 'SMP' ? 'selected' : '' }}>SMP
                             </option>
@@ -325,10 +338,8 @@
                         </select>
                         <div
                             class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-                            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 20 20">
-                                <path
-                                    d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
                             </svg>
                         </div>
                     </div>
@@ -342,7 +353,7 @@
                         Institution Name
                     </label>
                     @error('institution')
-                    <p class="text-red-500 text-xs italic">{{ $message }}</p>
+                        <p class="text-red-500 text-xs italic">{{ $message }}</p>
                     @enderror
                     <input
                         class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-1 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
@@ -358,43 +369,54 @@
                         Where Do You Know Ifest
                     </label>
                     @error('ifest_info')
-                    <p class="text-red-500 text-xs italic">{{ $message }}</p>
+                        <p class="text-red-500 text-xs italic">{{ $message }}</p>
                     @enderror
                     <div class="relative">
                         @php
-                        $oldIfestInfo = old('ifest_info', []);
-                        if (!is_array($oldIfestInfo)) {
-                        $oldIfestInfo = [];
-                        }
-                        $ifestInfoValue = implode(', ', $oldIfestInfo);
+                            $oldIfestInfo = old('ifest_info', []);
+                            if (!is_array($oldIfestInfo)) {
+                                $oldIfestInfo = [];
+                            }
+                            $ifestInfoValue = implode(', ', $oldIfestInfo);
                         @endphp
-                        <input type="hidden" id="mobile-grid-ifest-info" name="ifest_info" value="{{ $ifestInfoValue }}">
+                        <input type="hidden" id="mobile-grid-ifest-info" name="ifest_info"
+                            value="{{ $ifestInfoValue }}">
                         <input
                             class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-1 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                            id="mobile-grid-ifest-info-display" type="text" placeholder="Select Your Options" required readonly
-                            onclick="toggleMobileCheckboxes()" value="{{ $ifestInfoValue }}">
-                        <div id="mobile-checkboxes" class="absolute border border-gray-200 rounded shadow-lg hidden p-4" style="bottom: 100%; margin-bottom: 10px; background-color: rgba(255, 255, 255, 0.8);">
+                            id="mobile-grid-ifest-info-display" type="text" placeholder="Select Your Options" required
+                            readonly onclick="toggleMobileCheckboxes()" value="{{ $ifestInfoValue }}">
+                        <div id="mobile-checkboxes" class="absolute border border-gray-200 rounded shadow-lg hidden p-4"
+                            style="bottom: 100%; margin-bottom: 10px; background-color: rgba(255, 255, 255, 0.8);">
                             <div class="grid grid-cols-2 gap-4">
-                                <label><input type="checkbox" name="ifest_info[]" value="Social Media" onclick="updateInputMobile()" {{ in_array('Social Media', $oldIfestInfo) ? 'checked' : '' }}> Social Media</label>
-                                <label><input type="checkbox" name="ifest_info[]" value="Friend" onclick="updateInputMobile()" {{ in_array('Friend', $oldIfestInfo) ? 'checked' : '' }}> Friend</label>
-                                <label><input type="checkbox" name="ifest_info[]" value="Roadshow" onclick="updateInputMobile()" {{ in_array('Roadshow', $oldIfestInfo) ? 'checked' : '' }}> Roadshow</label>
-                                <label><input type="checkbox" name="ifest_info[]" value="Media Partner" onclick="updateInputMobile()" {{ in_array('Media Partner', $oldIfestInfo) ? 'checked' : '' }}> Media Partner</label>
-                                <label><input type="checkbox" name="ifest_info[]" value="Ads" onclick="updateInputMobile()" {{ in_array('Ads', $oldIfestInfo) ? 'checked' : '' }}> Ads</label>
-                                <label><input type="checkbox" name="ifest_info[]" value="Other" onclick="toggleOtherInput('mobile-other-input'); updateInputMobile()" {{ in_array('Other', $oldIfestInfo) ? 'checked' : '' }}> Other</label>
+                                <label><input type="checkbox" name="ifest_info[]" value="Social Media"
+                                        onclick="updateInputMobile()" {{ in_array('Social Media', $oldIfestInfo) ? 'checked' : '' }}> Social Media</label>
+                                <label><input type="checkbox" name="ifest_info[]" value="Friend"
+                                        onclick="updateInputMobile()" {{ in_array('Friend', $oldIfestInfo) ? 'checked' : '' }}> Friend</label>
+                                <label><input type="checkbox" name="ifest_info[]" value="Roadshow"
+                                        onclick="updateInputMobile()" {{ in_array('Roadshow', $oldIfestInfo) ? 'checked' : '' }}> Roadshow</label>
+                                <label><input type="checkbox" name="ifest_info[]" value="Media Partner"
+                                        onclick="updateInputMobile()" {{ in_array('Media Partner', $oldIfestInfo) ? 'checked' : '' }}> Media Partner</label>
+                                <label><input type="checkbox" name="ifest_info[]" value="Ads"
+                                        onclick="updateInputMobile()" {{ in_array('Ads', $oldIfestInfo) ? 'checked' : '' }}> Ads</label>
+                                <label><input type="checkbox" name="ifest_info[]" value="Other"
+                                        onclick="toggleOtherInput('mobile-other-input'); updateInputMobile()" {{ in_array('Other', $oldIfestInfo) ? 'checked' : '' }}> Other</label>
                             </div>
                             <input
                                 class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mt-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 {{ in_array('Other', $oldIfestInfo) ? '' : 'hidden' }}"
-                                id="mobile-other-input" type="text" name="ifest_info_other" placeholder="Please specify" oninput="updateInputMobile()" value="{{ old('ifest_info_other') }}">
+                                id="mobile-other-input" type="text" name="ifest_info_other" placeholder="Please specify"
+                                oninput="updateInputMobile()" value="{{ old('ifest_info_other') }}">
                         </div>
                     </div>
                 </div>
             </div>
 
-            <p class="text-sm">Already have an account? <a href="/login" class="hover:underline hover:text-blue-500">Login here!</a></p>
+            <p class="text-sm">Already have an account? <a href="/login"
+                    class="hover:underline hover:text-blue-500">Login here!</a></p>
 
             <div class="flex justify-center mt-7">
-                <button type="submit" class="image-button">
-                    <img src="image/tombol_regis.png" alt="button image">
+                <button type="submit"
+                    class="p-5 bg-gradient-to-br from-sky-950 to-pink-900 transition duration-500 ease-in-out hover:from-pink-900 hover:to-sky-950 py-2 px-10 rounded-sm">
+                    <h1 class="text-white">Register</h1>
                 </button>
             </div>
 
@@ -403,7 +425,7 @@
 </x-layout2>
 
 <script>
-    document.addEventListener('click', function(event) {
+    document.addEventListener('click', function (event) {
         if (!event.target.closest('#desktop-checkboxes') && !event.target.closest('#desktop-grid-ifest-info-display') &&
             !event.target.closest('#mobile-checkboxes') && !event.target.closest('#mobile-grid-ifest-info-display')) {
             document.getElementById("desktop-checkboxes").style.display = "none";
@@ -430,7 +452,7 @@
         var checkboxes = document.querySelectorAll('#desktop-checkboxes input[type="checkbox"]');
         var selected = [];
 
-        checkboxes.forEach(function(checkbox) {
+        checkboxes.forEach(function (checkbox) {
             if (checkbox.checked) {
                 if (checkbox.value === "Other") {
                     var otherInput = document.getElementById('desktop-other-input');
@@ -451,7 +473,7 @@
         var checkboxes = document.querySelectorAll('#mobile-checkboxes input[type="checkbox"]');
         var selected = [];
 
-        checkboxes.forEach(function(checkbox) {
+        checkboxes.forEach(function (checkbox) {
             if (checkbox.checked) {
                 if (checkbox.value === "Other") {
                     var otherInput = document.getElementById('mobile-other-input');
@@ -468,7 +490,7 @@
         document.getElementById("mobile-grid-ifest-info-display").value = selected.join(', ');
     }
 
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
         updateInputDesktop();
         updateInputMobile();
     });

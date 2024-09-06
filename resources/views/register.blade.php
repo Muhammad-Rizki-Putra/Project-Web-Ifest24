@@ -6,7 +6,7 @@
         </div>
         <div class="flex flex-row items-center justify-center h-auto mx-auto">
         <img class="w-[350px] h-auto m-auto hidden self-center xl:block pl-16 pt-4" src="image/logo_ifest.png" alt="logo_ifest">
-        <div class="mx-10 hidden xl:block h-[80vh] w-[2px] bg-black"></div>
+        <div class="mx-10 hidden xl:block h-[60vh] w-[2px] bg-black"></div>
             <div class="flex flex-col items-center py-4 my-auto h-auto max-h-[627px]">
                 <h1 class="text-5xl pb-5 font-bold text-navy-bg">
                     Register
@@ -196,14 +196,14 @@
                         </div>
                     </div>
 
-                    <div class="flex justify-center mt-4">
+                    <div class="flex justify-center my-4">
                         <button type="submit" class="image-button">
                             <img src="image/tombol_regis.png" alt="button image">
                         </button>
                     </div>
                 </form>
 
-                <p>Already have an account? <a href="/login"  class="hover:underline hover:text-blue-500">Login here!</a></p>
+                <p>Already have an account? <a href="/login"  class="hover:underline hover:text-blue-500 font-semibold">Login here!</a></p>
 
             </div>
         </div>

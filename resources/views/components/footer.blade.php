@@ -2,14 +2,14 @@
     <div class="flex flex-col items-center justify-center">
         <h1 class="text-2xl pb-2 text-nowrap">Brought To You By</h1>
         <div class="flex flex-row items-center justify-center">
-        <a href="/"><img src="/image/logo_ifest4.png" alt="" class="h-auto w-auto mx-3"></a>
+            <a href="/"><img src="/image/logo_ifest4.png" alt="" class="h-auto w-[60px] mx-3"></a>
             <a href="http://himatif.fmipa.unpad.ac.id/" target="_blank" rel="noopener noreferrer"> <img src="/image/logo_himatif.png" alt="" class="h-auto w-[60px]"></a>
         </div>
     </div>
 
     <div class="flex flex-col items-center justify-center">
         <h1 class="text-2xl pb-2 text-nowrap">Partner Links</h1>
-        <div class="grid max-sm:grid-cols-center-2 sm:max-lg:grid-cols-center-2 lg:grid-cols-center-3 items-center">  
+        <div class="grid max-sm:grid-cols-center-2 sm:max-lg:grid-cols-center-2 lg:grid-cols-center-3 items-center gap-x-2">  
             <div class="w-[100px] flex items-center justify-center">
                 <img src="/image/sponsor/dicoding.png" alt="" class="h-auto w-[100px]">
             </div>
@@ -79,7 +79,7 @@
     <div class="flex flex-col items-start pt-3">
         <h1 class="text-xl text-nowrap font-semibold pb-2 ">Brought To You By</h1>
         <div class="grid grid-cols-2 gap-2 items-center justify-start w-[100%]">
-            <a href="/"><img src="/image/logo_ifest4.png" alt="" class="h-auto w-auto"></a>
+            <a href="/"><img src="/image/logo_ifest4.png" alt="" class="h-auto w-[60]"></a>
             <a href="http://himatif.fmipa.unpad.ac.id/" target="_blank" rel="noopener noreferrer"><img src="/image/logo_himatif.png" alt="" class="h-auto w-[60]"></a>
         </div>
     </div>

@@ -20,8 +20,8 @@
                     <img class="w-full h-[492px]" src="/image/doc.png" alt="">
                 </div>
                 <div class="flex flex-col text-balance ml-10 mt-10 lg:mt-0">
-                    <h1 class="text-7xl pb-[22px]">Premiere Launch</h1>
-                    <p class="text-3xl max-w-[578px]">A platform that enables Founders or Strategic Partners from
+                    <h1 class="text-7xl pb-[22px] font-bold">Premiere Launch</h1>
+                    <p class="text-2xl max-w-[578px] font-semibold">A platform that enables Founders or Strategic Partners from
                         multiple companies involved in the Artificial Intelligence and Financial Technology sectors,
                         alongside experts and specialists in these domains.</p>
                 </div>
@@ -33,8 +33,8 @@
             </div>
 
             <div class="flex flex-col items-center pt-[116px]">
-                <h1 class="text-7xl text-center pb-[22px] font-semibold">What is IFEST?</h1>
-                <p class="text-3xl text-center max-w-[1191px]">
+                <h1 class="text-6xl text-center pb-[22px] font-semibold">What is IFEST?</h1>
+                <p class="text-2xl text-center max-w-[1191px]">
                     IFest is an annual event presented by Himatif FMIPA Unpad, which carries the essence of IT and aims
                     to serve as a platform for the development of participants' potential. IFest 2024 consists of
                     several series, namely Talkshow, Technopreneur, National Seminar, IT Competition, Awarding Night,
@@ -52,33 +52,33 @@
 
                     <div class="gallery">
                         <div class="gallery-container gallery-3">
-                            <div class="gallery-item group gallery-item-1 flex flex-col items-center justify-center"
-                                data-index="1">
-                                <a href="/technopreneur"><img src="/image/logo 3.png" alt="box"
-                                        class="bg-cream-bg rounded-lg w-auto h-auto mb-5"></a>
-                                <h1
-                                    class="absolute bottom-0 text-center py-2 mt-5 text-xl text-cream-bg group-hover:text-navy-bg group-hover:bg-cream-bg transition bg-navy-bg font-semibold w-full">
-                                    <a href="/technopreneur">TechnoPreneur</a>
-                                </h1>
-                            </div>
-                            <div class="gallery-item group gallery-item-2 flex flex-col items-center justify-center"
-                                data-index="2">
-                                <a href="/grand-opening"><img src="/image/logo_ifest.png" alt="box"
-                                        class="bg-cream-bg rounded-lg w-auto h-auto mb-5"></a>
-                                <h1
-                                    class="absolute bottom-0 text-center py-2 mt-5 text-xl text-cream-bg group-hover:text-navy-bg group-hover:bg-cream-bg transition bg-navy-bg font-semibold w-full">
-                                    <a href="/grand-opening">Grand Opening</a>
-                                </h1>
-                            </div>
-                            <div class="gallery-item group gallery-item-3 flex flex-col items-center justify-center"
-                                data-index="3">
-                                <a href="/last-act"><img src="/image/logo_ifest.png" alt="box"
-                                        class="bg-cream-bg rounded-lg w-auto h-auto mb-5"></a>
-                                <h1
-                                    class="absolute bottom-0 text-center py-2 mt-5 text-xl text-cream-bg group-hover:text-navy-bg group-hover:bg-cream-bg transition bg-navy-bg font-semibold w-full">
-                                    <a href="/last-act">Last Act</a>
-                                </h1>
-                            </div>
+                        <div class="gallery-item group gallery-item-1 flex flex-col items-center justify-center" data-index="1">
+    <a href="/technopreneur" class="w-full flex justify-center">
+        <img src="/image/logo 3.png" alt="box" class="bg-cream-bg rounded-lg w-[90%] h-auto mb-5">
+    </a>
+    <h1 class="absolute bottom-0 text-center py-2 mt-5 text-xl text-cream-bg group-hover:text-navy-bg group-hover:bg-cream-bg transition bg-navy-bg font-semibold w-full">
+        <a href="/technopreneur">TechnoPreneur</a>
+    </h1>
+</div>
+
+<div class="gallery-item group gallery-item-2 flex flex-col items-center justify-center" data-index="2">
+    <a href="/grand-opening" class="w-full flex justify-center">
+        <img src="/image/logo_ifest.png" alt="box" class="bg-cream-bg rounded-lg w-[80%] h-auto mb-5">
+    </a>
+    <h1 class="absolute bottom-0 text-center py-2 mt-5 text-xl text-cream-bg group-hover:text-navy-bg group-hover:bg-cream-bg transition bg-navy-bg font-semibold w-full">
+        <a href="/grand-opening">Grand Opening</a>
+    </h1>
+</div>
+
+<div class="gallery-item group gallery-item-3 flex flex-col items-center justify-center" data-index="3">
+    <a href="/last-act" class="w-full flex justify-center">
+        <img src="/image/logo_ifest.png" alt="box" class="bg-cream-bg rounded-lg w-[80%] h-auto mb-5">
+    </a>
+    <h1 class="absolute bottom-0 text-center py-2 mt-5 text-xl text-cream-bg group-hover:text-navy-bg group-hover:bg-cream-bg transition bg-navy-bg font-semibold w-full">
+        <a href="/last-act">Last Act</a>
+    </h1>
+</div>
+
                         </div>
                     </div>
 
@@ -191,18 +191,18 @@
                 </div>
                 <div class="flex flex-col text-balance text-center mt-10 lg:mt-0">
                     <h1 class="text-3xl font-bold">Premiere Launch</h1>
-                    <p class="text-xl max-w-[578px]">A platform that enables Founders or Strategic Partners from
+                    <p class="text-xl pt-4 max-w-[578px]">A platform that enables Founders or Strategic Partners from
                         multiple companies involved in the Artificial Intelligence and Financial Technology sectors,
                         alongside experts and specialists in these domains.</p>
                 </div>
             </div>
 
-            <div class="flex justify-center pt-[116px]">
+            <div class="flex justify-center pt-8">
                 <iframe class=" h-auto w-screen" src="https://www.youtube.com/watch?v=2NDpLzhb_o0">
                 </iframe>
             </div>
 
-            <div class="flex flex-col items-center pt-[116px]">
+            <div class="flex flex-col items-center py-16">
                 <h1 class="text-3xl text-center pb-[22px] font-bold">What is IFEST?</h1>
                 <p class="text-xl text-center max-w-[1191px]">
                     IFest is an annual event presented by Himatif FMIPA Unpad, which carries the essence of IT and aims
@@ -212,7 +212,7 @@
                 </p>
             </div>
 
-            <div class="flex flex-col justify-center pt-[116px]">
+            <div class="flex flex-col justify-center">
                 <h1 class="text-3xl text-center font-semibold mb-5" style="color: rgb(12 40 62);">Explore Our Event!</h1>
                 <div x-data="{            
     slides: [                
@@ -321,7 +321,7 @@
                 </div>
             </div>
 
-            <div class="flex flex-col justify-center pt-[116px]">
+            <div class="flex flex-col justify-center py-16">
                 <h1 class="text-3xl text-center font-semibold mb-5" style="color: rgb(12 40 62);">Explore Our Competition!</h1>
                 <div x-data="{            
     slides: [                

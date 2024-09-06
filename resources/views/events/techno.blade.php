@@ -8,7 +8,7 @@
             <p class="text-5xl text-center font-bold" style="color: rgb(115 4 53);">Future Founders:<br>Embracing The
                 Rise of Tech-Based Business</p>
             <div x-data="{ openA: true, openB: false }" class="flex flex-col items-center justify-center">
-                <div class="flex flex-row items-center justify-center pb-20 gap-x-40">
+                <div class="flex flex-row items-center justify-center pb-10 gap-x-40">
 
                     <x-radio-button textSize="text-2xl" textPadding="p-1" name="rh-tp" value="rh-tp1" id="rh-tp-1"
                         x-model="selected">Seminar</x-radio-button>
@@ -17,52 +17,52 @@
                         x-model="selected">Workshop</x-radio-button>
 
                 </div>
-                <p class="w-3/5 text-center text-2xl" style="color: rgb(12 40 62);">Designed to turn tech skills into
+                <p class="w-3/5 text-center text-xl" style="color: rgb(12 40 62);">Designed to turn tech skills into
                     successful businesses, Technopreneur is where technology meets entrepreneurship. Through engaging
                     seminars and hands-on workshops, knowledge and tools are provided by professional mentors, helping
                     you leverage digital technology to bring your business ideas to life.</p>
                 <div class="flex flex-col items-center justify-center">
                     <div x-show="selected === 'rh-tp1'" x-transition class="flex flex-col items-center justify-center">
                         <p class="text-6xl font-bold pt-20 pb-10" style="color: rgb(12 40 62);">SEMINAR</p>
-                        <p class="w-3/5 text-center text-2xl font-semibold" style="color: rgb(12 40 62);">The
+                        <p class="w-3/5 text-center text-xl font-semibold" style="color: rgb(12 40 62);">The
                             material
                             and talk show presented by professional speakers who are experts in technology-based
                             business to develop the interest and talent for entrepreneurship within the community in the
                             field of IT.</p>
-                        <ul class="list-disc" style="width: auto; float: left;">
-                            <li style="width: auto; float: left; color: rgb(12 40 62);" class="mx-4 text-lg">Key of
+                        <ul class="list-disc pt-4" style="width: auto; float: left;">
+                            <li style="width: auto; float: left; color: rgb(12 40 62);" class="mx-4 text-md">Key of
                                 Building a Business</li>
-                            <li style="width: auto; float: left; color: rgb(12 40 62);" class="mx-4 text-lg">Driving
+                            <li style="width: auto; float: left; color: rgb(12 40 62);" class="mx-4 text-md">Driving
                                 Innovation and Success in Business with Technology</li>
                             <!-- ... -->
                         </ul>
                         <ul class="list-disc pb-10" style="width: auto; float: left;">
-                            <li style="width: auto; float: left; color: rgb(12 40 62);" class="mx-4 text-lg">Empowering
+                            <li style="width: auto; float: left; color: rgb(12 40 62);" class="mx-4 text-">Empowering
                                 Business Growth through Data Science</li>
                         </ul>
                         <p class="text-3xl font-bold mb-5">The Speakers</p>
                         <div class="grid grid-cols-3 grid-rows-1 gap-x-10 pb-20">
                             <div class="w-[252px] h-[320px] bg-speaker bg-cover bg-center bg-no-repeat p-[5px]">
                                 <img src="/image/speaker_Sutansyah Marahakim.png" alt="" class="h-[75%] w-full">
-                                <div class="flex flex-col w-full bg-navy-bg h-[25%] flex items-center justify-center">
-                                    <h1 class="text-white font-semibold text-lg">Sutansyah Marahakim</h1>
-                                    <h2 class="text-white text-base leading-tight text-center">Creative Director &
+                                <div class="flex flex-col w-full bg-navy-bg h-[25%] flex gap-1 items-center py-2">
+                                    <h1 class="text-white font-semibold text-md">Sutansyah Marahakim</h1>
+                                    <h2 class="text-white text-base leading-tight text-sm text-center">Creative Director &
                                         Partner Kolaborasico</h2>
                                 </div>
                             </div>
                             <div class="w-[252px] h-[320px] bg-speaker bg-cover bg-center bg-no-repeat p-[5px]">
                                 <img src="/image/speaker_Sudar Yatno.png" alt="" class="h-[75%] w-full">
-                                <div class="flex flex-col w-full bg-navy-bg h-[25%] flex items-center justify-center">
-                                    <h1 class="text-white font-semibold text-lg">Sudar Yatno</h1>
-                                    <h2 class="text-white text-base leading-tight text-center">Chief Technology Officer
+                                <div class="flex flex-col w-full bg-navy-bg h-[25%] flex gap-1 items-center py-2">
+                                    <h1 class="text-white font-semibold text-md">Sudar Yatno</h1>
+                                    <h2 class="text-white text-base leading-tight text-sm text-center">Chief Technology Officer
                                         (CTO) Gits.id</h2>
                                 </div>
                             </div>
                             <div class="w-[252px] h-[320px] bg-speaker bg-cover bg-center bg-no-repeat p-[5px]">
                                 <img src="/image/speaker_Angel Metanosa Afinda.png" alt="" class="h-[75%] w-full">
-                                <div class="flex flex-col w-full bg-navy-bg h-[25%] flex items-center justify-center">
-                                    <h1 class="text-white font-semibold text-lg">Angel Metanosa Afinda</h1>
-                                    <h2 class="text-white text-base leading-tight text-center">Curriculum Developer
+                                <div class="flex flex-col w-full bg-navy-bg h-[25%] flex gap-1 items-center py-2">
+                                    <h1 class="text-white font-semibold text-md">Angel Metanosa Afinda</h1>
+                                    <h2 class="text-white text-base leading-tight text-sm text-center">Curriculum Developer
                                         Dicoding</h2>
                                 </div>
                             </div>
@@ -76,15 +76,15 @@
                     </div>
                     <div x-show="selected === 'rh-tp2'" x-transition class="flex flex-col items-center justify-center">
                         <p class="text-6xl font-bold pt-20 pb-10" style="color: rgb(12 40 62);">WORKSHOP</p>
-                        <p class="w-3/5 text-center text-2xl font-semibold" style="color: rgb(12 40 62);">An
+                        <p class="w-2/3 text-center text-xl font-semibold" style="color: rgb(12 40 62);">An
                             online
                             workshop that provides training and development facilities by professionals with the aim of
                             providing participants with an understanding of the use of technological advances to
                             transform businesses into innovative startups.</p>
-                        <ul class="list-disc" style="width: auto; float: left;">
-                            <li style="width: auto; float: left; color: rgb(12 40 62);" class="mx-4 text-lg">Design
+                        <ul class="list-disc pt-4" style="width: auto; float: left;">
+                            <li style="width: auto; float: left; color: rgb(12 40 62);" class="mx-4 text-md">Design
                                 Thinking</li>
-                            <li style="width: auto; float: left; color: rgb(12 40 62);" class="mx-4 text-lg">Business
+                            <li style="width: auto; float: left; color: rgb(12 40 62);" class="mx-4 text-md">Business
                                 Strategy Foundation</li>
                             <!-- ... -->
                         </ul>
@@ -177,58 +177,59 @@
                         zahranmuntazar</p>
                 </div>
             </div>
-            <img src="/image/POSTER TECHNO.png" class="h-auto w-[60%]" alt="">
+
+            <img src="/image/POSTER TECHNO.png" class="h-auto w-[70%]" alt="">
             <div class="flex flex-col items-center justify-center w-full gap-y-10">
-                <p class="text-center text-6xl font-semibold">Frequently Asked Questions</p>
+                <p class="text-center text-6xl font-semibold pt-10 pb-5">Frequently Asked Questions</p>
                 <div x-data="{ open: false }" class="w-1/2">
-                    <x-fa-q-button-mobver>
+                    <x-faq-button>
                         <x-slot:slottitle>Apakah rangkaian acara Technopreneur 2024 gratis?
                         </x-slot:slottitle>
                         <x-slot:slotdrop>Kamu dapat mengikuti Seminar Technopreneur 2024 secara GRATIS dan untuk
                             workshop akan dikenakan biaya seharga 100 ribu per tim BAGI YANG LOLOS!
                         </x-slot:slotdrop>
-                    </x-fa-q-button-mobver>
+                    </x-faq-button>
                 </div>
                 <div x-data="{ open: false }" class="w-1/2">
-                    <x-fa-q-button-mobver>
+                    <x-faq-button>
                         <x-slot:slottitle>Bagaimana teknis pembayarannya? Bagaimana jika tim saya tidak lolos seleksi
                             Workshop Technopreneur?</x-slot:slottitle>
                         <x-slot:slotdrop>Uang dibayarkan saat mengisi form registrasi. Uang akan dikembalikan 100%
                             kepada setiap tim yang dinyatakan tidak lolos setelah pengumuman seleksi.
                         </x-slot:slotdrop>
-                    </x-fa-q-button-mobver>
+                    </x-faq-button>
                 </div>
                 <div x-data="{ open: false }" class="w-1/2">
-                    <x-fa-q-button-mobver>
+                    <x-faq-button>
                         <x-slot:slottitle>Berapa orang yang diperbolehkan untuk mengikuti workshop?
                         </x-slot:slottitle>
                         <x-slot:slotdrop>Untuk pendaftaran awal workshop diperbolehkan untuk diikuti sebanyak banyaknya
                             tim, tiap timnya beranggotakan 3 orang. Setelah itu akan dilakukan seleksi ide bisnis dan
                             akan didapatkan 15 tim yang sudah lolos tahap seleksi awal.
                         </x-slot:slotdrop>
-                    </x-fa-q-button-mobver>
+                    </x-faq-button>
                 </div>
                 <div x-data="{ open: false }" class="w-1/2">
-                    <x-fa-q-button-mobver>
+                    <x-faq-button>
                         <x-slot:slottitle>Apakah ada batasan umur dalam membuat tim workshop?
                         </x-slot:slottitle>
                         <x-slot:slotdrop>Syaratnya hanya minimal SMA dan mempunyai ide bisnis, anggotanya pun bisa dari
                             institusi atau sekolah yang berbeda
                         </x-slot:slotdrop>
-                    </x-fa-q-button-mobver>
+                    </x-faq-button>
                 </div>
                 <div x-data="{ open: false }" class="w-1/2">
-                    <x-fa-q-button-mobver>
+                    <x-faq-button>
                         <x-slot:slottitle>Bagaimana cara mengatahui bahwa tim saya itu termasuk dalam 15 tim yang lolos
                             seleksi awal?
                         </x-slot:slottitle>
                         <x-slot:slotdrop>Apabila lolos seleksi dengan aspek-aspek yang diberikan di guidebook, maka akan
                             diumumkan melalui email ketua Tim dan media sosial Ifest 2024
                         </x-slot:slotdrop>
-                    </x-fa-q-button-mobver>
+                    </x-faq-button>
                 </div>
                 <div x-data="{ open: false }" class="w-1/2">
-                    <x-fa-q-button-mobver>
+                    <x-faq-button>
                         <x-slot:slottitle>Bagaimana cara mendaftar Technopreneur 2024?
 
                         </x-slot:slottitle>
@@ -236,17 +237,18 @@
                             rangkaian acara Technopreneur
 
                         </x-slot:slotdrop>
-                    </x-fa-q-button-mobver>
+                    </x-faq-button>
                 </div>
             </div>
         </div>
+
+        
+        <!-- Mobile -->
         <div
             class="md:hidden flex items-center justify-center flex-col h-auto bg-itcomp-bg bg-fixed bg-right-bottom bg-cover bg-no-repeat py-20">
             <h1 class="text-3xl font-bold" style="color: rgb(12 40 62);">TECHNOPRENEUR</h1>
-            <img src="image/logo 3.png" alt="" class="h-auto w-[20%] mt-4">
-            <p class="text-2xl text-center font-bold mt-4" style="color: rgb(115 4 53);">Future Founders:<br>Embracing
-                The
-                Rise of<br>Tech-Based Business</p>
+            <img src="image/logo 3.png" alt="" class="h-auto w-[40%] mt-4">
+            <p class="text-2xl text-center font-bold mt-4 mx-8" style="color: rgb(115 4 53);">Future Founders:<br>Embracing The Rise of Tech-Based Business</p>
             <div x-data="{ openA: true, openB: false }"
                 class="flex flex-col items-center justify-center space-y-4 mt-4">
                 <div class="flex flex-row items-center justify-center pb-4 gap-x-10">
@@ -258,32 +260,32 @@
                         x-model="selected">Workshop</x-radio-button>
 
                 </div>
-                <p class="w-4/5 text-center text-md text-balance font-semibold" style="color: rgb(12 40 62);">Designed
-                    to turn tech
-                    skills into successful businesses, Technopreneur is where technology meets entrepreneurship. Through
-                    engaging seminars and hands-on workshops, knowledge and tools are provided by professional mentors,
-                    helping you leverage digital technology to bring your business ideas to life.</p>
+                <p class="w-4/5 text-center text-md text-balance font-semibold" style="color: rgb(12 40 62);">
+                    Designed to turn tech skills into successful businesses, Technopreneur is where technology meets entrepreneurship.
+                    Through engaging seminars and hands-on workshops, knowledge and tools are provided by professional mentors,
+                    helping you leverage digital technology to bring your business ideas to life.
+                </p>
                 <div class="flex flex-col items-center justify-center">
                     <div x-show="selected === 'rh-tp1'" x-transition class="flex flex-col items-center justify-center">
-                        <p class="text-4xl font-bold pt-4 pb-2" style="color: rgb(12 40 62);">SEMINAR</p>
-                        <p class="w-4/5 text-center text-md font-bold" style="color: rgb(12 40 62);">The
-                            material and talk show presented by professional speakers who are experts in
-                            technology-based business to develop the interest and talent for entrepreneurship within the
-                            community in the field of IT.</p>
-                        <ul class="list-disc" style="width: auto; float: left;">
+                        <p class="text-4xl font-bold pt-8 pb-2" style="color: rgb(12 40 62);">SEMINAR</p>
+                        <p class="w-4/5 text-center text-md font-semibold pb-2" style="color: rgb(12 40 62);">
+                            The material and talk show presented by professional speakers who are experts in technology-based business 
+                            to develop the interest and talent for entrepreneurship within the community in the field of IT.
+                        </p>
+                        <ul class="list-disc" style="width: 60%; float: left;">
                             <li style="width: auto; float: left; color: rgb(12 40 62);" class="mx-4 text-sm">Key of
                                 Building a Business</li>
                             <!-- ... -->
                         </ul>
-                        <ul class="list-disc" style="width: auto; float: left;">
+                        <ul class="list-disc" style="width: 60%; float: left;">
                             <li style="width: auto; float: left; color: rgb(12 40 62);" class="mx-4 text-sm">Driving
                                 Innovation and Success in Business with Technology</li>
                         </ul>
-                        <ul class="list-disc pb-6" style="width: auto; float: left;">
+                        <ul class="list-disc pb-6" style="width: 60%; float: left;">
                             <li style="width: auto; float: left; color: rgb(12 40 62);" class="mx-4 text-sm">Empowering
                                 Business Growth through Data Science</li>
                         </ul>
-                        <p class="text-xl font-bold mb-5">The Speakers</p>
+                        <p class="text-2xl font-bold mb-5">The Speakers</p>
                         <div class="grid grid-cols-center-2 grid-rows-2 gap-x-2 gap-y-2 pb-10">
                             <div class="w-[157px] h-[200px] bg-speaker bg-cover bg-center bg-no-repeat p-[3px]">
                                 <img src="/image/speaker_Sutansyah Marahakim.png" alt="" class="h-[75%] w-full">
@@ -304,7 +306,7 @@
                             <div class="w-[157px] h-[200px] bg-speaker bg-cover bg-center bg-no-repeat p-[3px]">
                                 <img src="/image/speaker_Angel Metanosa Afinda.png" alt="" class="h-[75%] w-full">
                                 <div class="flex flex-col w-full bg-navy-bg h-[25%] flex items-center justify-start">
-                                    <h1 class="text-white font-semibold text-sm">Angel Metanosa Afinda</h1>
+                                    <h1 class="text-white font-semibold text-sm">Angel Metanosa A.</h1>
                                     <h2 class="text-white text-xs leading-tight text-center">Curriculum Developer
                                         Dicoding</h2>
                                 </div>
@@ -319,23 +321,25 @@
                         </div>
                     </div>
                     <div x-show="selected === 'rh-tp2'" x-transition class="flex flex-col items-center justify-center">
-                        <p class="text-4xl font-bold pt-4 pb-2" style="color: rgb(12 40 62);">WORKSHOP</p>
-                        <p class="w-4/5 text-center text-md font-bold" style="color: rgb(12 40 62);">An online
+                        <p class="text-4xl font-bold pt-8 pb-2" style="color: rgb(12 40 62);">WORKSHOP</p>
+                        <p class="w-4/5 text-center text-md font-bold pb-2" style="color: rgb(12 40 62);">An online
                             workshop that provides training and development facilities by professionals with the aim of
                             providing participants with an understanding of the use of technological advances to
                             transform businesses into innovative startups.</p>
-                        <ul class="list-disc" style="width: auto; float: left;">
+                        <ul class="list-disc" style="width: 60%; float: left;">
                             <li style="width: auto; float: left; color: rgb(12 40 62);" class="mx-4 text-sm">Design
                                 Thinking</li>
+                        </ul>
+                        <ul class="list-disc" style="width: 60%; float: left;">
                             <li style="width: auto; float: left; color: rgb(12 40 62);" class="mx-4 text-sm">Business
                                 Strategy Foundation</li>
                             <!-- ... -->
                         </ul>
-                        <ul class="list-disc" style="width: auto; float: left;">
+                        <ul class="list-disc" style="width: 60%; float: left;">
                             <li style="width: auto; float: left; color: rgb(12 40 62);" class="mx-4 text-sm">Funding and
                                 Pitching</li>
                         </ul>
-                        <ul class="list-disc pb-6" style="width: auto; float: left;">
+                        <ul class="list-disc pb-6" style="width: 60%; float: left;">
                             <li style="width: auto; float: left; color: rgb(12 40 62);" class="mx-4 text-sm">Brand
                                 Identity & Market Launch Strategy</li>
                         </ul>
@@ -389,7 +393,7 @@
                 </div>
             </div>
 
-            <div class="flex flex-row items-center justify-center space-x-10 w-auto mt-4 mb-4">
+            <div class="flex flex-row items-center justify-center space-x-10 w-auto mt-4 mb-4 py-4">
                 <a href="https://linktr.ee/Technopreneur2024" target="_blank" rel="noopener noreferrer"><x-button textSize="text-lg" textPadding="p-1">
                         Register & Guidebook
                     </x-button></a>
@@ -422,9 +426,9 @@
                         zahranmuntazar</p>
                 </div>
             </div>
-            <img src="/image/POSTER TECHNO.png" class="h-auto w-[90%] mt-4" alt="">
-            <div class="flex flex-col items-center justify-center w-full mt-4">
-                <p class="text-center text-2xl font-semibold">Frequently Asked Questions</p>
+            <img src="/image/POSTER TECHNO.png" class="h-auto w-[90%] mt-8" alt="">
+            <div class="flex flex-col items-center justify-center w-full mt-12">
+                <p class="text-center text-2xl font-semibold pb-2">Frequently Asked Questions</p>
                 <div x-data="{ open: false }" class="my-3 w-4/5">
                     <x-fa-q-button-mobver>
                         <x-slot:slottitle>Apakah rangkaian acara Technopreneur 2024 gratis?

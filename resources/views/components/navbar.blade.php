@@ -1,28 +1,31 @@
 <nav class="fixed top-0 z-30" x-data="{ IsopenEvent: false, IsopenCompetition: false, IsopenProfile: false }">   
-    <div class="hidden md:flex flex-col items-end h-[20%] ">  
-        <div class="bg-white h-full p-5 px-16 w-screen z-20 flex flex-row items-center justify-between shadow-xl">
-            <div class="flex justify-center ">
-                <img class="h-auto w-[50px] pt-2" src="/image/logo_ifest.png" alt="logo_ifest2">
-            </div>
-            <div class="hidden md:flex md:justify-center md:space-x-16 lg:space-x-24 item-center h-full">
-                <a href="/" class="text-lg font-reguler flex items-center ">Home</a>
-                <a href="/partner-with-us" class="text-lg font-reguler flex items-center text-nowrap ">Partner With Us!</a>
+    <div class="hidden md:flex flex-col items-end h-[20%]">  
+        <div class="bg-white h-full p-2 pl-4 pr-8 w-screen z-20 flex flex-row items-center justify-between shadow-xl">
+            <div class="flex flex-row items-center space-x-16">
+                <div class="flex justify-center">
+                    <img class="h-auto w-[45px]" src="/image/logo_ifest4.png" alt="logo_ifest2">
+                </div>
+                <a href="/" class="text-lg font-reguler flex items-center">Home</a>
+                <a href="/partner-with-us" class="text-lg font-reguler flex items-center text-nowrap">Partner With Us!</a>
                 <div class="flex flex-row items-center justify-center">
-                    <button @click="IsopenEvent = ! IsopenEvent, IsopenCompetition = false , IsopenProfile = false" class="text-lg font-reguler flex items-center ">Events</button>
+                    <button @click="IsopenEvent = ! IsopenEvent, IsopenCompetition = false, IsopenProfile = false" class="text-lg font-reguler flex items-center">Events</button>
                     <img src="/image/NavbarArrow.png" alt="" class="h-5 w-5 transition-transform duration-300 ease-in-out" :class="{'rotate-180': IsopenEvent}">
                 </div>
                 <div class="flex flex-row items-center justify-center">
-                    <button @click="IsopenCompetition = ! IsopenCompetition, IsopenEvent = false, IsopenProfile = false" class="text-lg font-reguler flex items-center ">Competitions</button>
+                    <button @click="IsopenCompetition = ! IsopenCompetition, IsopenEvent = false, IsopenProfile = false" class="text-lg font-reguler flex items-center">Competitions</button>
                     <img src="/image/NavbarArrow.png" alt="" class="h-5 w-5 transition-transform duration-300 ease-in-out" :class="{'rotate-180': IsopenCompetition}">
                 </div>
+            </div>
+
+            <div class="flex flex-row items-center space-x-16">
                 @if(auth()->guest())
                 <div class="flex flex-row items-center justify-center">
-                    <button @click="IsopenProfile = ! IsopenProfile, IsopenCompetition = false, IsopenEvent = false" class="text-lg font-reguler flex items-center ">Login/Register</button>
+                    <button @click="IsopenProfile = ! IsopenProfile, IsopenCompetition = false, IsopenEvent = false" class="text-lg font-reguler flex items-center">Login/Register</button>
                     <img src="/image/NavbarArrow.png" alt="" class="h-5 w-5 transition-transform duration-300 ease-in-out" :class="{'rotate-180': IsopenProfile}">
                 </div>
                 @else
                 <div class="flex flex-row items-center justify-center">
-                    <button @click="IsopenProfile = ! IsopenProfile, IsopenCompetition = false, IsopenEvent = false" class="text-lg font-reguler flex items-center ">Profile/Logout</button>
+                    <button @click="IsopenProfile = ! IsopenProfile, IsopenCompetition = false, IsopenEvent = false" class="text-lg font-reguler flex items-center">Profile/Logout</button>
                     <img src="/image/NavbarArrow.png" alt="" class="h-5 w-5 transition-transform duration-300 ease-in-out" :class="{'rotate-180': IsopenProfile}">
                 </div>
                 @endif
@@ -168,7 +171,7 @@
             </div>
             <div class="w-full h-auto p-3">
                 @if(auth()->guest())
-                <div class="w-full h-auto p-3">
+                <div class="w-full h-auto">
                     <div x-data="{ open: false }">
                         <button @click="open = !open" class="text-lg font-reguler">Login/Register</button>
                         <div 

@@ -209,7 +209,7 @@
                         </div>
                     </div>
 
-                    <div class="flex justify-center mt-4">
+                    <div class="flex justify-center my-4">
                         <button type="submit"
                             class="p-5 bg-gradient-to-br from-sky-950 to-pink-900 transition duration-500 ease-in-out hover:from-pink-900 hover:to-sky-950 py-2 px-10 rounded-sm">
                             <h1 class="text-white">Register</h1>

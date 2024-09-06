@@ -135,11 +135,9 @@
                         class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-1 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                         id="grid-password" name="password" type="password" placeholder="Enter Your Password" required
                         value="{{ old('password') }}">
-                    <p class="text-sm">Forgot your password? <a href="/forgot-password" target="_blank" rel="noopener noreferrer" class="hover:underline hover:text-blue-500">Click Here!</a></p>
-                    <p class="text-sm">Don't have an account? <a href="/register" target="_blank" rel="noopener noreferrer" class="hover:underline hover:text-blue-500">Register here!</a></p>
                 </div>
             </div>
-            <div class="flex justify-center mt-7">
+            <div class="flex justify-center my-1 mb-3">
                 <button type="submit" class="image-button">
                     <img src="image/Login_button.png" alt="button image">
                 </button>

@@ -186,7 +186,7 @@
                         x-model="selected">Semnas</x-radio-button>
 
                     <x-radio-button textSize="text-lg" textPadding="p-1" name="rh-la" value="rh-la3" id="rh-la-3"
-                    x-model="selected">Awarding</x-radio-button>
+                        x-model="selected">Awarding</x-radio-button>
                     
                     <x-radio-button textSize="text-lg" textPadding="p-1" name="rh-la" value="rh-la2" id="rh-la-2"
                         x-model="selected">Company Expo</x-radio-button>

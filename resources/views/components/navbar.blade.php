@@ -1,5 +1,5 @@
 <nav class="fixed top-0 z-30" x-data="{ IsopenEvent: false, IsopenCompetition: false, IsopenProfile: false }">   
-    <div class="hidden md:flex flex-col items-end h-[20%]">  
+    <div class="hidden md:flex flex-col items-start h-[20%]">  
         <div class="bg-white h-full p-2 pl-4 pr-8 w-screen z-20 flex flex-row items-center justify-between shadow-xl">
             <div class="flex flex-row items-center space-x-16">
                 <div class="flex justify-center">
@@ -65,29 +65,31 @@
                 <a href="/web-development-competition" class="lg:hidden block  py-2 text-xs font-semibold text-white">WebDev</a>
             </div>
         </div>
+    </div>
 
+    <div class="hidden md:flex flex-col items-end h-[20%]">  
         @if(auth()->guest())
-        <div x-show="IsopenProfile" class="bg-navy-bg w-[50%] h-7 rounded-b-lg relative items-center justify-center z-0"
+        <div x-show="IsopenProfile" class="bg-navy-bg w-auto h-10 px-6 rounded-b-lg relative items-center justify-center z-0"
         x-transition:enter="transition ease-out duration-500" 
         x-transition:enter-start="opacity-0 transform -translate-y-full" 
         x-transition:enter-end="opacity-100 transform translate-y-0"
         x-transition:leave="transition ease-in -duration-100"
         x-transition:leave-start="transform translate-y-0" 
         x-transition:leave-end="transform -translate-y-full">
-            <div class="flex flex-row items-center justify-evenly">
-                <a href="/login" class="block px-4 py-2 text-sm text-white  font-semibold">Login</a>
+            <div class="flex flex-row items-center justify-evenly gap-x-4">
+                <a href="/login" class="block px-4 py-2 text-sm text-white font-semibold">Login</a>
                 <a href="/register" class="block px-4 py-2 text-sm text-white font-semibold ">Register</a>
             </div>
         </div>
         @else
-        <div x-show="IsopenProfile" class="bg-navy-bg w-[50%] h-7 rounded-b-lg relative items-center justify-center z-0"
+        <div x-show="IsopenProfile" class="bg-navy-bg w-auto h-10 px-6 rounded-b-lg relative items-center justify-center z-0"
         x-transition:enter="transition ease-out duration-500" 
         x-transition:enter-start="opacity-0 transform -translate-y-full" 
         x-transition:enter-end="opacity-100 transform translate-y-0"
         x-transition:leave="transition ease-in -duration-100"
         x-transition:leave-start="transform translate-y-0" 
         x-transition:leave-end="transform -translate-y-full">
-            <div class="flex flex-row items-center justify-evenly">
+        <div class="flex flex-row items-center justify-evenly gap-x-4">
                 <a href="/profile" class="block px-4 py-2 text-sm text-white  font-semibold">Profile</a>
                 <a href="/logout" class="block px-4 py-2 text-sm text-white  font-semibold">Logout</a>
             </div>
@@ -100,7 +102,9 @@
     <!-- mobile navbar -->
 
     <div class="md:hidden flex flex-row items-start justify-between w-screen bg-white shadow-xl" x-data="{ isOpen: false }">
-        <a href="/"><img class="h-auto w-[60%] p-2" src="/image/logo_ifest2.png" alt="logo_ifest2"></a>
+        <div class="flex justify-center self-center pl-4">
+            <a href="/"><img class="h-auto w-[60%]" src="/image/logo_ifest2.png" alt="logo_ifest2"></a>
+        </div>
         <div class="p-5">
             <button class="relative group mt-[1%]" x-on:click="isOpen = !isOpen">
                 <img src="/image/hamburger.png" alt="" class="w-auto h-5">

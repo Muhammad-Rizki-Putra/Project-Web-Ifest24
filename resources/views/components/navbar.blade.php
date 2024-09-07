@@ -82,7 +82,7 @@
             </div>
         </div>
         @else
-        <div x-show="IsopenProfile" class="bg-navy-bg w-[50%] h-7 rounded-b-lg relative items-center justify-center z-0"
+        <div x-show="IsopenProfile" class="bg-navy-bg w-auto h-10 rounded-b-lg relative items-center justify-center z-0 gap-x-8 px-6"
         x-transition:enter="transition ease-out duration-500" 
         x-transition:enter-start="opacity-0 transform -translate-y-full" 
         x-transition:enter-end="opacity-100 transform translate-y-0"

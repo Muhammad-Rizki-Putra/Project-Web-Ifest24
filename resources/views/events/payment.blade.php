@@ -1,8 +1,9 @@
 <x-layout>
     <x-slot:pagename>{{$pagename}}</x-slot:pagename>
     <div
-        class="hidden md:flex items-center justify-center flex-col h-screen bg-itcomp-bg bg-fixed bg-right-bottom bg-cover bg-no-repeat py-20 gap-y-10 px-[25%]">
-        <div class="bg-cream-bg h-auto w-auto p-5 flex items-center justify-center flex-col gap-y-5 rounded-sm">
+        class="hidden md:flex items-center justify-center flex-col h-auto bg-itcomp-bg bg-fixed bg-right-bottom bg-cover bg-no-repeat py-20 gap-y-10 px-[25%]">
+        <div
+            class="bg-cream-bg h-auto w-auto p-5 flex items-center justify-center flex-col gap-y-5 rounded-md bg-opacity-45 shadow-lg my-10">
             <h1 class="font-bold text-5xl">Payment Form</h1>
             <p class="text-2xl">Acara apa - Bagian apa</p>
             <p class="font-semibold text-lg">Payment</p>
@@ -14,16 +15,24 @@
                 <p class="text-xl">Bank : </p>
             </div>
 
-
             <div>
-
-                <label class="block mb-2 text-xl font-medium text-black" for="file_input">Upload Payment proof</label>
-                <input
-                    class="h-auto block w-full text-2xl text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-pink-90 dark:text-white focus:outline-none dark:bg-pink-800 dark:border-gray-600 dark:placeholder-gray-400"
-                    id="file_input" type="file">
-
+                <label for="file-upload" class="custom-file-upload">
+                    <x-button textSize="text-2xl" textPadding="p-1" bgColor="bg-pink-900">Upload Payment Proof</x-button>
+                </label>
+                <input id="file-upload" type="file" style="display: none;" onchange="loadFile(event)" accept="image/*"/>
             </div>
-           
+
+            <img class="h-auto w-[200px]" id="output" />
+            <script>
+                var loadFile = function (event) {
+                    var output = document.getElementById('output');
+                    output.src = URL.createObjectURL(event.target.files[0]);
+                    output.onload = function () {
+                        URL.revokeObjectURL(output.src)
+                    }
+                };
+            </script>
+
             <div class="flex flex-row items-center w-full justify-evenly">
                 <a href="/last-act"><x-button textSize="text-2xl" textPadding="p-1">Back</x-button></a>
                 <!-- to do change -->

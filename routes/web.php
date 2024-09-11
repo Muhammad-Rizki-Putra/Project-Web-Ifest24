@@ -24,6 +24,10 @@ Route::get('/payment', function () {
     return view('events.payment', ['pagename' => 'Payment-Form']);
 });
 
+Route::get('/post-payment', function () {
+    return view('events.post-payment', ['pagename' => 'Post-Payment']);
+});
+
 Route::post('/partner-with-us', [PartnerController::class, 'store']);
 
 // profile

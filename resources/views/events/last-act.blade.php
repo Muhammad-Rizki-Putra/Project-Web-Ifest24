@@ -1,8 +1,8 @@
 <x-layout>
     <x-slot:pagename>{{$pagename}}</x-slot:pagename>
     <div x-data="{ selected: 'rh-la1' }">
-        <div
-            class="hidden md:flex items-center justify-center flex-col h-auto bg-itcomp-bg bg-fixed bg-right-bottom bg-cover bg-no-repeat py-20 gap-y-10 px-[25%]">
+            <div
+                class="hidden md:flex items-center justify-center flex-col h-auto bg-itcomp-bg bg-fixed bg-right-bottom bg-cover bg-no-repeat py-20 gap-y-10 px-[25%]">
 
             <div class="flex items-center justify-center flex-col h-auto top-0 gap-10">
                 <div>

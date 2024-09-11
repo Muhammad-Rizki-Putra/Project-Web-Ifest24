@@ -19,6 +19,11 @@ Route::get('/partner-with-us', function () {
     return view('partner', ['pagename' => 'Partner']);
 });
 
+// Payment form TODO : NEEDED TO BE CHANGE
+Route::get('/payment', function () {
+    return view('events.payment', ['pagename' => 'Payment-Form']);
+});
+
 Route::post('/partner-with-us', [PartnerController::class, 'store']);
 
 // profile

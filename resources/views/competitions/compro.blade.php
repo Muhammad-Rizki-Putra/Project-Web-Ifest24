@@ -24,9 +24,9 @@
     <div class="md:hidden flex items-center justify-center flex-col h-auto bg-itcomp-bg bg-fixed bg-right-bottom bg-cover bg-no-repeat py-20">
 
         <div class="space-y-4 mx-5 flex flex-col items-center justify-center">  
-            <h1 class="text-center text-3xl font-bold">Competitive Programming</h1>
+            <h1 class="text-center text-3xl font-bold" style="color: rgb(12 40 62);">Competitive Programming</h1>
             <img src="/image/Lomba/Comprog.png" alt="" class="h-auto w-[35%]">
-            <p class="text-center text-md text-wrap font-semibold">Competitive Programming Competition is a contest where participants are required to solve complex algorithmic problems within a specified time frame. Competitors write code to solve these problems, focusing on correctness, efficiency, and speed. All competitions are conducted online.</p>
+            <p class="text-center text-md text-wrap font-semibold" style="color: rgb(12 40 62);">Competitive Programming Competition is a contest where participants are required to solve complex algorithmic problems within a specified time frame. Competitors write code to solve these problems, focusing on correctness, efficiency, and speed. All competitions are conducted online.</p>
         </div>
 
         <div class="flex flex-row items-center justify-center space-x-10 w-auto py-10">
@@ -36,7 +36,7 @@
 
         <x-countdown-mobver>2024-09-01</x-countdown-mobver>
 
-        <h1 class="text-3xl py-20 font-bold">Timeline of Activity</h1>
+        <h1 class="text-3xl py-20 font-bold" style="color: rgb(12 40 62);">Timeline of Activity</h1>
         <div class="px-5 w-[30vh]">
             <img src="/image/tl/cp.png" alt="" class="flex h-auto">
         </div>

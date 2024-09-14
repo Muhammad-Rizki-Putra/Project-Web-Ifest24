@@ -57,7 +57,8 @@
                         <div class="w-[100%] bg-navy-bg h-[25%] flex items-center justify-center">
                             <div class="flex flex-col items-center">
                                 <h1 class="text-white font-semibold text-md">Budi Rahardjo</h1>
-                                <h2 class="text-white text-base leading-tight text-sm text-center">Editorial Board of the Journal of ICT Research and Applications</h2>
+                                <h2 class="text-white text-base leading-tight text-sm text-center">Editorial Board of
+                                    the Journal of ICT Research and Applications</h2>
                             </div>
                         </div>
                     </div>
@@ -67,7 +68,8 @@
                         <div class="w-[100%] bg-navy-bg h-[25%] flex items-center justify-center">
                             <div class="flex flex-col items-center">
                                 <h1 class="text-white font-semibold text-md">Faishal Wahiduddin</h1>
-                                <h2 class="text-white text-base leading-tight text-sm text-center">Tech Leader | Senior Software Engineer | Co-Founder WOOL ID</h2>
+                                <h2 class="text-white text-base leading-tight text-sm text-center">Tech Leader | Senior
+                                    Software Engineer | Co-Founder WOOL ID</h2>
                             </div>
                         </div>
                     </div>
@@ -189,7 +191,6 @@
         <!-- Mobver -->
         <div
             class="md:hidden flex items-center justify-center flex-col h-auto bg-itcomp-bg min-h-screen bg-fixed bg-right-bottom bg-cover bg-no-repeat py-20">
-            class="md:hidden min-h-screen flex items-center justify-center flex-col h-auto bg-itcomp-bg bg-fixed bg-right-bottom bg-cover bg-no-repeat py-20">
             <div>
                 <h1 class="text-3xl font-bold" style="color: rgb(12 40 62);">LAST ACT</h1>
             </div>
@@ -245,16 +246,20 @@
                 <div class="flex flex-col items-center justify-center">
                     <div class="grid grid-cols-2 grid-rows-1 gap-x-2 gap-y-2 pb-10">
                         <div class="w-[157px] h-[200px] bg-speaker bg-cover bg-center bg-no-repeat p-[3px]">
-                            <img src="/image/tba-pp.jpg" alt="" class="h-[75%] w-full">
-                            <div class="w-[100%] bg-navy-bg h-[25%] flex items-center justify-center">
-                                <h1 class="text-white font-semibold text-md">To Be Announced</h1>
+                            <img src="/image/Budi.jpg" alt="" class="h-[75%] w-full">
+                            <div class="flex flex-col w-full bg-navy-bg h-[25%] flex items-center justify-start">
+                                <h1 class="text-white font-semibold text-sm">Budi Rahardjo</h1>
+                                <h2 class="text-white text-xs leading-tight text-center">Editorial Board of
+                                the Journal of ICT Research and Applications</h2>
                             </div>
                         </div>
 
                         <div class="w-[157px] h-[200px] bg-speaker bg-cover bg-center bg-no-repeat p-[3px]">
-                            <img src="/image/tba-pp.jpg" alt="" class="h-[75%] w-full">
-                            <div class="w-[100%] bg-navy-bg h-[25%] flex items-center justify-center">
-                                <h1 class="text-white font-semibold text-md">To Be Announced</h1>
+                            <img src="/image/Faishal.jpeg.jpg" alt="" class="h-[75%] w-full">
+                            <div class="flex flex-col w-full bg-navy-bg h-[25%] flex items-center justify-start">
+                                <h1 class="text-white font-semibold text-sm">Faishal Wahiduddin</h1>
+                                <h2 class="text-white text-xs leading-tight text-center">Tech Leader | Senior
+                                Software Engineer | Co-Founder WOOL ID</h2>
                             </div>
                         </div>
                     </div>

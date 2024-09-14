@@ -3,7 +3,7 @@
     <div class="hidden md:flex items-center justify-center flex-col h-auto bg-itcomp-bg bg-fixed bg-right-bottom bg-cover bg-no-repeat py-20">
 
         <div class="space-y-8 w-[50%] flex flex-col items-center justify-center">
-            <h1 class="text-center text-5xl font-bold">Informatics Competition</h1>
+            <h1 class="text-center text-5xl font-bold text-navy-bg">Informatics Competition</h1>
             <img src="/image/Lomba/Incomp.png" alt="" class="h-auto w-[22%]">
             <p class="text-center text-xl text-balance font-semibold">The Informatics Competition is an informatics olympiad where participants are required to solve computational logic, algorithmic, and problem-solving questions. The preliminary round is held online, while the final will be conducted at the Unpad Jatinangor campus.</p>
         </div>

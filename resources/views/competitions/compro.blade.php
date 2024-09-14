@@ -3,7 +3,7 @@
 <div class="hidden md:flex items-center justify-center flex-col h-auto bg-itcomp-bg bg-fixed bg-right-bottom bg-cover bg-no-repeat py-20">
 
         <div class="space-y-8 w-[50%] flex flex-col items-center justify-center">
-            <h1 class="text-center text-5xl font-bold">Competitive Programming</h1>
+            <h1 class="text-center text-5xl font-bold text-navy-bg">Competitive Programming</h1>
             <img src="/image/Lomba/Comprog.png" alt="" class="h-auto w-[32%]">
             <p class="text-center text-xl text-balance font-semibold">Competitive Programming Competition is a contest where participants are required to solve complex algorithmic problems within a specified time frame. Competitors write code to solve these problems, focusing on correctness, efficiency, and speed. All competitions are conducted online.</p>
         </div>

@@ -3,7 +3,7 @@
 <div class="hidden md:flex items-center justify-center flex-col h-auto bg-itcomp-bg bg-fixed bg-right-bottom bg-cover bg-no-repeat py-20">
 
         <div class="space-y-8 w-[50%] flex flex-col items-center justify-center">
-            <h1 class="text-center text-5xl font-bold">Data Analyst</h1>
+            <h1 class="text-center text-5xl font-bold text-navy-bg">Data Analyst</h1>
             <img src="/image/Lomba/DAC.png" alt="" class="h-auto w-[32%]">
             <p class="text-center text-xl text-balance font-semibold">The Data Analysis Competition is a contest where participants are required to analyze a dataset to obtain useful information and support decision-making processes. In the preliminary round, participants are given a dataset to analyze and must write a paper on their findings. In the final round, participants are given a dataset to analyze within a limited time and then present their analysis to a panel of judges.</p>
         </div>

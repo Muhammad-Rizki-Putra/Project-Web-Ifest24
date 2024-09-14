@@ -1,7 +1,7 @@
 <x-layout>
     <x-slot:pagename>{{$pagename}}</x-slot:pagename>
     <div
-        class="hidden md:flex items-center justify-center flex-col h-auto bg-itcomp-bg bg-fixed bg-right-bottom bg-cover bg-no-repeat py-20 gap-y-10 px-[25%]">
+        class="hidden md:flex items-center justify-center flex-col min-h-screen h-auto bg-itcomp-bg bg-fixed bg-right-bottom bg-cover bg-no-repeat py-20 gap-y-10 px-[25%]">
         <div
             class="bg-cream-bg h-auto w-auto p-5 flex items-center justify-center flex-col gap-y-5 rounded-md bg-opacity-45 shadow-lg my-10">
             <h1 class="font-bold text-5xl">Payment Form</h1>

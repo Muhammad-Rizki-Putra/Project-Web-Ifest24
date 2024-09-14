@@ -3,7 +3,7 @@
     <div class="hidden md:flex items-center justify-center flex-col h-auto  bg-itcomp-bg bg-fixed bg-right-bottom bg-cover bg-no-repeat py-20">
         
         <div class="space-y-8 w-[50%] flex flex-col items-center justify-center">
-            <h1 class="text-center text-5xl font-bold">Capture the Flag</h1>
+            <h1 class="text-center text-5xl font-bold text-navy-bg">Capture the Flag</h1>
             <img src="/image/Lomba/CTF.png" alt="" class="h-auto w-[32%]">
             <p class="text-center text-xl text-balance font-semibold">Capture The Flag is a competition held to enhance problem-solving skills in the field of cybersecurity. This competition uses a jeopardy format that will test participants' abilities in Web Hacking, Binary Exploitation, Reverse Engineering, Digital Forensics, Cryptography, and Miscellaneous challenges. Each team, consisting of 1-3 members, competes in these areas in a single round.</p>
         </div>

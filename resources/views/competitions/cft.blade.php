@@ -24,9 +24,9 @@
     <div class="md:hidden flex items-center justify-center flex-col h-auto bg-itcomp-bg bg-fixed bg-right-bottom bg-cover bg-no-repeat py-20">
         
         <div class="space-y-4 mx-5 flex flex-col items-center justify-center">  
-            <h1 class="text-center text-3xl font-bold">Capture the Flag</h1>
+            <h1 class="text-center text-3xl font-bold" style="color: rgb(12 40 62);">Capture the Flag</h1>
             <img src="/image/Lomba/CTF.png" alt="" class="h-auto w-[35%]">
-            <p class="text-center text-md text-wrap font-semibold">Capture The Flag is a competition held to enhance problem-solving skills in the field of cybersecurity. This competition uses a jeopardy format that will test participants' abilities in Web Hacking, Binary Exploitation, Reverse Engineering, Digital Forensics, Cryptography, and Miscellaneous challenges. Each team, consisting of 1-3 members, competes in these areas in a single round.</p>
+            <p class="text-center text-md text-wrap font-semibold" style="color: rgb(12 40 62);">Capture The Flag is a competition held to enhance problem-solving skills in the field of cybersecurity. This competition uses a jeopardy format that will test participants' abilities in Web Hacking, Binary Exploitation, Reverse Engineering, Digital Forensics, Cryptography, and Miscellaneous challenges. Each team, consisting of 1-3 members, competes in these areas in a single round.</p>
         </div>
 
         <div class="flex flex-row items-center justify-center space-x-10 w-auto py-10">
@@ -36,7 +36,7 @@
 
         <x-countdown-mobver>2024-09-15</x-countdown-mobver>
 
-        <h1 class="text-3xl py-20 font-bold">Timeline of Activity</h1>
+        <h1 class="text-3xl py-20 font-bold" style="color: rgb(12 40 62);">Timeline of Activity</h1>
         <div class="px-5">
             <img src="/image/tl/ctf.png" alt="" class="flex h-auto">
         </div>

@@ -24,9 +24,9 @@
     <div class="md:hidden flex items-center justify-center flex-col h-auto bg-itcomp-bg bg-fixed bg-right-bottom bg-cover bg-no-repeat py-20">
 
         <div class="space-y-4 mx-5 flex flex-col items-center justify-center">  
-            <h1 class="text-center text-3xl font-bold">Web Development Competition</h1>
+            <h1 class="text-center text-3xl font-bold" style="color: rgb(12 40 62);">Web Development Competition</h1>
             <img src="/image/Lomba/Webdev.png" alt="" class="h-auto w-[35%]">
-            <p class="text-center text-md text-wrap font-semibold">Web Development Competition is a competition where participants design and build a web application that has a purpose and benefits, functions well, and whose uniqueness can address challenges or problems in life.The website created must contain at least one of the following themes:- Finance & Business- Education, Skill and Self Development- Entrepreneur- Work-life Balance- Startups</p>
+            <p class="text-center text-md text-wrap font-semibold" style="color: rgb(12 40 62);">Web Development Competition is a competition where participants design and build a web application that has a purpose and benefits, functions well, and whose uniqueness can address challenges or problems in life.The website created must contain at least one of the following themes:- Finance & Business- Education, Skill and Self Development- Entrepreneur- Work-life Balance- Startups</p>
         </div>
 
         <div class="flex flex-row items-center justify-center space-x-10 w-auto py-10">
@@ -36,7 +36,7 @@
 
         <x-countdown-mobver>2024-09-14</x-countdown-mobver>
 
-        <h1 class="text-3xl py-20 font-bold">Timeline of Activity</h1>
+        <h1 class="text-3xl py-20 font-bold" style="color: rgb(12 40 62);">Timeline of Activity</h1>
         <div class="px-5 w-[30vh]">
             <img src="/image/tl/webdev.png" alt="" class="flex h-auto">
         </div>

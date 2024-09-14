@@ -175,7 +175,7 @@
 
         <!-- Mobver -->
         <div
-            class="md:hidden flex items-center justify-center flex-col h-auto bg-itcomp-bg bg-fixed bg-right-bottom bg-cover bg-no-repeat py-20">
+            class="md:hidden flex items-center justify-center flex-col h-auto bg-itcomp-bg min-h-screen bg-fixed bg-right-bottom bg-cover bg-no-repeat py-20">
             <div>
                 <h1 class="text-3xl font-bold" style="color: rgb(12 40 62);">LAST ACT</h1>
             </div>
@@ -333,26 +333,29 @@
 
             <!-- Company Expo -->
             <div x-show="selected === 'rh-la2'"
-                class="hidden md:flex items-center justify-center flex-col h-auto py-20 gap-y-20"
+                class="md:flex items-center justify-center flex-col h-auto py-10 gap-y-20"
                 x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 scale-90"
                 x-transition:enter-end="opacity-100 scale-100" x-transition:leave="transition ease-in duration-100"
                 x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-90">
-                <h1>ini adalah comp expo</h1>
+                <div class="flex items-center justify-center flex-col h-auto">
+                    <img src="/image/logo_ifest.png" alt="" class="w-auto h-[200px]">
+                    <h1 class="text-2xl font-semibold">Coming Soon!</h1>
+                </div>
             </div>
 
             <!-- Awarding -->
             <div x-show="selected === 'rh-la3'"
-                class="hidden md:flex items-center justify-center flex-col h-auto py-20 gap-y-20"
+                class="md:flex items-center justify-center flex-col h-auto py-10 gap-y-20"
                 x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 scale-90"
                 x-transition:enter-end="opacity-100 scale-100" x-transition:leave="transition ease-in duration-100"
                 x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-90">
-                <h1>ini adalah awarding</h1>
+                <div class="flex items-center justify-center flex-col h-auto">
+                    <img src="/image/logo_ifest.png" alt="" class="w-auto h-[200px]">
+                    <h1 class="text-2xl font-semibold">Coming Soon!</h1>
+                </div>
             </div>
         </div>
-        <div class="md:hidden flex items-center justify-center flex-col h-auto  py-20">
-            <img src="/image/logo_ifest.png" alt="" class="w-auto h-[200px]">
-            <h1 class="text-2xl font-semibold">Coming Soon!</h1>
-        </div>
+
     </div>
 
     </div>

@@ -349,7 +349,7 @@
                                 <img src="/image/mentor_Gilang Ramadhan.png" alt="" class="h-[75%] w-full">
                                 <div class="flex flex-col w-full bg-navy-bg h-[25%] flex items-center justify-start">
                                     <h1 class="text-white font-semibold text-sm">Gilang Ramadhan</h1>
-                                    <h2 class="text-white text-[10px] leading-tight text-center">Curriculum Developer &
+                                    <h2 class="text-white text-[10px] leading-none text-center">Curriculum Developer &
                                         Contributor Coordinator Dicoding</h2>
                                 </div>
                             </div>

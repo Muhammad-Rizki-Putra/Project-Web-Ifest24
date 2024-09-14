@@ -53,16 +53,22 @@
 
                 <div class="grid grid-cols-2 grid-rows-1 gap-x-10 pt-10">
                     <div class="w-[315px] h-[400px] bg-speaker bg-cover bg-center bg-no-repeat p-1.5">
-                        <img src="/image/tba-pp.jpg" alt="" class="h-[75%] w-full">
+                        <img src="/image/Budi.jpg" alt="" class="h-[75%] w-full">
                         <div class="w-[100%] bg-navy-bg h-[25%] flex items-center justify-center">
-                            <h1 class="text-white font-semibold text-lg">To Be Announced</h1>
+                            <div class="flex flex-col items-center">
+                                <h1 class="text-white font-semibold text-md">Budi Rahardjo</h1>
+                                <h2 class="text-white text-base leading-tight text-sm text-center">Editorial Board of the Journal of ICT Research and Applications</h2>
+                            </div>
                         </div>
                     </div>
 
                     <div class="w-[315px] h-[400px] bg-speaker bg-cover bg-center bg-no-repeat p-1.5">
-                        <img src="/image/tba-pp.jpg" alt="" class="h-[75%] w-full">
+                        <img src="/image/Faishal.jpeg.jpg" alt="" class="h-[75%] w-full">
                         <div class="w-[100%] bg-navy-bg h-[25%] flex items-center justify-center">
-                            <h1 class="text-white font-semibold text-lg">To Be Announced</h1>
+                            <div class="flex flex-col items-center">
+                                <h1 class="text-white font-semibold text-md">Faishal Wahiduddin</h1>
+                                <h2 class="text-white text-base leading-tight text-sm text-center">Tech Leader | Senior Software Engineer | Co-Founder WOOL ID</h2>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -81,13 +87,8 @@
                 </div>
 
                 <div>
-                    <a 
-                    @if(auth()->guest())
-                    href="/login"
-                    @else
-                    href="/payment"
-                    @endif
-                    ><x-button textSize="text-4xl" textPadding="p-1">Register Now!</x-button></a>
+                    <a @if(auth()->guest()) href="/login" @else href="/payment" @endif><x-button textSize="text-4xl"
+                            textPadding="p-1">Register Now!</x-button></a>
                 </div>
 
                 <div class="w-full flex justify-center items-center py-5 pb-3">

@@ -136,7 +136,7 @@
 
 
                 <div>
-                    <h1 class="text-6xl font-semibold py-10">Frequently Asked Questions</h1>
+                    <h1 class="text-6xl text-center font-semibold py-10">Frequently Asked Questions</h1>
                 </div>
 
                 <div class="w-full gap-y-10 flex flex-col">

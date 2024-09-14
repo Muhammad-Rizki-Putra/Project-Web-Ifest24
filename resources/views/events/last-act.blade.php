@@ -2,7 +2,7 @@
     <x-slot:pagename>{{$pagename}}</x-slot:pagename>
     <div x-data="{ selected: 'rh-la1' }">
         <div
-            class="hidden md:flex items-center justify-center flex-col h-auto bg-itcomp-bg bg-fixed bg-right-bottom bg-cover bg-no-repeat py-20 gap-y-10 px-[25%]">
+            class="hidden md:flex items-center justify-center flex-col min-h-screen h-auto bg-itcomp-bg bg-fixed bg-right-bottom bg-cover bg-no-repeat py-20 gap-y-10 px-[25%]">
 
             <div class="flex items-center justify-center flex-col h-auto top-0 gap-10">
                 <div>
@@ -81,7 +81,13 @@
                 </div>
 
                 <div>
-                    <a href="/payment"><x-button textSize="text-4xl" textPadding="p-1">Register Now!</x-button></a>
+                    <a 
+                    @if(auth()->guest())
+                    href="/login"
+                    @else
+                    href="/payment"
+                    @endif
+                    ><x-button textSize="text-4xl" textPadding="p-1">Register Now!</x-button></a>
                 </div>
 
                 <div class="w-full flex justify-center items-center py-5 pb-3">
@@ -160,7 +166,10 @@
                 x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 scale-90"
                 x-transition:enter-end="opacity-100 scale-100" x-transition:leave="transition ease-in duration-100"
                 x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-90">
-                <h1>ini adalah comp expo</h1>
+                <div class="flex flex-row items-center gap-x-5">
+                    <img src="/image/ComingSoon.png" alt="" class="h-auto w-[200px]">
+                    <h1 class="text-5xl font-semibold text-center text-wrap pb-[22px] text-navy-bg">Coming Soon!</h1>
+                </div>
             </div>
 
             <!-- Awarding -->
@@ -169,13 +178,17 @@
                 x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 scale-90"
                 x-transition:enter-end="opacity-100 scale-100" x-transition:leave="transition ease-in duration-100"
                 x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-90">
-                <h1>ini adalah awarding</h1>
+                <div class="flex flex-row items-center gap-x-5">
+                    <img src="/image/ComingSoon.png" alt="" class="h-auto w-[200px]">
+                    <h1 class="text-5xl font-semibold text-center text-wrap pb-[22px] text-navy-bg">Coming Soon!</h1>
+                </div>
             </div>
         </div>
 
         <!-- Mobver -->
         <div
             class="md:hidden flex items-center justify-center flex-col h-auto bg-itcomp-bg min-h-screen bg-fixed bg-right-bottom bg-cover bg-no-repeat py-20">
+            class="md:hidden min-h-screen flex items-center justify-center flex-col h-auto bg-itcomp-bg bg-fixed bg-right-bottom bg-cover bg-no-repeat py-20">
             <div>
                 <h1 class="text-3xl font-bold" style="color: rgb(12 40 62);">LAST ACT</h1>
             </div>

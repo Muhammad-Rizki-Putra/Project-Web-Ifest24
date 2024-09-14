@@ -3,7 +3,7 @@
     <div class="hidden md:flex items-center justify-center flex-col h-auto bg-itcomp-bg bg-fixed bg-right-bottom bg-cover bg-no-repeat py-20">
 
         <div class="space-y-8 w-[50%] flex flex-col items-center justify-center">
-            <h1 class="text-center text-5xl font-bold">Web Development Competition</h1>
+            <h1 class="text-center text-5xl font-bold text-navy-bg">Web Development Competition</h1>
             <img src="/image/Lomba/Webdev2.png" alt="" class="h-auto w-[32%]">
             <p class="text-center text-xl text-balance font-semibold">Web Development Competition is a competition where participants design and build a web application that has a purpose and benefits, functions well, and whose uniqueness can address challenges or problems in life.The website created must contain at least one of the following themes:- Finance & Business- Education, Skill and Self Development- Entrepreneur- Work-life Balance- Startups</p>
         </div>

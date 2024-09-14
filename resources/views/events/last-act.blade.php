@@ -351,7 +351,7 @@
                 x-transition:enter-end="opacity-100 scale-100" x-transition:leave="transition ease-in duration-100"
                 x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-90">
                 <div class="flex items-center justify-center flex-col h-auto">
-                    <img src="/image/logo_ifest.png" alt="" class="w-auto h-[200px]">
+                    <img src="/image/ComingSoon.png" alt="" class="w-auto h-[200px]">
                     <h1 class="text-2xl font-semibold">Coming Soon!</h1>
                 </div>
             </div>
@@ -363,7 +363,7 @@
                 x-transition:enter-end="opacity-100 scale-100" x-transition:leave="transition ease-in duration-100"
                 x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-90">
                 <div class="flex items-center justify-center flex-col h-auto">
-                    <img src="/image/logo_ifest.png" alt="" class="w-auto h-[200px]">
+                    <img src="/image/ComingSoon.png" alt="" class="w-auto h-[200px]">
                     <h1 class="text-2xl font-semibold">Coming Soon!</h1>
                 </div>
             </div>

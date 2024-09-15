@@ -176,54 +176,21 @@
                     </div>
                 
             </div>
+            @if(auth()->guest())
             <div class="w-full h-auto p-3">
-                @if(auth()->guest())
-                <div class="w-full h-auto">
-                    
-                <div class="flex flex-row items-center justify-between">
-                    <img src="/image/NavbarArrow.png" alt="" class="h-5 w-5 transition-transform duration-300 ease-in-out" :class="{'rotate-180': IsopenProfile}">
-                    <button @click="IsopenProfile = !IsopenProfile" class="text-lg font-reguler">Login/Register</button>
-                </div>
-                        
-                        <div 
-                            x-show="IsopenProfile" 
-                            x-transition:enter="transition ease-out duration-200" 
-                            x-transition:enter-start="opacity-0 transform scale-95" 
-                            x-transition:enter-end="opacity-100 transform scale-100" 
-                            x-transition:leave="transition ease-in duration-75" 
-                            x-transition:leave-start="opacity-100 transform scale-100" 
-                            x-transition:leave-end="opacity-0 transform scale-95" 
-                            class="mt-2 bg-white fill-up-to-down"
-                        >
-                        <a href="/login" class="block px-4 py-2 text-sm text-gray-700">Login</a>
-                        <a href="/register" class="block px-4 py-2 text-sm text-gray-700">Register</a>
-                        </div>
-                    
-                </div>
-                @else
-                <div class="w-full h-auto p-3">
-                    <div>
-                    <div class="flex flex-row items-center justify-between">
-                    <img src="/image/NavbarArrow.png" alt="" class="h-5 w-5 transition-transform duration-300 ease-in-out" :class="{'rotate-180': IsopenProfile}">
-                    <button @click="IsopenProfile = !IsopenProfile" class="text-lg font-reguler">Login/Register</button>
-                </div>
-                        <div 
-                            x-show="IsopenProfile" 
-                            x-transition:enter="transition ease-out duration-200" 
-                            x-transition:enter-start="opacity-0 transform scale-95" 
-                            x-transition:enter-end="opacity-100 transform scale-100" 
-                            x-transition:leave="transition ease-in duration-75" 
-                            x-transition:leave-start="opacity-100 transform scale-100" 
-                            x-transition:leave-end="opacity-0 transform scale-95" 
-                            class="mt-2 bg-white fill-up-to-down"
-                        >
-                        <a href="/profile" class="block px-4 py-2 text-sm text-gray-700">Profile</a>
-                        <a href="/logout" class="block px-4 py-2 text-sm text-gray-700">Logout</a>
-                        </div>
-                    </div>
-                </div>
-                @endif
+                <a href="/login" class="text-lg font-reguler items-center text-nowrap">Login</a>
             </div>
+            <div class="w-full h-auto p-3">
+                <a href="/register" class="text-lg font-reguler items-center text-nowrap">Register</a>
+            </div>
+            @else
+            <div class="w-full h-auto p-3">
+                <a href="/profile" class="text-lg font-reguler items-center text-nowrap">Profile</a>
+            </div>
+            <div class="w-full h-auto p-3">
+                <a href="/logout" class="text-lg font-reguler items-center text-nowrap">Logout</a>
+            </div>
+            @endif
         </div>
     </div>
 </nav>

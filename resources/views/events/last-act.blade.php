@@ -88,7 +88,7 @@
                 </div>
 
                 <div>
-                    <a @if(auth()->guest()) href="/login" @else href="/payment" @endif><x-button textSize="text-4xl"
+                    <a @if(auth()->guest()) href="/login" @else href="/post-payment" @endif><x-button textSize="text-4xl"
                             textPadding="p-1">Claim Your Ticket!</x-button></a>
                 </div>
 
@@ -287,7 +287,7 @@
 
                 <div class="flex flex-col items-center justify-center w-full px-8 pb-12">
                     <div>
-                        <a @if(auth()->guest()) href="/login" @else href="/payment" @endif><x-button textSize="text-2xl"
+                        <a @if(auth()->guest()) href="/login" @else href="/post-payment" @endif><x-button textSize="text-2xl"
                                 textPadding="p-1">Claim Your Ticket!</x-button></a>
                     </div>
                 </div>

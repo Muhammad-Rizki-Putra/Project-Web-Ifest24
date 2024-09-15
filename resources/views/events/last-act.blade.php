@@ -52,25 +52,24 @@
                 </div>
 
                 <div class="grid grid-cols-2 grid-rows-1 gap-x-10 pt-10">
-                    <div class="w-[315px] h-[400px] bg-speaker bg-cover bg-center bg-no-repeat p-1.5">
-                        <img src="/image/Budi.jpg" alt="" class="h-[75%] w-full">
-                        <div class="w-[100%] bg-navy-bg h-[25%] flex items-center justify-center">
-                            <div class="flex flex-col items-center">
-                                <h1 class="text-white font-semibold text-md">Budi Rahardjo</h1>
-                                <h2 class="text-white text-base leading-tight text-sm text-center">Editorial Board of
-                                    the Journal of ICT Research and Applications</h2>
-                            </div>
+                    <div
+                        class="w-[257px] min-h-[350px] bg-gradient-to-r from-sky-950 to-pink-900 p-1 rounded-sm flex flex-col">
+                        <img src="/image/Budi.jpg" alt="" class="h-[250px] w-full">
+                        <div class="flex-grow flex flex-col w-full bg-navy-bg items-center justify-center p-1 gap-y-1">
+                            <h1 class="text-white font-semibold text-md text-center">Ir. Budi Rahardjo MSc., PhD</h1>
+                            <h2 class="text-white text-sm leading-tight text-center">BOD Journal ICT Research and
+                                Applications, ITB</h2>
                         </div>
                     </div>
 
-                    <div class="w-[315px] h-[400px] bg-speaker bg-cover bg-center bg-no-repeat p-1.5">
-                        <img src="/image/Faishal.jpeg.jpg" alt="" class="h-[75%] w-full">
-                        <div class="w-[100%] bg-navy-bg h-[25%] flex items-center justify-center">
-                            <div class="flex flex-col items-center">
-                                <h1 class="text-white font-semibold text-md">Faishal Wahiduddin</h1>
-                                <h2 class="text-white text-base leading-tight text-sm text-center">Tech Leader | Senior
-                                    Software Engineer | Co-Founder WOOL ID</h2>
-                            </div>
+                    <div
+                        class="w-[257px] min-h-[350px] bg-gradient-to-r from-sky-950 to-pink-900 p-1 rounded-sm flex flex-col">
+                        <img src="/image/Faishal.jpeg.jpg" alt="" class="h-[250px] w-full">
+                        <div class="flex-grow flex flex-col w-full bg-navy-bg items-center justify-center p-1 gap-y-1">
+                            <h1 class="text-white font-semibold text-md text-center">Faishal Wahiduddin, S. Kom., M.S
+                            </h1>
+                            <h2 class="text-white text-sm leading-tight text-center">Chief Technology Officer WOOL
+                                ID</h2>
                         </div>
                     </div>
                 </div>
@@ -90,7 +89,7 @@
 
                 <div>
                     <a @if(auth()->guest()) href="/login" @else href="/payment" @endif><x-button textSize="text-4xl"
-                            textPadding="p-1">Register Now!</x-button></a>
+                            textPadding="p-1">Claim Your Ticket!</x-button></a>
                 </div>
 
                 <div class="w-full flex justify-center items-center py-5 pb-3">
@@ -245,23 +244,31 @@
 
                 <div class="flex flex-col items-center justify-center">
                     <div class="grid grid-cols-2 grid-rows-1 gap-x-2 gap-y-2 pb-10">
-                        <div class="w-[157px] h-[200px] bg-speaker bg-cover bg-center bg-no-repeat p-[3px]">
-                            <img src="/image/Budi.jpg" alt="" class="h-[75%] w-full">
-                            <div class="flex flex-col w-full bg-navy-bg h-[25%] flex items-center justify-start">
-                                <h1 class="text-white font-semibold text-sm">Budi Rahardjo</h1>
-                                <h2 class="text-white text-xs leading-tight text-center">Editorial Board of
-                                the Journal of ICT Research and Applications</h2>
+
+                        <div
+                            class="w-[157px] min-h-[250px] bg-gradient-to-r from-sky-950 to-pink-900 p-1 rounded-sm flex flex-col">
+                            <img src="/image/Budi.jpg" alt="" class="h-[150px] w-full">
+                            <div
+                                class="flex-grow flex flex-col w-full bg-navy-bg items-center justify-center p-1 gap-y-1">
+                                <h1 class="text-white font-semibold text-xs text-center">Ir. Budi Rahardjo MSc., PhD
+                                </h1>
+                                <h2 class="text-white text-xs leading-tight text-center">BOD Journal ICT Research and
+                                    Applications, ITB</h2>
                             </div>
                         </div>
 
-                        <div class="w-[157px] h-[200px] bg-speaker bg-cover bg-center bg-no-repeat p-[3px]">
-                            <img src="/image/Faishal.jpeg.jpg" alt="" class="h-[75%] w-full">
-                            <div class="flex flex-col w-full bg-navy-bg h-[25%] flex items-center justify-start">
-                                <h1 class="text-white font-semibold text-sm">Faishal Wahiduddin</h1>
-                                <h2 class="text-white text-xs leading-tight text-center">Tech Leader | Senior
-                                Software Engineer | Co-Founder WOOL ID</h2>
+                        <div
+                            class="w-[157px] min-h-[250px] bg-gradient-to-r from-sky-950 to-pink-900 p-1 rounded-sm flex flex-col">
+                            <img src="/image/Faishal.jpeg.jpg" alt="" class="h-[150px] w-full">
+                            <div
+                                class="flex-grow flex flex-col w-full bg-navy-bg items-center justify-center p-1 gap-y-1">
+                                <h1 class="text-white font-semibold text-xs text-center">Faishal Wahiduddin, S. Kom.,
+                                    M.S</h1>
+                                <h2 class="text-white text-xs leading-tight text-center">Chief Technology Officer WOOL
+                                    ID</h2>
                             </div>
                         </div>
+
                     </div>
                 </div>
 
@@ -279,12 +286,18 @@
                 </div>
 
                 <div class="flex flex-col items-center justify-center w-full px-8 pb-12">
+                    <div>
+                        <a @if(auth()->guest()) href="/login" @else href="/payment" @endif><x-button textSize="text-2xl"
+                                textPadding="p-1">Claim Your Ticket!</x-button></a>
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-center justify-center w-full px-8 pb-12">
                     <a href="http://bit.lt/SCIFest" class="w-full max-w-md">
                         <div
                             class="bg-transparent rounded-xl p-3 w-full flex flex-row items-center justify-center gap-x-3 outline outline-2 outline-offset-2 outline-navy-bg">
-                            <p
-                                class="text-center text-navy-bg group-hover:text-cream-bg transition duration-150 text-lg font-medium text-nowrap">
-                                Click here to claim your ticket!</p>
+                            <img src="/image/Zoom2.png" alt="" class="w-16 h-auto">
+                            <p class="text-center text-navy-bg text-xl font-medium">Click here to Join!</p>
                         </div>
                     </a>
                 </div>

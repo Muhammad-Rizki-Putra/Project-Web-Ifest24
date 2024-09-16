@@ -324,7 +324,7 @@
             </div>
 
             <div class="flex justify-center pt-8">
-                <iframe class=" h-auto w-screen" src="https://www.youtube.com/watch?v=2NDpLzhb_o0">
+                <iframe class=" h-auto w-screen" src="https://www.youtube.com/embed/2NDpLzhb_o0">
                 </iframe>
             </div>
 

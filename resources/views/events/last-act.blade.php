@@ -55,9 +55,13 @@
                     <div
                         class="w-[257px] min-h-[350px] bg-gradient-to-r from-sky-950 to-pink-900 p-1 rounded-sm flex flex-col">
                         <img src="/image/Budi.jpg" alt="" class="h-[250px] w-full">
-                        <div class="flex-grow flex flex-col w-full bg-navy-bg items-center justify-center p-1 gap-y-1">
-                            <h1 class="text-white font-semibold text-md text-center">Ir. Budi Rahardjo MSc., PhD</h1>
-                            <h2 class="text-white text-sm leading-tight text-center">BOD Journal ICT Research and
+                        <div class="flex-grow flex flex-col w-full bg-navy-bg gap-y-3 items-center justify-center p-1 gap-y-1">
+                            <div class="flex flex-row items-center justify-center gap-x-1">
+                                <h1 class="text-white font-semibold text-sm text-center">Ir. Budi Rahardjo MSc., PhD
+                                </h1>
+                                <img src="/image/LogoITB.png" alt="" class="h-auto w-[50px]">
+                            </div>
+                            <h2 class="text-white text-xs leading-tight text-center">BOD Journal ICT Research and
                                 Applications, ITB</h2>
                         </div>
                     </div>
@@ -65,10 +69,14 @@
                     <div
                         class="w-[257px] min-h-[350px] bg-gradient-to-r from-sky-950 to-pink-900 p-1 rounded-sm flex flex-col">
                         <img src="/image/Faishal.jpeg.jpg" alt="" class="h-[250px] w-full">
-                        <div class="flex-grow flex flex-col w-full bg-navy-bg items-center justify-center p-1 gap-y-1">
-                            <h1 class="text-white font-semibold text-md text-center">Faishal Wahiduddin, S. Kom., M.S
-                            </h1>
-                            <h2 class="text-white text-sm leading-tight text-center">Chief Technology Officer WOOL
+                        <div class="flex-grow flex flex-col w-full bg-navy-bg gap-y-3 items-center justify-center p-1 gap-y-1">
+                            <div class="flex flex-row items-center justify-center">
+                                <h1 class="text-white font-semibold text-sm text-center">Faishal Wahiduddin, S. Kom.,
+                                    M.S
+                                </h1>
+                                <img src="/image/LogoWoolID.png" class="w-auto h-[20px]" alt="">
+                            </div>
+                            <h2 class="text-white text-xs leading-tight text-center">Chief Technology Officer WOOL
                                 ID</h2>
                         </div>
                     </div>
@@ -208,14 +216,14 @@
             <div class="flex justify-center items-center w-full">
                 <div class="flex flex-row gap-x-10 gap-y-3 flex-wrap overflow-x-auto max-w-[75%] mt-4 justify-center">
 
-                    <x-radio-button textSize="text-lg" textPadding="p-1" name="rh-la" value="rh-la1"
-                        id="rh-la-1" x-model="selected">Semnas</x-radio-button>
+                    <x-radio-button textSize="text-lg" textPadding="p-1" name="rh-la" value="rh-la1" id="rh-la-1"
+                        x-model="selected">Semnas</x-radio-button>
 
-                    <x-radio-button textSize="text-lg" textPadding="p-1" name="rh-la" value="rh-la3"
-                        id="rh-la-3" x-model="selected">Awarding</x-radio-button>
+                    <x-radio-button textSize="text-lg" textPadding="p-1" name="rh-la" value="rh-la3" id="rh-la-3"
+                        x-model="selected">Awarding</x-radio-button>
 
-                    <x-radio-button textSize="text-lg" textPadding="p-1" name="rh-la" value="rh-la2"
-                        id="rh-la-2" x-model="selected">Company Expo</x-radio-button>
+                    <x-radio-button textSize="text-lg" textPadding="p-1" name="rh-la" value="rh-la2" id="rh-la-2"
+                        x-model="selected">Company Expo</x-radio-button>
                 </div>
             </div>
 
@@ -297,9 +305,8 @@
 
                 <div class="flex flex-col items-center justify-center w-full px-8 pb-12">
                     <div>
-                        <a
-                            @if (auth()->guest()) href="/login?redirect=post-payment" @else href="/post-payment" @endif><x-button
-                                textSize="text-2xl" textPadding="p-1">Claim Your Ticket!</x-button></a>
+                        <a @if (auth()->guest()) href="/login?redirect=post-payment" @else href="/post-payment"
+                        @endif><x-button textSize="text-2xl" textPadding="p-1">Claim Your Ticket!</x-button></a>
                     </div>
                 </div>
 

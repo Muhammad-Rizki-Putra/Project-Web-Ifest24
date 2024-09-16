@@ -73,7 +73,7 @@ class RegisterController extends Controller
     {
         $request->fulfill();
 
-        return redirect('/');
+        return redirect('/profile-edit');
     }
 
     public function resendEmailVerification(Request $request)

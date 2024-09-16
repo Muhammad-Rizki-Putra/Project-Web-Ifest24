@@ -2,8 +2,8 @@
     <x-slot:pagename>{{ $pagename }}</x-slot:pagename>
 
     <!-- Desktop Version -->
-    <div class="relative flex flex-col items-center justify-center overflow-hidden py-6 sm:py-12 bg-white h-[60vh] mx-auto md:block hidden">
-        <a href="javascript:history.back()" class="hidden md:block absolute top-4 left-4 text-indigo-600 font-medium hover:underline">
+    <div class="relative flex flex-col items-center justify-center overflow-hidden py-6 sm:py-12 bg-white h-[60vh] mx-auto md:block hidden" style="border-radius: 10px;">
+        <a href="javascript:history.back()" class="hidden md:block absolute top-4 left-4 font-medium hover:underline">
             &larr; Back
         </a>
 
@@ -20,7 +20,7 @@
             <div class="mt-10 mx-10">
                 <form action="{{ route('verification.send') }}" method="POST">
                     @csrf
-                    <button type="submit" class="inline-block w-full rounded bg-indigo-600 px-5 py-3 font-medium text-white shadow-md shadow-indigo-500/20 hover:bg-indigo-700">
+                    <button type="submit" class="inline-block w-full rounded bg-gradient-to-r from-pink-400 to-white px-5 py-3 font-medium text-black shadow-md shadow-indigo-500/20" style="border-radius: 10px;">
                         Resend Verification Email
                     </button>
                 </form>
@@ -29,7 +29,7 @@
     </div>
 
     <!-- Mobile Version -->
-    <div class="md:hidden relative w-[90vw] flex flex-col bg-white py-6 mx-auto h-[60vh]">
+    <div class="md:hidden relative w-[90vw] flex flex-col bg-white py-6 mx-auto h-[60vh]" style="border-radius: 10px;">
         <a href="javascript:history.back()" class="absolute top-4 left-4 text-indigo-600 font-medium hover:underline">
             &larr; Back
         </a>
@@ -46,7 +46,7 @@
 
             <form action="{{ route('verification.send') }}" method="POST" class="inline-block mt-4">
                 @csrf
-                <button type="submit" class="w-full rounded bg-indigo-600 px-5 py-3 font-medium text-white shadow-md shadow-indigo-500/20 hover:bg-indigo-700">
+                <button type="submit" class="inline-block w-full rounded bg-gradient-to-r from-pink-400 to-white px-5 py-3 font-medium text-black shadow-md shadow-indigo-500/20" style="border-radius: 10px;">
                     Resend Verification Email
                 </button>
             </form>

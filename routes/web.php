@@ -26,7 +26,9 @@ Route::get('/payment', function () {
 
 Route::get('/post-payment', function () {
     return view('events.post-payment', ['pagename' => 'Post-Payment']);
-});
+})->middleware('auth');
+
+Route::get('/claim-ticket', [SemnasController::class, 'claimTicket']);
 
 Route::post('/partner-with-us', [PartnerController::class, 'store']);
 

@@ -4,13 +4,15 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use App\Models\Event;
 
 class ProfileController extends Controller
 {
     public function showProfile()
     {
         $user = Auth::user();
-        return view('profile', ['pagename' => 'Profile', 'user' => $user]);
+        $isRegistered = Event::where('user_id', $user->id)->exists();
+        return view('profile', ['pagename' => 'Profile', 'user' => $user, 'isRegistered' => $isRegistered]);
     }
 
     public function editProfile()

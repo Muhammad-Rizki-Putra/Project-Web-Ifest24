@@ -1,5 +1,5 @@
 <x-layout>
-    <x-slot:pagename>{{$pagename}}</x-slot:pagename>
+    <x-slot:pagename>{{ $pagename }}</x-slot:pagename>
     <div x-data="{ selected: 'rh-la1' }">
         <div
             class="hidden md:flex items-center justify-center flex-col min-h-screen h-auto bg-itcomp-bg bg-fixed bg-right-bottom bg-cover bg-no-repeat py-20 gap-y-10 px-[25%]">
@@ -88,8 +88,15 @@
                 </div>
 
                 <div>
-                    <a @if(auth()->guest()) href="/login" @else href="/post-payment" @endif><x-button textSize="text-4xl"
-                            textPadding="p-1">Claim Your Ticket!</x-button></a>
+                    @if (auth()->guest())
+                        <a href="/login?redirect=post-payment">
+                            <x-button textSize="text-4xl" textPadding="p-1">Claim Your Ticket!</x-button>
+                        </a>
+                    @else
+                        <a href="/claim-ticket">
+                            <x-button textSize="text-4xl" textPadding="p-1">Claim Your Ticket!</x-button>
+                        </a>
+                    @endif
                 </div>
 
                 <div class="w-full flex justify-center items-center py-5 pb-3">
@@ -201,14 +208,14 @@
             <div class="flex justify-center items-center w-full">
                 <div class="flex flex-row gap-x-10 gap-y-3 flex-wrap overflow-x-auto max-w-[75%] mt-4 justify-center">
 
-                    <x-radio-button textSize="text-lg" textPadding="p-1" name="rh-la" value="rh-la1" id="rh-la-1"
-                        x-model="selected">Semnas</x-radio-button>
+                    <x-radio-button textSize="text-lg" textPadding="p-1" name="rh-la" value="rh-la1"
+                        id="rh-la-1" x-model="selected">Semnas</x-radio-button>
 
-                    <x-radio-button textSize="text-lg" textPadding="p-1" name="rh-la" value="rh-la3" id="rh-la-3"
-                        x-model="selected">Awarding</x-radio-button>
+                    <x-radio-button textSize="text-lg" textPadding="p-1" name="rh-la" value="rh-la3"
+                        id="rh-la-3" x-model="selected">Awarding</x-radio-button>
 
-                    <x-radio-button textSize="text-lg" textPadding="p-1" name="rh-la" value="rh-la2" id="rh-la-2"
-                        x-model="selected">Company Expo</x-radio-button>
+                    <x-radio-button textSize="text-lg" textPadding="p-1" name="rh-la" value="rh-la2"
+                        id="rh-la-2" x-model="selected">Company Expo</x-radio-button>
                 </div>
             </div>
 
@@ -219,7 +226,8 @@
                 x-transition:enter-end="opacity-100 scale-100" x-transition:leave="transition ease-in duration-100"
                 x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-90">
                 <div class="flex flex-col items-center justify-center">
-                    <h1 class="text-4xl font-semibold text-center text-wrap pb-4" style="color: rgb(12 40 62);">SEMINAR
+                    <h1 class="text-4xl font-semibold text-center text-wrap pb-4" style="color: rgb(12 40 62);">
+                        SEMINAR
                         NASIONAL</h1>
                     <h1 class="text-lg text-center text-wrap pb-4 w-4/5 font-semibold" style="color: rgb(12 40 62);">
                         Exploring Career Path In Technology: Navigating
@@ -227,7 +235,8 @@
                 </div>
 
                 <div class="flex flex-col items-center justify-center">
-                    <p class="text-md text-center w-4/5 font-semibold" style="color: rgb(12 40 62);">National seminar is
+                    <p class="text-md text-center w-4/5 font-semibold" style="color: rgb(12 40 62);">National seminar
+                        is
                         an event that invites speakers who have insights
                         into
                         informatics careers. We aim to provide a platform for sharing information, experiences, and
@@ -275,7 +284,8 @@
                 <div class="flex items-center w-full flex-col gap-y-2 py-4">
                     <p class="text-xl text-center text-wrap pb-2 w-5/6 font-semibold" style="color: rgb(12 40 62);">Is
                         pursuing a career in IT still worth it?</p>
-                    <p class="text-md text-center text-wrap pb-2 w-4/5 font-semibold" style="color: rgb(12 40 62);">With
+                    <p class="text-md text-center text-wrap pb-2 w-4/5 font-semibold" style="color: rgb(12 40 62);">
+                        With
                         the end of the pandemic, the startup trend that had been growing
                         has
                         seen
@@ -287,8 +297,9 @@
 
                 <div class="flex flex-col items-center justify-center w-full px-8 pb-12">
                     <div>
-                        <a @if(auth()->guest()) href="/login" @else href="/post-payment" @endif><x-button textSize="text-2xl"
-                                textPadding="p-1">Claim Your Ticket!</x-button></a>
+                        <a
+                            @if (auth()->guest()) href="/login?redirect=post-payment" @else href="/post-payment" @endif><x-button
+                                textSize="text-2xl" textPadding="p-1">Claim Your Ticket!</x-button></a>
                     </div>
                 </div>
 

@@ -31,7 +31,9 @@ class LoginController extends Controller
         }
 
         $request->session()->regenerate();
-        return redirect()->intended('/');
+
+        $redirectTo = $request->input('redirect') ?? '/';
+        return redirect()->intended($redirectTo);
     }
 
     public function logout(Request $request)

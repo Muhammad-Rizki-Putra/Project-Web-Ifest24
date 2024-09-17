@@ -2,7 +2,7 @@
     <x-slot:pagename>{{ $pagename }}</x-slot:pagename>
 
     <!-- Desktop Version -->
-    <div class="relative flex flex-col items-center justify-center overflow-hidden py-6 sm:py-12 bg-white h-[60vh] mx-auto md:block hidden" style="border-radius: 10px;">
+    <div class="relative flex flex-col items-center justify-center overflow-hidden py-6 sm:py-12 bg-white h-[55vh] mx-auto md:block hidden" style="border-radius: 10px;">
         <a href="javascript:history.back()" class="hidden md:block absolute top-4 left-4 font-medium hover:underline">
             &larr; Back
         </a>

@@ -95,14 +95,13 @@
                 </div>
 
                 <div>
-                    @if (auth()->guest())
-                        <a href="/login?redirect=post-payment">
-                            <x-button textSize="text-4xl" textPadding="p-1">Claim Your Ticket!</x-button>
-                        </a>
+                    @if ($isRegistered)
+                        <p class="text-4xl text-center font-bold">Thank You for Participating</p>
                     @else
-                        <a href="/claim-ticket">
+                        <button id="claimButtonDesktop" onclick="handleClick(event, 'claimButtonDesktop')">
                             <x-button textSize="text-4xl" textPadding="p-1">Claim Your Ticket!</x-button>
-                        </a>
+                        </button>
+
                     @endif
                 </div>
 
@@ -191,7 +190,8 @@
                         <x-fa-q-button-mobver>
                             <x-slot:slottitle>Bagaimana cara mendaftar untuk mengikuti acara ini?
                             </x-slot:slottitle>
-                            <x-slot:slotdrop>Untuk mendaftar, peserta dapat mengisi formulir pendaftaran Last Act yang
+                            <x-slot:slotdrop>Untuk mendaftar, peserta dapat mengisi formulir pendaftaran Last Act
+                                yang
                                 tersedia di web IFest 2024.
                             </x-slot:slotdrop>
                         </x-fa-q-button-mobver>
@@ -306,14 +306,14 @@
             <div class="flex justify-center items-center w-full">
                 <div class="flex flex-row gap-x-10 gap-y-3 flex-wrap overflow-x-auto max-w-[75%] mt-4 justify-center">
 
-                    <x-radio-button textSize="text-lg" textPadding="p-1" name="rh-la" value="rh-la1" id="rh-la-1"
-                        x-model="selected">Semnas</x-radio-button>
+                    <x-radio-button textSize="text-lg" textPadding="p-1" name="rh-la" value="rh-la1"
+                        id="rh-la-1" x-model="selected">Semnas</x-radio-button>
 
-                    <x-radio-button textSize="text-lg" textPadding="p-1" name="rh-la" value="rh-la3" id="rh-la-3"
-                        x-model="selected">Awarding</x-radio-button>
+                    <x-radio-button textSize="text-lg" textPadding="p-1" name="rh-la" value="rh-la3"
+                        id="rh-la-3" x-model="selected">Awarding</x-radio-button>
 
-                    <x-radio-button textSize="text-lg" textPadding="p-1" name="rh-la" value="rh-la2" id="rh-la-2"
-                        x-model="selected">Company Expo</x-radio-button>
+                    <x-radio-button textSize="text-lg" textPadding="p-1" name="rh-la" value="rh-la2"
+                        id="rh-la-2" x-model="selected">Company Expo</x-radio-button>
                 </div>
             </div>
 
@@ -403,8 +403,14 @@
 
                 <div class="flex flex-col items-center justify-center w-full px-8 pb-12">
                     <div>
-                        <a @if (auth()->guest()) href="/login?redirect=post-payment" @else href="/post-payment"
-                        @endif><x-button textSize="text-2xl" textPadding="p-1">Claim Your Ticket!</x-button></a>
+                        @if ($isRegistered)
+                            <p class="text-4xl text-center font-bold">Thank You for Participating</p>
+                        @else
+                            <button id="claimButtonMobile" onclick="handleClick(event, 'claimButtonMobile')">
+                                <x-button textSize="text-2xl" textPadding="p-1">Claim Your Ticket!</x-button>
+                            </button>
+    
+                        @endif
                     </div>
                 </div>
 
@@ -495,7 +501,8 @@
                         <x-fa-q-button-mobver>
                             <x-slot:slottitle>Bagaimana cara mendaftar untuk mengikuti acara ini?
                             </x-slot:slottitle>
-                            <x-slot:slotdrop>Untuk mendaftar, peserta dapat mengisi formulir pendaftaran Last Act yang
+                            <x-slot:slotdrop>Untuk mendaftar, peserta dapat mengisi formulir pendaftaran Last Act
+                                yang
                                 tersedia di web IFest 2024.
                             </x-slot:slotdrop>
                         </x-fa-q-button-mobver>
@@ -506,7 +513,8 @@
                             <x-fa-q-button-mobver>
                                 <x-slot:slottitle>Apakah ada biaya untuk mengikuti acara Last Act IFEST 2024?
                                 </x-slot:slottitle>
-                                <x-slot:slotdrop>Untuk acara ini terdapat dua gelombang pendaftaran. Gelombang pertama
+                                <x-slot:slotdrop>Untuk acara ini terdapat dua gelombang pendaftaran. Gelombang
+                                    pertama
                                     adalah pendaftaran gratis, sementara gelombang berikutnya memerlukan biaya
                                     pendaftaran. Pastikan untuk mendaftar pada gelombang pertama untuk mendapatkan tiket
                                     gratis.
@@ -519,7 +527,8 @@
                             <x-fa-q-button-mobver>
                                 <x-slot:slottitle>Apa saja rangkaian acara yang ada di Last Act IFEST 2024?
                                 </x-slot:slottitle>
-                                <x-slot:slotdrop>Rangkaian acara Last Act IFEST 2024 mencakup Seminar Nasional dengan
+                                <x-slot:slotdrop>Rangkaian acara Last Act IFEST 2024 mencakup Seminar Nasional
+                                    dengan
                                     pembicara yang memiliki wawasan terkait karir di informatika, Company Expo yang
                                     diikuti
                                     oleh berbagai perusahaan di sektor informatika, serta Awarding Night yang merupakan
@@ -534,7 +543,8 @@
                                 <x-slot:slottitle>Apa saja yang ditampilkan di company expo?
 
                                 </x-slot:slottitle>
-                                <x-slot:slotdrop>Company Expo akan menampilkan booth dari berbagai perusahaan di sektor
+                                <x-slot:slotdrop>Company Expo akan menampilkan booth dari berbagai perusahaan di
+                                    sektor
                                     informatika. Peserta dapat memperoleh informasi mengenai program magang yang
                                     ditawarkan perusahaan-perusahaan tersebut, melihat proyek VR karya mahasiswa TI
                                     Unpad, serta menggunakan layanan CV review dan simulasi wawancara kerja.
@@ -559,7 +569,8 @@
                                 <x-slot:slottitle>Siapa yang dapat dihubungi untuk informasi lebih lanjut?
 
                                 </x-slot:slottitle>
-                                <x-slot:slotdrop>Untuk informasi lebih lanjut, silakan hubungi melalui direct message di
+                                <x-slot:slotdrop>Untuk informasi lebih lanjut, silakan hubungi melalui direct
+                                    message di
                                     Instagram @ifestunpad.
 
                                 </x-slot:slotdrop>
@@ -571,8 +582,9 @@
                 <!-- Company Expo -->
                 <div x-show="selected === 'rh-la2'"
                     class="md:flex items-center justify-center flex-col h-auto py-10 gap-y-20"
-                    x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 scale-90"
-                    x-transition:enter-end="opacity-100 scale-100" x-transition:leave="transition ease-in duration-100"
+                    x-transition:enter="transition ease-out duration-300"
+                    x-transition:enter-start="opacity-0 scale-90" x-transition:enter-end="opacity-100 scale-100"
+                    x-transition:leave="transition ease-in duration-100"
                     x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-90">
                     <div class="flex items-center justify-center flex-col h-auto">
                         <img src="/image/ComingSoon.png" alt="" class="w-auto h-[200px]">
@@ -583,8 +595,9 @@
                 <!-- Awarding -->
                 <div x-show="selected === 'rh-la3'"
                     class="md:flex items-center justify-center flex-col h-auto py-10 gap-y-20"
-                    x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 scale-90"
-                    x-transition:enter-end="opacity-100 scale-100" x-transition:leave="transition ease-in duration-100"
+                    x-transition:enter="transition ease-out duration-300"
+                    x-transition:enter-start="opacity-0 scale-90" x-transition:enter-end="opacity-100 scale-100"
+                    x-transition:leave="transition ease-in duration-100"
                     x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-90">
                     <div class="flex items-center justify-center flex-col h-auto">
                         <img src="/image/ComingSoon.png" alt="" class="w-auto h-[200px]">
@@ -594,4 +607,68 @@
             </div>
         </div>
     </div>
+
+    <div id="confirmationPopup"
+        style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.7); z-index: 1000;">
+        <div
+            style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #fff; padding: 30px; border-radius: 15px; width: 350px; box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); text-align: center;">
+            <h2 id="popupTitle" style="font-size: 1.5rem; font-weight: bold; margin-bottom: 15px;">Confirm Your Action
+            </h2>
+            <p id="popupMessage" style="margin-bottom: 20px; font-size: 1rem; color: #555;">We will send your ticket
+                confirmation through email. Please make sure your profile name is correct.</p>
+            <div id="popupButtons" style="display: flex; justify-content: space-around;">
+                <button onclick="cancelPopup()"
+                    style="background-color: #f44336; color: white; border: none; padding: 10px 20px; font-size: 1rem; border-radius: 5px; cursor: pointer; transition: background-color 0.3s;">Cancel</button>
+                <button id="submitButton" onclick=""
+                    style="background-color: #4CAF50; color: white; border: none; padding: 10px 20px; font-size: 1rem; border-radius: 5px; cursor: pointer; transition: background-color 0.3s;">Submit</button>
+            </div>
+        </div>
+    </div>
 </x-layout>
+
+<script>
+    function handleClick(event, claimButton) {
+        var isLoggedIn = {!! json_encode($isLoggedIn) !!};
+        var isVerified = {!! json_encode($isVerified) !!};
+        event.preventDefault();
+
+        const popupTitle = document.getElementById('popupTitle');
+        const popupMessage = document.getElementById('popupMessage');
+        const submitButton = document.getElementById('submitButton');
+
+        // belum login
+        if (!isLoggedIn) {
+            popupTitle.textContent = 'Login Required';
+            popupMessage.textContent = 'Please login first to claim your ticket.';
+            submitButton.textContent = 'Login';
+            submitButton.onclick = () => window.location.href = '/login';
+        }
+        // belum verifikasi email
+        else if (!isVerified) {
+            popupTitle.textContent = 'Email Verification Required';
+            popupMessage.textContent = 'Please verify your email to continue.';
+            submitButton.textContent = 'Verify';
+            submitButton.onclick = () => window.location.href = '/email/verify';
+        } else {
+            popupTitle.textContent = 'Confirm Your Action';
+            popupMessage.textContent =
+                'We will send your ticket confirmation through email. Please make sure your profile name is correct.';
+            submitButton.textContent = 'Submit';
+            submitButton.onclick = () => submitPopup(claimButton);
+        }
+
+        document.getElementById('confirmationPopup').style.display = 'block';
+    }
+
+    function cancelPopup() {
+        document.getElementById('confirmationPopup').style.display = 'none';
+    }
+
+    function submitPopup(claimButton) {
+        const button = document.getElementById(claimButton);
+        button.disabled = true;
+        button.textContent = 'Loading...';
+        document.getElementById('confirmationPopup').style.display = 'none';
+        window.location.href = '/claim-ticket';
+    }
+</script>

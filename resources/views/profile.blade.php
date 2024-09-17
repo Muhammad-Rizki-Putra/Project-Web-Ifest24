@@ -48,7 +48,7 @@
             @if ($isRegistered)
                 <div class="text-2xl profile-section-name mb-4 font-semibold">Registered At</div>
                 <div
-                    class="bg-gradient-to-r from-sky-200 via-cream-bg to-sky-100 p-4 rounded-lg shadow-lg border border-sky-300 flex items-center justify-between">
+                    class="bg-gradient-to-r from-sky-200 via-cream-bg to-sky-100 p-4 rounded-lg shadow-lg border border-sky-300 flex items-center justify-between min-w-[350px]">
                     <div>
                         <p class="font-bold text-xl mb-2">Seminar Nasional</p>
                         <ul class="list-none space-y-2">
@@ -63,11 +63,11 @@
                         </ul>
                     </div>
 
-                    <div class="self-end text-xs">
+                    {{-- <div class="self-end text-xs">
                         <button class="bg-sky-900 text-white px-4 py-2 w-24 rounded-lg hover:bg-sky-700 transition-all">
                             Details
                         </button>
-                    </div>
+                    </div> --}}
                 </div>
             @else
                 <div

@@ -147,7 +147,7 @@
                     </div>
                 </div>
 
-                <img src="/image/PosterSemnas.png" class="h-auto w-[90%] mt-8" alt="">
+                <img src="/image/PosterSemnasR.png" class="h-auto w-[90%] mt-8" alt="">
 
                 <!-- <div>
                     <h1 class="text-6xl text-center font-semibold py-10">Frequently Asked Questions</h1>
@@ -361,8 +361,9 @@
                             </div>
                         </div>
                     </div>
-                    <img src="/image/PosterSemnas.png" class="h-auto w-[90%] mt-8" alt="">
+                    <img src="/image/PosterSemnasR.png" class="h-auto w-[90%] mt-8" alt="">
                 </div>
+
 
                 <!-- <div>
                     <h1 class="text-center text-2xl font-semibold pb-4">Frequently Asked Questions</h1>

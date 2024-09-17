@@ -20,13 +20,13 @@
             <div class="flex flex-row items-center space-x-16">
                 @if(auth()->guest())
                 <div class="flex flex-row items-center justify-center">
-                    <button @click="IsopenProfile = ! IsopenProfile, IsopenCompetition = false, IsopenEvent = false" class="text-lg font-reguler flex items-center">Login/Register</button>
-                    <img src="/image/NavbarArrow.png" alt="" class="h-5 w-5 transition-transform duration-300 ease-in-out" :class="{'rotate-180': IsopenProfile}">
+                <a href="/login" class="block px-4 py-2 text-sm text-black  font-semibold">Login</a>
+                <a href="/register" class="block px-4 py-2 text-sm text-black font-semibold ">Register</a>
                 </div>
                 @else
                 <div class="flex flex-row items-center justify-center">
-                    <button @click="IsopenProfile = ! IsopenProfile, IsopenCompetition = false, IsopenEvent = false" class="text-lg font-reguler flex items-center">Profile/Logout</button>
-                    <img src="/image/NavbarArrow.png" alt="" class="h-5 w-5 transition-transform duration-300 ease-in-out" :class="{'rotate-180': IsopenProfile}">
+                <a href="/profile" class="block px-4 py-2 text-sm text-black  font-semibold">Profile</a>
+                <a href="/logout" class="block px-4 py-2 text-sm text-black  font-semibold">Logout</a>
                 </div>
                 @endif
             </div>
@@ -65,36 +65,6 @@
                 <a href="/web-development-competition" class="lg:hidden block  py-2 text-xs font-semibold text-white">WebDev</a>
             </div>
         </div>
-    </div>
-
-    <div class="hidden md:flex flex-col items-end h-[20%]">  
-        @if(auth()->guest())
-        <div x-show="IsopenProfile" class="bg-navy-bg w-auto h-10 rounded-b-lg relative items-center justify-center z-0 gap-x-8 px-6"
-        x-transition:enter="transition ease-out duration-500" 
-        x-transition:enter-start="opacity-0 transform -translate-y-full" 
-        x-transition:enter-end="opacity-100 transform translate-y-0"
-        x-transition:leave="transition ease-in -duration-100"
-        x-transition:leave-start="transform translate-y-0" 
-        x-transition:leave-end="transform -translate-y-full">
-            <div class="flex flex-row items-center justify-evenly">
-                <a href="/login" class="block px-4 py-2 text-sm text-white  font-semibold">Login</a>
-                <a href="/register" class="block px-4 py-2 text-sm text-white font-semibold ">Register</a>
-            </div>
-        </div>
-        @else
-        <div x-show="IsopenProfile" class="bg-navy-bg w-auto h-10 rounded-b-lg relative items-center justify-center z-0 gap-x-8 px-6"
-        x-transition:enter="transition ease-out duration-500" 
-        x-transition:enter-start="opacity-0 transform -translate-y-full" 
-        x-transition:enter-end="opacity-100 transform translate-y-0"
-        x-transition:leave="transition ease-in -duration-100"
-        x-transition:leave-start="transform translate-y-0" 
-        x-transition:leave-end="transform -translate-y-full">
-            <div class="flex flex-row items-center justify-evenly">
-                <a href="/profile" class="block px-4 py-2 text-sm text-white  font-semibold">Profile</a>
-                <a href="/logout" class="block px-4 py-2 text-sm text-white  font-semibold">Logout</a>
-            </div>
-        </div>
-        @endif
     </div>
 
     <!-- bg-white w-screen z-20 -->

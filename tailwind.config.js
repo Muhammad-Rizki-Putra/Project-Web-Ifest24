@@ -7,6 +7,24 @@ export default {
     "./node_modules/flowbite/**/*.js",
   ],
   theme: {
+    fontSize: {
+      xs3: '0.575rem',
+      xs2: '0.675rem',
+      xs: '0.75rem',
+      sm: '0.875rem',
+      base: '1rem',
+      md: '1rem',
+      lg: '1.125rem',
+      xl: '1.25rem',
+      '2xl': '1.563rem',
+      '3xl': '1.953rem',
+      '4xl': '2.441rem',
+      '5xl': '3.052rem',
+      '6xl': '3.75rem',
+      '7xl': '4.5rem',
+      '8xl': '6rem',
+      '9xl': '8rem',
+    },
     extend: {
       animation: {
         fade: 'fadeOut 1s ease-in-out',

@@ -55,29 +55,28 @@
                     <div
                         class="w-[257px] min-h-[350px] bg-gradient-to-r from-sky-950 to-pink-900 p-1 rounded-sm flex flex-col">
                         <img src="/image/Budi.jpg" alt="" class="h-[250px] w-full">
-                        <div class="flex-grow flex flex-col w-full bg-navy-bg gap-y-3 items-center justify-center p-1 gap-y-1">
-                            <div class="flex flex-row items-center justify-center gap-x-1">
-                                <h1 class="text-white font-semibold text-sm text-center">Ir. Budi Rahardjo MSc., PhD
-                                </h1>
-                                <img src="/image/LogoITB.png" alt="" class="h-auto w-[50px]">
-                            </div>
-                            <h2 class="text-white text-xs leading-tight text-center">BOD Journal ICT Research and
+                        <div class="flex-grow flex flex-col w-full bg-white items-center justify-center gap-y-2 p-2">
+                            <h1 class="text-black font-semibold text-md text-center">Ir. Budi Rahardjo MSc., PhD
+                            </h1>
+                            <h2 class="text-black text-xs3 leading-tight text-center">BOD Journal ICT Research and
                                 Applications, ITB</h2>
+                            <img src="/image/LogoITB.png" alt="" class="h-auto w-[45px]">
                         </div>
                     </div>
 
                     <div
                         class="w-[257px] min-h-[350px] bg-gradient-to-r from-sky-950 to-pink-900 p-1 rounded-sm flex flex-col">
                         <img src="/image/Faishal.jpeg.jpg" alt="" class="h-[250px] w-full">
-                        <div class="flex-grow flex flex-col w-full bg-navy-bg gap-y-3 items-center justify-center p-1 gap-y-1">
+                        <div class="flex-grow flex flex-col w-full bg-white items-center justify-center gap-y-2 p-2">
                             <div class="flex flex-row items-center justify-center">
-                                <h1 class="text-white font-semibold text-sm text-center">Faishal Wahiduddin, S. Kom.,
+                                <h1 class="text-black font-semibold text-sm text-center">Faishal Wahiduddin, S. Kom.,
                                     M.S
                                 </h1>
-                                <img src="/image/LogoWoolID.png" class="w-auto h-[20px]" alt="">
+
                             </div>
-                            <h2 class="text-white text-xs leading-tight text-center">Chief Technology Officer WOOL
+                            <h2 class="text-black text-xs2 leading-tight text-center">Chief Technology Officer WOOL
                                 ID</h2>
+                            <img src="/image/LogoWoolID.png" class="h-auto w-[120px]" alt="">
                         </div>
                     </div>
                 </div>
@@ -148,8 +147,9 @@
                     </div>
                 </div>
 
+                <img src="/image/PosterSemnas.png" class="h-auto w-[90%] mt-8" alt="">
 
-                <div>
+                <!-- <div>
                     <h1 class="text-6xl text-center font-semibold py-10">Frequently Asked Questions</h1>
                 </div>
 
@@ -174,7 +174,7 @@
                             <x-slot:slotdrop>The event location is...</x-slot:slotdrop>
                         </x-faq-button>
                     </div>
-                </div>
+                </div> -->
             </div>
 
             <!-- Company Expo -->
@@ -185,7 +185,8 @@
                 x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-90">
                 <div class="flex flex-row items-center gap-x-5">
                     <img src="/image/ComingSoon.png" alt="" class="h-auto w-[200px]">
-                    <h1 class="text-5xl font-semibold text-center text-wrap pb-[22px] text-navy-bg">Coming Soon!</h1>
+                    <h1 class="text-5xl font-semibold text-center text-wrap pb-[22px] text-navy-bg">Coming Soon!
+                    </h1>
                 </div>
             </div>
 
@@ -197,7 +198,8 @@
                 x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-90">
                 <div class="flex flex-row items-center gap-x-5">
                     <img src="/image/ComingSoon.png" alt="" class="h-auto w-[200px]">
-                    <h1 class="text-5xl font-semibold text-center text-wrap pb-[22px] text-navy-bg">Coming Soon!</h1>
+                    <h1 class="text-5xl font-semibold text-center text-wrap pb-[22px] text-navy-bg">Coming Soon!
+                    </h1>
                 </div>
             </div>
         </div>
@@ -243,14 +245,16 @@
                 </div>
 
                 <div class="flex flex-col items-center justify-center">
-                    <p class="text-md text-center w-4/5 font-semibold" style="color: rgb(12 40 62);">National seminar
+                    <p class="text-md text-center w-4/5 font-semibold" style="color: rgb(12 40 62);">National
+                        seminar
                         is
                         an event that invites speakers who have insights
                         into
                         informatics careers. We aim to provide a platform for sharing information, experiences, and
                         ideas
                         for
-                        those already involved in or interested in pursuing a career in the field of informatics.</p>
+                        those already involved in or interested in pursuing a career in the field of informatics.
+                    </p>
                 </div>
 
                 <div class="flex flex-col items-center justify-center py-8">
@@ -265,24 +269,27 @@
                         <div
                             class="w-[157px] min-h-[250px] bg-gradient-to-r from-sky-950 to-pink-900 p-1 rounded-sm flex flex-col">
                             <img src="/image/Budi.jpg" alt="" class="h-[150px] w-full">
-                            <div
-                                class="flex-grow flex flex-col w-full bg-navy-bg items-center justify-center p-1 gap-y-1">
-                                <h1 class="text-white font-semibold text-xs text-center">Ir. Budi Rahardjo MSc., PhD
+                            <div class="flex-grow flex flex-col w-full bg-white items-center justify-center gap-y-1">
+                                <h1 class="text-black font-semibold text-xs2 text-center">Ir. Budi Rahardjo MSc., PhD
                                 </h1>
-                                <h2 class="text-white text-xs leading-tight text-center">BOD Journal ICT Research and
+                                <h2 class="text-black text-xs3 leading-tight text-center">BOD Journal ICT Research
+                                    and
                                     Applications, ITB</h2>
+                                <img src="/image/LogoITB.png" alt="" class="h-auto w-[35px]">
                             </div>
                         </div>
 
                         <div
                             class="w-[157px] min-h-[250px] bg-gradient-to-r from-sky-950 to-pink-900 p-1 rounded-sm flex flex-col">
                             <img src="/image/Faishal.jpeg.jpg" alt="" class="h-[150px] w-full">
-                            <div
-                                class="flex-grow flex flex-col w-full bg-navy-bg items-center justify-center p-1 gap-y-1">
-                                <h1 class="text-white font-semibold text-xs text-center">Faishal Wahiduddin, S. Kom.,
+                            <div class="flex-grow flex flex-col w-full bg-white items-center justify-center gap-y-1">
+                                <h1 class="text-black font-semibold text-xs3 text-center">Faishal Wahiduddin, S.
+                                    Kom.,
                                     M.S</h1>
-                                <h2 class="text-white text-xs leading-tight text-center">Chief Technology Officer WOOL
+                                <h2 class="text-black text-xs3 leading-tight text-center">Chief Technology Officer
+                                    WOOL
                                     ID</h2>
+                                <img src="/image/LogoWoolID.png" class="h-auto w-[90px]" alt="">
                             </div>
                         </div>
 
@@ -290,15 +297,18 @@
                 </div>
 
                 <div class="flex items-center w-full flex-col gap-y-2 py-4">
-                    <p class="text-xl text-center text-wrap pb-2 w-5/6 font-semibold" style="color: rgb(12 40 62);">Is
+                    <p class="text-xl text-center text-wrap pb-2 w-5/6 font-semibold" style="color: rgb(12 40 62);">
+                        Is
                         pursuing a career in IT still worth it?</p>
                     <p class="text-md text-center text-wrap pb-2 w-4/5 font-semibold" style="color: rgb(12 40 62);">
                         With
                         the end of the pandemic, the startup trend that had been growing
                         has
                         seen
-                        a decline over the past two years. Additionally, issues like Artificial Intelligence potentially
-                        replacing programmer jobs have emerged. So, as job opportunities in the IT field decrease, is
+                        a decline over the past two years. Additionally, issues like Artificial Intelligence
+                        potentially
+                        replacing programmer jobs have emerged. So, as job opportunities in the IT field decrease,
+                        is
                         pursuing a
                         career in this field still worth it?</p>
                 </div>
@@ -351,9 +361,10 @@
                             </div>
                         </div>
                     </div>
+                    <img src="/image/PosterSemnas.png" class="h-auto w-[90%] mt-8" alt="">
                 </div>
 
-                <div>
+                <!-- <div>
                     <h1 class="text-center text-2xl font-semibold pb-4">Frequently Asked Questions</h1>
                 </div>
 
@@ -378,7 +389,7 @@
                             <x-slot:slotdrop>The event location is...</x-slot:slotdrop>
                         </x-fa-q-button-mobver>
                     </div>
-                </div>
+                </div> -->
             </div>
 
             <!-- Company Expo -->
@@ -405,8 +416,6 @@
                 </div>
             </div>
         </div>
-
     </div>
-
     </div>
 </x-layout>

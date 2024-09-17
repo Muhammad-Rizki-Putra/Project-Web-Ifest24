@@ -13,11 +13,17 @@ class SemnasController extends Controller
     public function index()
     {
         $pagename = 'Semnas';
-        $isRegistered = $this->getSemnasIdForUser(Auth::user()) ? true : false;
         $isLoggedIn = Auth::check();
-        $isVerified = $this->checkVerifiedUser(Auth::user());
-        return view('events.last-act', ['pagename' => $pagename, 'isRegistered' => $isRegistered, 'isVerified' => $isVerified, 'isLoggedIn' => $isLoggedIn]);
+        $isRegistered = $isLoggedIn && $this->getSemnasIdForUser(Auth::user()) ? true : false;
+        $isVerified = $isLoggedIn && $this->checkVerifiedUser(Auth::user());
+        return view('events.last-act', [
+            'pagename' => $pagename,
+            'isRegistered' => $isRegistered,
+            'isVerified' => $isVerified,
+            'isLoggedIn' => $isLoggedIn
+        ]);
     }
+    
 
     // public function register(Request $request)
     // {

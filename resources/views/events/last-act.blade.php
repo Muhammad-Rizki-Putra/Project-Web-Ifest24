@@ -95,7 +95,7 @@
                 </div>
 
                 <div>
-                    @if ($isRegistered)
+                    @if (isset($isRegistered) && $isRegistered)
                         <p class="text-4xl text-center font-bold">Thank You for Participating</p>
                     @else
                         <button id="claimButtonDesktop" onclick="handleClick(event, 'claimButtonDesktop')">
@@ -403,7 +403,7 @@
 
                 <div class="flex flex-col items-center justify-center w-full px-8 pb-12">
                     <div>
-                        @if ($isRegistered)
+                        @if (isset($isRegistered) && $isRegistered)
                             <p class="text-4xl text-center font-bold">Thank You for Participating</p>
                         @else
                             <button id="claimButtonMobile" onclick="handleClick(event, 'claimButtonMobile')">

@@ -18,6 +18,7 @@ Route::get('/', function () {
 Route::get('/partner-with-us', function () {
     return view('partner', ['pagename' => 'Partner']);
 });
+Route::post('/partner-with-us', [PartnerController::class, 'store']);
 
 // Payment form TODO : NEEDED TO BE CHANGE
 Route::get('/payment', function () {
@@ -29,8 +30,6 @@ Route::get('/post-payment', function () {
 })->middleware('auth');
 
 Route::get('/claim-ticket', [SemnasController::class, 'claimTicket']);
-
-Route::post('/partner-with-us', [PartnerController::class, 'store']);
 
 // profile
 Route::get('/profile', [ProfileController::class, 'showProfile'])->middleware('auth');

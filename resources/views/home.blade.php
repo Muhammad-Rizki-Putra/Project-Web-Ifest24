@@ -84,13 +84,13 @@
 
                             <div class="gallery-item group gallery-item-3 flex flex-col items-center justify-center"
                                 data-index="3">
-                                <a href="/last-act" class="w-full flex justify-center">
+                                <a href="/last_act" class="w-full flex justify-center">
                                     <img src="/image/logo_ifest.png" alt="box"
                                         class="bg-cream-bg rounded-lg w-[80%] h-auto mb-5">
                                 </a>
                                 <h1
                                     class="absolute bottom-0 text-center py-2 mt-5 text-xl text-cream-bg group-hover:text-navy-bg group-hover:bg-cream-bg transition bg-navy-bg font-semibold w-full">
-                                    <a href="/last-act">Last Act</a>
+                                    <a href="/last_act">Last Act</a>
                                 </h1>
                             </div>
 
@@ -366,7 +366,7 @@
             imgAlt: '',  
             title: 'Last Act',
             description: '',    
-            ctaUrl: '/last-act',
+            ctaUrl: '/last_act',
             ctaText: 'Click here for more details',                
         },          
     ],            

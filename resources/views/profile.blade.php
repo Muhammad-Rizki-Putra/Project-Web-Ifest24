@@ -72,7 +72,7 @@
             @else
                 <div
                     class="bg-gradient-to-r from-sky-100 via-cream-bg to-sky-50 p-4 rounded-lg text-center shadow-md border border-sky-200">
-                    <p>Don't miss our Seminar Nasional event. <a href="{{ url('/last-act') }}"
+                    <p>Don't miss our Seminar Nasional event. <a href="{{ url('/last_act') }}"
                             class="text-sky-800 underline hover:text-sky-600">Click here</a> to claim your ticket.</p>
                 </div>
             @endif

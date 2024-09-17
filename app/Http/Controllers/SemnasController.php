@@ -16,7 +16,7 @@ class SemnasController extends Controller
         $isLoggedIn = Auth::check();
         $isRegistered = $isLoggedIn && $this->getSemnasIdForUser(Auth::user()) ? true : false;
         $isVerified = $isLoggedIn && $this->checkVerifiedUser(Auth::user());
-        return view('events.last-act', [
+        return view('events.last_act', [
             'pagename' => $pagename,
             'isRegistered' => $isRegistered,
             'isVerified' => $isVerified,

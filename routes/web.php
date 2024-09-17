@@ -69,7 +69,7 @@ Route::get('/grand-opening', function () {
     return view('events.grand-opening', ['pagename' => 'Grand Opening']);
 });
 
-Route::get('/last-act', [SemnasController::class, 'index']);
+Route::get('/last_act', [SemnasController::class, 'index']);
 
 // Competition Route
 Route::get('/competitive-programming', function () {

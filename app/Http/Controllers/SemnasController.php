@@ -13,8 +13,17 @@ class SemnasController extends Controller
     public function index()
     {
         $pagename = 'Semnas';
-        return view('events.semnas', compact('pagename'));
+        $isLoggedIn = Auth::check();
+        $isRegistered = $isLoggedIn && $this->getSemnasIdForUser(Auth::user()) ? true : false;
+        $isVerified = $isLoggedIn && $this->checkVerifiedUser(Auth::user());
+        return view('events.last_act', [
+            'pagename' => $pagename,
+            'isRegistered' => $isRegistered,
+            'isVerified' => $isVerified,
+            'isLoggedIn' => $isLoggedIn
+        ]);
     }
+    
 
     // public function register(Request $request)
     // {
@@ -71,7 +80,18 @@ class SemnasController extends Controller
 
     private function getSemnasIdForUser($user)
     {
-        $event = Event::where('user_id', $user->id)->first();
-        return $event->id;
+        if ($user) {
+            $event = Event::where('user_id', $user->id)->first();
+            return $event ? $event->id : null;
+        }
+        return null;
+    }
+
+    private function checkVerifiedUser($user)
+    {
+        if ($user) {
+            return $user->email_verified_at !== null;
+        }
+        return false;
     }
 }

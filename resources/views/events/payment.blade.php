@@ -36,7 +36,7 @@
             </script>
 
             <div class="flex flex-row items-center w-full justify-evenly">
-                <a href="/last-act"><x-button textSize="text-2xl" textPadding="p-1">Back</x-button></a>
+                <a href="/last_act"><x-button textSize="text-2xl" textPadding="p-1">Back</x-button></a>
                 <!-- to do change -->
                 <a href="/"><x-button textSize="text-2xl" textPadding="p-1">Submit</x-button></a>
             </div>
@@ -78,7 +78,7 @@
             <p id="output"></p>
 
             <div class="flex flex-row items-center w-full justify-evenly">
-                <a href="/last-act"><x-button textSize="text-2xl" textPadding="p-1">Back</x-button></a>
+                <a href="/last_act"><x-button textSize="text-2xl" textPadding="p-1">Back</x-button></a>
                 <!-- to do change -->
                 <a href="/"><x-button textSize="text-2xl" textPadding="p-1">Submit</x-button></a>
             </div>

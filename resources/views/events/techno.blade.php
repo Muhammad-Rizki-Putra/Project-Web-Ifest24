@@ -46,7 +46,8 @@
                                 <img src="/image/speaker_Sutansyah Marahakim.png" alt="" class="h-[75%] w-full">
                                 <div class="flex flex-col w-full bg-navy-bg h-[25%] flex gap-1 items-center py-2">
                                     <h1 class="text-white font-semibold text-md">Sutansyah Marahakim</h1>
-                                    <h2 class="text-white text-base leading-tight text-sm text-center">Creative Director &
+                                    <h2 class="text-white text-base leading-tight text-sm text-center">Creative Director
+                                        &
                                         Partner Kolaborasico</h2>
                                 </div>
                             </div>
@@ -54,7 +55,8 @@
                                 <img src="/image/speaker_Sudar Yatno.png" alt="" class="h-[75%] w-full">
                                 <div class="flex flex-col w-full bg-navy-bg h-[25%] flex gap-1 items-center py-2">
                                     <h1 class="text-white font-semibold text-md">Sudar Yatno</h1>
-                                    <h2 class="text-white text-base leading-tight text-sm text-center">Chief Technology Officer
+                                    <h2 class="text-white text-base leading-tight text-sm text-center">Chief Technology
+                                        Officer
                                         (CTO) Gits.id</h2>
                                 </div>
                             </div>
@@ -62,7 +64,8 @@
                                 <img src="/image/speaker_Angel Metanosa Afinda.png" alt="" class="h-[75%] w-full">
                                 <div class="flex flex-col w-full bg-navy-bg h-[25%] flex gap-1 items-center py-2">
                                     <h1 class="text-white font-semibold text-md">Angel Metanosa Afinda</h1>
-                                    <h2 class="text-white text-base leading-tight text-sm text-center">Curriculum Developer
+                                    <h2 class="text-white text-base leading-tight text-sm text-center">Curriculum
+                                        Developer
                                         Dicoding</h2>
                                 </div>
                             </div>
@@ -179,6 +182,62 @@
             </div>
 
             <img src="/image/POSTER TECHNO.png" class="h-auto w-[70%]" alt="">
+
+
+            <div class="w-auto flex flex-col">
+                
+
+                <div class="flex items-center justify-center flex-col">
+                    <p class="text-center text-4xl font-semibold pt-10 pb-7 w-fit">Our Sponsor</p>
+                    <div
+                        class=" py-8 w-full h-auto bg-white flex flex-col items-center justify-center gap-y-6 bg-opacity-50 rounded-md">
+                        <div class="grid grid-cols-3 grid-rows-1 gap-4 justify-center items-center">
+                            <div class="flex items-center justify-center"><img src="/image/SponsorPage/Techno/2.svg"
+                                    alt="">
+                            </div>
+                            <div class="flex items-center justify-center"><img src="/image/SponsorPage/Techno/5.svg"
+                                    alt="">
+                            </div>
+                            <div class="flex items-center justify-center"><img src="/image/SponsorPage/Techno/3.svg"
+                                    alt="">
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-3 grid-rows-1 gap-4 justify-center items-center">
+                            <div class="flex items-center justify-center"><img src="/image/SponsorPage/Techno/4.svg"
+                                    alt="">
+                            </div>
+                            <div class="flex items-center justify-center"><img src="/image/SponsorPage/Techno/1.svg"
+                                    alt="">
+                            </div>
+                            <div class="flex items-center justify-center"><img src="/image/SponsorPage/Techno/6.svg"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-center flex-col">
+                    <p class="text-center text-4xl font-semibold pt-10 pb-7 w-fit">Our Media Partner</p>
+                    <div
+                        class="w-full py-8 px-64 h-auto bg-white flex flex-col items-center justify-center gap-y-10 bg-opacity-50 rounded-md">
+                        <div class="grid grid-cols-3 grid-rows-1 gap-4 justify-center items-center">
+                            <div class="flex items-center justify-center"><img src="/image/MedPart/Techno/2.svg" alt="">
+                            </div>
+                            <div class="flex items-center justify-center"><img src="/image/MedPart/Techno/5.svg" alt="">
+                            </div>
+                            <div class="flex items-center justify-center"><img src="/image/MedPart/Techno/3.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 grid-rows-1 gap-4 justify-center items-center">
+                            <div class="flex items-center justify-center"><img src="/image/MedPart/Techno/4.svg" alt="">
+                            </div>
+                            <div class="flex items-center justify-center"><img src="/image/MedPart/Techno/1.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="flex flex-col items-center justify-center w-full gap-y-10">
                 <p class="text-center text-6xl font-semibold pt-10 pb-5">Frequently Asked Questions</p>
                 <div x-data="{ open: false }" class="w-1/2">
@@ -242,13 +301,14 @@
             </div>
         </div>
 
-        
+
         <!-- Mobile -->
         <div
             class="md:hidden flex items-center justify-center flex-col h-auto bg-itcomp-bg bg-fixed bg-right-bottom bg-cover bg-no-repeat py-20">
             <h1 class="text-3xl font-bold" style="color: rgb(12 40 62);">TECHNOPRENEUR</h1>
             <img src="image/logo 3.png" alt="" class="h-auto w-[40%] mt-4">
-            <p class="text-2xl text-center font-bold mt-4 mx-8" style="color: rgb(115 4 53);">Future Founders:<br>Embracing The Rise of Tech-Based Business</p>
+            <p class="text-2xl text-center font-bold mt-4 mx-8" style="color: rgb(115 4 53);">Future
+                Founders:<br>Embracing The Rise of Tech-Based Business</p>
             <div x-data="{ openA: true, openB: false }"
                 class="flex flex-col items-center justify-center space-y-4 mt-4">
                 <div class="flex flex-row items-center justify-center pb-4 gap-x-10">
@@ -261,16 +321,20 @@
 
                 </div>
                 <p class="w-4/5 text-center text-md text-balance font-semibold" style="color: rgb(12 40 62);">
-                    Designed to turn tech skills into successful businesses, Technopreneur is where technology meets entrepreneurship.
-                    Through engaging seminars and hands-on workshops, knowledge and tools are provided by professional mentors,
+                    Designed to turn tech skills into successful businesses, Technopreneur is where technology meets
+                    entrepreneurship.
+                    Through engaging seminars and hands-on workshops, knowledge and tools are provided by professional
+                    mentors,
                     helping you leverage digital technology to bring your business ideas to life.
                 </p>
                 <div class="flex flex-col items-center justify-center">
                     <div x-show="selected === 'rh-tp1'" x-transition class="flex flex-col items-center justify-center">
                         <p class="text-4xl font-bold pt-8 pb-2" style="color: rgb(12 40 62);">SEMINAR</p>
                         <p class="w-4/5 text-center text-md font-semibold pb-2" style="color: rgb(12 40 62);">
-                            The material and talk show presented by professional speakers who are experts in technology-based business 
-                            to develop the interest and talent for entrepreneurship within the community in the field of IT.
+                            The material and talk show presented by professional speakers who are experts in
+                            technology-based business
+                            to develop the interest and talent for entrepreneurship within the community in the field of
+                            IT.
                         </p>
                         <ul class="list-disc" style="width: 60%; float: left;">
                             <li style="width: auto; float: left; color: rgb(12 40 62);" class="mx-4 text-sm">Key of
@@ -394,7 +458,8 @@
             </div>
 
             <div class="flex flex-row items-center justify-center space-x-10 w-auto mt-4 mb-4 py-4">
-                <a href="https://linktr.ee/Technopreneur2024" target="_blank" rel="noopener noreferrer"><x-button textSize="text-lg" textPadding="p-1">
+                <a href="https://linktr.ee/Technopreneur2024" target="_blank" rel="noopener noreferrer"><x-button
+                        textSize="text-lg" textPadding="p-1">
                         Register & Guidebook
                     </x-button></a>
 

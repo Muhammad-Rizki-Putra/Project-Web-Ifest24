@@ -1,15 +1,18 @@
-<div class="hidden md:flex flex-row items-start justify-evenly w-full h-auto p-5" style="background-color: rgba(251, 242, 233, 1);">
+<div class="hidden md:flex flex-row items-start justify-evenly w-full h-auto p-5"
+    style="background-color: rgba(251, 242, 233, 1);">
     <div class="flex flex-col items-center justify-center">
         <h1 class="text-2xl pb-2 text-nowrap">Brought To You By</h1>
         <div class="flex flex-row items-center justify-center">
             <a href="/"><img src="/image/logo_ifest4.png" alt="" class="h-auto w-[60px] mx-3"></a>
-            <a href="http://himatif.fmipa.unpad.ac.id/" target="_blank" rel="noopener noreferrer"> <img src="/image/logo_himatif.png" alt="" class="h-auto w-[60px]"></a>
+            <a href="http://himatif.fmipa.unpad.ac.id/" target="_blank" rel="noopener noreferrer"> <img
+                    src="/image/logo_himatif.png" alt="" class="h-auto w-[60px]"></a>
         </div>
     </div>
 
     <div class="flex flex-col items-center justify-center">
         <h1 class="text-2xl pb-2 text-nowrap">Partner Links</h1>
-        <div class="grid max-sm:grid-cols-center-2 sm:max-lg:grid-cols-center-2 lg:grid-cols-center-3 items-center gap-x-2">  
+        <div
+            class="grid max-sm:grid-cols-center-2 sm:max-lg:grid-cols-center-2 lg:grid-cols-center-3 items-center gap-x-2">
             <div class="w-[100px] flex items-center justify-center">
                 <img src="/image/sponsor/dicoding.png" alt="" class="h-auto w-[100px]">
             </div>
@@ -48,25 +51,25 @@
 
     <div class="flex flex-col items-center justify-center">
         <h1 class="text-2xl pb-2 text-nowrap">Social Media</h1>
-       <div class="grid grid-rows-2 gap-2 h-auto">
+        <div class="grid grid-rows-2 gap-2 h-auto">
             <div class="flex flex-row items-center">
-                <a href="https://www.instagram.com/ifestunpad/" target="_blank" rel="noopener noreferrer"><img src="/image/Instagram.png" class="h-auto w-[60%]"
-                        alt=""></a>
+                <a href="https://www.instagram.com/ifestunpad/" target="_blank" rel="noopener noreferrer"><img
+                        src="/image/Instagram.png" class="h-auto w-[60%]" alt=""></a>
                 <p class="text-md">@ifestunpad</p>
             </div>
             <div class="flex flex-row items-center">
-                <a href="https://www.tiktok.com/@ifestunpad?lang=en" target="_blank" rel="noopener noreferrer"><img src="/image/Tiktok.png" class="h-auto w-[60%]"
-                        alt=""></a>
+                <a href="https://www.tiktok.com/@ifestunpad?lang=en" target="_blank" rel="noopener noreferrer"><img
+                        src="/image/Tiktok.png" class="h-auto w-[60%]" alt=""></a>
                 <p class="text-md">@ifestunpad</p>
             </div>
             <div class="flex flex-row items-center">
-                <a href="https://www.youtube.com/@informaticsfestivalhimatif4954" target="_blank" rel="noopener noreferrer"><img src="/image/Youtube.png"
-                        class="h-auto w-[60%]" alt=""></a>
+                <a href="https://www.youtube.com/@informaticsfestivalhimatif4954" target="_blank"
+                    rel="noopener noreferrer"><img src="/image/Youtube.png" class="h-auto w-[60%]" alt=""></a>
                 <p class="text-md">Ifest Himatif Unpad</p>
             </div>
             <div class="flex flex-row items-center">
-                <a href="https://www.linkedin.com/company/ifest-unpad/" target="_blank" rel="noopener noreferrer"><img src="/image/Linkedin.png"
-                        class="h-auto w-[60%]" alt=""></a>
+                <a href="https://www.linkedin.com/company/ifest-unpad/" target="_blank" rel="noopener noreferrer"><img
+                        src="/image/Linkedin.png" class="h-auto w-[60%]" alt=""></a>
                 <p class="text-md w-auto">IFEST UNPAD</p>
             </div>
         </div>
@@ -80,7 +83,8 @@
         <h1 class="text-xl text-nowrap font-semibold pb-2 ">Brought To You By</h1>
         <div class="grid grid-cols-2 gap-2 items-center justify-start w-[100%]">
             <a href="/"><img src="/image/logo_ifest4.png" alt="" class="h-auto w-[60]"></a>
-            <a href="http://himatif.fmipa.unpad.ac.id/" target="_blank" rel="noopener noreferrer"><img src="/image/logo_himatif.png" alt="" class="h-auto w-[60]"></a>
+            <a href="http://himatif.fmipa.unpad.ac.id/" target="_blank" rel="noopener noreferrer"><img
+                    src="/image/logo_himatif.png" alt="" class="h-auto w-[60]"></a>
         </div>
     </div>
 
@@ -103,23 +107,23 @@
         <h1 class="text-xl text-nowrap font-semibold pb-2">Follow Our Social Media</h1>
         <div class="grid grid-rows-2 gap-2 h-auto">
             <div class="flex flex-row items-center">
-                <a href="https://www.instagram.com/ifestunpad/" target="_blank" rel="noopener noreferrer"><img src="/image/Instagram.png" class="h-auto w-[60%]"
-                        alt=""></a>
+                <a href="https://www.instagram.com/ifestunpad/" target="_blank" rel="noopener noreferrer"><img
+                        src="/image/Instagram.png" class="h-auto w-[60%]" alt=""></a>
                 <p class="text-md">@ifestunpad</p>
             </div>
             <div class="flex flex-row items-center">
-                <a href="https://www.tiktok.com/@ifestunpad?lang=en" target="_blank" rel="noopener noreferrer"><img src="/image/Tiktok.png" class="h-auto w-[60%]"
-                        alt=""></a>
+                <a href="https://www.tiktok.com/@ifestunpad?lang=en" target="_blank" rel="noopener noreferrer"><img
+                        src="/image/Tiktok.png" class="h-auto w-[60%]" alt=""></a>
                 <p class="text-md">@ifestunpad</p>
             </div>
             <div class="flex flex-row items-center">
-                <a href="https://www.youtube.com/@informaticsfestivalhimatif4954" target="_blank" rel="noopener noreferrer"><img src="/image/Youtube.png"
-                        class="h-auto w-[60%]" alt=""></a>
+                <a href="https://www.youtube.com/@informaticsfestivalhimatif4954" target="_blank"
+                    rel="noopener noreferrer"><img src="/image/Youtube.png" class="h-auto w-[60%]" alt=""></a>
                 <p class="text-md">Informatics Festival Himatif Unpad</p>
             </div>
             <div class="flex flex-row items-center">
-                <a href="https://www.linkedin.com/company/ifest-unpad/" target="_blank" rel="noopener noreferrer"><img src="/image/Linkedin.png"
-                        class="h-auto w-[60%]" alt=""></a>
+                <a href="https://www.linkedin.com/company/ifest-unpad/" target="_blank" rel="noopener noreferrer"><img
+                        src="/image/Linkedin.png" class="h-auto w-[60%]" alt=""></a>
                 <p class="text-md w-auto">IFEST UNPAD</p>
             </div>
         </div>
@@ -127,7 +131,7 @@
 
     <div class="flex flex-col items-start justify-start pt-3">
         <h1 class="text-xl text-nowrap font-semibold">Partner Links</h1>
-        <div class="grid grid-flow-row-dense grid-cols-3 grid-rows-3 items-center">  
+        <div class="grid grid-flow-row-dense grid-cols-3 grid-rows-3 items-center">
             <div class="w-[100px] flex items-center justify-center">
                 <img src="/image/sponsor/dicoding.png" alt="" class="h-auto w-[100px]">
             </div>

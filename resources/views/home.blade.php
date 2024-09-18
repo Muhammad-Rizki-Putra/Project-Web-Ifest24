@@ -181,6 +181,7 @@
                 </div>
             </div>
             <div class="py-10">
+            <h1 class="text-7xl text-center font-semibold">Dicoding promotion</h1>   
                 <div x-data="{            
     slides: [                
         {
@@ -304,7 +305,7 @@
                 <img src="/image/logo_ifest.png" alt="" class="h-auto w-[200px]">
             </div>
             <div class=" relative overflow-hidden bg-navy-bg text-white">
-                <x-home-countdown class="min-w-screen">2024-09-25</x-home-countdown>
+                <x-home-countdown class="min-w-screen">2024-09-16</x-home-countdown>
             </div>
         </div>
 
@@ -572,6 +573,7 @@
                 </div>
             </div>
             <div class="flex flex-col justify-center py-16">
+            <h1 class="text-3xl text-center font-semibold mb-5" style="color: rgb(12 40 62);">Dicoding promotion</h1>
                 <div x-data="{            
     slides: [                
         {

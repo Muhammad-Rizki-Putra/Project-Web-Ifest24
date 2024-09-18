@@ -19,6 +19,40 @@
         <div class="w-[55vh]">
             <img src="/image/tl/webdev.png" alt="" class="flex h-auto">
         </div>
+
+        <div class="flex flex-col w-auto">
+            <div class="flex items-center justify-center flex-col">
+                <p class="text-center text-4xl font-semibold pt-10 pb-7 w-fit">Our Sponsor</p>
+                <div
+                    class="w-full py-8 h-auto bg-white flex flex-col items-center justify-center gap-y-6 bg-opacity-50 rounded-md">
+                    <div class="grid grid-cols-3 grid-rows-1 gap-4 gap-x-1 justify-center items-center">
+                        <div class="p-3 flex items-center justify-center"><img src="/image/SponsorPage/ITComp/1.svg" alt="">
+                        </div>
+                        <div class="p-3 flex items-center justify-center"><img src="/image/SponsorPage/ITComp/2.svg" alt="">
+                        </div>
+                        <div class="p-3 mr-5 flex items-center justify-center"><img src="/image/SponsorPage/ITComp/3.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex items-center justify-center flex-col">
+                <p class="text-center text-4xl font-semibold pt-10 pb-7 w-fit">Our Media Partner</p>
+                <div
+                    class="w-full py-8 h-auto bg-white flex flex-col items-center justify-center gap-y-6 bg-opacity-50 rounded-md">
+                    <div class="grid grid-cols-4 grid-rows-1 gap-4 gap-x-5 justify-center items-center">
+                        <div class="flex items-center justify-center"><img src="/image/MedPart/ITComp/2.svg" alt="">
+                        </div>
+                        <div class="flex items-center justify-center"><img src="/image/MedPart/ITComp/3.svg" alt="">
+                        </div>
+                        <div class="flex items-center justify-center p-5"><img src="/image/MedPart/ITComp/4.svg" alt="">
+                        </div>
+                        <div class="p-5 flex items-center justify-center"><img src="/image/MedPart/ITComp/1.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="md:hidden flex items-center justify-center flex-col h-auto bg-itcomp-bg bg-fixed bg-right-bottom bg-cover bg-no-repeat py-20">

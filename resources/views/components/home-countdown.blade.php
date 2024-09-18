@@ -36,8 +36,17 @@
   </template>
 
   <template x-if="remainingTime <= 0">
-    <div>
-      <div>Countdown has ended!</div>
+  <div class="animate-marquee whitespace-nowrap py-3 flex items-center justify-center">
+        <span class="mx-4 text-7xl" x-text="'• D-Days'"></span>
+        <span class="mx-4 text-7xl" x-text="'• D-Days'"></span>
+        <span class="mx-4 text-7xl" x-text="'• D-Days'"></span>
+        <span class="mx-4 text-7xl" x-text="'• D-Days'"></span>
+        <span class="mx-4 text-7xl" x-text="'• D-Days'"></span>
+        <span class="mx-4 text-7xl" x-text="'• D-Days'"></span>
+        <span class="mx-4 text-7xl" x-text="'• D-Days'"></span>
+        <span class="mx-4 text-7xl" x-text="'• D-Days'"></span>
+        <span class="mx-4 text-7xl" x-text="'• D-Days'"></span>
+        <span class="mx-4 text-7xl" x-text="'• D-Days'"></span>
     </div>
   </template>
 </div>

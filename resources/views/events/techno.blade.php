@@ -185,7 +185,7 @@
 
 
             <div class="w-auto flex flex-col">
-                
+
 
                 <div class="flex items-center justify-center flex-col">
                     <p class="text-center text-4xl font-semibold pt-10 pb-7 w-fit">Our Sponsor</p>
@@ -492,6 +492,66 @@
                 </div>
             </div>
             <img src="/image/POSTER TECHNO.png" class="h-auto w-[90%] mt-8" alt="">
+
+            <div class="w-auto flex flex-col">
+
+
+                <div class="flex items-center justify-center flex-col">
+                    <p class="text-center text-4xl font-semibold pt-10 pb-7 w-fit">Our Sponsor</p>
+                    <div
+                        class=" py-8 w-full h-auto bg-white flex flex-col items-center justify-center gap-y-6 bg-opacity-50 rounded-md p-3">
+                        <div class="grid grid-cols-3 grid-rows-1 gap-4 justify-center items-center">
+                            <div class="flex items-center justify-center"><img class="h-auto w-[100px]"
+                                    src="/image/SponsorPage/Techno/2.svg" alt="">
+                            </div>
+                            <div class="flex items-center justify-center"><img class="h-auto w-[100px]"
+                                    src="/image/SponsorPage/Techno/5.svg" alt="">
+                            </div>
+                            <div class="flex items-center justify-center"><img class="h-auto w-[100px]"
+                                    src="/image/SponsorPage/Techno/3.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-3 grid-rows-1 gap-4 justify-center items-center">
+                            <div class="flex items-center justify-center"><img class="h-auto w-[100px]"
+                                    src="/image/SponsorPage/Techno/4.svg" alt="">
+                            </div>
+                            <div class="flex items-center justify-center"><img class="h-auto w-[100px]"
+                                    src="/image/SponsorPage/Techno/1.svg" alt="">
+                            </div>
+                            <div class="flex items-center justify-center"><img class="h-auto w-[100px]"
+                                    src="/image/SponsorPage/Techno/6.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-center flex-col">
+                    <p class="text-center text-4xl font-semibold pt-10 pb-7 w-fit">Our Media Partner</p>
+                    <div
+                        class=" py-8 w-full h-auto bg-white flex flex-col items-center justify-center gap-y-6 bg-opacity-50 rounded-md p-3">
+                        <div class="grid grid-cols-3 grid-rows-1 gap-4 justify-center items-center">
+                            <div class="flex items-center justify-center"><img class="h-auto w-[100px]"
+                                    src="/image/MedPart/Techno/2.svg" alt="">
+                            </div>
+                            <div class="flex items-center justify-center"><img class="h-auto w-[100px]"
+                                    src="/image/MedPart/Techno/5.svg" alt="">
+                            </div>
+                            <div class="flex items-center justify-center"><img class="h-auto w-[100px]"
+                                    src="/image/MedPart/Techno/3.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 grid-rows-1 gap-4 justify-center items-center">
+                            <div class="flex items-center justify-center"><img class="h-auto w-[100px]"
+                                    src="/image/MedPart/Techno/4.svg" alt="">
+                            </div>
+                            <div class="flex items-center justify-center"><img class="h-auto w-[100px]"
+                                    src="/image/MedPart/Techno/1.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="flex flex-col items-center justify-center w-full mt-12">
                 <p class="text-center text-2xl font-semibold pb-2">Frequently Asked Questions</p>
                 <div x-data="{ open: false }" class="my-3 w-4/5">

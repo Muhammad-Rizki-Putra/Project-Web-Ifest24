@@ -181,7 +181,7 @@
                 </div>
             </div>
             <div class="py-10">
-            <h1 class="text-7xl text-center font-semibold">Dicoding promotion</h1>   
+                <h1 class="text-7xl text-center font-semibold">Dicoding promotion</h1>
                 <div x-data="{            
     slides: [                
         {
@@ -289,6 +289,66 @@
                                 x-bind:class="[currentSlideIndex === index + 1 ? 'bg-slate-300' : 'bg-slate-300/50']"
                                 x-bind:aria-label="'slide ' + (index + 1)"></button>
                         </template>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex items-center justify-center flex-col">
+                <p class="text-center text-4xl font-semibold pt-10 pb-7 w-fit">Our Sponsor</p>
+                <div
+                    class=" py-8 w-full h-auto outline-1 backdrop-blur-md flex flex-col items-center justify-center gap-y-6 bg-opacity-50 rounded-md">
+                    <div class="grid grid-cols-4 grid-flow-row gap-4 justify-center items-center">
+                        <div class="flex items-center justify-center"><img src="/image/SponsorPage/Techno/2.svg" alt="">
+                        </div>
+                        <div class="flex items-center justify-center"><img src="/image/SponsorPage/Techno/5.svg" alt="">
+                        </div>
+                        <div class="flex items-center justify-center"><img src="/image/SponsorPage/Techno/3.svg" alt="">
+                        </div>
+                        <div class="flex items-center justify-center"><img src="/image/SponsorPage/Techno/4.svg" alt="">
+                        </div>
+                        <div class="flex items-center justify-center"><img src="/image/SponsorPage/Techno/1.svg" alt="">
+                        </div>
+                        <div class="flex items-center justify-center"><img src="/image/SponsorPage/Techno/6.svg" alt="">
+                        </div>
+                        <div class="flex items-center justify-center"><img src="/image/MedPart/ITComp/2.svg" alt="">
+                        </div>
+                        <div class="flex items-center justify-center"><img src="/image/MedPart/ITComp/3.svg" alt="">
+                        </div>
+                        <div class="flex items-center justify-center p-5"><img src="/image/MedPart/ITComp/4.svg" alt="">
+                        </div>
+                        <div class="p-5 flex items-center justify-center"><img src="/image/MedPart/ITComp/1.svg" alt="">
+                        </div>
+                        <div class="flex items-center justify-center p-5"><img src="/image/Sponsor/McEasy.svg" alt="">
+                        </div>
+                        <div class="p-5 flex items-center justify-center"><img src="/image/Sponsor/Skillpedia.svg"
+                                alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="flex items-center justify-center flex-col">
+                <p class="text-center text-4xl font-semibold pt-10 pb-7 w-fit">Our Media Partner</p>
+                <div
+                    class=" py-8 w-full h-auto outline-1 backdrop-blur-md flex flex-col items-center justify-center gap-y-6 bg-opacity-50 rounded-md">
+                    <div class="grid grid-cols-4 grid-flow-row gap-4 justify-center items-center">
+                        <div class="flex items-center justify-center"><img src="/image/MedPart/Techno/2.svg" alt="">
+                        </div>
+                        <div class="flex items-center justify-center"><img src="/image/MedPart/Techno/3.svg" alt="">
+                        </div>
+                        <div class="flex items-center justify-center"><img src="/image/MedPart/Techno/4.svg" alt="">
+                        </div>
+                        <div class="flex items-center justify-center"><img src="/image/MedPart/Techno/1.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-3 grid-flow-row gap-4 justify-center items-center">
+                        <div class="flex items-center justify-center"><img src="/image/MedPart/ITComp/2.svg" alt="">
+                        </div>
+                        <div class="flex items-center justify-center"><img src="/image/MedPart/ITComp/3.svg" alt="">
+                        </div>
+                        <div class="flex items-center justify-center"><img src="/image/MedPart/ITComp/4.svg" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -573,7 +633,8 @@
                 </div>
             </div>
             <div class="flex flex-col justify-center py-16">
-            <h1 class="text-3xl text-center font-semibold mb-5" style="color: rgb(12 40 62);">Dicoding promotion</h1>
+                <h1 class="text-3xl text-center font-semibold mb-5" style="color: rgb(12 40 62);">Dicoding promotion
+                </h1>
                 <div x-data="{            
     slides: [                
         {

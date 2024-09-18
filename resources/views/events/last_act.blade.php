@@ -2,7 +2,7 @@
     <x-slot:pagename>{{ $pagename }}</x-slot:pagename>
     <div x-data="{ selected: 'rh-la1' }">
         <div
-            class="hidden md:flex items-center justify-center flex-col min-h-screen h-auto bg-itcomp-bg bg-fixed bg-right-bottom bg-cover bg-no-repeat py-20 gap-y-10 px-[25%]">
+            class="hidden md:flex items-center justify-center flex-col min-h-screen h-auto bg-itcomp-bg bg-fixed bg-right-bottom bg-cover bg-no-repeat py-10 gap-y-10 px-[25%]">
 
             <div class="flex items-center justify-center flex-col h-auto top-0 gap-10">
                 <div>
@@ -11,6 +11,45 @@
 
                 <div>
                     <img src="/image/logo_ifest.png" class="h-auto w-[300px]" alt="">
+                </div>
+
+
+
+                <h1 class="text-3xl font-bold text-center text-wrap" style="color: rgb(115 4 53);">Get ready for a
+                    spectacular finale at IFEST 2024 with the electrifying Last Act! 🎉</h1>
+                <p class="text-xl text-center text-wrap">Experience the dazzling Company Expo, where leading companies
+                    showcase groundbreaking innovations that will leave you in awe. Don’t miss the National Seminar,
+                    where industry experts will present brilliant ideas sure to inspire you. Get valuable insights and
+                    professional tips at our CV Clinic, designed to help you enhance your resume and stand out in the
+                    job market.</p>
+                <p class="text-xl text-center text-wrap">The climax awaits at the Awarding Night, where the spotlight
+                    will shine on the prestigious winners and their remarkable achievements. Enjoy an array of Special
+                    Performances that will captivate and entertain you. Participate in Fun Games and activities that
+                    will add excitement to the event. Capture your memorable moments at the Photobooth, perfect for
+                    snapping photos with friends.</p>
+                <p class="text-xl text-center text-wrap">And that's not all—discover even more surprises and delights
+                    throughout the event! Join us for an unforgettable experience filled with innovation, inspiration,
+                    and celebration! 🌟</p>
+
+                <div class="w-[300px] items-center justify-center">
+                    <x-countdown>2024-10-05</x-countdown>
+                </div>
+
+                <div class="w-[600px] h-[120px] flex flex-col items-center justify-center">
+                    <div class="w-full h-full flex flex-row items-center justify-evenly gap-5">
+                        <div class="flex h-full flex-row gap-1 items-center justify-center p-2 backdrop-blur-sm bg-white/30 rounded-md">
+                            <img src="/image/calendar-symbol.svg" class="h-auto w-[50px]" alt="">
+                            <p class="text-xl">5th October 2024</p>
+                        </div>
+                        <div class="flex h-full flex-row gap-1 items-center justify-center p-2 backdrop-blur-sm bg-white/30 rounded-md">
+                            <img src="/image/time1.svg" class="h-auto w-[50px]" alt="">
+                            <p class="text-xl">08.30 - 16.00</p>
+                        </div>
+                        <div class="flex h-full flex-row gap-1 items-center justify-center p-2 backdrop-blur-sm bg-white/30 rounded-md">
+                            <img src="/image/location1.svg" class="h-auto w-[50px]" alt="">
+                            <p class="text-xl">Graha Sanusi, UNPAD Dipatiukur</p>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="flex flex-row gap-20 pt-5">
@@ -45,10 +84,6 @@
                         ideas
                         for
                         those already involved in or interested in pursuing a career in the field of informatics.</p>
-                </div>
-
-                <div>
-                    <x-countdown>2024-09-14</x-countdown>
                 </div>
 
                 <div class="grid grid-cols-2 grid-rows-1 gap-x-10 pt-10">
@@ -106,9 +141,9 @@
                 </div>
 
                 <div class="w-full flex justify-center items-center py-5 pb-3">
-                    <a href="http://bit.lt/SCIFest" class="w-full max-w-md">
+                    <a class="w-full max-w-md">
                         <div
-                            class="bg-transparent rounded-xl p-3 w-full flex flex-row items-center justify-center gap-x-3 outline outline-2 outline-offset-2 outline-navy-bg">
+                            class="bg-transparent rounded-xl p-3 w-full flex flex-row items-center justify-center gap-x-3 outline outline-2 outline-offset-2 outline-navy-bg opacity-50 cursor-not-allowed">
                             <img src="/image/Zoom2.png" alt="" class="w-16 h-auto">
                             <p class="text-center text-navy-bg text-xl font-medium">Click here to Join!</p>
                         </div>
@@ -306,14 +341,14 @@
             <div class="flex justify-center items-center w-full">
                 <div class="flex flex-row gap-x-10 gap-y-3 flex-wrap overflow-x-auto max-w-[75%] mt-4 justify-center">
 
-                    <x-radio-button textSize="text-lg" textPadding="p-1" name="rh-la" value="rh-la1"
-                        id="rh-la-1" x-model="selected">Semnas</x-radio-button>
+                    <x-radio-button textSize="text-lg" textPadding="p-1" name="rh-la" value="rh-la1" id="rh-la-1"
+                        x-model="selected">Semnas</x-radio-button>
 
-                    <x-radio-button textSize="text-lg" textPadding="p-1" name="rh-la" value="rh-la3"
-                        id="rh-la-3" x-model="selected">Awarding</x-radio-button>
+                    <x-radio-button textSize="text-lg" textPadding="p-1" name="rh-la" value="rh-la3" id="rh-la-3"
+                        x-model="selected">Awarding</x-radio-button>
 
-                    <x-radio-button textSize="text-lg" textPadding="p-1" name="rh-la" value="rh-la2"
-                        id="rh-la-2" x-model="selected">Company Expo</x-radio-button>
+                    <x-radio-button textSize="text-lg" textPadding="p-1" name="rh-la" value="rh-la2" id="rh-la-2"
+                        x-model="selected">Company Expo</x-radio-button>
                 </div>
             </div>
 
@@ -347,7 +382,7 @@
 
                 <div class="flex flex-col items-center justify-center py-8">
                     <div class="w-4/5">
-                        <x-countdown-mobver>2024-09-14</x-countdown-mobver>
+                        <x-countdown-mobver>2024-10-05</x-countdown-mobver>
                     </div>
                 </div>
 
@@ -409,15 +444,15 @@
                             <button id="claimButtonMobile" onclick="handleClick(event, 'claimButtonMobile')">
                                 <x-button textSize="text-2xl" textPadding="p-1">Claim Your Ticket!</x-button>
                             </button>
-    
+
                         @endif
                     </div>
                 </div>
 
                 <div class="flex flex-col items-center justify-center w-full px-8 pb-12">
-                    <a href="http://bit.lt/SCIFest" class="w-full max-w-md">
+                    <a class="w-full max-w-md">
                         <div
-                            class="bg-transparent rounded-xl p-3 w-full flex flex-row items-center justify-center gap-x-3 outline outline-2 outline-offset-2 outline-navy-bg">
+                            class="bg-transparent rounded-xl p-3 w-full flex flex-row items-center justify-center gap-x-3 outline outline-2 outline-offset-2 outline-navy-bg opacity-50 cursor-not-allowed">
                             <img src="/image/Zoom2.png" alt="" class="w-16 h-auto">
                             <p class="text-center text-navy-bg text-xl font-medium">Click here to Join!</p>
                         </div>
@@ -582,9 +617,8 @@
                 <!-- Company Expo -->
                 <div x-show="selected === 'rh-la2'"
                     class="md:flex items-center justify-center flex-col h-auto py-10 gap-y-20"
-                    x-transition:enter="transition ease-out duration-300"
-                    x-transition:enter-start="opacity-0 scale-90" x-transition:enter-end="opacity-100 scale-100"
-                    x-transition:leave="transition ease-in duration-100"
+                    x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 scale-90"
+                    x-transition:enter-end="opacity-100 scale-100" x-transition:leave="transition ease-in duration-100"
                     x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-90">
                     <div class="flex items-center justify-center flex-col h-auto">
                         <img src="/image/ComingSoon.png" alt="" class="w-auto h-[200px]">
@@ -595,9 +629,8 @@
                 <!-- Awarding -->
                 <div x-show="selected === 'rh-la3'"
                     class="md:flex items-center justify-center flex-col h-auto py-10 gap-y-20"
-                    x-transition:enter="transition ease-out duration-300"
-                    x-transition:enter-start="opacity-0 scale-90" x-transition:enter-end="opacity-100 scale-100"
-                    x-transition:leave="transition ease-in duration-100"
+                    x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 scale-90"
+                    x-transition:enter-end="opacity-100 scale-100" x-transition:leave="transition ease-in duration-100"
                     x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-90">
                     <div class="flex items-center justify-center flex-col h-auto">
                         <img src="/image/ComingSoon.png" alt="" class="w-auto h-[200px]">

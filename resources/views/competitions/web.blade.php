@@ -36,6 +36,9 @@
                 </div>
             </div>
 
+
+
+            </html>
             <div class="flex items-center justify-center flex-col">
                 <p class="text-center text-4xl font-semibold pt-10 pb-7 w-fit">Our Media Partner</p>
                 <div
@@ -52,7 +55,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>x
     </div>
 
     <div class="md:hidden flex items-center justify-center flex-col h-auto bg-itcomp-bg bg-fixed bg-right-bottom bg-cover bg-no-repeat py-20">
@@ -73,6 +76,52 @@
         <h1 class="text-3xl py-20 font-bold" style="color: rgb(12 40 62);">Timeline of Activity</h1>
         <div class="px-5 w-[30vh]">
             <img src="/image/tl/webdev.png" alt="" class="flex h-auto">
+        </div>
+        <div class="w-auto flex flex-col">
+
+
+            <div class="flex items-center justify-center flex-col">
+                <p class="text-center text-4xl font-semibold pt-10 pb-7 w-fit">Our Sponsor</p>
+                <div
+                    class=" py-8 w-full h-auto bg-white flex flex-col items-center justify-center gap-y-6 bg-opacity-50 rounded-md p-3">
+                    <div class="grid grid-cols-2 grid-rows-1 gap-4 justify-center items-center">
+                        <div class="p-3 flex items-center justify-center"><img class="h-auto w-[100px]"
+                                src="/image/SponsorPage/ITComp/1.svg" alt="">
+                        </div>
+                        <div class="p-3 mr-5 flex items-center justify-center"><img class="h-auto w-[100px]"
+                                src="/image/SponsorPage/ITComp/3.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 grid-rows-1 gap-4 justify-center items-center">
+                        <div class="p-3 flex items-center justify-center"><img class="h-auto w-[100px]"
+                                src="/image/SponsorPage/ITComp/2.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex items-center justify-center flex-col">
+                <p class="text-center text-4xl font-semibold pt-10 pb-7 w-fit">Our Media Partner</p>
+                <div
+                    class=" py-8 w-full h-auto bg-white flex flex-col items-center justify-center gap-y-6 bg-opacity-50 rounded-md p-3">
+                    <div class="grid grid-cols-2 grid-rows-1 gap-4 justify-center items-center">
+                        <div class="flex items-center justify-center"><img class="h-auto w-[100px]"
+                                src="/image/MedPart/ITComp/2.svg" alt="">
+                        </div>
+                        <div class="flex items-center justify-center"><img class="h-auto w-[100px]"
+                                src="/image/MedPart/ITComp/3.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 grid-rows-1 gap-4 justify-center items-center">
+                        <div class="flex items-center justify-center p-5"><img class="h-auto w-[100px]"
+                                src="/image/MedPart/ITComp/4.svg" alt="">
+                        </div>
+                        <div class="p-5 flex items-center justify-center"><img class="h-auto w-[100px]"
+                                src="/image/MedPart/ITComp/1.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </x-layout>

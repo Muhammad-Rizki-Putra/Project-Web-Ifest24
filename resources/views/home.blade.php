@@ -296,33 +296,47 @@
             <div class="flex items-center justify-center flex-col">
                 <p class="text-center text-4xl font-semibold pt-10 pb-7 w-fit">Our Sponsor</p>
                 <div
-                    class=" py-8 w-full h-auto outline-1 backdrop-blur-md flex flex-col items-center justify-center gap-y-6 bg-opacity-50 rounded-md">
+                    class=" py-8 w-full h-auto outline-1 flex flex-col items-center justify-center gap-y-6 bg-opacity-50 rounded-md backdrop-blur-md bg-white/30">
                     <div class="grid grid-cols-4 grid-flow-row gap-4 justify-center items-center">
-                        <div class="flex items-center justify-center"><img src="/image/SponsorPage/Techno/2.svg" alt="">
-                        </div>
-                        <div class="flex items-center justify-center"><img src="/image/SponsorPage/Techno/5.svg" alt="">
-                        </div>
-                        <div class="flex items-center justify-center"><img src="/image/SponsorPage/Techno/3.svg" alt="">
-                        </div>
-                        <div class="flex items-center justify-center"><img src="/image/SponsorPage/Techno/4.svg" alt="">
-                        </div>
-                        <div class="flex items-center justify-center"><img src="/image/SponsorPage/Techno/1.svg" alt="">
-                        </div>
-                        <div class="flex items-center justify-center"><img src="/image/SponsorPage/Techno/6.svg" alt="">
-                        </div>
-                        <div class="flex items-center justify-center"><img src="/image/MedPart/ITComp/2.svg" alt="">
-                        </div>
-                        <div class="flex items-center justify-center"><img src="/image/MedPart/ITComp/3.svg" alt="">
-                        </div>
-                        <div class="flex items-center justify-center p-5"><img src="/image/MedPart/ITComp/4.svg" alt="">
-                        </div>
-                        <div class="p-5 flex items-center justify-center"><img src="/image/MedPart/ITComp/1.svg" alt="">
-                        </div>
-                        <div class="flex items-center justify-center p-5"><img src="/image/Sponsor/McEasy.svg" alt="">
-                        </div>
-                        <div class="p-5 flex items-center justify-center"><img src="/image/Sponsor/Skillpedia.svg"
+                        <a target="_blank" rel="noopener noreferrer"
+                            href="https://www.instagram.com/opsfood.co?igsh=ZXdyN3k5dGdodDI2"
+                            class="flex items-center justify-center"><img src="/image/SponsorPage/Techno/2.svg" alt="">
+                        </a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://gits.id/"
+                            class="flex items-center justify-center"><img src="/image/SponsorPage/Techno/5.svg" alt="">
+                        </a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://mekari.com/"
+                            class="flex items-center justify-center"><img src="/image/SponsorPage/Techno/3.svg" alt="">
+                        </a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://kolaborasi.co/"
+                            class="flex items-center justify-center"><img src="/image/SponsorPage/Techno/4.svg" alt="">
+                        </a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://selasarkampus.com/"
+                            class="flex items-center justify-center"><img src="/image/SponsorPage/Techno/1.svg" alt="">
+                        </a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.dicoding.com/"
+                            class="flex items-center justify-center"><img src="/image/SponsorPage/Techno/6.svg" alt="">
+                        </a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/petircysec/"
+                            class="flex items-center justify-center"><img src="/image/SponsorPage/ITComp/2.svg" alt="">
+                        </a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://devcode.ai/"
+                            class="flex items-center justify-center"><img src="/image/SponsorPage/ITComp/3.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="grid grid-cols-3 grid-flow-row gap-4 justify-center items-center">
+                        <a target="_blank" rel="noopener noreferrer"
+                            href="https://www.instagram.com/aida_unpad?igsh=eDNhajJmbWx3N2o="
+                            class="p-5 flex items-center justify-center"><img src="/image/SponsorPage/ITComp/1.svg"
                                 alt="">
-                        </div>
+                        </a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.mceasy.com/en/"
+                            class="flex items-center justify-center p-5"><img src="/image/Sponsor/McEasy.svg" alt="">
+                        </a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://skillpedia.id/"
+                            class="p-5 flex items-center justify-center"><img src="/image/Sponsor/Skillpedia.svg"
+                                alt="">
+                        </a>
                     </div>
 
                 </div>
@@ -742,6 +756,81 @@
                                 x-bind:class="[currentSlideIndex === index + 1 ? 'bg-slate-300' : 'bg-slate-300/50']"
                                 x-bind:aria-label="'slide ' + (index + 1)"></button>
                         </template>
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-center justify-center flex-col">
+                <p class="text-center text-4xl font-semibold pt-10 pb-7 w-fit">Our Sponsor</p>
+                <div
+                    class=" py-8 w-full h-auto bg-white flex flex-col items-center justify-center gap-y-6 backdrop-blur-md bg-white/30 rounded-md p-3">
+                    <div class="grid grid-cols-3 grid-flow-row gap-4 justify-center items-center">
+                        <a target="_blank" rel="noopener noreferrer"
+                            href="https://www.instagram.com/opsfood.co?igsh=ZXdyN3k5dGdodDI2"
+                            class="flex items-center justify-center"><img src="/image/SponsorPage/Techno/2.svg" alt="">
+                        </a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://gits.id/"
+                            class="flex items-center justify-center"><img src="/image/SponsorPage/Techno/5.svg" alt="">
+                        </a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://mekari.com/"
+                            class="flex items-center justify-center"><img src="/image/SponsorPage/Techno/3.svg" alt="">
+                        </a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://kolaborasi.co/"
+                            class="flex items-center justify-center"><img src="/image/SponsorPage/Techno/4.svg" alt="">
+                        </a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://selasarkampus.com/"
+                            class="flex items-center justify-center"><img src="/image/SponsorPage/Techno/1.svg" alt="">
+                        </a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.dicoding.com/"
+                            class="flex items-center justify-center"><img src="/image/SponsorPage/Techno/6.svg" alt="">
+                        </a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/petircysec/"
+                            class="flex items-center justify-center"><img src="/image/SponsorPage/ITComp/2.svg" alt="">
+                        </a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://devcode.ai/"
+                            class="flex items-center justify-center"><img src="/image/SponsorPage/ITComp/3.svg" alt="">
+                        </a>
+                        <a target="_blank" rel="noopener noreferrer"
+                            href="https://www.instagram.com/aida_unpad?igsh=eDNhajJmbWx3N2o="
+                            class="p-5 flex items-center justify-center"><img src="/image/SponsorPage/ITComp/1.svg"
+                                alt="">
+                        </a>
+                    </div>
+                    <div class="grid grid-cols-2 grid-flow-row gap-4 justify-center items-center">
+                    
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.mceasy.com/en/"
+                            class="flex items-center justify-center p-5"><img src="/image/Sponsor/McEasy.svg" alt="">
+                        </a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://skillpedia.id/"
+                            class="p-5 flex items-center justify-center"><img src="/image/Sponsor/Skillpedia.svg"
+                                alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex items-center justify-center flex-col pb-5">
+                <p class="text-center text-4xl font-semibold pt-10 pb-7 w-fit">Our Media Partner</p>
+                <div
+                    class=" py-8 w-full h-auto flex flex-col items-center justify-center gap-y-6 backdrop-blur-md bg-white/30 rounded-md p-3">
+                    <div class="grid grid-cols-3 grid-flow-row gap-4 justify-center items-center">
+                        <div class="flex items-center justify-center"><img src="/image/MedPart/Techno/2.svg" alt="">
+                        </div>
+                        <div class="flex items-center justify-center"><img src="/image/MedPart/Techno/3.svg" alt="">
+                        </div>
+                        <div class="flex items-center justify-center"><img src="/image/MedPart/Techno/4.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-3 grid-flow-row gap-4 justify-center items-center">
+                        <div class="flex items-center justify-center"><img src="/image/MedPart/ITComp/2.svg" alt="">
+                        </div>
+                        <div class="flex items-center justify-center"><img src="/image/MedPart/ITComp/3.svg" alt="">
+                        </div>
+                        <div class="flex items-center justify-center"><img src="/image/MedPart/ITComp/4.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 grid-flow-row gap-4 justify-center items-center">
+                        <div class="flex items-center justify-center"><img src="/image/MedPart/Techno/1.svg" alt="">
+                        </div>
                     </div>
                 </div>
             </div>

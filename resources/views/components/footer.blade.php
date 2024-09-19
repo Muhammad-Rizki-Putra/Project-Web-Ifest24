@@ -9,41 +9,6 @@
         </div>
     </div>
 
-    <div class="flex flex-col items-center justify-center">
-        <h1 class="text-2xl pb-2 text-nowrap">Partner Links</h1>
-        <div
-            class="grid max-sm:grid-cols-center-2 sm:max-lg:grid-cols-center-2 lg:grid-cols-center-3 items-center gap-x-2">
-            <a href="https://www.dicoding.com/" class="w-[100px] flex items-center justify-center " target="_blank"
-                rel="noopener noreferrer">
-                <img src="/image/sponsor/dicoding.png" alt="" class="h-auto w-[100px]">
-            </a>
-            <a href="https://gits.id/" class="w-[100px] flex items-center justify-center" target="_blank"
-                rel="noopener noreferrer">
-                <img src="/image/sponsor/gitsid.png" alt="" class="h-auto w-[80px]">
-            </a>
-            <a href="https://kolaborasi.co/" class="w-[100px] flex items-center justify-center" target="_blank"
-                rel="noopener noreferrer">
-                <img src="/image/sponsor/kolaborasico.png" alt="" class="h-auto w-[100px]">
-            </a>
-            <a href="https://mekari.com/" class="w-[100px] flex items-center justify-center" target="_blank"
-                rel="noopener noreferrer">
-                <img src="/image/sponsor/mekari.png" alt="" class="h-auto w-[100px]">
-            </a>
-            <a href="https://startupbandung.id/" class="w-[100px] flex items-center justify-center" target="_blank"
-                rel="noopener noreferrer">
-                <img src="/image/sponsor/startupbandung.png" alt="" class="h-auto w-[100px]">
-            </a>
-            <a href="https://www.mceasy.com/" class="w-[100px] flex items-center justify-center" target="_blank"
-                rel="noopener noreferrer">
-                <img src="/image/sponsor/McEasy.svg" alt="" class="h-auto w-[100px]">
-            </a>
-            <a href="https://skillpedia.id/" class="w-[100px] flex items-center justify-center" target="_blank"
-                rel="noopener noreferrer">
-                <img src="/image/sponsor/Skillpedia.svg" alt="" class="h-auto w-[100px]">
-            </a>
-        </div>
-    </div>
-
     <div class="flex flex-col items-center justify-start">
         <h1 class="text-2xl pb-2">Contacts</h1>
         <div>
@@ -139,39 +104,7 @@
         </div>
     </div>
 
-    <div class="flex flex-col items-start justify-start pt-3">
-        <h1 class="text-xl text-nowrap font-semibold">Partner Links</h1>
-        <div class="grid grid-flow-row-dense grid-cols-3 grid-rows-3 items-center">
-            <a href="https://www.dicoding.com/" class="w-[100px] flex items-center justify-center " target="_blank"
-                rel="noopener noreferrer">
-                <img src="/image/sponsor/dicoding.png" alt="" class="h-auto w-[100px]">
-            </a>
-            <a href="https://gits.id/" class="w-[100px] flex items-center justify-center" target="_blank"
-                rel="noopener noreferrer">
-                <img src="/image/sponsor/gitsid.png" alt="" class="h-auto w-[80px]">
-            </a>
-            <a href="https://kolaborasi.co/" class="w-[100px] flex items-center justify-center" target="_blank"
-                rel="noopener noreferrer">
-                <img src="/image/sponsor/kolaborasico.png" alt="" class="h-auto w-[100px]">
-            </a>
-            <a href="https://mekari.com/" class="w-[100px] flex items-center justify-center" target="_blank"
-                rel="noopener noreferrer">
-                <img src="/image/sponsor/mekari.png" alt="" class="h-auto w-[100px]">
-            </a>
-            <a href="https://startupbandung.id/" class="w-[100px] flex items-center justify-center" target="_blank"
-                rel="noopener noreferrer">
-                <img src="/image/sponsor/startupbandung.png" alt="" class="h-auto w-[100px]">
-            </a>
-            <a href="https://www.mceasy.com/" class="w-[100px] flex items-center justify-center" target="_blank"
-                rel="noopener noreferrer">
-                <img src="/image/sponsor/McEasy.svg" alt="" class="h-auto w-[100px]">
-            </a>
-            <a href="https://skillpedia.id/" class="w-[100px] flex items-center justify-center" target="_blank"
-                rel="noopener noreferrer">
-                <img src="/image/sponsor/Skillpedia.svg" alt="" class="h-auto w-[100px]">
-            </a>
-        </div>
-    </div>
+    
 </div>
 
 <script src="

@@ -38,8 +38,9 @@ export default {
       }),
 
       fontFamily: {
-        'sans' : ['Onest','cursive']
+        'sans': ['Plus Jakarta Sans', 'sans-serif'], // Use 'sans-serif' as the fallback
       },
+      
       
 
       colors: {

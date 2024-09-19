@@ -37,15 +37,18 @@
 
                 <div class="w-[600px] h-[120px] flex flex-col items-center justify-center">
                     <div class="w-full h-full flex flex-row items-center justify-evenly gap-5">
-                        <div class="flex h-full flex-row gap-1 items-center justify-center p-2 backdrop-blur-sm bg-white/30 rounded-md">
+                        <div
+                            class="flex h-full flex-row gap-1 items-center justify-center p-2 backdrop-blur-sm bg-white/30 rounded-md">
                             <img src="/image/calendar-symbol.svg" class="h-auto w-[50px]" alt="">
                             <p class="text-xl">5th October 2024</p>
                         </div>
-                        <div class="flex h-full flex-row gap-1 items-center justify-center p-2 backdrop-blur-sm bg-white/30 rounded-md">
+                        <div
+                            class="flex h-full flex-row gap-1 items-center justify-center p-2 backdrop-blur-sm bg-white/30 rounded-md">
                             <img src="/image/time1.svg" class="h-auto w-[50px]" alt="">
                             <p class="text-xl">08.30 - 16.00</p>
                         </div>
-                        <div class="flex h-full flex-row gap-1 items-center justify-center p-2 backdrop-blur-sm bg-white/30 rounded-md">
+                        <div
+                            class="flex h-full flex-row gap-1 items-center justify-center p-2 backdrop-blur-sm bg-white/30 rounded-md">
                             <img src="/image/location1.svg" class="h-auto w-[50px]" alt="">
                             <p class="text-xl">Graha Sanusi, UNPAD Dipatiukur</p>
                         </div>
@@ -150,154 +153,39 @@
                     </a>
                 </div>
 
-                <div class="flex flex-col items-center justify-start w-auto rounded-md p-5 m-5 gap-y-5"
-                    style="background-color: rgb(244 230 230);">
-                    <div class="grid grid-cols-2 gap-4">
-                        <div class="flex flex-col gap-y-2">
+                <div class="flex flex-col items-center justify-center pb-12">
+                    <div class="flex flex-col items-center justify-start w-auto rounded-xl p-5 gap-y-5"
+                        style="background-color: rgb(244 230 230);">
+                        <div class="grid grid-cols-2 gap-4">
                             <p class="font-bold">Alif Al Husaini</p>
+                            <p class="font-bold">Panji Iman Sujatmiko</p>
                             <div class="flex flex-row items-center gap-x-2">
                                 <img src="/image/Phone.png" alt="" class="h-5 w-auto">
                                 <p class="font-semibold">081237449945</p>
                             </div>
-                        </div>
-                        <div class="flex flex-col gap-y-2">
-                            <p class="font-bold">Panji Iman Sujatmiko</p>
                             <div class="flex flex-row items-center gap-x-2">
                                 <img src="/image/Phone.png" alt="" class="h-5 w-auto">
                                 <p class="font-semibold">089647824647</p>
+                            </div>
+                            <div>
+
                             </div>
                             <div class="flex flex-row items-center gap-x-2">
                                 <img src="/image/lineapp.png" alt="" class="h-5 w-auto">
                                 <p class="font-semibold">panjiimans</p>
                             </div>
                         </div>
-                    </div>
-                    <p class="font-semibold">Or</p>
-                    <div>
-                        <div class="flex flex-row items-center gap-x-2">
-                            <img src="/image/Email1.png" alt="" class="h-5 w-auto">
-                            <p class="font-semibold">keilmuan.himatif@gmail.com</p>
+                        <p class="font-semibold">Or</p>
+                        <div>
+                            <div class="flex flex-row items-center gap-x-2">
+                                <img src="/image/Email1.png" alt="" class="h-5 w-auto">
+                                <p class="font-semibold">keilmuan.himatif@gmail.com</p>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <img src="/image/PosterSemnasR.png" class="h-auto w-[90%] mt-8" alt="">
-
-                <div>
-                    <h1 class="text-6xl text-center font-semibold py-10">Frequently Asked Questions</h1>
-                </div>
-
-                <div class="flex flex-col items-center justify-center w-full">
-                    <div x-data="{ open: false }" class="mb-6 w-4/5">
-                        <x-fa-q-button-mobver>
-                            <x-slot:slottitle>Kapan dan dimana acara Last Act IFEST 2024 akan
-                                diadakan?</x-slot:slottitle>
-                            <x-slot:slotdrop>Acara Last Act IFEST 2024 akan diadakan secara offline pada tanggal 5
-                                Oktober 2024 di Graha Sanusi, Universitas Padjadjaran, Kampus Dipati Ukur.
-                            </x-slot:slotdrop>
-                        </x-fa-q-button-mobver>
-                    </div>
-
-                    <div x-data="{ open: false }" class="mb-6 w-4/5">
-                        <x-fa-q-button-mobver>
-                            <x-slot:slottitle>Apa saja rangkaian acara yang ada di Last Act IFEST 2024?
-                            </x-slot:slottitle>
-                            <x-slot:slotdrop>Rangkaian acara Last Act IFEST 2024 mencakup Seminar Nasional dengan
-                                pembicara yang memiliki wawasan terkait karir di informatika, Company Expo yang diikuti
-                                oleh berbagai perusahaan di sektor informatika, serta Awarding Night yang merupakan
-                                acara penutup IFEST 2024. Awarding Night akan memberikan penghargaan kepada semua
-                                finalis Kompetisi IT dan Technopreneur, serta mitra yang berpartisipasi dalam IFEST
-                                2024.</x-slot:slotdrop>
-                        </x-fa-q-button-mobver>
-                    </div>
-
-                    <div x-data="{ open: false }" class="mb-3 w-4/5">
-                        <x-fa-q-button-mobver>
-                            <x-slot:slottitle>Apakah acara ini terbuka untuk umum?
-                            </x-slot:slottitle>
-                            <x-slot:slotdrop>Ya, Last Act IFEST 2024 terbuka untuk umum. Namun, peserta diharapkan
-                                melakukan pendaftaran sebelumnya karena kapasitas tempat yang terbatas.
-                            </x-slot:slotdrop>
-                        </x-fa-q-button-mobver>
-                    </div>
-
-                    <div x-data="{ open: false }" class="mb-6 w-4/5">
-                        <x-fa-q-button-mobver>
-                            <x-slot:slottitle>Bagaimana cara mendaftar untuk mengikuti acara ini?
-                            </x-slot:slottitle>
-                            <x-slot:slotdrop>Untuk mendaftar, peserta dapat mengisi formulir pendaftaran Last Act
-                                yang
-                                tersedia di web IFest 2024.
-                            </x-slot:slotdrop>
-                        </x-fa-q-button-mobver>
-                    </div>
-                </div>
-
-                <div class="flex flex-col items-center justify-center w-full">
-                    <div x-data="{ open: false }" class="mb-6 w-4/5">
-                        <x-fa-q-button-mobver>
-                            <x-slot:slottitle>Apakah ada biaya untuk mengikuti acara Last Act IFEST 2024?
-                            </x-slot:slottitle>
-                            <x-slot:slotdrop>Untuk acara ini terdapat dua gelombang pendaftaran. Gelombang pertama
-                                adalah pendaftaran gratis, sementara gelombang berikutnya memerlukan biaya
-                                pendaftaran. Pastikan untuk mendaftar pada gelombang pertama untuk mendapatkan tiket
-                                gratis.
-
-                            </x-slot:slotdrop>
-                        </x-fa-q-button-mobver>
-                    </div>
-
-                    <div x-data="{ open: false }" class="mb-6 w-4/5">
-                        <x-fa-q-button-mobver>
-                            <x-slot:slottitle>Apa saja rangkaian acara yang ada di Last Act IFEST 2024?
-                            </x-slot:slottitle>
-                            <x-slot:slotdrop>Rangkaian acara Last Act IFEST 2024 mencakup Seminar Nasional dengan
-                                pembicara yang memiliki wawasan terkait karir di informatika, Company Expo yang
-                                diikuti
-                                oleh berbagai perusahaan di sektor informatika, serta Awarding Night yang merupakan
-                                acara penutup IFEST 2024. Awarding Night akan memberikan penghargaan kepada semua
-                                finalis Kompetisi IT dan Technopreneur, serta mitra yang berpartisipasi dalam IFEST
-                                2024.</x-slot:slotdrop>
-                        </x-fa-q-button-mobver>
-                    </div>
-
-                    <div x-data="{ open: false }" class="mb-3 w-4/5">
-                        <x-fa-q-button-mobver>
-                            <x-slot:slottitle>Apa saja yang ditampilkan di company expo?
-
-                            </x-slot:slottitle>
-                            <x-slot:slotdrop>Company Expo akan menampilkan booth dari berbagai perusahaan di sektor
-                                informatika. Peserta dapat memperoleh informasi mengenai program magang yang
-                                ditawarkan perusahaan-perusahaan tersebut, melihat proyek VR karya mahasiswa TI
-                                Unpad, serta menggunakan layanan CV review dan simulasi wawancara kerja.
-
-                            </x-slot:slotdrop>
-                        </x-fa-q-button-mobver>
-                    </div>
-
-                    <div x-data="{ open: false }" class="mb-6 w-4/5">
-                        <x-fa-q-button-mobver>
-                            <x-slot:slottitle>Apakah ada persyaratan khusus untuk menghadiri acara ini?
-
-                            </x-slot:slottitle>
-                            <x-slot:slotdrop>Persyaratan khusus hanya meliputi pendaftaran melalui formulir
-                                pendaftaran Seminar Nasional.
-                            </x-slot:slotdrop>
-                        </x-fa-q-button-mobver>
-                    </div>
-
-                    <div x-data="{ open: false }" class="mb-6 w-4/5">
-                        <x-fa-q-button-mobver>
-                            <x-slot:slottitle>Siapa yang dapat dihubungi untuk informasi lebih lanjut?
-
-                            </x-slot:slottitle>
-                            <x-slot:slotdrop>Untuk informasi lebih lanjut, silakan hubungi melalui direct message di
-                                Instagram @ifestunpad.
-
-                            </x-slot:slotdrop>
-                        </x-fa-q-button-mobver>
-                    </div>
-                </div>
             </div>
 
             <!-- Company Expo -->
@@ -306,10 +194,19 @@
                 x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 scale-90"
                 x-transition:enter-end="opacity-100 scale-100" x-transition:leave="transition ease-in duration-100"
                 x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-90">
-                <div class="flex flex-row items-center gap-x-5">
+                <!-- <div class="flex flex-row items-center gap-x-5">
                     <img src="/image/ComingSoon.png" alt="" class="h-auto w-[200px]">
                     <h1 class="text-5xl font-semibold text-center text-wrap pb-[22px] text-navy-bg">Coming Soon!
                     </h1>
+                </div> -->
+                <div class="gap-y-5">
+                    <h1 class="text-5xl font-semibold text-center text-wrap pb-3">COMPANY EXPO</h1>
+                    <p class="text-lg text-center">Company Expo :
+                        The Company Expo is one of the key events at IFEST 2024, partnering with various IT companies to
+                        provide a platform for showcasing their profiles, products, and career development opportunities
+                        to the participants.
+                        Tambahin gambar gambar expo gitu biar menarik.
+                    </p>
                 </div>
             </div>
 
@@ -320,22 +217,196 @@
                 x-transition:enter-end="opacity-100 scale-100" x-transition:leave="transition ease-in duration-100"
                 x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-90">
                 <div class="flex flex-row items-center gap-x-5">
-                    <img src="/image/ComingSoon.png" alt="" class="h-auto w-[200px]">
+                    <!-- <img src="/image/ComingSoon.png" alt="" class="h-auto w-[200px]">
                     <h1 class="text-5xl font-semibold text-center text-wrap pb-[22px] text-navy-bg">Coming Soon!
-                    </h1>
+                    </h1> -->
+                    <div class="gap-y-5">
+                        <h1 class="text-5xl font-semibold text-center text-wrap pb-3">AWARDING NIGHT</h1>
+                        <p class="text-lg text-center">Awarding Night is the closing event of IFEST 2024. It will serve
+                            as an award ceremony attended by all finalists of IT Competition, Technopreneur, as well as
+                            partners who participated in IFEST 2024.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h1 class="text-6xl text-center font-semibold py-10">Frequently Asked Questions</h1>
+            </div>
+
+            <div class="flex flex-col items-center justify-center w-full">
+                <div x-data="{ open: false }" class="mb-6 w-4/5">
+                    <x-fa-q-button-mobver>
+                        <x-slot:slottitle>Kapan dan dimana acara Last Act IFEST 2024 akan
+                            diadakan?</x-slot:slottitle>
+                        <x-slot:slotdrop>Acara Last Act IFEST 2024 akan diadakan secara offline pada tanggal 5
+                            Oktober 2024 di Graha Sanusi, Universitas Padjadjaran, Kampus Dipati Ukur.
+                        </x-slot:slotdrop>
+                    </x-fa-q-button-mobver>
+                </div>
+
+                <div x-data="{ open: false }" class="mb-6 w-4/5">
+                    <x-fa-q-button-mobver>
+                        <x-slot:slottitle>Apa saja rangkaian acara yang ada di Last Act IFEST 2024?
+                        </x-slot:slottitle>
+                        <x-slot:slotdrop>Rangkaian acara Last Act IFEST 2024 mencakup Seminar Nasional dengan
+                            pembicara yang memiliki wawasan terkait karir di informatika, Company Expo yang diikuti
+                            oleh berbagai perusahaan di sektor informatika, serta Awarding Night yang merupakan
+                            acara penutup IFEST 2024. Awarding Night akan memberikan penghargaan kepada semua
+                            finalis Kompetisi IT dan Technopreneur, serta mitra yang berpartisipasi dalam IFEST
+                            2024.</x-slot:slotdrop>
+                    </x-fa-q-button-mobver>
+                </div>
+
+                <div x-data="{ open: false }" class="mb-3 w-4/5">
+                    <x-fa-q-button-mobver>
+                        <x-slot:slottitle>Apakah acara ini terbuka untuk umum?
+                        </x-slot:slottitle>
+                        <x-slot:slotdrop>Ya, Last Act IFEST 2024 terbuka untuk umum. Namun, peserta diharapkan
+                            melakukan pendaftaran sebelumnya karena kapasitas tempat yang terbatas.
+                        </x-slot:slotdrop>
+                    </x-fa-q-button-mobver>
+                </div>
+
+                <div x-data="{ open: false }" class="mb-6 w-4/5">
+                    <x-fa-q-button-mobver>
+                        <x-slot:slottitle>Bagaimana cara mendaftar untuk mengikuti acara ini?
+                        </x-slot:slottitle>
+                        <x-slot:slotdrop>Untuk mendaftar, peserta dapat mengisi formulir pendaftaran Last Act
+                            yang
+                            tersedia di web IFest 2024.
+                        </x-slot:slotdrop>
+                    </x-fa-q-button-mobver>
+                </div>
+
+                <div x-data="{ open: false }" class="mb-6 w-4/5">
+                    <x-fa-q-button-mobver>
+                        <x-slot:slottitle>Apakah ada biaya untuk mengikuti acara Last Act IFEST 2024?
+                        </x-slot:slottitle>
+                        <x-slot:slotdrop>Untuk acara ini terdapat dua gelombang pendaftaran. Gelombang pertama
+                            adalah pendaftaran gratis, sementara gelombang berikutnya memerlukan biaya
+                            pendaftaran. Pastikan untuk mendaftar pada gelombang pertama untuk mendapatkan tiket
+                            gratis.
+
+                        </x-slot:slotdrop>
+                    </x-fa-q-button-mobver>
+                </div>
+
+                <div x-data="{ open: false }" class="mb-6 w-4/5">
+                    <x-fa-q-button-mobver>
+                        <x-slot:slottitle>Apa saja rangkaian acara yang ada di Last Act IFEST 2024?
+                        </x-slot:slottitle>
+                        <x-slot:slotdrop>Rangkaian acara Last Act IFEST 2024 mencakup Seminar Nasional dengan
+                            pembicara yang memiliki wawasan terkait karir di informatika, Company Expo yang
+                            diikuti
+                            oleh berbagai perusahaan di sektor informatika, serta Awarding Night yang merupakan
+                            acara penutup IFEST 2024. Awarding Night akan memberikan penghargaan kepada semua
+                            finalis Kompetisi IT dan Technopreneur, serta mitra yang berpartisipasi dalam IFEST
+                            2024.</x-slot:slotdrop>
+                    </x-fa-q-button-mobver>
+                </div>
+
+                <div x-data="{ open: false }" class="mb-3 w-4/5">
+                    <x-fa-q-button-mobver>
+                        <x-slot:slottitle>Apa saja yang ditampilkan di company expo?
+
+                        </x-slot:slottitle>
+                        <x-slot:slotdrop>Company Expo akan menampilkan booth dari berbagai perusahaan di sektor
+                            informatika. Peserta dapat memperoleh informasi mengenai program magang yang
+                            ditawarkan perusahaan-perusahaan tersebut, melihat proyek VR karya mahasiswa TI
+                            Unpad, serta menggunakan layanan CV review dan simulasi wawancara kerja.
+
+                        </x-slot:slotdrop>
+                    </x-fa-q-button-mobver>
+                </div>
+
+                <div x-data="{ open: false }" class="mb-6 w-4/5">
+                    <x-fa-q-button-mobver>
+                        <x-slot:slottitle>Apakah ada persyaratan khusus untuk menghadiri acara ini?
+
+                        </x-slot:slottitle>
+                        <x-slot:slotdrop>Persyaratan khusus hanya meliputi pendaftaran melalui formulir
+                            pendaftaran Seminar Nasional.
+                        </x-slot:slotdrop>
+                    </x-fa-q-button-mobver>
+                </div>
+
+                <div x-data="{ open: false }" class="mb-6 w-4/5">
+                    <x-fa-q-button-mobver>
+                        <x-slot:slottitle>Siapa yang dapat dihubungi untuk informasi lebih lanjut?
+
+                        </x-slot:slottitle>
+                        <x-slot:slotdrop>Untuk informasi lebih lanjut, silakan hubungi melalui direct message di
+                            Instagram @ifestunpad.
+
+                        </x-slot:slotdrop>
+                    </x-fa-q-button-mobver>
                 </div>
             </div>
         </div>
 
         <!-- Mobver -->
         <div
-            class="md:hidden flex items-center justify-center flex-col h-auto bg-itcomp-bg min-h-screen bg-fixed bg-right-bottom bg-cover bg-no-repeat py-20">
+            class="md:hidden flex items-center justify-center gap-y-10 flex-col h-auto bg-itcomp-bg min-h-screen bg-fixed bg-right-bottom bg-cover bg-no-repeat py-20 px-5">
             <div>
-                <h1 class="text-3xl font-bold" style="color: rgb(12 40 62);">LAST ACT</h1>
+                <h1 class="text-5xl font-bold" style="color: rgb(12 40 62);">LAST ACT</h1>
             </div>
 
             <div class="flex justify-center w-full">
                 <img src="/image/logo_ifest.png" alt="" class="h-auto w-[40%] mt-4">
+            </div>
+
+
+
+            <div
+                class=" mt-10 backdrop-blur-md bg-white/30 flex flex-col gap-y-5 items-center justify-center p-8 rounded-sm">
+
+                <h1 class="text-xl font-bold text-center text-wrap " style="color: rgb(115 4 53);">Get ready for a
+                    spectacular finale at IFEST 2024 with the electrifying Last Act! 🎉</h1>
+                <p class="text-md text-center text-wrap">Experience the dazzling Company Expo, where leading companies
+                    showcase groundbreaking innovations that will leave you in awe. Don’t miss the National Seminar,
+                    where industry experts will present brilliant ideas sure to inspire you. Get valuable insights and
+                    professional tips at our CV Clinic, designed to help you enhance your resume and stand out in the
+                    job market.</p>
+
+                <p class="text-md text-center text-wrap">The climax awaits at the Awarding Night, where the spotlight
+                    will shine on the prestigious winners and their remarkable achievements. Enjoy an array of Special
+                    Performances that will captivate and entertain you. Participate in Fun Games and activities that
+                    will add excitement to the event. Capture your memorable moments at the Photobooth, perfect for
+                    snapping photos with friends.</p>
+
+                <p class="text-md text-center text-wrap">And that's not all—discover even more surprises and delights
+                    throughout the event! Join us for an unforgettable experience filled with innovation, inspiration,
+                    and celebration! 🌟</p>
+            </div>
+
+            <div class="w-4/5">
+                <x-countdown-mobver>2024-10-05</x-countdown-mobver>
+            </div>
+
+            <div
+                class="w-full h-auto flex flex-row items-center justify-center gap-x-3 backdrop-blur-md bg-white/30 rounded-md p-3">
+                <div class="grid grid-cols-1 gap-4">
+                    <img src="/image/calendar-symbol.svg" class="h-auto w-[40px] justify-self-start" alt="">
+
+
+                    <img src="/image/time1.svg" class="h-auto w-[40px] justify-self-start" alt="">
+
+
+                    <img src="/image/location1.svg" class="h-auto w-[40px] justify-self-start" alt="">
+
+                </div>
+                <div class="grid grid-cols-1 gap-4">
+                    <div class="h-[40px] w-auto flex items-center">
+                        <p class="text-md">5th October 2024</p>
+                    </div>
+                    <div class="h-[40px] w-auto flex items-center">
+                        <p class="text-md">08.30 - 16.00</p>
+                    </div>
+                    <div class="h-[40px] w-auto flex items-center">
+                        <p class="text-md">Graha Sanusi, UNPAD Dipatiukur</p>
+                    </div>
+                </div>
             </div>
 
             <div class="flex justify-center items-center w-full">
@@ -351,6 +422,8 @@
                         x-model="selected">Company Expo</x-radio-button>
                 </div>
             </div>
+
+
 
             <!-- Semnas -->
             <div x-show="selected === 'rh-la1'"
@@ -381,9 +454,7 @@
                 </div>
 
                 <div class="flex flex-col items-center justify-center py-8">
-                    <div class="w-4/5">
-                        <x-countdown-mobver>2024-10-05</x-countdown-mobver>
-                    </div>
+
                 </div>
 
                 <div class="flex flex-col items-center justify-center">
@@ -463,23 +534,22 @@
                     <div class="flex flex-col items-center justify-start w-[85%] rounded-xl p-5 gap-y-5"
                         style="background-color: rgb(244 230 230);">
                         <div class="grid grid-cols-2 gap-4">
-                            <div class="flex flex-col gap-y-2">
-                                <p class="font-bold">Alif Al Husaini</p>
-                                <div class="flex flex-row items-center gap-x-2">
-                                    <img src="/image/Phone.png" alt="" class="h-5 w-auto">
-                                    <p class="font-semibold">081237449945</p>
-                                </div>
+                            <p class="font-bold">Alif Al Husaini</p>
+                            <p class="font-bold">Panji Iman Sujatmiko</p>
+                            <div class="flex flex-row items-center gap-x-2">
+                                <img src="/image/Phone.png" alt="" class="h-5 w-auto">
+                                <p class="font-semibold">081237449945</p>
                             </div>
-                            <div class="flex flex-col gap-y-2">
-                                <p class="font-bold">Panji Iman Sujatmiko</p>
-                                <div class="flex flex-row items-center gap-x-2">
-                                    <img src="/image/Phone.png" alt="" class="h-5 w-auto">
-                                    <p class="font-semibold">089647824647</p>
-                                </div>
-                                <div class="flex flex-row items-center gap-x-2">
-                                    <img src="/image/lineapp.png" alt="" class="h-5 w-auto">
-                                    <p class="font-semibold">panjiimans</p>
-                                </div>
+                            <div class="flex flex-row items-center gap-x-2">
+                                <img src="/image/Phone.png" alt="" class="h-5 w-auto">
+                                <p class="font-semibold">089647824647</p>
+                            </div>
+                            <div>
+
+                            </div>
+                            <div class="flex flex-row items-center gap-x-2">
+                                <img src="/image/lineapp.png" alt="" class="h-5 w-auto">
+                                <p class="font-semibold">panjiimans</p>
                             </div>
                         </div>
                         <p class="font-semibold">Or</p>
@@ -492,19 +562,111 @@
                     </div>
                     <img src="/image/PosterSemnasR.png" class="h-auto w-[90%] mt-8" alt="">
                 </div>
+            </div>
+            <!-- Company Expo -->
+            <div x-show="selected === 'rh-la2'"
+                class="md:flex items-center justify-center flex-col h-auto py-10 gap-y-20"
+                x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 scale-90"
+                x-transition:enter-end="opacity-100 scale-100" x-transition:leave="transition ease-in duration-100"
+                x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-90">
+                <!-- <div class="flex items-center justify-center flex-col h-auto">
+                    <img src="/image/ComingSoon.png" alt="" class="w-auto h-[200px]">
+                    <h1 class="text-2xl font-semibold">Coming Soon!</h1>
+                </div> -->
+                <div class="flex flex-col items-center justify-center gap-y-3">
+                    <h1 class="text-4xl font-semibold text-center text-wrap pb-4" style="color: rgb(12 40 62);">
+                        COMPANY EXPO</h1>
+                    <p class="text-md text-center w-4/5 font-semibold" style="color: rgb(12 40 62);">National
+                        Company Expo :
+                        The Company Expo is one of the key events at IFEST 2024, partnering with various IT companies to
+                        provide a platform for showcasing their profiles, products, and career development opportunities
+                        to the participants.
+                        Tambahin gambar gambar expo gitu biar menarik.
+                    </p>
+                </div>
+            </div>
 
+            <!-- Awarding -->
+            <div x-show="selected === 'rh-la3'"
+                class="md:flex items-center justify-center flex-col h-auto py-10 gap-y-20"
+                x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 scale-90"
+                x-transition:enter-end="opacity-100 scale-100" x-transition:leave="transition ease-in duration-100"
+                x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-90">
+                <!-- <div class="flex items-center justify-center flex-col h-auto">
+                    <img src="/image/ComingSoon.png" alt="" class="w-auto h-[200px]">
+                    <h1 class="text-2xl font-semibold">Coming Soon!</h1>
+                </div> -->
+                <div class="flex flex-col items-center justify-center gap-y-3">
+                    <h1 class="text-4xl font-semibold text-center text-wrap pb-4" style="color: rgb(12 40 62);">
+                        AWARDING NIGHT</h1>
+                    <p class="text-md text-center w-4/5 font-semibold" style="color: rgb(12 40 62);">National
+                        Awarding Night is the closing event of IFEST 2024. It will serve as an award ceremony attended
+                        by all finalists of IT Competition, Technopreneur, as well as partners who participated in IFEST
+                        2024.
+                    </p>
+                </div>
+            </div>
 
-                <div>
-                    <h1 class="text-center text-2xl font-semibold pb-4">Frequently Asked Questions</h1>
+            <div>
+                <h1 class="text-center text-2xl font-semibold pb-4">Frequently Asked Questions</h1>
+            </div>
+
+            <div class="flex flex-col items-center justify-center w-full">
+                <div x-data="{ open: false }" class="mb-6 w-4/5">
+                    <x-fa-q-button-mobver>
+                        <x-slot:slottitle>Kapan dan dimana acara Last Act IFEST 2024 akan
+                            diadakan?</x-slot:slottitle>
+                        <x-slot:slotdrop>Acara Last Act IFEST 2024 akan diadakan secara offline pada tanggal 5
+                            Oktober 2024 di Graha Sanusi, Universitas Padjadjaran, Kampus Dipati Ukur.
+                        </x-slot:slotdrop>
+                    </x-fa-q-button-mobver>
+                </div>
+
+                <div x-data="{ open: false }" class="mb-6 w-4/5">
+                    <x-fa-q-button-mobver>
+                        <x-slot:slottitle>Apa saja rangkaian acara yang ada di Last Act IFEST 2024?
+                        </x-slot:slottitle>
+                        <x-slot:slotdrop>Rangkaian acara Last Act IFEST 2024 mencakup Seminar Nasional dengan
+                            pembicara yang memiliki wawasan terkait karir di informatika, Company Expo yang diikuti
+                            oleh berbagai perusahaan di sektor informatika, serta Awarding Night yang merupakan
+                            acara penutup IFEST 2024. Awarding Night akan memberikan penghargaan kepada semua
+                            finalis Kompetisi IT dan Technopreneur, serta mitra yang berpartisipasi dalam IFEST
+                            2024.</x-slot:slotdrop>
+                    </x-fa-q-button-mobver>
+                </div>
+
+                <div x-data="{ open: false }" class="mb-3 w-4/5">
+                    <x-fa-q-button-mobver>
+                        <x-slot:slottitle>Apakah acara ini terbuka untuk umum?
+                        </x-slot:slottitle>
+                        <x-slot:slotdrop>Ya, Last Act IFEST 2024 terbuka untuk umum. Namun, peserta diharapkan
+                            melakukan pendaftaran sebelumnya karena kapasitas tempat yang terbatas.
+                        </x-slot:slotdrop>
+                    </x-fa-q-button-mobver>
+                </div>
+
+                <div x-data="{ open: false }" class="mb-6 w-4/5">
+                    <x-fa-q-button-mobver>
+                        <x-slot:slottitle>Bagaimana cara mendaftar untuk mengikuti acara ini?
+                        </x-slot:slottitle>
+                        <x-slot:slotdrop>Untuk mendaftar, peserta dapat mengisi formulir pendaftaran Last Act
+                            yang
+                            tersedia di web IFest 2024.
+                        </x-slot:slotdrop>
+                    </x-fa-q-button-mobver>
                 </div>
 
                 <div class="flex flex-col items-center justify-center w-full">
                     <div x-data="{ open: false }" class="mb-6 w-4/5">
                         <x-fa-q-button-mobver>
-                            <x-slot:slottitle>Kapan dan dimana acara Last Act IFEST 2024 akan
-                                diadakan?</x-slot:slottitle>
-                            <x-slot:slotdrop>Acara Last Act IFEST 2024 akan diadakan secara offline pada tanggal 5
-                                Oktober 2024 di Graha Sanusi, Universitas Padjadjaran, Kampus Dipati Ukur.
+                            <x-slot:slottitle>Apakah ada biaya untuk mengikuti acara Last Act IFEST 2024?
+                            </x-slot:slottitle>
+                            <x-slot:slotdrop>Untuk acara ini terdapat dua gelombang pendaftaran. Gelombang
+                                pertama
+                                adalah pendaftaran gratis, sementara gelombang berikutnya memerlukan biaya
+                                pendaftaran. Pastikan untuk mendaftar pada gelombang pertama untuk mendapatkan tiket
+                                gratis.
+
                             </x-slot:slotdrop>
                         </x-fa-q-button-mobver>
                     </div>
@@ -513,8 +675,10 @@
                         <x-fa-q-button-mobver>
                             <x-slot:slottitle>Apa saja rangkaian acara yang ada di Last Act IFEST 2024?
                             </x-slot:slottitle>
-                            <x-slot:slotdrop>Rangkaian acara Last Act IFEST 2024 mencakup Seminar Nasional dengan
-                                pembicara yang memiliki wawasan terkait karir di informatika, Company Expo yang diikuti
+                            <x-slot:slotdrop>Rangkaian acara Last Act IFEST 2024 mencakup Seminar Nasional
+                                dengan
+                                pembicara yang memiliki wawasan terkait karir di informatika, Company Expo yang
+                                diikuti
                                 oleh berbagai perusahaan di sektor informatika, serta Awarding Night yang merupakan
                                 acara penutup IFEST 2024. Awarding Night akan memberikan penghargaan kepada semua
                                 finalis Kompetisi IT dan Technopreneur, serta mitra yang berpartisipasi dalam IFEST
@@ -524,117 +688,41 @@
 
                     <div x-data="{ open: false }" class="mb-3 w-4/5">
                         <x-fa-q-button-mobver>
-                            <x-slot:slottitle>Apakah acara ini terbuka untuk umum?
+                            <x-slot:slottitle>Apa saja yang ditampilkan di company expo?
+
                             </x-slot:slottitle>
-                            <x-slot:slotdrop>Ya, Last Act IFEST 2024 terbuka untuk umum. Namun, peserta diharapkan
-                                melakukan pendaftaran sebelumnya karena kapasitas tempat yang terbatas.
+                            <x-slot:slotdrop>Company Expo akan menampilkan booth dari berbagai perusahaan di
+                                sektor
+                                informatika. Peserta dapat memperoleh informasi mengenai program magang yang
+                                ditawarkan perusahaan-perusahaan tersebut, melihat proyek VR karya mahasiswa TI
+                                Unpad, serta menggunakan layanan CV review dan simulasi wawancara kerja.
+
                             </x-slot:slotdrop>
                         </x-fa-q-button-mobver>
                     </div>
 
                     <div x-data="{ open: false }" class="mb-6 w-4/5">
                         <x-fa-q-button-mobver>
-                            <x-slot:slottitle>Bagaimana cara mendaftar untuk mengikuti acara ini?
+                            <x-slot:slottitle>Apakah ada persyaratan khusus untuk menghadiri acara ini?
+
                             </x-slot:slottitle>
-                            <x-slot:slotdrop>Untuk mendaftar, peserta dapat mengisi formulir pendaftaran Last Act
-                                yang
-                                tersedia di web IFest 2024.
+                            <x-slot:slotdrop>Persyaratan khusus hanya meliputi pendaftaran melalui formulir
+                                pendaftaran Seminar Nasional.
                             </x-slot:slotdrop>
                         </x-fa-q-button-mobver>
                     </div>
 
-                    <div class="flex flex-col items-center justify-center w-full">
-                        <div x-data="{ open: false }" class="mb-6 w-4/5">
-                            <x-fa-q-button-mobver>
-                                <x-slot:slottitle>Apakah ada biaya untuk mengikuti acara Last Act IFEST 2024?
-                                </x-slot:slottitle>
-                                <x-slot:slotdrop>Untuk acara ini terdapat dua gelombang pendaftaran. Gelombang
-                                    pertama
-                                    adalah pendaftaran gratis, sementara gelombang berikutnya memerlukan biaya
-                                    pendaftaran. Pastikan untuk mendaftar pada gelombang pertama untuk mendapatkan tiket
-                                    gratis.
+                    <div x-data="{ open: false }" class="mb-6 w-4/5">
+                        <x-fa-q-button-mobver>
+                            <x-slot:slottitle>Siapa yang dapat dihubungi untuk informasi lebih lanjut?
 
-                                </x-slot:slotdrop>
-                            </x-fa-q-button-mobver>
-                        </div>
+                            </x-slot:slottitle>
+                            <x-slot:slotdrop>Untuk informasi lebih lanjut, silakan hubungi melalui direct
+                                message di
+                                Instagram @ifestunpad.
 
-                        <div x-data="{ open: false }" class="mb-6 w-4/5">
-                            <x-fa-q-button-mobver>
-                                <x-slot:slottitle>Apa saja rangkaian acara yang ada di Last Act IFEST 2024?
-                                </x-slot:slottitle>
-                                <x-slot:slotdrop>Rangkaian acara Last Act IFEST 2024 mencakup Seminar Nasional
-                                    dengan
-                                    pembicara yang memiliki wawasan terkait karir di informatika, Company Expo yang
-                                    diikuti
-                                    oleh berbagai perusahaan di sektor informatika, serta Awarding Night yang merupakan
-                                    acara penutup IFEST 2024. Awarding Night akan memberikan penghargaan kepada semua
-                                    finalis Kompetisi IT dan Technopreneur, serta mitra yang berpartisipasi dalam IFEST
-                                    2024.</x-slot:slotdrop>
-                            </x-fa-q-button-mobver>
-                        </div>
-
-                        <div x-data="{ open: false }" class="mb-3 w-4/5">
-                            <x-fa-q-button-mobver>
-                                <x-slot:slottitle>Apa saja yang ditampilkan di company expo?
-
-                                </x-slot:slottitle>
-                                <x-slot:slotdrop>Company Expo akan menampilkan booth dari berbagai perusahaan di
-                                    sektor
-                                    informatika. Peserta dapat memperoleh informasi mengenai program magang yang
-                                    ditawarkan perusahaan-perusahaan tersebut, melihat proyek VR karya mahasiswa TI
-                                    Unpad, serta menggunakan layanan CV review dan simulasi wawancara kerja.
-
-                                </x-slot:slotdrop>
-                            </x-fa-q-button-mobver>
-                        </div>
-
-                        <div x-data="{ open: false }" class="mb-6 w-4/5">
-                            <x-fa-q-button-mobver>
-                                <x-slot:slottitle>Apakah ada persyaratan khusus untuk menghadiri acara ini?
-
-                                </x-slot:slottitle>
-                                <x-slot:slotdrop>Persyaratan khusus hanya meliputi pendaftaran melalui formulir
-                                    pendaftaran Seminar Nasional.
-                                </x-slot:slotdrop>
-                            </x-fa-q-button-mobver>
-                        </div>
-
-                        <div x-data="{ open: false }" class="mb-6 w-4/5">
-                            <x-fa-q-button-mobver>
-                                <x-slot:slottitle>Siapa yang dapat dihubungi untuk informasi lebih lanjut?
-
-                                </x-slot:slottitle>
-                                <x-slot:slotdrop>Untuk informasi lebih lanjut, silakan hubungi melalui direct
-                                    message di
-                                    Instagram @ifestunpad.
-
-                                </x-slot:slotdrop>
-                            </x-fa-q-button-mobver>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Company Expo -->
-                <div x-show="selected === 'rh-la2'"
-                    class="md:flex items-center justify-center flex-col h-auto py-10 gap-y-20"
-                    x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 scale-90"
-                    x-transition:enter-end="opacity-100 scale-100" x-transition:leave="transition ease-in duration-100"
-                    x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-90">
-                    <div class="flex items-center justify-center flex-col h-auto">
-                        <img src="/image/ComingSoon.png" alt="" class="w-auto h-[200px]">
-                        <h1 class="text-2xl font-semibold">Coming Soon!</h1>
-                    </div>
-                </div>
-
-                <!-- Awarding -->
-                <div x-show="selected === 'rh-la3'"
-                    class="md:flex items-center justify-center flex-col h-auto py-10 gap-y-20"
-                    x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 scale-90"
-                    x-transition:enter-end="opacity-100 scale-100" x-transition:leave="transition ease-in duration-100"
-                    x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-90">
-                    <div class="flex items-center justify-center flex-col h-auto">
-                        <img src="/image/ComingSoon.png" alt="" class="w-auto h-[200px]">
-                        <h1 class="text-2xl font-semibold">Coming Soon!</h1>
+                            </x-slot:slotdrop>
+                        </x-fa-q-button-mobver>
                     </div>
                 </div>
             </div>

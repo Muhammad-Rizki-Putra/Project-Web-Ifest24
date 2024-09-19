@@ -1,6 +1,6 @@
 <x-layout>
     <x-slot:pagename>{{$pagename}}</x-slot:pagename>
-    <div class="hidden w-full md:flex flex-col bg-home-bg bg-cover bg-no-repeat bg-center ">
+    <div class="hidden w-full md:flex flex-col bg-itcomp-bg bg-fixed bg-right-bottom bg-cover bg-no-repeat ">
         <div
             class="py-[125px] px-[184px] bg-home-launch bg-center bg-cover bg-no-repeat flex items-center justify-center h-[calc(100vh-189px)]">
             <img src="/image/logo_ifest3.png" alt="" class="h-auto w-auto">
@@ -296,7 +296,7 @@
             <div class="flex items-center justify-center flex-col">
                 <p class="text-center text-4xl font-semibold pt-10 pb-7 w-fit">Our Sponsor</p>
                 <div
-                    class=" py-8 w-full h-auto outline-1 flex flex-col items-center justify-center gap-y-6 bg-opacity-50 rounded-md backdrop-blur-md bg-white/30">
+                    class=" py-8 w-full h-auto outline-1 flex flex-col items-center justify-center gap-y-6 bg-opacity-50 rounded-md backdrop-blur-md bg-white/30 p-5">
                     <div class="grid grid-cols-4 grid-flow-row gap-4 justify-center items-center">
                         <a target="_blank" rel="noopener noreferrer"
                             href="https://www.instagram.com/opsfood.co?igsh=ZXdyN3k5dGdodDI2"
@@ -342,10 +342,10 @@
                 </div>
             </div>
 
-            <div class="flex items-center justify-center flex-col">
+            <div class="flex items-center justify-center flex-col pb-20">
                 <p class="text-center text-4xl font-semibold pt-10 pb-7 w-fit">Our Media Partner</p>
                 <div
-                    class=" py-8 w-full h-auto outline-1 backdrop-blur-md flex flex-col items-center justify-center gap-y-6 bg-opacity-50 rounded-md">
+                    class=" py-8 w-full h-auto outline-1  flex flex-col items-center justify-center gap-y-6 bg-opacity-50 rounded-md backdrop-blur-md bg-white/30 p-5">
                     <div class="grid grid-cols-4 grid-flow-row gap-4 justify-center items-center">
                         <div class="flex items-center justify-center"><img src="/image/MedPart/Techno/2.svg" alt="">
                         </div>
@@ -370,7 +370,7 @@
     </div>
 
     <!-- Mobile ver. -->
-    <div class="md:hidden w-full flex flex-col bg-home-bg bg-cover bg-no-repeat bg-center">
+    <div class="md:hidden w-full flex flex-col bg-itcomp-bg bg-fixed bg-right-bottom bg-cover bg-no-repeat">
 
 
         <div class="h-min-screen">

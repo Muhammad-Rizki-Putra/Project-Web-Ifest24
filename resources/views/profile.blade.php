@@ -44,7 +44,7 @@
                     </div>
                     <div class="text-left flex-col truncate">
                         <p class="font-bold">Institution Name</p>
-                        <p class="truncate">test</p>
+                        <p class="truncate">{{ $user->institution }}</p>
                     </div>
                 </div>
             </div>

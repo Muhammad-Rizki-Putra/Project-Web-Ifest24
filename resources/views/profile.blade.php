@@ -3,6 +3,12 @@
     <div
         class="hidden w-full md:flex flex-col bg-home-bg bg-cover bg-no-repeat bg-fixed bg-right-bottom self-center p-8 min-h-screen">
         <div class="account-info p-8 ">
+            @if (session()->has('success'))
+                <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative mb-4"
+                    role="alert">
+                    <span class="block sm:inline">{{ session('success') }}</span>
+                </div>
+            @endif
             <div class="text-2xl profile-section-name font-semibold">Profile</div>
             <div class="grid grid-cols-1 h-46 bg-cream-bg place-content-center p-4 rounded-lg">
                 <div class="grid grid-cols-3 grid-rows-2 gap-4">
@@ -46,7 +52,7 @@
 
         <div class="register-location p-8">
             @if ($isRegistered)
-            <div class="text-2xl profile-section-name mb-2 font-semibold">Registered At</div>
+                <div class="text-2xl profile-section-name mb-2 font-semibold">Registered At</div>
                 <div
                     class="bg-gradient-to-r from-sky-200 via-cream-bg to-sky-100 p-4 rounded-lg shadow-lg border border-sky-300 flex items-center justify-between min-w-[350px]">
                     <div>
@@ -126,7 +132,7 @@
 
         <div class="register-location p-8">
             @if ($isRegistered)
-            <div class="text-2xl profile-section-name mb-2 font-semibold">Registered At</div>
+                <div class="text-2xl profile-section-name mb-2 font-semibold">Registered At</div>
                 <div
                     class="bg-gradient-to-r from-sky-200 via-cream-bg to-sky-100 p-4 rounded-lg shadow-lg border border-sky-300 flex items-center justify-between">
                     <div>

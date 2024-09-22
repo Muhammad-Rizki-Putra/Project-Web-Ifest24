@@ -27,7 +27,7 @@
                         <input type="email" name="email" class="profile-edit-box profile-edit-box-section"
                             placeholder="Enter Your Email"
                             value="{{ old('email', $user->email) }}" required>
-                        <p class="text-sm text-gray-500 mt-1">Your email is not verified. <a href="{{ route('verification.notice') }}" class="text-indigo-600 hover:underline">Verify your email</a></p>
+                        <p class="text-sm text-gray-500 mt-1">Your email is not verified. <a href="/email/verify" class="text-indigo-600 hover:underline">Verify your email</a></p>
                         @endif
                         @error('email')
                         <p class="text-red-500 text-xs italic">{{ $message }}</p>

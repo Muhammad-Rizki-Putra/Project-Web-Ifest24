@@ -51,11 +51,13 @@ class RegisterController extends Controller
             'ifest_info' => json_encode($request->ifest_info),
         ]);
 
-        event(new Registered($user));
+        // ni kalo mau verifikasi langsung
+        // event(new Registered($user));
+        // return redirect()->route('verification.notice');
+        // return redirect()->route('login')->with('success', 'Registration successful, please login!');
 
         Auth::login($user);
-        // return redirect()->route('login')->with('success', 'Registration successful, please login!');
-        return redirect()->route('verification.notice');
+        return redirect()->intended('/profile')->with('success', 'Registration successful!');
     }
 
     public function verifyEmail()
@@ -63,6 +65,7 @@ class RegisterController extends Controller
         $user = Auth::user();
 
         if ($user && is_null($user->email_verified_at)) {
+            event(new Registered($user));
             return view('auth.verify-email', ['pagename' => 'verify']);
         } else {
             return redirect()->intended('/');

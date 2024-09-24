@@ -62,13 +62,18 @@ class SemnasController extends Controller
     public function claimTicket()
     {
         if (Auth::check()) {
+            $user = Auth::user();
+            
+            if (!$user->email_verified_at || $this->getSemnasIdForUser($user) != null) {
+                return redirect('/last_act');
+            }
+
             $userId = Auth::id();
 
             Event::create([
                 'user_id' => $userId,
             ]);
 
-            $user = Auth::user();
             $semnasId = $this->getSemnasIdForUser($user);
 
             Mail::to($user->email)->send(new Semnas($user, $semnasId));

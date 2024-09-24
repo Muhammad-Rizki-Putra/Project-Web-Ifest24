@@ -769,7 +769,7 @@
             popupTitle.textContent = 'Email Verification Required';
             popupMessage.textContent = 'Please verify your email to continue.';
             submitButton.textContent = 'Verify';
-            submitButton.onclick = () => window.location.href = '/email/verify';
+            submitButton.onclick = () => window.location.href = '/profile-edit';
         } else {
             popupTitle.textContent = 'Confirm Your Action';
             popupMessage.textContent =

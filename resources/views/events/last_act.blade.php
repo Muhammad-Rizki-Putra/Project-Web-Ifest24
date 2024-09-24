@@ -114,7 +114,7 @@
                             </div>
                             <h2 class="text-black text-xs2 leading-tight text-center">Chief Technology Officer WOOL
                                 ID</h2>
-                            <img src="/image/LogoWoolID.png" class="h-auto w-[120px]" alt="">
+                            <img src="/image/LogoWoolID.webp" class="h-auto w-[120px]" alt="">
                         </div>
                     </div>
                 </div>
@@ -483,7 +483,7 @@
                                 <h2 class="text-black text-xs3 leading-tight text-center">Chief Technology Officer
                                     WOOL
                                     ID</h2>
-                                <img src="/image/LogoWoolID.png" class="h-auto w-[90px]" alt="">
+                                <img src="/image/LogoWoolID.webp" class="h-auto w-[90px]" alt="">
                             </div>
                         </div>
 

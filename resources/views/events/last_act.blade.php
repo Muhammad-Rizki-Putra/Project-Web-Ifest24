@@ -114,7 +114,7 @@
                             </div>
                             <h2 class="text-black text-xs2 leading-tight text-center">Chief Technology Officer WOOL
                                 ID</h2>
-                            <img src="/image/LogoWoolID.webp" class="h-auto w-[120px]" alt="">
+                            <img src="/image/logoWool.png" class="h-auto w-[120px]" alt="">
                         </div>
                     </div>
                 </div>
@@ -412,14 +412,14 @@
             <div class="flex justify-center items-center w-full">
                 <div class="flex flex-row gap-x-10 gap-y-3 flex-wrap overflow-x-auto max-w-[75%] mt-4 justify-center">
 
-                    <x-radio-button textSize="text-lg" textPadding="p-1" name="rh-la" value="rh-la1" id="rh-la-1"
-                        x-model="selected">Semnas</x-radio-button>
+                    <x-radio-button textSize="text-lg" textPadding="p-1" name="rh-la" value="rh-la1"
+                        id="rh-la-1" x-model="selected">Semnas</x-radio-button>
 
-                    <x-radio-button textSize="text-lg" textPadding="p-1" name="rh-la" value="rh-la3" id="rh-la-3"
-                        x-model="selected">Awarding</x-radio-button>
+                    <x-radio-button textSize="text-lg" textPadding="p-1" name="rh-la" value="rh-la3"
+                        id="rh-la-3" x-model="selected">Awarding</x-radio-button>
 
-                    <x-radio-button textSize="text-lg" textPadding="p-1" name="rh-la" value="rh-la2" id="rh-la-2"
-                        x-model="selected">Company Expo</x-radio-button>
+                    <x-radio-button textSize="text-lg" textPadding="p-1" name="rh-la" value="rh-la2"
+                        id="rh-la-2" x-model="selected">Company Expo</x-radio-button>
                 </div>
             </div>
 
@@ -483,7 +483,7 @@
                                 <h2 class="text-black text-xs3 leading-tight text-center">Chief Technology Officer
                                     WOOL
                                     ID</h2>
-                                <img src="/image/LogoWoolID.webp" class="h-auto w-[90px]" alt="">
+                                <img src="/image/logoWool.png" class="h-auto w-[90px]" alt="">
                             </div>
                         </div>
 

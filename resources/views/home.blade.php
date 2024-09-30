@@ -331,10 +331,10 @@
                                 alt="">
                         </a>
                         <a target="_blank" rel="noopener noreferrer" href="https://www.mceasy.com/en/"
-                            class="flex items-center justify-center p-5"><img src="/image/Sponsor/mceasy.webp" alt="">
+                            class="flex items-center justify-center p-5"><img src="/image/Sponsor/logomceasy.webp" alt="">
                         </a>
                         <a target="_blank" rel="noopener noreferrer" href="https://skillpedia.id/"
-                            class="p-5 flex items-center justify-center"><img src="/image/Sponsor/skillpedia.webp"
+                            class="p-5 flex items-center justify-center"><img src="/image/Sponsor/logoskillpedia.webp"
                                 alt="">
                         </a>
                     </div>
@@ -798,10 +798,10 @@
                     <div class="grid grid-cols-2 grid-flow-row gap-4 justify-center items-center">
                     
                         <a target="_blank" rel="noopener noreferrer" href="https://www.mceasy.com/en/"
-                            class="flex items-center justify-center p-5"><img src="/image/Sponsor/mceasy.webp" alt="">
+                            class="flex items-center justify-center p-5"><img src="/image/Sponsor/logomceasy.webp" alt="">
                         </a>
                         <a target="_blank" rel="noopener noreferrer" href="https://skillpedia.id/"
-                            class="p-5 flex items-center justify-center"><img src="/image/Sponsor/skillpedia.webp"
+                            class="p-5 flex items-center justify-center"><img src="/image/Sponsor/logoskillpedia.webp"
                                 alt="">
                         </a>
                     </div>

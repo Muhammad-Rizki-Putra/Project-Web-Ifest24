@@ -798,10 +798,10 @@
                     <div class="grid grid-cols-2 grid-flow-row gap-4 justify-center items-center">
                     
                         <a target="_blank" rel="noopener noreferrer" href="https://www.mceasy.com/en/"
-                            class="flex items-center justify-center p-5"><img src="/image/Sponsor/gambar1.png" alt="">
+                            class="flex items-center justify-center p-5"><img src="/image/sponsor/gambar1.png" alt="">
                         </a>
                         <a target="_blank" rel="noopener noreferrer" href="https://skillpedia.id/"
-                            class="p-5 flex items-center justify-center"><img src="/image/Sponsor/gambar2.png"
+                            class="p-5 flex items-center justify-center"><img src="/image/sponsor/gambar2.png"
                                 alt="">
                         </a>
                     </div>

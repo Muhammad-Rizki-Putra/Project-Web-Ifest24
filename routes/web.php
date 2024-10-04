@@ -8,11 +8,9 @@ use App\Http\Controllers\GoogleController;
 use App\Http\Controllers\ResetPasswordController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\PartnerController;
+use App\Http\Controllers\HomeController;
 
-Route::get('/', function () {
-    return view('home', ['pagename' => 'Home']);
-});
-
+Route::get('/', [HomeController::class, 'index']);
 
 // partner
 Route::get('/partner-with-us', function () {

@@ -1,5 +1,5 @@
 <x-layout>
-    <x-slot:pagename>{{$pagename}}</x-slot:pagename>
+    <x-slot:pagename>{{ $pagename }}</x-slot:pagename>
     <div class="hidden w-full md:flex flex-col bg-itcomp-bg bg-fixed bg-right-bottom bg-cover bg-no-repeat ">
         <div
             class="py-[125px] px-[184px] bg-home-launch bg-center bg-cover bg-no-repeat flex items-center justify-center h-[calc(100vh-189px)]">
@@ -13,10 +13,6 @@
         </div>
 
         <div class="flex flex-col px-[125px] pt-[15vh] justify-center">
-
-
-
-
             <div class="flex flex-col lg:flex-row justify-center pt-20">
                 <div
                     class="bg-home-doc bg-contain bg-center bg-no-repeat h-[512px] w-[512px] p-1.5 flex items-center justify-center">
@@ -182,64 +178,63 @@
             </div>
             <div class="py-10">
                 <h1 class="text-7xl text-center font-semibold">Dicoding promotion</h1>
-                <div x-data="{            
-    slides: [                
-        {
-            imgSrc: '/image/PosterDicoding/1.png',
-            imgAlt: '',  
-            title: '',
-            description: '',    
-            ctaUrl: 'https://dicoding.id/DBN',
-            ctaText: 'Click for more information',          
-        },                
-        {                    
-            imgSrc: '/image/PosterDicoding/2.png',
-            imgAlt: '',  
-            title: '',
-            description: '',    
-            ctaUrl: '/capture-the-flag',
-            ctaText: 'Click for more information',                
-        },                
-        {                    
-            imgSrc: '/image/PosterDicoding/3.png',
-            imgAlt: '',  
-            title: '',
-            description: '',    
-            ctaUrl: '/capture-the-flag',
-            ctaText: 'Click for more information',                
-        },   
-        {                    
-            imgSrc: '/image/PosterDicoding/4.png',
-            imgAlt: '',  
-            title: '',
-            description: '',    
-            ctaUrl: '/capture-the-flag',
-            ctaText: 'Click for more information',                
-        },           
-    ],            
-    currentSlideIndex: 1,
-    previous() {                
-        if (this.currentSlideIndex > 1) {                    
-            this.currentSlideIndex = this.currentSlideIndex - 1                
-        } else {   
-            this.currentSlideIndex = this.slides.length                
-        }            
-    },            
-    next() {                
-        if (this.currentSlideIndex < this.slides.length) {                    
-            this.currentSlideIndex = this.currentSlideIndex + 1                
-        } else {                 
-            this.currentSlideIndex = 1                
-        }            
-    },        
-}" class="relative w-full overflow-hidden">
+                <div x-data="{
+                    slides: [{
+                            imgSrc: '/image/PosterDicoding/1.png',
+                            imgAlt: '',
+                            title: '',
+                            description: '',
+                            ctaUrl: 'https://dicoding.id/DBN',
+                            ctaText: 'Click for more information',
+                        },
+                        {
+                            imgSrc: '/image/PosterDicoding/2.png',
+                            imgAlt: '',
+                            title: '',
+                            description: '',
+                            ctaUrl: '/capture-the-flag',
+                            ctaText: 'Click for more information',
+                        },
+                        {
+                            imgSrc: '/image/PosterDicoding/3.png',
+                            imgAlt: '',
+                            title: '',
+                            description: '',
+                            ctaUrl: '/capture-the-flag',
+                            ctaText: 'Click for more information',
+                        },
+                        {
+                            imgSrc: '/image/PosterDicoding/4.png',
+                            imgAlt: '',
+                            title: '',
+                            description: '',
+                            ctaUrl: '/capture-the-flag',
+                            ctaText: 'Click for more information',
+                        },
+                    ],
+                    currentSlideIndex: 1,
+                    previous() {
+                        if (this.currentSlideIndex > 1) {
+                            this.currentSlideIndex = this.currentSlideIndex - 1
+                        } else {
+                            this.currentSlideIndex = this.slides.length
+                        }
+                    },
+                    next() {
+                        if (this.currentSlideIndex < this.slides.length) {
+                            this.currentSlideIndex = this.currentSlideIndex + 1
+                        } else {
+                            this.currentSlideIndex = 1
+                        }
+                    },
+                }" class="relative w-full overflow-hidden">
 
                     <!-- previous button -->
                     <button type="button"
                         class="absolute left-96 top-1/2 z-20 flex rounded-full -translate-y-1/2 items-center justify-center bg-white/40 p-2 text-slate-700 transition hover:bg-white/60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700 active:outline-offset-0 dark:bg-slate-900/40 dark:text-slate-300 dark:hover:bg-slate-900/60 dark:focus-visible:outline-blue-600"
                         aria-label="previous slide" x-on:click="previous()">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor" fill="none"
-                            stroke-width="3" class="size-5 md:size-6 pr-0.5" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor"
+                            fill="none" stroke-width="3" class="size-5 md:size-6 pr-0.5" aria-hidden="true">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
                         </svg>
                     </button>
@@ -248,8 +243,8 @@
                     <button type="button"
                         class="absolute right-96 top-1/2 z-20 flex rounded-full -translate-y-1/2 items-center justify-center bg-white/40 p-2 text-slate-700 transition hover:bg-white/60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700 active:outline-offset-0 dark:bg-slate-900/40 dark:text-slate-300 dark:hover:bg-slate-900/60 dark:focus-visible:outline-blue-600"
                         aria-label="next slide" x-on:click="next()">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor" fill="none"
-                            stroke-width="3" class="size-5 md:size-6 pl-0.5" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor"
+                            fill="none" stroke-width="3" class="size-5 md:size-6 pl-0.5" aria-hidden="true">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                         </svg>
                     </button>
@@ -300,28 +295,37 @@
                     <div class="grid grid-cols-4 grid-flow-row gap-4 justify-center items-center">
                         <a target="_blank" rel="noopener noreferrer"
                             href="https://www.instagram.com/opsfood.co?igsh=ZXdyN3k5dGdodDI2"
-                            class="flex items-center justify-center"><img src="/image/SponsorPage/Techno/2.svg" alt="">
+                            class="flex items-center justify-center"><img src="/image/SponsorPage/Techno/2.svg"
+                                alt="">
                         </a>
                         <a target="_blank" rel="noopener noreferrer" href="https://gits.id/"
-                            class="flex items-center justify-center"><img src="/image/SponsorPage/Techno/5.svg" alt="">
+                            class="flex items-center justify-center"><img src="/image/SponsorPage/Techno/5.svg"
+                                alt="">
                         </a>
                         <a target="_blank" rel="noopener noreferrer" href="https://mekari.com/"
-                            class="flex items-center justify-center"><img src="/image/SponsorPage/Techno/3.svg" alt="">
+                            class="flex items-center justify-center"><img src="/image/SponsorPage/Techno/3.svg"
+                                alt="">
                         </a>
                         <a target="_blank" rel="noopener noreferrer" href="https://kolaborasi.co/"
-                            class="flex items-center justify-center"><img src="/image/SponsorPage/Techno/4.svg" alt="">
+                            class="flex items-center justify-center"><img src="/image/SponsorPage/Techno/4.svg"
+                                alt="">
                         </a>
                         <a target="_blank" rel="noopener noreferrer" href="https://selasarkampus.com/"
-                            class="flex items-center justify-center"><img src="/image/SponsorPage/Techno/1.svg" alt="">
+                            class="flex items-center justify-center"><img src="/image/SponsorPage/Techno/1.svg"
+                                alt="">
                         </a>
                         <a target="_blank" rel="noopener noreferrer" href="https://www.dicoding.com/"
-                            class="flex items-center justify-center"><img src="/image/SponsorPage/Techno/6.svg" alt="">
+                            class="flex items-center justify-center"><img src="/image/SponsorPage/Techno/6.svg"
+                                alt="">
                         </a>
-                        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/petircysec/"
-                            class="flex items-center justify-center"><img src="/image/SponsorPage/ITComp/2.svg" alt="">
+                        <a target="_blank" rel="noopener noreferrer"
+                            href="https://www.linkedin.com/company/petircysec/"
+                            class="flex items-center justify-center"><img src="/image/SponsorPage/ITComp/2.svg"
+                                alt="">
                         </a>
                         <a target="_blank" rel="noopener noreferrer" href="https://devcode.ai/"
-                            class="flex items-center justify-center"><img src="/image/SponsorPage/ITComp/3.svg" alt="">
+                            class="flex items-center justify-center"><img src="/image/SponsorPage/ITComp/3.svg"
+                                alt="">
                         </a>
                     </div>
                     <div class="grid grid-cols-3 grid-flow-row gap-4 justify-center items-center">
@@ -331,7 +335,8 @@
                                 alt="">
                         </a>
                         <a target="_blank" rel="noopener noreferrer" href="https://www.mceasy.com/en/"
-                            class="flex items-center justify-center p-5"><img src="/image/sponsor/gambar1.png" alt="">
+                            class="flex items-center justify-center p-5"><img src="/image/sponsor/gambar1.png"
+                                alt="">
                         </a>
                         <a target="_blank" rel="noopener noreferrer" href="https://skillpedia.id/"
                             class="p-5 flex items-center justify-center"><img src="/image/sponsor/gambar2.png" alt="">
@@ -357,26 +362,51 @@
                 <div
                     class=" py-8 w-full h-auto outline-1  flex flex-col items-center justify-center gap-y-6 bg-opacity-50 rounded-md backdrop-blur-md bg-white/30 p-5">
                     <div class="grid grid-cols-4 grid-flow-row gap-4 justify-center items-center">
-                        <div class="flex items-center justify-center"><img src="/image/MedPart/Techno/2.svg" alt="">
+                        <div class="flex items-center justify-center"><img src="/image/MedPart/Techno/2.svg"
+                                alt="">
                         </div>
-                        <div class="flex items-center justify-center"><img src="/image/MedPart/Techno/3.svg" alt="">
+                        <div class="flex items-center justify-center"><img src="/image/MedPart/Techno/3.svg"
+                                alt="">
                         </div>
-                        <div class="flex items-center justify-center"><img src="/image/MedPart/Techno/4.svg" alt="">
+                        <div class="flex items-center justify-center"><img src="/image/MedPart/Techno/4.svg"
+                                alt="">
                         </div>
-                        <div class="flex items-center justify-center"><img src="/image/MedPart/Techno/1.svg" alt="">
+                        <div class="flex items-center justify-center"><img src="/image/MedPart/Techno/1.svg"
+                                alt="">
                         </div>
                     </div>
                     <div class="grid grid-cols-3 grid-flow-row gap-4 justify-center items-center">
-                        <div class="flex items-center justify-center"><img src="/image/MedPart/ITComp/2.svg" alt="">
+                        <div class="flex items-center justify-center"><img src="/image/MedPart/ITComp/2.svg"
+                                alt="">
                         </div>
-                        <div class="flex items-center justify-center"><img src="/image/MedPart/ITComp/3.svg" alt="">
+                        <div class="flex items-center justify-center"><img src="/image/MedPart/ITComp/3.svg"
+                                alt="">
                         </div>
-                        <div class="flex items-center justify-center"><img src="/image/MedPart/ITComp/4.svg" alt="">
+                        <div class="flex items-center justify-center"><img src="/image/MedPart/ITComp/4.svg"
+                                alt="">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- dday Modal PC -->
+        @if (isset($isRegistered) && $isRegistered)
+            <div id="dday"
+                class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50 hidden">
+                <div class="relative bg-white p-8 rounded-lg shadow-lg text-center">
+                    <button id="close-dday"
+                        class="absolute top-2 right-2 text-gray-500 hover:text-gray-800 text-2xl font-bold">&times;</button>
+                    <h2 class="text-3xl font-bold mb-4">D-Day!</h2>
+                    <p class="text-lg mb-4">Thank you for joining us! For those attending online, you can join from
+                        this
+                        link: <a href="https://zoom.us/j/96902496904?pwd=o2jHctOaZQt7DpwwTo6sidFWiBKGNa.1"
+                            class="text-blue-500">Join Here</a>.</p>
+                    <p class="text-lg">For those attending offline, enjoy additional benefits like a CV Clinic, company
+                        expo, games, and much more. See you there!</p>
+                </div>
+            </div>
+        @endif
     </div>
 
     <!-- Mobile ver. -->
@@ -428,58 +458,57 @@
             <div class="flex flex-col justify-center">
                 <h1 class="text-3xl text-center font-semibold mb-5" style="color: rgb(12 40 62);">Explore Our Event!
                 </h1>
-                <div x-data="{            
-    slides: [                
-        {
-            imgSrc: '/image/tp-hm.png',
-            imgAlt: '',  
-            title: 'Technopreneur',
-            description: '',    
-            ctaUrl: '/technopreneur',
-            ctaText: 'Click here for more details',          
-        },                
-        {                    
-            imgSrc: '/image/if-hm.png',
-            imgAlt: '',  
-            title: 'Grand Opening',
-            description: '',    
-            ctaUrl: '/grand-opening',
-            ctaText: 'Click here for more details',                
-        },                
-        {                    
-            imgSrc: '/image/if-hm.png',
-            imgAlt: '',  
-            title: 'Last Act',
-            description: '',    
-            ctaUrl: '/last_act',
-            ctaText: 'Click here for more details',                
-        },          
-    ],            
-    currentSlideIndex: 1,
-    previous() {                
-        if (this.currentSlideIndex > 1) {                    
-            this.currentSlideIndex = this.currentSlideIndex - 1                
-        } else {   
-            // If it's the first slide, go to the last slide           
-            this.currentSlideIndex = this.slides.length                
-        }            
-    },            
-    next() {                
-        if (this.currentSlideIndex < this.slides.length) {                    
-            this.currentSlideIndex = this.currentSlideIndex + 1                
-        } else {                 
-            // If it's the last slide, go to the first slide    
-            this.currentSlideIndex = 1                
-        }            
-    },        
-}" class="relative w-full overflow-hidden">
+                <div x-data="{
+                    slides: [{
+                            imgSrc: '/image/tp-hm.png',
+                            imgAlt: '',
+                            title: 'Technopreneur',
+                            description: '',
+                            ctaUrl: '/technopreneur',
+                            ctaText: 'Click here for more details',
+                        },
+                        {
+                            imgSrc: '/image/if-hm.png',
+                            imgAlt: '',
+                            title: 'Grand Opening',
+                            description: '',
+                            ctaUrl: '/grand-opening',
+                            ctaText: 'Click here for more details',
+                        },
+                        {
+                            imgSrc: '/image/if-hm.png',
+                            imgAlt: '',
+                            title: 'Last Act',
+                            description: '',
+                            ctaUrl: '/last_act',
+                            ctaText: 'Click here for more details',
+                        },
+                    ],
+                    currentSlideIndex: 1,
+                    previous() {
+                        if (this.currentSlideIndex > 1) {
+                            this.currentSlideIndex = this.currentSlideIndex - 1
+                        } else {
+                            // If it's the first slide, go to the last slide           
+                            this.currentSlideIndex = this.slides.length
+                        }
+                    },
+                    next() {
+                        if (this.currentSlideIndex < this.slides.length) {
+                            this.currentSlideIndex = this.currentSlideIndex + 1
+                        } else {
+                            // If it's the last slide, go to the first slide    
+                            this.currentSlideIndex = 1
+                        }
+                    },
+                }" class="relative w-full overflow-hidden">
 
                     <!-- previous button -->
                     <button type="button"
                         class="absolute left-5 top-1/2 z-20 flex rounded-full -translate-y-1/2 items-center justify-center bg-white/40 p-2 text-slate-700 transition hover:bg-white/60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700 active:outline-offset-0 dark:bg-slate-900/40 dark:text-slate-300 dark:hover:bg-slate-900/60 dark:focus-visible:outline-blue-600"
                         aria-label="previous slide" x-on:click="previous()">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor" fill="none"
-                            stroke-width="3" class="size-5 md:size-6 pr-0.5" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor"
+                            fill="none" stroke-width="3" class="size-5 md:size-6 pr-0.5" aria-hidden="true">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
                         </svg>
                     </button>
@@ -488,8 +517,8 @@
                     <button type="button"
                         class="absolute right-5 top-1/2 z-20 flex rounded-full -translate-y-1/2 items-center justify-center bg-white/40 p-2 text-slate-700 transition hover:bg-white/60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700 active:outline-offset-0 dark:bg-slate-900/40 dark:text-slate-300 dark:hover:bg-slate-900/60 dark:focus-visible:outline-blue-600"
                         aria-label="next slide" x-on:click="next()">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor" fill="none"
-                            stroke-width="3" class="size-5 md:size-6 pl-0.5" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor"
+                            fill="none" stroke-width="3" class="size-5 md:size-6 pl-0.5" aria-hidden="true">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                         </svg>
                     </button>
@@ -538,74 +567,73 @@
             <div class="flex flex-col justify-center py-16">
                 <h1 class="text-3xl text-center font-semibold mb-5" style="color: rgb(12 40 62);">Explore Our
                     Competition!</h1>
-                <div x-data="{            
-    slides: [                
-        {
-            imgSrc: '/image/Lomba-cm/Comprog.png',
-            imgAlt: '',  
-            title: 'Competitive Programming',
-            description: '',    
-            ctaUrl: '/competitive-programming',
-            ctaText: 'Click here to participate',          
-        },                
-        {                    
-            imgSrc: '/image/Lomba-cm/CTF.png',
-            imgAlt: '',  
-            title: 'Capture The Flag',
-            description: '',    
-            ctaUrl: '/capture-the-flag',
-            ctaText: 'Click here to participate',                
-        },                
-        {                    
-            imgSrc: '/image/Lomba-cm/DAC.png',
-            imgAlt: '',  
-            title: 'Data Analyst Competition',
-            description: '',    
-            ctaUrl: '/capture-the-flag',
-            ctaText: 'Click here to participate',                
-        },   
-        {                    
-            imgSrc: '/image/Lomba-cm/Incomp.png',
-            imgAlt: '',  
-            title: 'Informatics Competition',
-            description: '',    
-            ctaUrl: '/capture-the-flag',
-            ctaText: 'Click here to participate',                
-        },   
-        {                    
-            imgSrc: '/image/Lomba-cm/Webdev.png',
-            imgAlt: '',  
-            title: 'Web Development',
-            description: '',    
-            ctaUrl: '/capture-the-flag',
-            ctaText: 'Click here to participate',                
-        },            
-    ],            
-    currentSlideIndex: 1,
-    previous() {                
-        if (this.currentSlideIndex > 1) {                    
-            this.currentSlideIndex = this.currentSlideIndex - 1                
-        } else {   
-            // If it's the first slide, go to the last slide           
-            this.currentSlideIndex = this.slides.length                
-        }            
-    },            
-    next() {                
-        if (this.currentSlideIndex < this.slides.length) {                    
-            this.currentSlideIndex = this.currentSlideIndex + 1                
-        } else {                 
-            // If it's the last slide, go to the first slide    
-            this.currentSlideIndex = 1                
-        }            
-    },        
-}" class="relative w-full overflow-hidden">
+                <div x-data="{
+                    slides: [{
+                            imgSrc: '/image/Lomba-cm/Comprog.png',
+                            imgAlt: '',
+                            title: 'Competitive Programming',
+                            description: '',
+                            ctaUrl: '/competitive-programming',
+                            ctaText: 'Click here to participate',
+                        },
+                        {
+                            imgSrc: '/image/Lomba-cm/CTF.png',
+                            imgAlt: '',
+                            title: 'Capture The Flag',
+                            description: '',
+                            ctaUrl: '/capture-the-flag',
+                            ctaText: 'Click here to participate',
+                        },
+                        {
+                            imgSrc: '/image/Lomba-cm/DAC.png',
+                            imgAlt: '',
+                            title: 'Data Analyst Competition',
+                            description: '',
+                            ctaUrl: '/capture-the-flag',
+                            ctaText: 'Click here to participate',
+                        },
+                        {
+                            imgSrc: '/image/Lomba-cm/Incomp.png',
+                            imgAlt: '',
+                            title: 'Informatics Competition',
+                            description: '',
+                            ctaUrl: '/capture-the-flag',
+                            ctaText: 'Click here to participate',
+                        },
+                        {
+                            imgSrc: '/image/Lomba-cm/Webdev.png',
+                            imgAlt: '',
+                            title: 'Web Development',
+                            description: '',
+                            ctaUrl: '/capture-the-flag',
+                            ctaText: 'Click here to participate',
+                        },
+                    ],
+                    currentSlideIndex: 1,
+                    previous() {
+                        if (this.currentSlideIndex > 1) {
+                            this.currentSlideIndex = this.currentSlideIndex - 1
+                        } else {
+                            // If it's the first slide, go to the last slide           
+                            this.currentSlideIndex = this.slides.length
+                        }
+                    },
+                    next() {
+                        if (this.currentSlideIndex < this.slides.length) {
+                            this.currentSlideIndex = this.currentSlideIndex + 1
+                        } else {
+                            // If it's the last slide, go to the first slide    
+                            this.currentSlideIndex = 1
+                        }
+                    },
+                }" class="relative w-full overflow-hidden">
 
                     <!-- previous button -->
                     <button type="button"
                         class="absolute left-5 top-1/2 z-20 flex rounded-full -translate-y-1/2 items-center justify-center bg-white/40 p-2 text-slate-700 transition hover:bg-white/60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700 active:outline-offset-0 dark:bg-slate-900/40 dark:text-slate-300 dark:hover:bg-slate-900/60 dark:focus-visible:outline-blue-600"
                         aria-label="previous slide" x-on:click="previous()">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor" fill="none"
-                            stroke-width="3" class="size-5 md:size-6 pr-0.5" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor"
+                            fill="none" stroke-width="3" class="size-5 md:size-6 pr-0.5" aria-hidden="true">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
                         </svg>
                     </button>
@@ -614,8 +642,8 @@
                     <button type="button"
                         class="absolute right-5 top-1/2 z-20 flex rounded-full -translate-y-1/2 items-center justify-center bg-white/40 p-2 text-slate-700 transition hover:bg-white/60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700 active:outline-offset-0 dark:bg-slate-900/40 dark:text-slate-300 dark:hover:bg-slate-900/60 dark:focus-visible:outline-blue-600"
                         aria-label="next slide" x-on:click="next()">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor" fill="none"
-                            stroke-width="3" class="size-5 md:size-6 pl-0.5" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor"
+                            fill="none" stroke-width="3" class="size-5 md:size-6 pl-0.5" aria-hidden="true">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                         </svg>
                     </button>
@@ -659,66 +687,65 @@
             <div class="flex flex-col justify-center py-16">
                 <h1 class="text-3xl text-center font-semibold mb-5" style="color: rgb(12 40 62);">Dicoding promotion
                 </h1>
-                <div x-data="{            
-    slides: [                
-        {
-            imgSrc: '/image/PosterDicoding/1.png',
-            imgAlt: '',  
-            title: '',
-            description: '',    
-            ctaUrl: 'https://dicoding.id/DBN',
-            ctaText: 'Click for more information',          
-        },                
-        {                    
-            imgSrc: '/image/PosterDicoding/2.png',
-            imgAlt: '',  
-            title: '',
-            description: '',    
-            ctaUrl: '/capture-the-flag',
-            ctaText: 'Click for more information',                
-        },                
-        {                    
-            imgSrc: '/image/PosterDicoding/3.png',
-            imgAlt: '',  
-            title: '',
-            description: '',    
-            ctaUrl: '/capture-the-flag',
-            ctaText: 'Click for more information',                
-        },   
-        {                    
-            imgSrc: '/image/PosterDicoding/4.png',
-            imgAlt: '',  
-            title: '',
-            description: '',    
-            ctaUrl: '/capture-the-flag',
-            ctaText: 'Click for more information',                
-        },           
-    ],           
-    currentSlideIndex: 1,
-    previous() {                
-        if (this.currentSlideIndex > 1) {                    
-            this.currentSlideIndex = this.currentSlideIndex - 1                
-        } else {   
-            // If it's the first slide, go to the last slide           
-            this.currentSlideIndex = this.slides.length                
-        }            
-    },            
-    next() {                
-        if (this.currentSlideIndex < this.slides.length) {                    
-            this.currentSlideIndex = this.currentSlideIndex + 1                
-        } else {                 
-            // If it's the last slide, go to the first slide    
-            this.currentSlideIndex = 1                
-        }            
-    },        
-}" class="relative w-full overflow-hidden">
+                <div x-data="{
+                    slides: [{
+                            imgSrc: '/image/PosterDicoding/1.png',
+                            imgAlt: '',
+                            title: '',
+                            description: '',
+                            ctaUrl: 'https://dicoding.id/DBN',
+                            ctaText: 'Click for more information',
+                        },
+                        {
+                            imgSrc: '/image/PosterDicoding/2.png',
+                            imgAlt: '',
+                            title: '',
+                            description: '',
+                            ctaUrl: '/capture-the-flag',
+                            ctaText: 'Click for more information',
+                        },
+                        {
+                            imgSrc: '/image/PosterDicoding/3.png',
+                            imgAlt: '',
+                            title: '',
+                            description: '',
+                            ctaUrl: '/capture-the-flag',
+                            ctaText: 'Click for more information',
+                        },
+                        {
+                            imgSrc: '/image/PosterDicoding/4.png',
+                            imgAlt: '',
+                            title: '',
+                            description: '',
+                            ctaUrl: '/capture-the-flag',
+                            ctaText: 'Click for more information',
+                        },
+                    ],
+                    currentSlideIndex: 1,
+                    previous() {
+                        if (this.currentSlideIndex > 1) {
+                            this.currentSlideIndex = this.currentSlideIndex - 1
+                        } else {
+                            // If it's the first slide, go to the last slide           
+                            this.currentSlideIndex = this.slides.length
+                        }
+                    },
+                    next() {
+                        if (this.currentSlideIndex < this.slides.length) {
+                            this.currentSlideIndex = this.currentSlideIndex + 1
+                        } else {
+                            // If it's the last slide, go to the first slide    
+                            this.currentSlideIndex = 1
+                        }
+                    },
+                }" class="relative w-full overflow-hidden">
 
                     <!-- previous button -->
                     <button type="button"
                         class="absolute left-5 top-1/2 z-20 flex rounded-full -translate-y-1/2 items-center justify-center bg-white/40 p-2 text-slate-700 transition hover:bg-white/60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700 active:outline-offset-0 dark:bg-slate-900/40 dark:text-slate-300 dark:hover:bg-slate-900/60 dark:focus-visible:outline-blue-600"
                         aria-label="previous slide" x-on:click="previous()">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor" fill="none"
-                            stroke-width="3" class="size-5 md:size-6 pr-0.5" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor"
+                            fill="none" stroke-width="3" class="size-5 md:size-6 pr-0.5" aria-hidden="true">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
                         </svg>
                     </button>
@@ -727,8 +754,8 @@
                     <button type="button"
                         class="absolute right-5 top-1/2 z-20 flex rounded-full -translate-y-1/2 items-center justify-center bg-white/40 p-2 text-slate-700 transition hover:bg-white/60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700 active:outline-offset-0 dark:bg-slate-900/40 dark:text-slate-300 dark:hover:bg-slate-900/60 dark:focus-visible:outline-blue-600"
                         aria-label="next slide" x-on:click="next()">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor" fill="none"
-                            stroke-width="3" class="size-5 md:size-6 pl-0.5" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor"
+                            fill="none" stroke-width="3" class="size-5 md:size-6 pl-0.5" aria-hidden="true">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                         </svg>
                     </button>
@@ -776,27 +803,35 @@
                     <div class="grid grid-cols-3 grid-flow-row gap-4 justify-center items-center">
                         <a target="_blank" rel="noopener noreferrer"
                             href="https://www.instagram.com/opsfood.co?igsh=ZXdyN3k5dGdodDI2"
-                            class="flex items-center justify-center"><img src="/image/SponsorPage/Techno/2.svg" alt="">
+                            class="flex items-center justify-center"><img src="/image/SponsorPage/Techno/2.svg"
+                                alt="">
                         </a>
                         <a target="_blank" rel="noopener noreferrer" href="https://gits.id/"
-                            class="flex items-center justify-center"><img src="/image/SponsorPage/Techno/5.svg" alt="">
+                            class="flex items-center justify-center"><img src="/image/SponsorPage/Techno/5.svg"
+                                alt="">
                         </a>
                         <a target="_blank" rel="noopener noreferrer" href="https://mekari.com/"
-                            class="flex items-center justify-center"><img src="/image/SponsorPage/Techno/3.svg" alt="">
+                            class="flex items-center justify-center"><img src="/image/SponsorPage/Techno/3.svg"
+                                alt="">
                         </a>
                         <a target="_blank" rel="noopener noreferrer" href="https://kolaborasi.co/"
-                            class="flex items-center justify-center"><img src="/image/SponsorPage/Techno/4.svg" alt="">
+                            class="flex items-center justify-center"><img src="/image/SponsorPage/Techno/4.svg"
+                                alt="">
                         </a>
                         <a target="_blank" rel="noopener noreferrer" href="https://selasarkampus.com/"
-                            class="flex items-center justify-center"><img src="/image/SponsorPage/Techno/1.svg" alt="">
+                            class="flex items-center justify-center"><img src="/image/SponsorPage/Techno/1.svg"
+                                alt="">
                         </a>
                         <a target="_blank" rel="noopener noreferrer" href="https://www.dicoding.com/"
-                            class="flex items-center justify-center"><img src="/image/SponsorPage/Techno/6.svg" alt="">
+                            class="flex items-center justify-center"><img src="/image/SponsorPage/Techno/6.svg"
+                                alt="">
                         </a>
                     </div>
                     <div class="grid grid-cols-2 grid-flow-row gap-4 justify-center items-center">
-                        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/petircysec/"
-                            class="flex items-center justify-center"><img src="/image/SponsorPage/ITComp/2.svg" alt="">
+                        <a target="_blank" rel="noopener noreferrer"
+                            href="https://www.linkedin.com/company/petircysec/"
+                            class="flex items-center justify-center"><img src="/image/SponsorPage/ITComp/2.svg"
+                                alt="">
                         </a>
                         <a target="_blank" rel="noopener noreferrer" href="https://devcode.ai/"
                             class="flex items-center justify-center"><img src="/image/SponsorPage/ITComp/3.svg" alt="">
@@ -817,8 +852,12 @@
                             class="p-5 flex items-center justify-center"><img src="/image/SponsorPage/ITComp/1.svg"
                                 alt="">
                         </a>
+                    </div>
+                    <div class="grid grid-cols-2 grid-flow-row gap-4 justify-center items-center">
+
                         <a target="_blank" rel="noopener noreferrer" href="https://www.mceasy.com/en/"
-                            class="flex items-center justify-center p-5"><img src="/image/sponsor/gambar1.png" alt="">
+                            class="flex items-center justify-center p-5"><img src="/image/sponsor/gambar1.png"
+                                alt="">
                         </a>
                         <a target="_blank" rel="noopener noreferrer" href="https://skillpedia.id/"
                             class="p-5 flex items-center justify-center"><img src="/image/sponsor/gambar2.png" alt="">
@@ -832,27 +871,86 @@
                 <div
                     class=" py-8 w-full h-auto flex flex-col items-center justify-center gap-y-6 backdrop-blur-md bg-white/30 rounded-md p-3">
                     <div class="grid grid-cols-3 grid-flow-row gap-4 justify-center items-center">
-                        <div class="flex items-center justify-center"><img src="/image/MedPart/Techno/2.svg" alt="">
+                        <div class="flex items-center justify-center"><img src="/image/MedPart/Techno/2.svg"
+                                alt="">
                         </div>
-                        <div class="flex items-center justify-center"><img src="/image/MedPart/Techno/3.svg" alt="">
+                        <div class="flex items-center justify-center"><img src="/image/MedPart/Techno/3.svg"
+                                alt="">
                         </div>
-                        <div class="flex items-center justify-center"><img src="/image/MedPart/Techno/4.svg" alt="">
+                        <div class="flex items-center justify-center"><img src="/image/MedPart/Techno/4.svg"
+                                alt="">
                         </div>
                     </div>
                     <div class="grid grid-cols-3 grid-flow-row gap-4 justify-center items-center">
-                        <div class="flex items-center justify-center"><img src="/image/MedPart/ITComp/2.svg" alt="">
+                        <div class="flex items-center justify-center"><img src="/image/MedPart/ITComp/2.svg"
+                                alt="">
                         </div>
-                        <div class="flex items-center justify-center"><img src="/image/MedPart/ITComp/3.svg" alt="">
+                        <div class="flex items-center justify-center"><img src="/image/MedPart/ITComp/3.svg"
+                                alt="">
                         </div>
-                        <div class="flex items-center justify-center"><img src="/image/MedPart/ITComp/4.svg" alt="">
+                        <div class="flex items-center justify-center"><img src="/image/MedPart/ITComp/4.svg"
+                                alt="">
                         </div>
                     </div>
                     <div class="grid grid-cols-1 grid-flow-row gap-4 justify-center items-center">
-                        <div class="flex items-center justify-center"><img src="/image/MedPart/Techno/1.svg" alt="">
+                        <div class="flex items-center justify-center"><img src="/image/MedPart/Techno/1.svg"
+                                alt="">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        @if (isset($isRegistered) && $isRegistered)
+            <div id="dday-mobile"
+                class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50 hidden">
+                <div class="relative bg-white p-6 rounded-lg shadow-lg text-center max-w-sm mx-auto">
+                    <button id="close-dday-mobile"
+                        class="absolute top-2 right-2 text-gray-500 hover:text-gray-800 text-2xl font-bold">&times;</button>
+                    <h2 class="text-3xl font-bold mb-4">D-Day!</h2>
+                    <p class="text-lg mb-4">Thank you for joining us! For those attending online, you can join from
+                        this link:
+                        <a href="https://zoom.us/j/96902496904?pwd=o2jHctOaZQt7DpwwTo6sidFWiBKGNa.1"
+                            class="text-blue-500">Join Here</a>.
+                    </p>
+                    <p class="text-lg">For those attending offline, enjoy additional benefits like a CV Clinic, company
+                        expo, games, and much more. See you there!</p>
+                </div>
+            </div>
+        @endif
     </div>
 </x-layout>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var dday = document.getElementById('dday');
+        var ddayMobile = document.getElementById('dday-mobile');
+        
+        if (dday) {
+            dday.classList.remove('hidden');
+        }
+
+        if (ddayMobile) {
+            ddayMobile.classList.remove('hidden');
+        }
+
+        var closedday = document.getElementById('close-dday');
+        var closeddayMobile = document.getElementById('close-dday-mobile');
+
+        if (closedday) {
+            closedday.onclick = function() {
+                if (dday) {
+                    dday.classList.add('hidden');
+                }
+            };
+        }
+
+        if (closeddayMobile) {
+            closeddayMobile.onclick = function() {
+                if (ddayMobile) {
+                    ddayMobile.classList.add('hidden');
+                }
+            };
+        }
+    });
+</script>

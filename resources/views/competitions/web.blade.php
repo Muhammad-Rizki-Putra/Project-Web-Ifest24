@@ -55,7 +55,7 @@
                     </div>
                 </div>
             </div>
-        </div>x
+        </div>
     </div>
 
     <div class="md:hidden flex items-center justify-center flex-col h-auto bg-itcomp-bg bg-fixed bg-right-bottom bg-cover bg-no-repeat py-20">

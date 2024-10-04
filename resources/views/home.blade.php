@@ -334,8 +334,18 @@
                             class="flex items-center justify-center p-5"><img src="/image/sponsor/gambar1.png" alt="">
                         </a>
                         <a target="_blank" rel="noopener noreferrer" href="https://skillpedia.id/"
-                            class="p-5 flex items-center justify-center"><img src="/image/sponsor/gambar2.png"
+                            class="p-5 flex items-center justify-center"><img src="/image/sponsor/gambar2.png" alt="">
+                        </a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://tujuhsembilan.com/"
+                            class="p-5 flex items-center justify-center"><img class="w-[300px]" src="/image/sponsor/imgTujuhSembilan.png"
                                 alt="">
+                        </a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://kinobi.tech/"
+                            class="p-5 flex items-center justify-center"><img class="w-[300px]" src="/image/sponsor/imgKinobi.png" alt="">
+                        </a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://karier.unpad.ac.id/"
+                            class="p-5 flex items-center justify-center"><img class="w-auto h-[150px]"
+                                src="/image/sponsor/imgKarirUnpad.jpg" alt="">
                         </a>
                     </div>
 
@@ -783,26 +793,35 @@
                         <a target="_blank" rel="noopener noreferrer" href="https://www.dicoding.com/"
                             class="flex items-center justify-center"><img src="/image/SponsorPage/Techno/6.svg" alt="">
                         </a>
+                    </div>
+                    <div class="grid grid-cols-2 grid-flow-row gap-4 justify-center items-center">
                         <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/petircysec/"
                             class="flex items-center justify-center"><img src="/image/SponsorPage/ITComp/2.svg" alt="">
                         </a>
                         <a target="_blank" rel="noopener noreferrer" href="https://devcode.ai/"
                             class="flex items-center justify-center"><img src="/image/SponsorPage/ITComp/3.svg" alt="">
                         </a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://tujuhsembilan.com/"
+                            class="p-5 flex items-center justify-center"><img src="/image/sponsor/imgTujuhSembilan.png"
+                                alt="">
+                        </a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://kinobi.tech/"
+                            class="p-5 flex items-center justify-center"><img src="/image/sponsor/imgKinobi.png" alt="">
+                        </a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://karier.unpad.ac.id/"
+                            class="p-5 flex items-center justify-center "><img class=""
+                                src="/image/sponsor/imgKarirUnpad.jpg" alt="">
+                        </a>
                         <a target="_blank" rel="noopener noreferrer"
                             href="https://www.instagram.com/aida_unpad?igsh=eDNhajJmbWx3N2o="
                             class="p-5 flex items-center justify-center"><img src="/image/SponsorPage/ITComp/1.svg"
                                 alt="">
                         </a>
-                    </div>
-                    <div class="grid grid-cols-2 grid-flow-row gap-4 justify-center items-center">
-                    
                         <a target="_blank" rel="noopener noreferrer" href="https://www.mceasy.com/en/"
                             class="flex items-center justify-center p-5"><img src="/image/sponsor/gambar1.png" alt="">
                         </a>
                         <a target="_blank" rel="noopener noreferrer" href="https://skillpedia.id/"
-                            class="p-5 flex items-center justify-center"><img src="/image/sponsor/gambar2.png"
-                                alt="">
+                            class="p-5 flex items-center justify-center"><img src="/image/sponsor/gambar2.png" alt="">
                         </a>
                     </div>
                 </div>

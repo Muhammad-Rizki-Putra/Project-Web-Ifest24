@@ -380,12 +380,12 @@
             </div>
         </div>
 
-        <!-- Popup Modal PC -->
+        <!-- custom-modal Modal PC -->
         @if (isset($isRegistered) && $isRegistered)
-            <div id="popup"
+            <div id="custom-modal"
                 class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50 hidden">
                 <div class="relative bg-white p-8 rounded-lg shadow-lg text-center">
-                    <button id="close-popup"
+                    <button id="close-custom-modal"
                         class="absolute top-2 right-2 text-gray-500 hover:text-gray-800 text-2xl font-bold">&times;</button>
                     <h2 class="text-3xl font-bold mb-4">D-Day!</h2>
                     <p class="text-lg mb-4">Thank you for joining us! For those attending online, you can join from
@@ -881,10 +881,10 @@
         </div>
 
         @if (isset($isRegistered) && $isRegistered)
-            <div id="popup-mobile"
+            <div id="custom-modal-mobile"
                 class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50 hidden">
                 <div class="relative bg-white p-6 rounded-lg shadow-lg text-center max-w-sm mx-auto">
-                    <button id="close-popup-mobile"
+                    <button id="close-custom-modal-mobile"
                         class="absolute top-2 right-2 text-gray-500 hover:text-gray-800 text-2xl font-bold">&times;</button>
                     <h2 class="text-3xl font-bold mb-4">D-Day!</h2>
                     <p class="text-lg mb-4">Thank you for joining us! For those attending online, you can join from
@@ -902,32 +902,32 @@
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
-        var popup = document.getElementById('popup');
-        var popupMobile = document.getElementById('popup-mobile');
+        var custom-modal = document.getElementById('custom-modal');
+        var custom-modalMobile = document.getElementById('custom-modal-mobile');
         
-        if (popup) {
-            popup.classList.remove('hidden');
+        if (custom-modal) {
+            custom-modal.classList.remove('hidden');
         }
 
-        if (popupMobile) {
-            popupMobile.classList.remove('hidden');
+        if (custom-modalMobile) {
+            custom-modalMobile.classList.remove('hidden');
         }
 
-        var closePopup = document.getElementById('close-popup');
-        var closePopupMobile = document.getElementById('close-popup-mobile');
+        var closecustom-modal = document.getElementById('close-custom-modal');
+        var closecustom-modalMobile = document.getElementById('close-custom-modal-mobile');
 
-        if (closePopup) {
-            closePopup.onclick = function() {
-                if (popup) {
-                    popup.classList.add('hidden');
+        if (closecustom-modal) {
+            closecustom-modal.onclick = function() {
+                if (custom-modal) {
+                    custom-modal.classList.add('hidden');
                 }
             };
         }
 
-        if (closePopupMobile) {
-            closePopupMobile.onclick = function() {
-                if (popupMobile) {
-                    popupMobile.classList.add('hidden');
+        if (closecustom-modalMobile) {
+            closecustom-modalMobile.onclick = function() {
+                if (custom-modalMobile) {
+                    custom-modalMobile.classList.add('hidden');
                 }
             };
         }

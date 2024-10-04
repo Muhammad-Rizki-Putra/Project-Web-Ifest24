@@ -901,10 +901,10 @@
 </x-layout>
 
 <script>
-    window.onload = function() {
+    document.addEventListener('DOMContentLoaded', function() {
         var popup = document.getElementById('popup');
         var popupMobile = document.getElementById('popup-mobile');
-
+        
         if (popup) {
             popup.classList.remove('hidden');
         }
@@ -912,26 +912,24 @@
         if (popupMobile) {
             popupMobile.classList.remove('hidden');
         }
-    };
 
-    var closePopup = document.getElementById('close-popup');
-    var closePopupMobile = document.getElementById('close-popup-mobile');
+        var closePopup = document.getElementById('close-popup');
+        var closePopupMobile = document.getElementById('close-popup-mobile');
 
-    if (closePopup) {
-        closePopup.onclick = function() {
-            var popup = document.getElementById('popup');
-            if (popup) {
-                popup.classList.add('hidden');
-            }
-        };
-    }
+        if (closePopup) {
+            closePopup.onclick = function() {
+                if (popup) {
+                    popup.classList.add('hidden');
+                }
+            };
+        }
 
-    if (closePopupMobile) {
-        closePopupMobile.onclick = function() {
-            var popupMobile = document.getElementById('popup-mobile');
-            if (popupMobile) {
-                popupMobile.classList.add('hidden');
-            }
-        };
-    }
+        if (closePopupMobile) {
+            closePopupMobile.onclick = function() {
+                if (popupMobile) {
+                    popupMobile.classList.add('hidden');
+                }
+            };
+        }
+    });
 </script>

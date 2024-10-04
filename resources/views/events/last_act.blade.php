@@ -146,7 +146,7 @@
                 <div class="w-full flex justify-center items-center py-5 pb-3">
                     <a href="https://zoom.us/j/96902496904?pwd=o2jHctOaZQt7DpwwTo6sidFWiBKGNa.1" class="w-full max-w-md">
                         <div
-                            class="bg-transparent rounded-xl p-3 w-full flex flex-row items-center justify-center gap-x-3 outline outline-2 outline-offset-2 outline-navy-bg opacity-50">
+                            class="bg-transparent rounded-xl p-3 w-full flex flex-row items-center justify-center gap-x-3 outline outline-2 outline-offset-2 outline-navy-bg">
                             <img src="/image/Zoom2.png" alt="" class="w-16 h-auto">
                             <p class="text-center text-navy-bg text-xl font-medium">Click here to Join!</p>
                         </div>
@@ -523,7 +523,7 @@
                 <div class="flex flex-col items-center justify-center w-full px-8 pb-12">
                     <a href="https://zoom.us/j/96902496904?pwd=o2jHctOaZQt7DpwwTo6sidFWiBKGNa.1" class="w-full max-w-md">
                         <div
-                            class="bg-transparent rounded-xl p-3 w-full flex flex-row items-center justify-center gap-x-3 outline outline-2 outline-offset-2 outline-navy-bg opacity-50">
+                            class="bg-transparent rounded-xl p-3 w-full flex flex-row items-center justify-center gap-x-3 outline outline-2 outline-offset-2 outline-navy-bg">
                             <img src="/image/Zoom2.png" alt="" class="w-16 h-auto">
                             <p class="text-center text-navy-bg text-xl font-medium">Click here to Join!</p>
                         </div>

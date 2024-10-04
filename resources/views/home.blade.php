@@ -902,15 +902,36 @@
 
 <script>
     window.onload = function() {
-        document.getElementById('popup').classList.remove('hidden');
-        // document.getElementById('popup-mobile').classList.remove('hidden');
+        var popup = document.getElementById('popup');
+        var popupMobile = document.getElementById('popup-mobile');
+
+        if (popup) {
+            popup.classList.remove('hidden');
+        }
+
+        if (popupMobile) {
+            popupMobile.classList.remove('hidden');
+        }
     };
 
-    document.getElementById('close-popup').onclick = function() {
-        document.getElementById('popup').classList.add('hidden');
-    };
+    var closePopup = document.getElementById('close-popup');
+    var closePopupMobile = document.getElementById('close-popup-mobile');
 
-    // document.getElementById('close-popup-mobile').onclick = function() {
-    //     document.getElementById('popup-mobile').classList.add('hidden');
-    // };
+    if (closePopup) {
+        closePopup.onclick = function() {
+            var popup = document.getElementById('popup');
+            if (popup) {
+                popup.classList.add('hidden');
+            }
+        };
+    }
+
+    if (closePopupMobile) {
+        closePopupMobile.onclick = function() {
+            var popupMobile = document.getElementById('popup-mobile');
+            if (popupMobile) {
+                popupMobile.classList.add('hidden');
+            }
+        };
+    }
 </script>

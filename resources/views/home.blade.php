@@ -903,14 +903,14 @@
 <script>
     window.onload = function() {
         document.getElementById('popup').classList.remove('hidden');
-        document.getElementById('popup-mobile').classList.remove('hidden');
+        // document.getElementById('popup-mobile').classList.remove('hidden');
     };
 
     document.getElementById('close-popup').onclick = function() {
         document.getElementById('popup').classList.add('hidden');
     };
 
-    document.getElementById('close-popup-mobile').onclick = function() {
-        document.getElementById('popup-mobile').classList.add('hidden');
-    };
+    // document.getElementById('close-popup-mobile').onclick = function() {
+    //     document.getElementById('popup-mobile').classList.add('hidden');
+    // };
 </script>

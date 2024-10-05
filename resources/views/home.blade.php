@@ -381,22 +381,22 @@
         </div>
 
         <!-- dday Modal PC -->
-        @if (isset($isRegistered) && $isRegistered)
-            <div id="dday"
-                class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50 hidden">
-                <div class="relative bg-white p-8 rounded-lg shadow-lg text-center">
-                    <button id="close-dday"
-                        class="absolute top-2 right-2 text-gray-500 hover:text-gray-800 text-2xl font-bold">&times;</button>
-                    <h2 class="text-3xl font-bold mb-4">D-Day!</h2>
-                    <p class="text-lg mb-4">Thank you for joining us! For those attending online, you can join from
-                        this
-                        link: <a href="https://zoom.us/j/96902496904?pwd=o2jHctOaZQt7DpwwTo6sidFWiBKGNa.1"
-                            class="text-blue-500">Join Here</a>.</p>
-                    <p class="text-lg">For those attending offline, enjoy additional benefits like a CV Clinic, company
-                        expo, games, and much more. See you there!</p>
-                </div>
+        <!-- @if (isset($isRegistered) && $isRegistered) -->
+        <div id="dday"
+            class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50 hidden">
+            <div class="relative bg-white p-8 rounded-lg shadow-lg text-center">
+                <button id="close-dday"
+                    class="absolute top-2 right-2 text-gray-500 hover:text-gray-800 text-2xl font-bold">&times;</button>
+                <h2 class="text-3xl font-bold mb-4">D-Day!</h2>
+                <p class="text-lg mb-4">Thank you for joining us! For those attending online, you can join from
+                    this
+                    link: <a href="https://zoom.us/j/96902496904?pwd=o2jHctOaZQt7DpwwTo6sidFWiBKGNa.1"
+                        class="text-blue-500">Join Here</a>.</p>
+                <p class="text-lg">For those attending offline, enjoy additional benefits like a CV Clinic, company
+                    expo, games, and much more. See you there!</p>
             </div>
-        @endif
+        </div>
+        <!-- @endif -->
     </div>
 
     <!-- Mobile ver. -->
@@ -880,23 +880,23 @@
             </div>
         </div>
 
-        @if (isset($isRegistered) && $isRegistered)
-            <div id="dday-mobile"
-                class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50 hidden">
-                <div class="relative bg-white p-6 rounded-lg shadow-lg text-center max-w-sm mx-auto">
-                    <button id="close-dday-mobile"
-                        class="absolute top-2 right-2 text-gray-500 hover:text-gray-800 text-2xl font-bold">&times;</button>
-                    <h2 class="text-3xl font-bold mb-4">D-Day!</h2>
-                    <p class="text-lg mb-4">Thank you for joining us! For those attending online, you can join from
-                        this link:
-                        <a href="https://zoom.us/j/96902496904?pwd=o2jHctOaZQt7DpwwTo6sidFWiBKGNa.1"
-                            class="text-blue-500">Join Here</a>.
-                    </p>
-                    <p class="text-lg">For those attending offline, enjoy additional benefits like a CV Clinic, company
-                        expo, games, and much more. See you there!</p>
-                </div>
+        <!-- @if (isset($isRegistered) && $isRegistered) -->
+        <div id="dday-mobile"
+            class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50 hidden">
+            <div class="relative bg-white p-6 rounded-lg shadow-lg text-center max-w-sm mx-auto">
+                <button id="close-dday-mobile"
+                    class="absolute top-2 right-2 text-gray-500 hover:text-gray-800 text-2xl font-bold">&times;</button>
+                <h2 class="text-3xl font-bold mb-4">D-Day!</h2>
+                <p class="text-lg mb-4">Thank you for joining us! For those attending online, you can join from
+                    this link:
+                    <a href="https://zoom.us/j/96902496904?pwd=o2jHctOaZQt7DpwwTo6sidFWiBKGNa.1"
+                        class="text-blue-500">Join Here</a>.
+                </p>
+                <p class="text-lg">For those attending offline, enjoy additional benefits like a CV Clinic, company
+                    expo, games, and much more. See you there!</p>
             </div>
-        @endif
+        </div>
+        <!-- @endif -->
     </div>
 </x-layout>
 
@@ -904,7 +904,7 @@
     document.addEventListener('DOMContentLoaded', function() {
         var dday = document.getElementById('dday');
         var ddayMobile = document.getElementById('dday-mobile');
-        
+
         if (dday) {
             dday.classList.remove('hidden');
         }

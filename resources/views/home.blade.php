@@ -391,7 +391,6 @@
         </div>
 
         <!-- dday Modal PC -->
-        <!-- @if (isset($isRegistered) && $isRegistered) -->
         <div id="dday"
             class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50 hidden">
             <div class="relative bg-white p-8 rounded-lg shadow-lg text-center">
@@ -406,7 +405,6 @@
                     expo, games, and much more. See you there!</p>
             </div>
         </div>
-        <!-- @endif -->
     </div>
 
     <!-- Mobile ver. -->
@@ -901,7 +899,6 @@
             </div>
         </div>
 
-        <!-- @if (isset($isRegistered) && $isRegistered) -->
         <div id="dday-mobile"
             class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50 hidden">
             <div class="relative bg-white p-6 rounded-lg shadow-lg text-center max-w-sm mx-auto">
@@ -917,7 +914,6 @@
                     expo, games, and much more. See you there!</p>
             </div>
         </div>
-        <!-- @endif -->
     </div>
 </x-layout>
 
